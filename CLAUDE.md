@@ -55,7 +55,8 @@ as JSON (`frameworks/`). AGPL-3.0, © 2026 Douglas Cleary.
 - README media (screenshots + demo video): build the UI (`npm run build`), then
   `PY=<python with backend deps> frontend/e2e/media/capture.sh <scratch-dir> [port]`. It starts a BLANK
   throwaway instance (data in `<scratch-dir>/instance`), records Setup → "Explore with demo data" → dashboard →
-  controls/crosswalk → findings → reports, screenshots the demo pages, stops the server, and writes
+  controls/crosswalk → findings → reports, screenshots the demo pages (running one Red Team analysis for the
+  `08`/`09` shots), stops the server, and writes
   `docs/screenshots/*.png` (1440×900 @2x) + `docs/media/athorize-demo.mp4` and `athorize-demo-preview.gif`
   (ffmpeg needed for those two; raw .webm stays in `<scratch-dir>/work`). Fails on page errors, failed API calls,
   error alerts or the word "Universal" on screen. Script: `frontend/e2e/media/capture_media.mjs`.

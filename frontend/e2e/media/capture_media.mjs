@@ -10,7 +10,8 @@
  *
  * The instance must be blank (first-run Setup screen): the script screenshots Setup, then
  * records the video of "Explore with demo data" → dashboard → controls/crosswalk → findings →
- * reports, then screenshots the seeded demo pages. Demo data only (Acme / Northwind / Contoso).
+ * reports, then screenshots the seeded demo pages, running one Red Team analysis for the
+ * Red Team shots. Demo data only (Acme / Northwind / Contoso).
  *
  * Outputs
  *   <shots>/*.png               1440×900 viewport, 2× device scale
@@ -48,6 +49,10 @@ const FINDING = 'Stale privileged accounts not disabled'
 const EVIDENCE = 'corp-800-53-control-evidence-bundle.pdf'
 const INSPECT_FRAMEWORK = 'nist-800-53-r5'
 const INSPECT_SYSTEM = 'Corporate Security Program'
+// Red Team: this pair yields findings at every severity, all three attack chains and dollar
+// ranges (the demo organization's risk context is seeded).
+const REDTEAM_SYSTEM = 'Enterprise Resource Planning'
+const REDTEAM_FRAMEWORK = 'pci-dss-v4'
 
 const problems = []
 function watch(page, label) {
@@ -303,6 +308,33 @@ console.log('3/3 Screenshots')
   await page.goto(`${BASE}/reports`)
   await page.getByRole('button', { name: /Executive Briefing/ }).waitFor()
   await shoot(page, '06-reports')
+
+  // Red Team: run a fresh analysis, then the overview (exposure KPIs, cited sources, attack chains)
+  await page.goto(`${BASE}/red-team`)
+  await settle(page)
+  await page.locator('main select').nth(0).selectOption(await systemId(page, REDTEAM_SYSTEM))
+  await page.locator('main select').nth(1).selectOption(REDTEAM_FRAMEWORK)
+  await settle(page)
+  const analyzed = page.waitForResponse(r => r.url().includes('/api/redteam/analyze/') && r.request().method() === 'POST')
+  await page.locator('main').getByRole('button', { name: 'Run Analysis' }).click()
+  if (!(await analyzed).ok()) throw new Error('red team analysis failed')
+  await settle(page)
+  await page.locator('main').getByRole('button', { name: /^Attack Chains/ }).click()
+  await page.locator('main button').filter({ hasText: 'AC-001' }).first().click()
+  await shoot(page, '08-red-team')
+
+  // the top-priority finding: exposure range, cost breakdown with its sources, pre-filled finding language
+  await page.locator('main').getByRole('button', { name: /^All Findings/ }).click()
+  const card = page.locator('main div.border.bg-bg-secondary').filter({ has: page.locator('button span.font-mono', { hasText: /^RT-\d+$/ }) }).first()
+  await card.locator('button').first().click()
+  await card.getByRole('button', { name: 'Show Cost Breakdown' }).click()
+  await card.getByRole('button', { name: 'Show Finding Language' }).click()
+  await card.getByRole('button', { name: 'Create Finding' }).waitFor()
+  await card.evaluate(el => {
+    const main = document.querySelector('main')
+    if (main) main.scrollTop += el.getBoundingClientRect().top - main.getBoundingClientRect().top - 12
+  })
+  await shoot(page, '09-red-team-finding')
 
   await ctx.close()
 }

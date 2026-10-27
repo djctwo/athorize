@@ -20,13 +20,14 @@ All data shown is the built-in demo (fictional companies Acme, Northwind and Con
 |---|---|
 | ![Compliance dashboard](docs/screenshots/01-dashboard.png) | ![A control's crosswalk: what it also satisfies in 14 other frameworks](docs/screenshots/02-controls-crosswalk.png) |
 | **Dashboard:** open findings, aging, evidence freshness | **Crosswalk:** one NIST 800-53 control and everything it also satisfies |
-| ![A finding and every framework it affects](docs/screenshots/03-finding-impact.png) | |
-| **Cross-framework impact:** one finding, 17 affected frameworks | |
+| ![A finding and every framework it affects](docs/screenshots/03-finding-impact.png) | ![Compliance Red Team: estimated exposure, cited sources and attack chains for a demo system](docs/screenshots/08-red-team.png) |
+| **Cross-framework impact:** one finding, 17 affected frameworks | **Compliance Red Team:** 10 findings, 3 attack chains, estimated exposure in dollars |
 
 More screenshots:
 [evidence with crosswalk suggestions](docs/screenshots/04-evidence.png) ·
 [Inspection Prep readiness](docs/screenshots/05-inspection-prep.png) ·
 [reports and executive briefing](docs/screenshots/06-reports.png) ·
+[a Red Team finding with its cost breakdown](docs/screenshots/09-red-team-finding.png) ·
 [first-run setup](docs/screenshots/07-setup.png)
 
 ## Why Athorize
@@ -54,6 +55,16 @@ More screenshots:
   mostly from NIST's official mappings, routed through 800-53. Each control shows
   what it also satisfies; a finding shows every framework it affects; a review
   queue proposes status changes and never applies them silently.
+- **Compliance Red Team:** reviews a system's compliance data the way a hostile
+  assessor would: controls with no or expired evidence, weak narratives,
+  implementation gaps, overdue or unplanned findings, missing assessments and
+  past-due deadlines. Each gap comes with the affected controls (where there are
+  any), remediation guidance and pre-filled finding language (one click files it),
+  and related gaps link into attack chains such as Audit Failure Risk. Every gap
+  carries an estimated dollar range that cites its sources (IBM/Ponemon 2024
+  breach costs, statutory penalty ranges, your revenue and contract figures);
+  these are planning estimates, and they feed the executive briefing. It tests
+  the compliance program, not the network.
 - **Evidence, findings and POA&M tracking**, with owners, due dates, comments
   and @mentions, saved views and bulk edits.
 - **Continuous monitoring:** set a cadence per framework, and see what's due
@@ -67,8 +78,6 @@ More screenshots:
   Elastic, Wazuh, GuardDuty, Suricata, Snort, YARA, CEF, syslog and Windows Event
   Log, plus Nessus (CSV and native `.nessus`), Qualys, Tenable and OpenVAS scan
   results. Asset inventories and POA&M/SSP spreadsheets import too.
-- **Risk in dollars:** findings translated into estimated exposure, with cited
-  breach-cost and penalty benchmarks.
 - **Audit readiness:** an Inspection Prep score with punch list and 90/60/30
   timeline, per-assessment reports, audit binders, and an 8-slide executive
   briefing (PowerPoint).
