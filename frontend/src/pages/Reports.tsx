@@ -111,14 +111,14 @@ export default function Reports() {
         <div>
           <h2 className="text-xl font-bold text-[var(--text-primary)]">Reports</h2>
           <p className="text-xs text-[var(--text-secondary)] mt-0.5">
-            Export compliance data as CSV files for offline analysis or audit evidence.
+            Export compliance data as CSV files for offline analysis or audit evidence. The System and Framework filters below also scope the Executive Briefing.
           </p>
         </div>
         <button
           onClick={async () => {
             setGeneratingPptx(true)
             try {
-              await generateExecBriefing()
+              await generateExecBriefing({ systemId: systemFilter || null, frameworkId: frameworkFilter || null })
               toast.success('Executive briefing downloaded')
             } catch (e) {
               toast.error(e instanceof Error ? e.message : 'Failed to generate briefing')

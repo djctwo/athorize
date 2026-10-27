@@ -92,16 +92,24 @@ def update_risk_context(
 
 @router.get("/exposure-summary")
 def exposure_summary(
+    system_id: int | None = None,
+    framework_id: str | None = None,
     user: User = Depends(get_current_user),
     db: Session = Depends(get_db),
 ):
     """Organization-level estimated exposure (Executive Briefing): the latest
-    report per system x framework the caller can see, combined with the same
+    report per system x framework the caller can see (optionally only one
+    system and/or framework, the Reports page filters), combined with the same
     probable-loss model and revenue cap as a single report. Estimates only."""
-    rows = db.query(RedTeamReport).filter(
+    q = db.query(RedTeamReport).filter(
         RedTeamReport.organization_id == user.organization_id,
         *system_scope_filter(RedTeamReport.system_id, db, user),
-    ).order_by(RedTeamReport.created_at.desc(), RedTeamReport.id.desc()).all()
+    )
+    if system_id is not None:
+        q = q.filter(RedTeamReport.system_id == system_id)
+    if framework_id:
+        q = q.filter(RedTeamReport.framework_id == framework_id)
+    rows = q.order_by(RedTeamReport.created_at.desc(), RedTeamReport.id.desc()).all()
     latest: dict[tuple[int, str], RedTeamReport] = {}
     for r in rows:
         latest.setdefault((r.system_id, r.framework_id), r)

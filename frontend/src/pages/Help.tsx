@@ -402,7 +402,8 @@ const SECTIONS: Section[] = [
         title: 'Generate reports and the Executive Briefing',
         steps: [
           'Open Reports for CSV exports: findings, evidence, risks, compliance summary, ConMon — filterable by system and framework.',
-          'Click Executive Briefing (PPTX) for an 8-slide deck: title, posture, dollar exposure with cited sources (before a Red Team run it says how to get one), open findings with the controls that fix them, crosswalk leverage, program health, a 30/60/90 way forward, and recommendations.',
+          'Click Executive Briefing (PPTX) for a deck in eight sections: title, posture, dollar exposure with cited sources (before a Red Team run it says how to get one), open findings with the controls that fix them, crosswalk leverage, program health, a 30/60/90 way forward, and recommendations. Long tables continue onto extra slides; system × framework pairs nobody has started are left out of the posture table.',
+          'Pick a System and/or Framework first to scope the deck to them: every number, table and recommendation follows the filter, and a section with nothing in scope (no Red Team run, no open findings, no crosswalk claims) is left out.',
         ],
       },
       {

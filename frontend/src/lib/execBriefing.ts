@@ -7,6 +7,7 @@ import pptxgen from 'pptxgenjs'
 import { api } from './api'
 import type { Finding, Framework, System } from '../types'
 import { plural } from './plural'
+import { splitPairs } from './compliancePairs'
 
 const FONT = 'Calibri'
 const C = {
@@ -30,6 +31,7 @@ interface ComplianceScore {
   implemented: number
   open_findings: number
   critical_findings: number
+  assessed_controls?: number
 }
 
 interface FindingImpact {
@@ -42,6 +44,7 @@ interface FindingImpact {
 interface Suggestion {
   framework_id: string
   control_id: string
+  source_framework_id?: string
 }
 
 interface RedTeamReport {
@@ -136,22 +139,47 @@ function header(slide: pptxgen.Slide, title: string, subtitle: string): void {
   slide.addShape('line', { x: 0.55, y: 1.42, w: 12.2, h: 0, line: { color: C.accent, width: 1.5 } })
 }
 
-export async function generateExecBriefing(): Promise<void> {
-  // Gather everything up front
-  const [systems, frameworks, scores, findings, snapshot, redteam, evidence, risks, calendar] = await Promise.all([
+/** The Reports page System / Framework filters. Empty = the whole company. */
+export interface BriefingScope {
+  systemId?: number | null
+  frameworkId?: string | null
+}
+
+/** `path` plus only the filters that are set (unfiltered paths stay exactly as before). */
+function withScope(path: string, params: Record<string, string | number | null | undefined>): string {
+  const q = Object.entries(params).filter(([, v]) => v !== undefined && v !== null && v !== '')
+    .map(([k, v]) => `${k}=${encodeURIComponent(String(v))}`).join('&')
+  if (!q) return path
+  return `${path}${path.includes('?') ? '&' : '?'}${q}`
+}
+
+export async function generateExecBriefing(scope: BriefingScope = {}): Promise<void> {
+  const systemId = scope.systemId || undefined
+  const frameworkId = scope.frameworkId || undefined
+  const filtered = !!(systemId || frameworkId)
+  const sysQ = { system_id: systemId }
+  const bothQ = { system_id: systemId, framework_id: frameworkId }
+  // Gather everything up front, already narrowed to the selected system / framework.
+  const [allSystems, frameworks, allScores, findings, snapshot, redteam, evidence, risks, calendar] = await Promise.all([
     api.get<System[]>('/systems'),
     api.get<Framework[]>('/frameworks'),
-    api.get<ComplianceScore[]>('/dashboard/compliance'),
-    api.get<Finding[]>('/findings'),
-    api.get<Snapshot>('/dashboard/snapshot'),
-    api.get<RedTeamReport[]>('/redteam').catch(() => [] as RedTeamReport[]),
-    api.get<EvidenceItem[]>('/evidence').catch(() => [] as EvidenceItem[]),
-    api.get<RiskItem[]>('/risks').catch(() => [] as RiskItem[]),
+    api.get<ComplianceScore[]>(withScope('/dashboard/compliance', sysQ)),
+    api.get<Finding[]>(withScope('/findings', bothQ)),
+    api.get<Snapshot>(withScope('/dashboard/snapshot', bothQ)),
+    api.get<RedTeamReport[]>(withScope('/redteam', bothQ)).catch(() => [] as RedTeamReport[]),
+    api.get<EvidenceItem[]>(withScope('/evidence', bothQ)).catch(() => [] as EvidenceItem[]),
+    api.get<RiskItem[]>(withScope('/risks', sysQ)).catch(() => [] as RiskItem[]),
     // Manual events only: derived deadlines (findings, evidence…) have their own slides.
-    api.get<CalendarItem[]>('/calendar?derived=false').catch(() => [] as CalendarItem[]),
+    api.get<CalendarItem[]>(withScope('/calendar?derived=false', bothQ)).catch(() => [] as CalendarItem[]),
   ])
+  const systems = systemId ? allSystems.filter(x => x.id === systemId) : allSystems
+  // Rows for systems x frameworks nobody has started (0%, no findings) are noise
+  // to leadership: leave them out and say how many were left out.
+  const { shown: scores, hidden: hiddenPairs } = splitPairs(
+    allScores.filter(sc => sc.total_controls > 0 && (!frameworkId || sc.framework_id === frameworkId)),
+  )
   const exposure = await api
-    .get<ExposureSummary>('/redteam/exposure-summary')
+    .get<ExposureSummary>(withScope('/redteam/exposure-summary', bothQ))
     .catch(() => undefined)
   const methodology = await api
     .get<{ methodology?: Methodology }>('/redteam/risk-context')
@@ -182,7 +210,10 @@ export async function generateExecBriefing(): Promise<void> {
   await Promise.all(systems.map(async s => {
     try {
       const r = await api.get<{ suggestions: Suggestion[] }>(`/crosswalk/suggestions?system_id=${s.id}`)
-      suggestionCounts.set(s.id, r.suggestions)
+      // With a framework selected: only suggestions into or out of it.
+      suggestionCounts.set(s.id, frameworkId
+        ? r.suggestions.filter(x => x.framework_id === frameworkId || x.source_framework_id === frameworkId)
+        : r.suggestions)
     } catch {
       suggestionCounts.set(s.id, [])
     }
@@ -235,14 +266,17 @@ export async function generateExecBriefing(): Promise<void> {
       fontFace: FONT, fontSize: 18, color: C.accent, bold: true,
     })
     const activeFw = frameworks.filter(f => f.is_active)
+    const scopeLine = filtered
+      ? `Scope: ${systemId ? systems.map(x => `${x.acronym} — ${x.name}`).join(', ') : 'all systems'} · ${frameworkId ? fwName(frameworkId) : 'all frameworks'}`
+      : `${plural(systems.length, 'system')} · ${plural(activeFw.length, 'active framework')}`
     s.addText(
-      `${plural(systems.length, 'system')} · ${plural(activeFw.length, 'active framework')} · generated ${new Date().toLocaleDateString('en-CA')}`,
+      `${scopeLine} · generated ${new Date().toLocaleDateString('en-CA')}`,
       { x: 0.8, y: 4.0, w: 11.7, h: 0.4, fontFace: FONT, fontSize: 13, color: C.sub },
     )
   }
 
-  // ---- Compliance posture ----
-  {
+  // ---- Compliance posture ---- (left out of a filtered deck with nothing to show)
+  if (!(filtered && scores.length === 0)) {
     const s = pres.addSlide()
     s.background = { color: C.bg }
     header(s, 'Where We Stand', 'Compliance posture — score per system per active framework')
@@ -255,7 +289,6 @@ export async function generateExecBriefing(): Promise<void> {
       { text: 'Critical', options: { bold: true, fill: { color: C.headFill } } },
     ]
     const rows = scores
-      .filter(sc => sc.total_controls > 0)
       .map(sc => [
         { text: sc.system_name },
         { text: fwName(sc.framework_id) },
@@ -273,12 +306,21 @@ export async function generateExecBriefing(): Promise<void> {
       border: { type: 'solid', color: C.line, pt: 0.5 },
       autoPage: true, autoPageRepeatHeader: true,
     })
+    if (hiddenPairs > 0) {
+      s.addText(
+        `${plural(hiddenPairs, 'system × framework pair')} not started yet (no control assessed, no open finding) ${hiddenPairs === 1 ? 'is' : 'are'} left out.`,
+        { x: 0.55, y: 6.85, w: 12.2, h: 0.4, fontFace: FONT, fontSize: 10, italic: true, color: C.sub },
+      )
+    }
   }
 
   // ---- Risk exposure ($) ----
   // Always present (R2USER-17): before any Red Team run the deck pointed at an
   // "exposure slide" that did not exist. Without a run it says how to get one.
-  if (!(latestReports.length > 0 && exposureHigh > 0)) {
+  // A filtered deck with no Red Team run in scope leaves the slide out instead.
+  const hasExposure = latestReports.length > 0 && exposureHigh > 0
+  const exposureSlide = hasExposure || !filtered
+  if (!hasExposure && !filtered) {
     const s = pres.addSlide()
     s.background = { color: C.bg }
     header(s, 'What the Gaps Cost', 'Estimated financial exposure from current compliance gaps')
@@ -291,7 +333,7 @@ export async function generateExecBriefing(): Promise<void> {
     s.addShape('rect', { x: 0.7, y: 3.8, w: 2.9, h: 1.8, fill: { color: C.headFill }, line: { color: C.line, width: 0.75 } })
     s.addText(String(criticalCount), { x: 0.7, y: 4.05, w: 2.9, h: 0.8, align: 'center', fontFace: FONT, fontSize: 22, bold: true, color: criticalCount > 0 ? C.red : C.green })
     s.addText('Open Critical Findings', { x: 0.7, y: 4.9, w: 2.9, h: 0.5, align: 'center', fontFace: FONT, fontSize: 11, color: C.sub })
-  } else {
+  } else if (hasExposure) {
     const s = pres.addSlide()
     s.background = { color: C.bg }
     header(s, 'What the Gaps Cost', 'Estimated financial exposure from current compliance gaps — adversarial analysis, calibrated to this organization')
@@ -341,7 +383,7 @@ export async function generateExecBriefing(): Promise<void> {
   }
 
   // ---- Open findings with crosswalk remediation ----
-  {
+  if (!(filtered && openFindings.length === 0)) {
     const s = pres.addSlide()
     s.background = { color: C.bg }
     header(
@@ -386,7 +428,7 @@ export async function generateExecBriefing(): Promise<void> {
   }
 
   // ---- Crosswalk leverage ----
-  {
+  if (!(filtered && totalSuggestions === 0)) {
     const s = pres.addSlide()
     s.background = { color: C.bg }
     header(
@@ -521,7 +563,7 @@ export async function generateExecBriefing(): Promise<void> {
       })),
       { x: 0.7, y: 1.9, w: 11.9, h: 5.0, fontFace: FONT, fontSize: 14, color: C.ink, valign: 'top' },
     )
-    if (methodology) {
+    if (methodology && exposureSlide) {
       s.addText(
         `Monetary figures are planning estimates (${methodology.breach_costs_source}; published penalty structures). See the exposure slide for full methodology.`,
         { x: 0.7, y: 6.85, w: 11.9, h: 0.4, fontFace: FONT, fontSize: 8.5, italic: true, color: C.sub },
