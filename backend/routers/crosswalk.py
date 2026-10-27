@@ -1,3 +1,5 @@
+import re
+
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
@@ -8,6 +10,7 @@ from models import Control, ControlImplementation, EvidenceArtifact, Finding, Fr
 from models.user import User
 from services import audit as audit_svc
 from services import crosswalk as crosswalk_svc
+from services.natural_sort import control_sort_key
 from services.payload import safe_commit
 from services.system_scope import system_scope_filter, system_scope_filter_nullable, require_system_allowed
 
@@ -40,6 +43,41 @@ def _titles_for(db: Session, keys: set[tuple[str, str]]) -> dict[tuple[str, str]
         Control.control_id.in_({k[1] for k in keys}),
     ).all()
     return {(r.framework_id, r.control_id): r.title for r in rows}
+
+
+# Suggestion ranking: strongest relationship first, then the most trustworthy
+# mapping, then a direct mapping before one composed through the hub.
+_RELATIONSHIP_RANK = {"equivalent": 0, "superset": 1, "subset": 2, "intersects": 3, "related": 4}
+_CONFIDENCE_ORDER = {"official": 0, "derived": 1, "vendor": 2}
+_STOP_WORDS = frozenset({"and", "or", "of", "the", "for", "to", "in", "on", "a", "an", "with",
+                         "policy", "area", "control", "controls", "requirement", "requirements"})
+
+
+def _title_words(title: str) -> set[str]:
+    """Significant, crudely stemmed words of a control title ("Users" ~ "User")."""
+    words = set()
+    for w in re.findall(r"[a-z]+", (title or "").lower()):
+        if len(w) < 3 or w in _STOP_WORDS:
+            continue
+        words.add(w[:-1] if w.endswith("s") and len(w) > 4 else w)
+    return words
+
+
+def _suggestion_rank(sug: dict, source_titles: dict[tuple[str, str], str]):
+    """Sort key for an evidence suggestion. Within one relationship tier the
+    controls whose titles share the most words with the evidence's own control
+    come first (a CJIS "Identification and Authentication" before CJIS "Mobile
+    Devices" for an MFA export), then catalog order."""
+    src = _title_words(source_titles.get((sug["source_framework_id"], sug["source_control_id"]), ""))
+    overlap = len(src & _title_words(sug.get("title", "")))
+    return (
+        _RELATIONSHIP_RANK.get(sug["relationship"], 9),
+        _CONFIDENCE_ORDER.get(sug["confidence"], 9),
+        0 if sug["path"] == "direct" else 1,
+        -overlap,
+        sug["framework_id"],
+        control_sort_key(sug["control_id"]),
+    )
 
 
 # NOTE: fixed-path routes must register before /{framework_id}/{control_id},
@@ -101,12 +139,14 @@ def evidence_suggestions(
                 "source_control_id": ctrl,
             }
 
-    titles = _titles_for(db, set(suggestions.keys()))
+    titles = _titles_for(db, set(suggestions.keys()) | valid_pairs)
     out = []
     for key, sug in suggestions.items():
         sug["title"] = titles.get(key, "")
         out.append(sug)
-    out.sort(key=lambda x: (x["framework_id"], x["control_id"]))
+    # Strongest, most relevant first — not alphabetical by framework id, which
+    # put CJIS "Mobile Devices" above the EQUIVALENT FedRAMP control.
+    out.sort(key=lambda x: _suggestion_rank(x, titles))
     return {"evidence_id": evidence_id, "suggestions": out}
 
 
