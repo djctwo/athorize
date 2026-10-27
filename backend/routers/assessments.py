@@ -3,7 +3,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from database import get_db
 from models.user import User
-from models.assessment import Assessment
+from models.assessment import Assessment, ASSESSMENT_COMPLETE, ASSESSMENT_IN_PROGRESS, ASSESSMENT_STATUSES
 from schemas import AssessmentCreate, AssessmentUpdate
 from dependencies import get_current_user, require_min_role
 from services import audit as audit_svc
@@ -71,13 +71,17 @@ def update_assessment(assessment_id: int, req: AssessmentUpdate, user: User = De
     ).first()
     if not assessment:
         raise HTTPException(404, "Assessment not found")
+    # Only the canonical statuses: anything else (e.g. "COMPLETED") would be
+    # stored but never recognised by Red Team, reports or the UI.
+    if req.status is not None and req.status not in ASSESSMENT_STATUSES:
+        raise HTTPException(422, f"status must be one of: {', '.join(ASSESSMENT_STATUSES)}")
 
     for field, val in req.model_dump(exclude_unset=True).items():
         setattr(assessment, field, val)
 
-    if req.status == "IN_PROGRESS" and not assessment.started_at:
+    if req.status == ASSESSMENT_IN_PROGRESS and not assessment.started_at:
         assessment.started_at = datetime.now(timezone.utc)
-    if req.status == "COMPLETE":
+    if req.status == ASSESSMENT_COMPLETE:
         assessment.completed_at = datetime.now(timezone.utc)
 
     audit_svc.record(db, organization_id=user.organization_id, actor_id=user.id,

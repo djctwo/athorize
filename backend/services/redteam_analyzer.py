@@ -23,6 +23,7 @@ from models import (
     CalendarEvent,
     FrameworkActivation,
 )
+from models.assessment import ASSESSMENT_COMPLETE
 from models.organization import Organization
 from services.metrics import open_finding_clause
 from services.risk_quantification import chain_exposure, compute_report_totals, quantify_findings
@@ -332,7 +333,7 @@ def _check_assessment_coverage(
         )
         return
 
-    completed = [a for a in assessments if a.status == "COMPLETED"]
+    completed = [a for a in assessments if a.status == ASSESSMENT_COMPLETE]
     if not completed:
         fb.add(
             title="No completed assessments",
