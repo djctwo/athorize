@@ -60,15 +60,22 @@ def onboarding_status(user: User = Depends(get_current_user), db: Session = Depe
 
 
 @router.get("/snapshot")
-def dashboard_snapshot(system_id: int | None = None, user: User = Depends(get_current_user), db: Session = Depends(get_db)):
+def dashboard_snapshot(system_id: int | None = None, framework_id: str | None = None,
+                       user: User = Depends(get_current_user), db: Session = Depends(get_db)):
+    """KPI tiles. `framework_id` (Executive Briefing filter) narrows the finding
+    counts to that framework and the evidence counts to artifacts tagged with it."""
     org_id = user.organization_id
 
     total_systems = db.query(System).filter(System.organization_id == org_id, *system_scope_filter(System.id, db, user)).count()
-    counts = finding_counts(_sys(db.query(Finding).filter(
+    finding_q = _sys(db.query(Finding).filter(
         Finding.organization_id == org_id, *system_scope_filter(Finding.system_id, db, user),
         counted_framework_clause(org_id),
-    ), Finding, system_id))
+    ), Finding, system_id)
+    if framework_id:
+        finding_q = finding_q.filter(Finding.framework_id == framework_id)
+    counts = finding_counts(finding_q)
     open_findings = counts["open"]
+    delayed_findings = counts["delayed"]
     critical_findings = counts["critical"]
     overdue_findings = counts["overdue"]
 
@@ -90,6 +97,16 @@ def dashboard_snapshot(system_id: int | None = None, user: User = Depends(get_cu
     total_evidence = _sys(db.query(EvidenceArtifact).filter(
         EvidenceArtifact.organization_id == org_id, *system_scope_filter(EvidenceArtifact.system_id, db, user),
     ), EvidenceArtifact, system_id).count()
+    if framework_id:
+        # framework_ids is a JSON list: narrow in Python (evidence sets are small).
+        today = date.today()
+        tagged = [e for e in _sys(db.query(EvidenceArtifact).filter(
+            EvidenceArtifact.organization_id == org_id, *system_scope_filter(EvidenceArtifact.system_id, db, user),
+        ), EvidenceArtifact, system_id).all() if framework_id in (e.framework_ids or [])]
+        total_evidence = len(tagged)
+        expired_evidence = sum(1 for e in tagged if e.expiration_date and e.expiration_date < today)
+        expiring_evidence = sum(1 for e in tagged if e.expiration_date
+                                and today <= e.expiration_date <= today + timedelta(days=30))
     fresh_evidence = total_evidence - expiring_evidence - expired_evidence
 
     open_risks = _sys(db.query(RiskRegisterEntry).filter(
@@ -98,13 +115,20 @@ def dashboard_snapshot(system_id: int | None = None, user: User = Depends(get_cu
     ), RiskRegisterEntry, system_id).count()
 
     # Cadence is org-wide (not per-system); only computed for the all-systems view
-    cadence_overdue = 0 if system_id else cadence_svc.overdue_count(db, org_id)
+    if system_id:
+        cadence_overdue = 0
+    elif framework_id:
+        cadence_overdue = sum(1 for r in cadence_svc.list_cadences(db, org_id)
+                              if r["status"] == "OVERDUE" and r["framework_id"] == framework_id)
+    else:
+        cadence_overdue = cadence_svc.overdue_count(db, org_id)
 
     org = db.query(Organization).filter(Organization.id == org_id).first()
     return {
         "organization_name": org.name if org else "",
         "total_systems": total_systems,
         "open_findings": open_findings,
+        "delayed_findings": delayed_findings,
         "critical_findings": critical_findings,
         "overdue_findings": overdue_findings,
         "expiring_evidence": expiring_evidence,
@@ -212,6 +236,7 @@ def compliance_overview(system_id: int | None = None, user: User = Depends(get_c
                 "implemented": s.implemented,
                 "open_findings": s.open_findings,
                 "critical_findings": s.critical_findings,
+                "assessed_controls": s.assessed,
             })
 
     return scores

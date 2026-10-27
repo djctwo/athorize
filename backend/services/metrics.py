@@ -8,7 +8,9 @@ number can't be computed two different ways on two pages.
 
 Definitions (mirrored in the in-app Help):
   - Open finding: any finding NOT in a terminal status (Closed, Risk Accepted,
-    False Positive). DELAYED and IN_PROGRESS findings are open. Company-wide
+    False Positive). DELAYED and IN_PROGRESS findings are open, and the UI
+    says so ("incl. N delayed"); the API marks each finding `is_open` so no
+    page re-derives this from status. Company-wide
     numbers (Dashboard tiles and charts, Portfolio) count findings filed under
     a framework that is ACTIVE for the company and has a loaded catalog — the
     same (system x framework) pairs the score cards and the trend use, so the
@@ -25,7 +27,8 @@ Definitions (mirrored in the in-app Help):
     when it is Implemented/Inherited AND has a narrative of at least 80 chars
     AND evidence uploaded for THAT system (tagged with the control and
     framework, or linked on the implementation) that is unexpired on the
-    inspection date (today when none is set). See
+    inspection date (today when none is set) AND has no open finding filed
+    against that control on that system under that framework. See
     services.inspection_prep.build_prep.
   - Average score (company / trend): the plain mean of the per-pair scores over
     every system x active framework pair whose catalog is loaded.
@@ -47,6 +50,8 @@ from services.aging import TERMINAL_STATUSES
 # leaves every denominator.
 SATISFIED_STATUSES = frozenset({"IMPLEMENTED", "INHERITED"})
 NOT_APPLICABLE = "NOT_APPLICABLE"
+# Open, but remediation slipped past its plan. Counted as open everywhere.
+DELAYED = "DELAYED"
 
 
 def counted_framework_clause(organization_id: int):
@@ -71,12 +76,13 @@ def is_open_status(status: str | None) -> bool:
 
 
 def finding_counts(base_query, today: date | None = None) -> dict[str, int]:
-    """Open / critical / overdue counts for a Finding query that is already
+    """Open (and how many of those are Delayed) / critical / overdue counts for a Finding query that is already
     filtered to the right org / scope / system / framework."""
     day = today or date.today()
     open_q = base_query.filter(open_finding_clause())
     return {
         "open": open_q.count(),
+        "delayed": open_q.filter(Finding.status == DELAYED).count(),
         "critical": open_q.filter(Finding.severity == "CRITICAL").count(),
         "overdue": open_q.filter(Finding.due_date.isnot(None), Finding.due_date < day).count(),
     }

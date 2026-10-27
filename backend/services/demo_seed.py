@@ -35,7 +35,7 @@ from models import (
 )
 from models.control import Control
 from models.control_implementation import ControlImplementation
-from models.assessment import Assessment
+from models.assessment import Assessment, ASSESSMENT_COMPLETE, ASSESSMENT_IN_PROGRESS, ASSESSMENT_PLANNED
 from models.calendar_event import CalendarEvent
 from services.auth import hash_password
 from services.demo_marker import mark_demo
@@ -131,6 +131,17 @@ def _reset_clock() -> None:
     now = datetime.now(timezone.utc)
     SYSTEMS_SINCE = now - timedelta(days=400)
     today = date.today()
+
+
+# A demo created "now" reads wrong to an assessor: every finding DAYS OPEN 0, an
+# assessment window with no findings, a ConMon log that starts today, an empty
+# trend. Records are backdated relative to the seed time (deterministic: the
+# same seed time gives the same data), so aging, overdue counts, the trend and
+# report windows look like a program that has been running for a year.
+def _ago(days: int, hour: int = 14) -> datetime:
+    """A UTC timestamp `days` before the seed day, at a fixed working hour."""
+    d = today - timedelta(days=days)
+    return datetime(d.year, d.month, d.day, hour, 0, tzinfo=timezone.utc)
 
 
 def _seed_acme(db: Session) -> None:
@@ -236,7 +247,7 @@ def _seed_acme(db: Session) -> None:
     for fw_id in ACTIVE_FRAMEWORKS + ([custom_fw_id] if custom_fw_id else []):
         db.add(FrameworkActivation(
             organization_id=org.id, framework_id=fw_id, is_active=True,
-            activated_at=now,
+            activated_at=SYSTEMS_SINCE,
         ))
         loader.load_catalog(fw_id, db)
         loader.load_mappings(fw_id, db)
@@ -302,49 +313,61 @@ def _seed_acme(db: Session) -> None:
             **_demo_file("corp-bundle.pdf"),
             date_collected=today - timedelta(days=20),
             expiration_date=today + timedelta(days=160),
+            created_at=_ago(20),
         ))
         db.flush()
 
     # Findings span the full state machine, aging buckets, and sources so
     # every Findings-page filter/KPI and the lifecycle UI have real data.
     # (title, system, severity, framework, control, status, due_offset_days, extras)
+    # extras "_opened" = days ago the finding was filed (due dates follow the
+    # usual windows: Critical/High 30 days, Medium 90); "_resolved" = days ago a
+    # Closed / Risk Accepted / False Positive finding reached that status. The
+    # SCADA findings were filed during the Annual OT assessment (45-30 days ago).
     findings_data = [
         ("Unpatched SQL Server", "ERP", "CRITICAL", "pci-dss-v4", "6.3.3", "IN_PROGRESS", 14, {
+            "_opened": 16,
             "owner_name": "Owen Owner", "owner_email": "owner@acme-industrial.com",
             "remediation_plan": "Apply CU patch bundle during the next maintenance window; verify with authenticated scan.",
             "milestones": [
-                {"title": "Patch staged in test", "due": str(today + timedelta(days=3)), "complete": True},
+                {"title": "Patch staged in test", "due": str(today - timedelta(days=4)), "complete": True},
                 {"title": "Production maintenance window", "due": str(today + timedelta(days=10)), "complete": False},
                 {"title": "Verification scan", "due": str(today + timedelta(days=14)), "complete": False},
             ]}),
         ("Weak password policy", "ERP", "HIGH", "pci-dss-v4", "8.3.6", "CLOSED", -10, {
+            "_opened": 40, "_resolved": 12,
             "actual_completion": today - timedelta(days=12), "closed_date": today - timedelta(days=12),
             "remediation_plan": "IdP policy updated to 14-char minimum with breached-password screening."}),
         ("Missing network segmentation", "SCADA", "CRITICAL", "nist-800-82-r3", "OT-SC-7", "OPEN", -8, {
-            "owner_name": "Maria Manager"}),  # OVERDUE — due date in the past
+            "_opened": 38, "owner_name": "Maria Manager"}),  # OVERDUE — due date in the past
         ("Default credentials on HMI", "SCADA", "CRITICAL", "nist-800-82-r3", "OT-IA-2", "IN_PROGRESS", 7, {
-            "owner_name": "Owen Owner",
+            "_opened": 41, "owner_name": "Owen Owner",
             "reopen_reason": "Verification found two HMIs still on vendor defaults after the first remediation pass."}),
         ("Firewall rules not reviewed", "ERP", "MEDIUM", "pci-dss-v4", "1.2.5", "DELAYED", 45, {
+            "_opened": 120,
             "scheduled_completion": today + timedelta(days=45),
             "remediation_plan": "Review deferred to Q3 — network team committed to the firewall audit sprint."}),
-        ("Incomplete access logs", "ERP", "MEDIUM", "pci-dss-v4", "10.2.1", "OPEN", 30, {}),
-        ("No incident response plan for OT", "SCADA", "HIGH", "nist-800-82-r3", "OT-IR-1", "OPEN", 21, {}),
+        ("Incomplete access logs", "ERP", "MEDIUM", "pci-dss-v4", "10.2.1", "OPEN", 30, {"_opened": 60}),
+        ("No incident response plan for OT", "SCADA", "HIGH", "nist-800-82-r3", "OT-IR-1", "OPEN", 21, {"_opened": 36}),
         ("Unencrypted Modbus traffic", "SCADA", "HIGH", "nist-800-82-r3", "OT-SC-8", "RISK_ACCEPTED", 0, {
+            "_opened": 44, "_resolved": 21,
             "risk_rationale": "Legacy PLC fleet cannot terminate TLS; compensating controls: network segmentation + passive monitoring. Re-evaluate at fleet refresh (2027)."}),
-        ("Dev database uses prod data", "DEV", "HIGH", "nist-800-53-r5", "MP-6", "OPEN", 60, {}),
+        ("Dev database uses prod data", "DEV", "HIGH", "nist-800-53-r5", "MP-6", "OPEN", 60, {"_opened": 25}),
         ("No code review process", "DEV", "MEDIUM", "nist-800-53-r5", "SA-11", "FALSE_POSITIVE", 0, {
+            "_opened": 52, "_resolved": 45,
             "risk_rationale": "GitHub branch protection requires two approving reviews — finding was based on stale documentation."}),
-        ("Stale privileged accounts not disabled", "CORP", "HIGH", "cmmc-2.0", "AC.L2-3.1.1", "OPEN", 30, {}),
+        ("Stale privileged accounts not disabled", "CORP", "HIGH", "cmmc-2.0", "AC.L2-3.1.1", "OPEN", 30, {"_opened": 9}),
         ("Account reviews skipped two quarters", "CORP", "MEDIUM", "nist-800-53-r5", "AC-2", "IN_PROGRESS", 20, {
-            "owner_name": "Maria Manager"}),
-        ("Audit log retention below 1 year", "CORP", "MEDIUM", "cmmc-2.0", "AU.L2-3.3.1", "OPEN", 30, {}),
+            "_opened": 70, "owner_name": "Maria Manager"}),
+        ("Audit log retention below 1 year", "CORP", "MEDIUM", "cmmc-2.0", "AU.L2-3.3.1", "OPEN", 30, {"_opened": 60}),
         # SIEM-sourced findings — exercise the Source column/filter and import KPI
         ("Suricata: ET EXPLOIT attempted RCE against ERP web tier", "ERP", "HIGH", "pci-dss-v4", "6.4.1", "OPEN", 14, {
+            "_opened": 16,
             "extra_data": {"source_type": "suricata", "rule_id": "2034567",
                            "src_ip": "203.0.113.50", "dest_ip": "10.10.20.15",
                            "dedup_hash": "demo-suricata-0001"}}),
         ("Nessus: TLS 1.0 enabled on legacy app server", "ERP", "MEDIUM", "pci-dss-v4", "4.2.1", "IN_PROGRESS", 30, {
+            "_opened": 60,
             "extra_data": {"source_type": "nessus", "plugin_id": "104743",
                            "host": "10.10.20.31", "dedup_hash": "demo-nessus-0001"}}),
     ]
@@ -357,6 +380,10 @@ def _seed_acme(db: Session) -> None:
     ADMIN_OWNED_TITLES = {"Audit log retention below 1 year", "Incomplete access logs"}
     for title, sys_key, sev, fw, ctrl, status, due_off, extras in findings_data:
         extra_data = extras.pop("extra_data", None)
+        opened = _ago(extras.pop("_opened"), hour=9)
+        resolved = extras.pop("_resolved", None)
+        # Last touched: when it reached its terminal status, else a few days ago.
+        touched = _ago(resolved, hour=16) if resolved is not None else max(opened, _ago(2, hour=16))
         owner_id = OWNER_ID_BY_NAME.get(extras.get("owner_name", ""))
         if title in ADMIN_OWNED_TITLES:
             owner_id = admin.id
@@ -368,29 +395,33 @@ def _seed_acme(db: Session) -> None:
             due_date=today + timedelta(days=due_off),
             extra_data=extra_data,
             owner_id=owner_id,
+            created_at=opened, updated_at=touched,
             **extras,
         ))
     db.flush()
 
     # expires_off: -10 = EXPIRED, +12 = expiring soon, rest fresh — so the
     # dashboard freshness donut and Evidence-page badges show all three states.
+    # collected_ago: when the artifact was produced (validity = collected →
+    # expires: a quarterly scan 90 days, policies and diagrams a year).
     evidence_data = [
-        ("quarterly-vuln-scan.pdf", "scan_result", sys_erp.id, ["6.3.3"], -10),
-        ("password-policy-v3.docx", "policy", sys_erp.id, ["8.3.6"], 12),
-        ("network-diagram-2026.vsdx", "configuration", sys_scada.id, ["OT-SC-7"], 75),
-        ("firewall-review-q2.xlsx", "log", sys_erp.id, ["1.2.5"], 75),
-        ("access-log-export.csv", "log", sys_erp.id, ["10.2.1"], 75),
-        ("ir-plan-ot-draft.docx", "procedure", sys_scada.id, ["OT-IR-1"], 75),
+        ("quarterly-vuln-scan.pdf", "scan_result", sys_erp.id, ["6.3.3"], -10, 100),
+        ("password-policy-v3.docx", "policy", sys_erp.id, ["8.3.6"], 12, 353),
+        ("network-diagram-2026.vsdx", "configuration", sys_scada.id, ["OT-SC-7"], 75, 290),
+        ("firewall-review-q2.xlsx", "log", sys_erp.id, ["1.2.5"], 75, 105),
+        ("access-log-export.csv", "log", sys_erp.id, ["10.2.1"], 75, 15),
+        ("ir-plan-ot-draft.docx", "procedure", sys_scada.id, ["OT-IR-1"], 75, 46),
     ]
-    for fname, atype, sid, cids, expires_off in evidence_data:
+    for fname, atype, sid, cids, expires_off, collected_ago in evidence_data:
         db.add(EvidenceArtifact(
             organization_id=org.id, system_id=sid,
             filename=fname, artifact_type=atype,
             description=f"Demo evidence: {fname}",
             control_ids=cids, framework_ids=["pci-dss-v4"],
             **_demo_file(fname),
-            date_collected=today - timedelta(days=15),
+            date_collected=today - timedelta(days=collected_ago),
             expiration_date=today + timedelta(days=expires_off),
+            created_at=_ago(collected_ago, hour=11),
         ))
 
     # Crosswalk-aware evidence: linked to 800-53 controls, so the detail panel
@@ -411,24 +442,42 @@ def _seed_acme(db: Session) -> None:
             **_demo_file(fname),
             date_collected=today - timedelta(days=8),
             expiration_date=today + timedelta(days=82),
+            created_at=_ago(8, hour=11),
         ))
     db.flush()
 
+    # A year of continuous-monitoring history. Most cadences are current; the
+    # gaps are the demo's story: the quarterly ASV scan slipped (its scan
+    # evidence is expired too), the monthly patch review missed this month (next
+    # to the unpatched SQL Server finding), account reviews stopped two quarters
+    # ago (the AC-2 finding), and annual training is a couple of weeks late.
+    # (system, activity, framework ("" = org-wide), description, performed_by, days ago...)
     conmon_data = [
-        (sys_erp.id, "VULNERABILITY_SCAN", "Quarterly vulnerability scan completed"),
-        (sys_erp.id, "LOG_REVIEW", "Reviewed access logs for anomalies"),
-        (sys_scada.id, "NETWORK_SCAN", "Scanned OT network for unauthorized devices"),
-        (sys_scada.id, "CONFIG_REVIEW", "Reviewed firewall rules and ACLs"),
-        (sys_corp.id, "ACCESS_REVIEW", "Quarterly privileged access review across IdP groups"),
-        (sys_corp.id, "POLICY_REVIEW", "Annual security policy suite review"),
+        (sys_erp.id, "VULNERABILITY_SCAN", "pci-dss-v4", "Quarterly ASV vulnerability scan completed",
+         "Owen Owner", (100, 190, 280, 370)),
+        (sys_erp.id, "LOG_REVIEW", "", "Reviewed access logs for anomalies", "Jane Analyst", (6, 36, 66, 96, 126)),
+        (sys_erp.id, "PATCH_REVIEW", "", "Monthly patch compliance review", "Owen Owner", (45, 75, 105, 135)),
+        (sys_scada.id, "NETWORK_SCAN", "", "Scanned OT network for unauthorized devices", "Jane Analyst", (20, 110, 200)),
+        (sys_scada.id, "CONFIG_REVIEW", "", "Reviewed firewall rules and ACLs", "Owen Owner", (40, 130, 220)),
+        (sys_corp.id, "ACCESS_REVIEW", "", "Quarterly privileged access review across IdP groups", "Maria Manager", (7, 97, 187)),
+        (sys_corp.id, "ACCOUNT_REVIEW", "", "Quarterly user account review (last one before the reviews lapsed)",
+         "Maria Manager", (200, 290)),
+        (sys_corp.id, "POLICY_REVIEW", "", "Annual security policy suite review", "Maria Manager", (7, 372)),
+        (sys_corp.id, "BACKUP_VERIFICATION", "", "Restored a nightly backup to a scratch host and verified checksums",
+         "Owen Owner", (60, 150, 240)),
+        (sys_corp.id, "RISK_ASSESSMENT", "", "Annual enterprise risk assessment", "Maria Manager", (355,)),
+        (sys_corp.id, "CONTINUITY_TEST", "", "Business continuity tabletop with leadership", "Maria Manager", (300,)),
+        (sys_corp.id, "USER_TRAINING", "", "Annual security awareness training campaign", "Maria Manager", (380,)),
     ]
-    for sid, atype, desc in conmon_data:
-        db.add(ConMonEntry(
-            organization_id=org.id, system_id=sid,
-            entry_date=today - timedelta(days=7),
-            activity_type=atype, description=desc,
-            performed_by="admin",
-        ))
+    for sid, atype, fw, desc, who, days_list in conmon_data:
+        for days in days_list:
+            db.add(ConMonEntry(
+                organization_id=org.id, system_id=sid, framework_id=fw,
+                entry_date=today - timedelta(days=days),
+                activity_type=atype, description=desc,
+                performed_by=who,
+                created_at=_ago(days, hour=15),
+            ))
     db.flush()
 
     # (name, role, vendor, model, os_family, os_version, ip, env, patch, connected_to, system_id)
@@ -563,22 +612,25 @@ def _seed_acme(db: Session) -> None:
             kev_matches += 1
     db.flush()
 
+    # (system, framework, type, status, created, started, completed) — created is
+    # when it was scheduled, ahead of the start.
     assessments = [
-        (sys_scada.id, "nist-800-82-r3", "Annual OT Security Assessment", "COMPLETE",
-         now - timedelta(days=45), now - timedelta(days=30)),
-        (sys_erp.id, "pci-dss-v4", "PCI-DSS Self-Assessment Q2", "IN_PROGRESS",
-         now - timedelta(days=10), None),
-        (sys_dev.id, "nist-800-53-r5", "Initial Controls Assessment", "PLANNED",
-         None, None),
-        (sys_corp.id, "cmmc-2.0", "CMMC Level 2 Readiness Assessment", "IN_PROGRESS",
-         now - timedelta(days=20), None),
+        (sys_scada.id, "nist-800-82-r3", "Annual OT Security Assessment", ASSESSMENT_COMPLETE,
+         _ago(60), _ago(45), _ago(30)),
+        (sys_erp.id, "pci-dss-v4", "PCI-DSS Self-Assessment Q2", ASSESSMENT_IN_PROGRESS,
+         _ago(24), _ago(10), None),
+        (sys_dev.id, "nist-800-53-r5", "Initial Controls Assessment", ASSESSMENT_PLANNED,
+         _ago(3), None, None),
+        (sys_corp.id, "cmmc-2.0", "CMMC Level 2 Readiness Assessment", ASSESSMENT_IN_PROGRESS,
+         _ago(30), _ago(20), None),
     ]
-    for sid, fw, atype, status, started, completed in assessments:
+    for sid, fw, atype, status, created, started, completed in assessments:
         db.add(Assessment(
             organization_id=org.id, system_id=sid, framework_id=fw,
             assessment_type=atype, status=status,
             assessor_id=analyst.id,
             started_at=started, completed_at=completed,
+            created_at=created,
             notes="Demo assessment seeded for walkthroughs.",
         ))
 
@@ -811,8 +863,14 @@ def _seed_acme(db: Session) -> None:
             quick_win_count=result.get("quick_win_count", 0),
             has_org_context=1 if result.get("has_org_context") else 0,
             findings=result["findings"], attack_chains=result["attack_chains"],
+            created_at=_ago(2, hour=10),
         ))
     db.flush()
+
+    # Compliance trend: weekly snapshots for the past quarter (the daily job
+    # only starts recording today), so the Dashboard trend, the findings
+    # burndown and the Audit Binder progress section have history.
+    seed_history(db, org.id)
 
     print("Demo data seeded successfully.")
     print(f"  Organization: {org.name}")
@@ -837,6 +895,58 @@ def _seed_acme(db: Session) -> None:
     # Persistent "demo instance" marker → in-app banner (services/demo_marker).
     mark_demo(org)
     db.flush()
+
+
+_TERMINAL = ("CLOSED", "RISK_ACCEPTED", "FALSE_POSITIVE")
+
+
+def _as_date(dt: datetime) -> date:
+    return (dt.astimezone(timezone.utc) if dt.tzinfo else dt).date()
+
+
+def _open_on(f: Finding, day: date) -> bool:
+    """Was the finding open on `day`? Filed on or before it and not yet resolved
+    (a terminal finding's updated_at is when it reached that status)."""
+    if f.created_at is None or _as_date(f.created_at) > day:
+        return False
+    if f.status in _TERMINAL:
+        resolved = f.closed_date or (_as_date(f.updated_at) if f.updated_at else None)
+        return resolved is not None and resolved > day
+    return True
+
+
+def seed_history(db: Session, organization_id: int, weeks: int = 12) -> int:
+    """Weekly ComplianceSnapshot rows for the past `weeks` weeks for every
+    (system x active framework) pair the daily job records. Finding counts are
+    what was open on each day (from the backdated filing / resolution dates);
+    scores ramp up to today's, so the trend shows a program improving. Today's
+    point stays live (GET /dashboard/history computes it). Returns rows written."""
+    from models.compliance_snapshot import ComplianceSnapshot
+    from services.history import live_pair_scores
+
+    pairs = live_pair_scores(db, organization_id, on=today)
+    findings = db.query(Finding).filter(Finding.organization_id == organization_id).all()
+    written = 0
+    for w in range(weeks, 0, -1):
+        day = today - timedelta(days=7 * w)
+        ramp = 1 - 0.035 * w  # 12 weeks back: ~58% of today's implementation
+        for p in pairs:
+            fs = [f for f in findings
+                  if f.system_id == p["system_id"] and f.framework_id == p["framework_id"] and _open_on(f, day)]
+            db.add(ComplianceSnapshot(
+                organization_id=organization_id, system_id=p["system_id"],
+                framework_id=p["framework_id"], snapshot_date=day,
+                score_percentage=round(p["score_percentage"] * ramp, 1),
+                total_controls=p["total_controls"],
+                implemented=round(p["implemented"] * ramp),
+                open_findings=len(fs),
+                critical_findings=sum(1 for f in fs if f.severity == "CRITICAL"),
+                overdue_findings=sum(1 for f in fs if f.due_date and f.due_date < day),
+                created_at=_ago(7 * w, hour=2),
+            ))
+            written += 1
+    db.flush()
+    return written
 
 
 def _write_demo_custom_framework() -> str | None:
@@ -923,7 +1033,7 @@ def _seed_company(db: Session, *, name, slug, industry, revenue, frameworks, pri
     loader = FrameworkLoader(settings.frameworks_dir)
     for fw_id in frameworks:
         db.add(FrameworkActivation(organization_id=org.id, framework_id=fw_id,
-                                   is_active=True, activated_at=now))
+                                   is_active=True, activated_at=SYSTEMS_SINCE))
         loader.load_catalog(fw_id, db)
         loader.load_mappings(fw_id, db)
     db.flush()
@@ -947,17 +1057,20 @@ def _seed_company(db: Session, *, name, slug, industry, revenue, frameworks, pri
 
     # A few findings referencing real primary-framework control ids.
     fx = prim_controls[:6]
+    # (title, severity, control, status, due offset, days ago filed)
     finding_specs = [
-        (f"Overdue remediation on {fx[0].control_id}", "HIGH", fx[0].control_id, "OPEN", -6),
-        (f"Partial coverage for {fx[1].control_id}", "MEDIUM", fx[1].control_id, "IN_PROGRESS", 21),
-        (f"Evidence stale for {fx[2].control_id}", "MEDIUM", fx[2].control_id, "OPEN", 30),
-        (f"Accepted risk on {fx[3].control_id}", "LOW", fx[3].control_id, "RISK_ACCEPTED", 0),
+        (f"Overdue remediation on {fx[0].control_id}", "HIGH", fx[0].control_id, "OPEN", -6, 36),
+        (f"Partial coverage for {fx[1].control_id}", "MEDIUM", fx[1].control_id, "IN_PROGRESS", 21, 69),
+        (f"Evidence stale for {fx[2].control_id}", "MEDIUM", fx[2].control_id, "OPEN", 30, 60),
+        (f"Accepted risk on {fx[3].control_id}", "LOW", fx[3].control_id, "RISK_ACCEPTED", 0, 80),
     ] if len(fx) >= 4 else []
-    for title, sev, cid, status, due_off in finding_specs:
+    for title, sev, cid, status, due_off, opened in finding_specs:
         db.add(Finding(
             organization_id=org.id, system_id=systems[0].id,
             framework_id=primary_fw, control_id=cid, title=title,
             severity=sev, status=status, due_date=today + timedelta(days=due_off),
+            created_at=_ago(opened, hour=9),
+            updated_at=_ago(30 if status == "RISK_ACCEPTED" else 3, hour=16),
         ))
 
     # A couple evidence artifacts + risks so the dashboards aren't empty.
@@ -970,6 +1083,7 @@ def _seed_company(db: Session, *, name, slug, industry, revenue, frameworks, pri
             **_demo_file(f"{slug}-evidence.pdf"),
             date_collected=today - timedelta(days=15),
             expiration_date=today + timedelta(days=165),
+            created_at=_ago(15, hour=11),
         ))
     db.add(RiskRegisterEntry(
         organization_id=org.id, system_id=systems[0].id,
@@ -978,6 +1092,7 @@ def _seed_company(db: Session, *, name, slug, industry, revenue, frameworks, pri
         review_date=today + timedelta(days=90),
     ))
     db.flush()
+    seed_history(db, org.id)
     return org
 
 

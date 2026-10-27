@@ -13,6 +13,8 @@ Both importers preview first and never clobber human-entered data.
 """
 from __future__ import annotations
 
+import re
+
 from datetime import date, datetime
 
 from services.import_common import csv_table, decode_text
@@ -51,6 +53,11 @@ POAM_HEADERS = {
                        "deviationrationale", "acceptancerationale"],
     "remediation_plan": ["remediationplan", "overallremediationplan", "remediation", "mitigation", "mitigationplan",
                          "correctiveaction", "plannedmilestones", "milestones", "milestone"],
+    # eMASS "Milestone with Completion Dates": one milestone per line (or ";"),
+    # each ending in its date, e.g. "M1 Review procedure updated 11/30/2026".
+    "milestones_text": ["milestonewithcompletiondates", "milestoneswithcompletiondates",
+                        "milestonewithcompletiondate", "milestoneswithcompletiondate",
+                        "milestonesandcompletiondates", "milestoneswithdates"],
 }
 
 SSP_HEADERS = {
@@ -146,6 +153,33 @@ def _parse_date(raw: str) -> date | None:
         except ValueError:
             continue
     return None
+
+
+_MILESTONE_DATE = re.compile(r"\d{4}-\d{1,2}-\d{1,2}|\d{1,2}/\d{1,2}/\d{2,4}")
+
+
+def parse_milestones(raw: str, complete: bool = False) -> list[dict]:
+    """eMASS-style milestone text -> [{"title", "due", "complete"}]. One
+    milestone per line (or ";"-separated); the last date in an entry is its
+    due date and is cut from the title. Text without a date is kept as a
+    milestone without a due date, never dropped."""
+    out = []
+    for part in re.split(r"[\r\n;]+", raw or ""):
+        part = part.strip()
+        if not part:
+            continue
+        due = ""
+        dates = list(_MILESTONE_DATE.finditer(part))
+        if dates:
+            m = dates[-1]
+            parsed = _parse_date(m.group(0))
+            if parsed:
+                due = parsed.isoformat()
+                part = part[:m.start()] + part[m.end():]
+        title = re.sub(r"\(\s*\)|\[\s*\]", "", part).strip(" \t-–—:,()[]")
+        if title or due:
+            out.append({"title": (title or "Milestone")[:200], "due": due, "complete": complete})
+    return out
 
 
 def _columns(header: list[str], spec: dict[str, list[str]]) -> dict[str, list[int]]:
@@ -282,8 +316,8 @@ def parse_poam(raw: bytes) -> dict:
             status = "OPEN"
             issues.append(f"Row {idx}: Risk Accepted without a risk rationale column/value — imported as Open "
                           "(accept it in Athorize with the rationale)")
-        milestones = []
-        if canon.get("remediation_plan"):
+        milestones = parse_milestones(canon.get("milestones_text", ""), complete=status == "CLOSED")
+        if not milestones and canon.get("remediation_plan"):
             milestones = [{"title": canon["remediation_plan"][:200],
                            "due": due.isoformat() if due else "", "complete": status == "CLOSED"}]
         parsed.append({

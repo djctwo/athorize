@@ -114,9 +114,12 @@ export default function Findings() {
       })
     : findings
 
-  const open = filtered.filter(f => f.status === 'OPEN' || f.status === 'IN_PROGRESS')
+  // "Open" is the server's definition (is_open: Open, In Progress, Delayed), the
+  // same one the Dashboard tiles use — never re-derived from status here.
+  const open = filtered.filter(f => f.is_open)
+  const delayed = open.filter(f => f.status === 'DELAYED').length
   const overdue = filtered.filter(f => f.aging_bucket === 'OVERDUE')
-  const critical = filtered.filter(f => f.severity === 'CRITICAL' || f.severity === 'HIGH')
+  const critical = open.filter(f => f.severity === 'CRITICAL' || f.severity === 'HIGH')
   const siemCount = findings.filter(f => !!(f.extra_data as Record<string, unknown>)?.source_type).length
 
   return (
@@ -143,9 +146,10 @@ export default function Findings() {
 
       <div className="flex border border-[var(--border)] bg-[var(--bg-secondary)] mb-4">
         <KpiCard label="Total" value={filtered.length} />
-        <KpiCard label="Open" value={open.length} tone={open.length > 0 ? 'warning' : 'default'} />
+        <KpiCard label="Open" value={open.length} tone={open.length > 0 ? 'warning' : 'default'}
+          sub={delayed > 0 ? `incl. ${delayed} delayed` : undefined} />
         <KpiCard label="Overdue" value={overdue.length} tone={overdue.length > 0 ? 'danger' : 'default'} />
-        <KpiCard label="Critical/High" value={critical.length} tone={critical.length > 0 ? 'danger' : 'default'} />
+        <KpiCard label="Critical/High" value={critical.length} tone={critical.length > 0 ? 'danger' : 'default'} sub="open" />
         <KpiCard label="SIEM/Scanner" value={siemCount} />
       </div>
 

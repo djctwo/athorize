@@ -79,8 +79,11 @@ More screenshots:
   Log, plus Nessus (CSV and native `.nessus`), Qualys, Tenable and OpenVAS scan
   results. Asset inventories and POA&M/SSP spreadsheets import too.
 - **Audit readiness:** an Inspection Prep score with punch list and 90/60/30
-  timeline, per-assessment reports, audit binders, and an 8-slide executive
-  briefing (PowerPoint).
+  timeline, per-assessment reports, audit binders, and an executive briefing
+  (PowerPoint) for the whole company or one system and framework: posture,
+  estimated exposure, open findings, crosswalk leverage, program health, a
+  30/60/90 plan and recommendations, in eight sections (long tables continue
+  onto extra slides).
 - **Built for real teams:** six roles, per-system access, OIDC single sign-on,
   API tokens, a tamper-evident (hash-chained) audit log, and backup and restore.
 

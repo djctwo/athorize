@@ -200,7 +200,7 @@ function CostBreakdown({ items }: { items: CostBreakdownItem[] }) {
   )
 }
 
-function FindingCard({ finding, reportId, rank }: { finding: RTFinding; reportId: number; rank: number }) {
+export function FindingCard({ finding, reportId, rank, total }: { finding: RTFinding; reportId: number; rank: number; total: number }) {
   const [expanded, setExpanded] = useState(false)
   const [showLang, setShowLang] = useState(false)
   const [showCost, setShowCost] = useState(false)
@@ -254,8 +254,11 @@ function FindingCard({ finding, reportId, rank }: { finding: RTFinding; reportId
               <div className="text-text-secondary">{finding.effort_hours_low}–{finding.effort_hours_high} hours</div>
             </div>
             <div>
-              <span className="text-[10px] uppercase tracking-wider text-text-muted font-semibold">Priority Score</span>
-              <div className="font-mono font-bold text-accent">{finding.priority_score.toLocaleString()}</div>
+              <span className="text-[10px] uppercase tracking-wider text-text-muted font-semibold">Priority</span>
+              {/* The raw score (exposure midpoint ÷ effort hours, e.g. 4,108,750) means nothing to a
+                  reader; its rank in this report does. */}
+              <div className="font-mono font-bold text-accent">#{rank} of {total}</div>
+              <div className="text-[11px] text-text-muted">ranked by estimated exposure avoided per hour of effort</div>
             </div>
           </div>
 
@@ -512,7 +515,7 @@ function ReportView({ report }: { report: RTReport }) {
               <p className="text-[11px] text-text-muted px-1 pb-2">
                 Low-effort findings sorted by return on investment. Fix these first.
               </p>
-              {quickWins.map(f => <FindingCard key={f.id} finding={f} reportId={report.id} rank={rankMap.get(f.id) || 99} />)}
+              {quickWins.map(f => <FindingCard key={f.id} finding={f} reportId={report.id} rank={rankMap.get(f.id) || 99} total={report.findings.length} />)}
             </>
           )}
         </div>
@@ -520,7 +523,7 @@ function ReportView({ report }: { report: RTReport }) {
 
       {tab === 'findings' && (
         <div className="space-y-1">
-          {sorted.map(f => <FindingCard key={f.id} finding={f} reportId={report.id} rank={rankMap.get(f.id) || 99} />)}
+          {sorted.map(f => <FindingCard key={f.id} finding={f} reportId={report.id} rank={rankMap.get(f.id) || 99} total={report.findings.length} />)}
         </div>
       )}
 

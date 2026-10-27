@@ -20,7 +20,7 @@ const finding = {
   title: 'Stale accounts', description: '', weakness_description: '', severity: 'HIGH', status: 'OPEN',
   owner_id: null, owner_name: null, owner_email: null, due_date: null, scheduled_completion: null,
   actual_completion: null, closed_date: null, remediation_plan: '', risk_rationale: '', reopen_reason: null,
-  milestones: [], extra_data: {}, aging_bucket: 'ON_TRACK', days_until_due: null, days_open: 3,
+  milestones: [], extra_data: {}, aging_bucket: 'ON_TRACK', days_until_due: null, days_open: 3, is_open: true,
   created_at: '', updated_at: '',
 } as Finding
 

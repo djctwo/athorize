@@ -17,10 +17,14 @@ interface FamilyRow {
   narrative_gaps: number
   evidence_gaps: number
   stale_evidence: number
+  /** Controls in the family with an open finding (Open / In Progress / Delayed): never ready. */
+  open_findings?: number
 }
 
 interface PunchItem {
   priority: number
+  /** What to do: implement | remediate | evidence | refresh | narrative (absent on older servers). */
+  action?: string
   system_acronym: string
   control_id: string
   control_title: string
@@ -52,9 +56,13 @@ interface PrepPackage {
 const PRIORITY_LABEL: Record<number, string> = {
   1: 'Implement', 2: 'Evidence', 3: 'Refresh', 4: 'Narrative',
 }
+const ACTION_LABEL: Record<string, string> = {
+  implement: 'Implement', remediate: 'Remediate', evidence: 'Evidence', refresh: 'Refresh', narrative: 'Narrative',
+}
 const PRIORITY_TONE: Record<number, 'danger' | 'warn' | 'info' | 'neutral'> = {
   1: 'danger', 2: 'warn', 3: 'warn', 4: 'info',
 }
+const actionLabel = (p: PunchItem) => (p.action && ACTION_LABEL[p.action]) || PRIORITY_LABEL[p.priority]
 
 function scoreColor(pct: number): string {
   return pct >= 80 ? 'var(--success)' : pct >= 50 ? 'var(--warning)' : 'var(--danger)'
@@ -175,6 +183,9 @@ export default function InspectionPrep() {
                 )}
               </div>
               <div>{plural(pkg.punch_list.length, 'punch-list item')} · {plural(pkg.families.length, 'control family', 'control families')}</div>
+              <div className="text-xs mt-1">
+                A control is ready when it is Implemented or Inherited, has a real narrative, has evidence still fresh on the inspection date, and has no open finding (Open, In Progress or Delayed) against it.
+              </div>
             </div>
           </div>
 
@@ -208,6 +219,7 @@ export default function InspectionPrep() {
                     <th className="text-left px-3 py-2">Narrative gaps</th>
                     <th className="text-left px-3 py-2">Evidence gaps</th>
                     <th className="text-left px-3 py-2">Stale evidence</th>
+                    <th className="text-left px-3 py-2">Open findings</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -226,6 +238,9 @@ export default function InspectionPrep() {
                       <td className="px-3 py-2 text-xs">{f.narrative_gaps || '—'}</td>
                       <td className="px-3 py-2 text-xs">{f.evidence_gaps || '—'}</td>
                       <td className="px-3 py-2 text-xs">{f.stale_evidence || '—'}</td>
+                      <td className="px-3 py-2 text-xs">{f.open_findings
+                        ? <span className="text-[var(--danger)]">{f.open_findings}</span>
+                        : '—'}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -238,7 +253,7 @@ export default function InspectionPrep() {
             <h3 className="text-sm font-semibold text-[var(--text-secondary)] uppercase tracking-wider mb-2">Punch List ({pkg.punch_list.length})</h3>
             {pkg.punch_list.length === 0 ? (
               <div className="text-sm text-[var(--success)] border border-[var(--success)]/30 bg-[var(--success)]/5 p-3">
-                No gaps — every control is implemented with a narrative and fresh evidence. Inspection-ready.
+                No gaps — every control is implemented with a narrative and fresh evidence, and none has an open finding. Inspection-ready.
               </div>
             ) : (
               <div className="border border-[var(--border)] bg-[var(--bg-secondary)]">
@@ -255,7 +270,7 @@ export default function InspectionPrep() {
                   <tbody>
                     {pkg.punch_list.map((p, i) => (
                       <tr key={i} className="border-b border-[var(--border)] last:border-b-0">
-                        <td className="px-3 py-2"><Pill tone={PRIORITY_TONE[p.priority]}>{PRIORITY_LABEL[p.priority]}</Pill></td>
+                        <td className="px-3 py-2"><Pill tone={PRIORITY_TONE[p.priority]}>{actionLabel(p)}</Pill></td>
                         <td className="px-3 py-2"><span className="font-mono text-[var(--accent)]">{p.control_id}</span> <span className="text-[var(--text-secondary)] text-xs">{p.control_title}</span></td>
                         <td className="px-3 py-2 text-xs">{p.system_acronym}</td>
                         <td className="px-3 py-2 text-xs text-[var(--text-secondary)]">{p.issues.join(' · ')}</td>

@@ -88,3 +88,55 @@ class TestApi:
         csv_r = client.get(f"/api/inspection/prep/punch-list.csv?framework_id=cmmc-2.0&system_ids={sid}")
         assert csv_r.status_code == 200
         assert "Priority,System,Control" in csv_r.text
+
+
+class TestOpenFindings:
+    """A control with an open finding is not inspection-ready (the demo showed
+    AC at 100% ready while AC-2 had an open finding). "Open" is the one
+    definition in services/metrics.py, so a Delayed finding blocks too."""
+
+    def _ready_ac2(self, db, org, sid):
+        db.add(ControlImplementation(system_id=sid, framework_id="cmmc-2.0", control_id="AC-2",
+                                     implementation_status="IMPLEMENTED",
+                                     narrative="X" * 100, responsible_party="IT Security"))
+        db.add(EvidenceArtifact(organization_id=org.id, system_id=sid, filename="e.pdf",
+                                control_ids=["AC-2"], framework_ids=["cmmc-2.0"],
+                                expiration_date=date.today() + timedelta(days=120)))
+
+    def _finding(self, db, org, sid, status, control="AC-2", fw="cmmc-2.0"):
+        from models import Finding
+        db.add(Finding(organization_id=org.id, system_id=sid, framework_id=fw, control_id=control,
+                       title=f"Account reviews skipped ({status})", severity="MEDIUM", status=status))
+
+    def test_open_finding_blocks_readiness(self, db, seeded):
+        org = seeded["org"]
+        sid = _setup(db, org)
+        self._ready_ac2(db, org, sid)
+        self._finding(db, org, sid, "DELAYED")
+        db.commit()
+        pkg = ip.build_prep(db, org.id, "cmmc-2.0", [sid], None)
+        ac = next(f for f in pkg["families"] if f["family"] == "AC")
+        assert ac["ready"] == 0
+        assert ac["open_findings"] == 1
+        item = next(p for p in pkg["punch_list"] if p["control_id"] == "AC-2")
+        assert item["action"] == "remediate"
+        assert any(i.startswith("open finding") for i in item["issues"])
+        # It is remediation work: it lands in the first window with the implementation gaps.
+        assert item["priority"] == 1
+
+    def test_closed_or_other_system_finding_does_not_block(self, db, seeded):
+        org = seeded["org"]
+        sid = _setup(db, org)
+        other = System(organization_id=org.id, name="Other", acronym="OTH", description="",
+                       system_type="", environment="production", criticality="moderate")
+        db.add(other)
+        db.flush()
+        self._ready_ac2(db, org, sid)
+        self._finding(db, org, sid, "CLOSED")
+        self._finding(db, org, other.id, "OPEN")
+        self._finding(db, org, sid, "OPEN", fw="nist-800-53-r5")  # different framework
+        db.commit()
+        pkg = ip.build_prep(db, org.id, "cmmc-2.0", [sid], None)
+        ac = next(f for f in pkg["families"] if f["family"] == "AC")
+        assert ac["ready"] == 1
+        assert ac["open_findings"] == 0

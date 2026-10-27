@@ -126,7 +126,7 @@ const SECTIONS: Section[] = [
         roles: WRITE,
         steps: [
           'Open Migration (Admin group). Pick the target system and framework.',
-          'POA&M \u2192 Findings: upload your POA&M as CSV (Excel: File \u2192 Save As \u2192 CSV). Column names are matched flexibly \u2014 Weakness/Finding, Risk/Severity, POC/Owner, Scheduled Completion, Mitigation all work, as do the FedRAMP POA&M template columns (Controls, Adjusted/Original Risk Rating) even with its title rows above the header.',
+          'POA&M \u2192 Findings: upload your POA&M as CSV (Excel: File \u2192 Save As \u2192 CSV). Column names are matched flexibly \u2014 Weakness/Finding, Risk/Severity, POC/Owner, Scheduled Completion, Mitigation all work, as do the FedRAMP POA&M template columns (Controls, Adjusted/Original Risk Rating) even with its title rows above the header, and eMASS-style columns (POA&M Item ID, Security Control Number, Raw Severity Value, Milestone with Completion Dates: one milestone per line, each ending in its date, becomes the finding\'s milestones).',
           'SSP \u2192 Control Implementations: upload an implementation workbook; control ids are validated against the catalog and statuses map automatically (In Place \u2192 Implemented, etc.).',
           'Preview first \u2014 it shows exactly what will be created, what is a duplicate, and what will be skipped, with a reason for every skipped or adjusted row. Each row is identified by its POA&M ID when the file has one, otherwise by its title: rows sharing an identity merge into one finding (the same weakness on different assets with different POA&M IDs stays separate), and re-importing the same file creates nothing new. A finding that already exists without a POA&M ID (imported earlier or entered by hand) is linked to the first row with the same title instead of being duplicated. Nothing a human already assessed is ever overwritten.',
         ],
@@ -323,7 +323,7 @@ const SECTIONS: Section[] = [
         title: 'Generate a readiness package',
         steps: [
           'Open Inspection Prep; pick the framework, system(s), and the inspection date.',
-          'Readiness = ready controls ÷ (controls × selected systems, minus Not Applicable ones). A control is ready on a system when it is Implemented or Inherited, has a narrative of ~80+ characters, and has evidence uploaded for THAT system that is still unexpired on the inspection date (today when no date is set). Not Applicable controls are left out, exactly as in the compliance score.',
+          'Readiness = ready controls ÷ (controls × selected systems, minus Not Applicable ones). A control is ready on a system when it is Implemented or Inherited, has a narrative of ~80+ characters, and has evidence uploaded for THAT system that is still unexpired on the inspection date (today when no date is set), and has no open finding (Open, In Progress or Delayed) filed against it on that system. A control with an open finding shows up in the punch list as Remediate, in the first window of the timeline. Not Applicable controls are left out, exactly as in the compliance score.',
           'The punch list ranks what to fix first: Implement gaps, then missing evidence, then stale evidence, then weak narratives — each with an owner.',
           'The 90/60/30 timeline tells you what must be done by when, anchored on the inspection date.',
           'Print the package or export the punch list as CSV for the team.',
@@ -402,7 +402,8 @@ const SECTIONS: Section[] = [
         title: 'Generate reports and the Executive Briefing',
         steps: [
           'Open Reports for CSV exports: findings, evidence, risks, compliance summary, ConMon — filterable by system and framework.',
-          'Click Executive Briefing (PPTX) for an 8-slide deck: title, posture, dollar exposure with cited sources (before a Red Team run it says how to get one), open findings with the controls that fix them, crosswalk leverage, program health, a 30/60/90 way forward, and recommendations.',
+          'Click Executive Briefing (PPTX) for a deck in eight sections: title, posture, dollar exposure with cited sources (before a Red Team run it says how to get one), open findings with the controls that fix them, crosswalk leverage, program health, a 30/60/90 way forward, and recommendations. Long tables continue onto extra slides; system × framework pairs nobody has started are left out of the posture table.',
+          'Pick a System and/or Framework first to scope the deck to them: every number, table and recommendation follows the filter, and a section with nothing in scope (no Red Team run, no open findings, no crosswalk claims) is left out.',
         ],
       },
       {
@@ -772,10 +773,10 @@ const GLOSSARY: { term: string; def: string }[] = [
   { term: 'Relationship types', def: 'equivalent (same requirement), subset/superset (one contains the other), intersects (overlap — typical for concept crosswalks like CSF/ISO/PCI), related (adjacent).' },
   { term: 'Confidence tiers', def: 'official = from a NIST/framework-author mapping; derived = composed through the hub (two hops); vendor = shipped by a third party. Propagation only ever uses official/derived equivalent-or-superset edges.' },
   { term: 'Evidence freshness', def: 'Every artifact carries an expiration. Fresh → Expiring (30 days out) → Expired. Stale evidence drags down Inspection Prep readiness.' },
-  { term: 'Open finding', def: 'Any finding not Closed, Risk Accepted or False Positive — Delayed and In Progress findings are open. Every Open / Critical / Overdue count (Dashboard tiles and charts, score cards, Portfolio, trend, Executive Briefing) uses this one definition. Overdue = open with a due date before today.' },
+  { term: 'Open finding', def: 'Any finding not Closed, Risk Accepted or False Positive — Delayed and In Progress findings are open. Every Open / Critical / Overdue count (Dashboard tiles and charts, the Findings page tiles, score cards, Portfolio, trend, Executive Briefing) uses this one definition, and the Open tiles say how many of them are Delayed ("incl. 1 delayed"). Overdue = open with a due date before today.' },
   { term: 'Average score', def: 'The Portfolio and trend average is the plain mean of the per-system × framework scores (frameworks with a loaded catalog). Today\'s trend point and the Portfolio are live; earlier points are the daily snapshots.' },
   { term: 'Aging buckets', def: 'Overdue / Due 7 / Due 30 / On Track, computed from a finding\'s due date. Terminal findings (closed, risk-accepted, false positive) show Resolved.' },
-  { term: 'ConMon cadence', def: 'How often a monitoring activity must recur (e.g. PCI quarterly scans). Resolution order: your org override → framework requirement → built-in default.' },
+  { term: 'ConMon cadence', def: 'How often a monitoring activity must recur (e.g. PCI quarterly scans). Resolution order: your org override → framework requirement → built-in default. An activity logged Org-wide counts toward every framework\'s cadence; one logged for a framework counts for that framework and org-wide.' },
   { term: 'KEV', def: 'CISA\'s Known Exploited Vulnerabilities catalog — vulnerabilities confirmed exploited in the wild. KEV items matching your assets deserve top priority.' },
   { term: 'Purdue level', def: 'OT network hierarchy (0 = process, 4/5 = enterprise). Drives the Purdue view on the Topology page.' },
   { term: 'Attack chain', def: 'A Red Team construct: individual compliance gaps that combine into a compound failure mode (e.g. missing evidence + weak narratives = audit failure), priced together.' },

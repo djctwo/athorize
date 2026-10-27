@@ -19,6 +19,9 @@ class ComplianceScore:
     open_findings: int
     critical_findings: int
     overdue_findings: int = 0
+    # Catalog controls with any status other than Not Assessed: 0 means nobody
+    # has started this system x framework pair (the Dashboard chart hides it).
+    assessed: int = 0
 
 
 def score_system(system_id: int, framework_id: str, db: Session, today: date | None = None) -> ComplianceScore:
@@ -71,4 +74,5 @@ def score_system(system_id: int, framework_id: str, db: Session, today: date | N
         open_findings=counts["open"],
         critical_findings=counts["critical"],
         overdue_findings=counts["overdue"],
+        assessed=sum(1 for st in statuses if st != "NOT_ASSESSED"),
     )

@@ -301,6 +301,33 @@ class TestEvidenceSuggestions:
         r = client.get(f"/api/crosswalk/evidence/{ev.id}/suggestions")
         assert r.json()["suggestions"] == []
 
+    def test_strongest_and_most_relevant_mappings_first(self, auth_client, db):
+        """The demo's MFA export listed CJIS "Mobile Devices" first and the
+        EQUIVALENT FedRAMP IA-2 tenth: suggestions were sorted alphabetically by
+        framework id. Now: relationship strength first, then how much the
+        control title overlaps the evidence's own control, then catalog order."""
+        client, seeded, _ = auth_client
+        org = seeded["org"]
+        _activate(db, org.id, "nist-800-53-r5", "cjis", "cmmc-2.0", "fedramp")
+        _add_control(db, "nist-800-53-r5", "IA-2", "Identification and Authentication (Organizational Users)")
+        for fw, cid, title, rel in [
+            ("cjis", "5.13", "Policy Area 13 - Mobile Devices", "intersects"),
+            ("cjis", "5.6", "Policy Area 6 - Identification and Authentication", "intersects"),
+            ("cmmc-2.0", "IA.L2-3.5.3", "Multifactor Authentication", "intersects"),
+            ("fedramp", "IA-2", "Identification and Authentication (Organizational Users)", "equivalent"),
+        ]:
+            _add_control(db, fw, cid, title)
+            _add_edge(db, fw, cid, "nist-800-53-r5", "IA-2", rel=rel)
+        _, ev = self._seed_evidence(db, org, ["IA-2"], ["nist-800-53-r5"])
+        db.commit()
+        sugs = client.get(f"/api/crosswalk/evidence/{ev.id}/suggestions").json()["suggestions"]
+        assert [(s["framework_id"], s["control_id"]) for s in sugs] == [
+            ("fedramp", "IA-2"),
+            ("cjis", "5.6"),
+            ("cmmc-2.0", "IA.L2-3.5.3"),
+            ("cjis", "5.13"),
+        ]
+
 
 class TestImplementationSuggestions:
     def _seed_system_with_impl(self, db, org, status="IMPLEMENTED"):

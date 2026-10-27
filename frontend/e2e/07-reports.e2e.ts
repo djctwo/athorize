@@ -60,6 +60,26 @@ test('Executive Briefing PPTX is a real deck with slides and no garbage text', a
   expect(garbage).toEqual([])
 })
 
+test('Executive Briefing follows the System and Framework filters', async ({ page }) => {
+  await openReports(page)
+  const selects = page.locator('main select')
+  await selects.nth(0).selectOption({ label: 'CORP — Corporate Security Program' })
+  await selects.nth(1).selectOption({ label: 'NIST 800-53r5' })
+  const [dl] = await Promise.all([
+    page.waitForEvent('download', { timeout: 60_000 }),
+    page.getByRole('button', { name: 'Executive Briefing (PPTX)' }).click(),
+  ])
+  const zip = readZip(await downloadBytes(dl))
+  const slides = [...zip.keys()].filter(k => /^ppt\/slides\/slide\d+\.xml$/.test(k))
+  const text = slides.map(s => [...zip.get(s)!.toString('utf8').matchAll(/<a:t>([^<]*)<\/a:t>/g)].map(m => m[1]).join(' ')).join('\n')
+  expect(text).toContain('Scope: CORP')
+  // Other systems and frameworks stay out of a scoped deck.
+  expect(text).not.toMatch(/Plant\s+Floor\s+SCADA|Enterprise\s+Resource\s+Planning/)
+  // Posture rows are CORP x 800-53 only (the crosswalk columns may still name other frameworks).
+  const posture = slides.map(s => zip.get(s)!.toString('utf8')).find(x => x.includes('Where We Stand'))!
+  expect(posture).not.toMatch(/CMMC|PCI DSS|DORA/)
+})
+
 test('Assessment report opens and prints to a non-empty PDF', async ({ page, context }) => {
   await openReports(page)
   const assessmentSelect = page.locator('main select').nth(2)
