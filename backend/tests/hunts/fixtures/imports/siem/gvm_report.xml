@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report id="aaaaaaaa-0000-4000-8000-000000000001" format_id="a994b278-1f62-11e1-96ac-406186ea4fc5" extension="xml" content_type="text/xml">
+  <owner><name>admin</name></owner>
+  <name>2026-10-20T09:00:00Z</name>
+  <report id="aaaaaaaa-0000-4000-8000-000000000001">
+    <scan_run_status>Done</scan_run_status>
+    <results start="1" max="100">
+      <result id="r-0001">
+        <name>OpenSSH Multiple Vulnerabilities</name>
+        <host>10.0.0.8<asset asset_id="as-1"/><hostname>web-01.example.com</hostname></host>
+        <port>22/tcp</port>
+        <nvt oid="1.3.6.1.4.1.25623.1.0.100001"><type>nvt</type><name>OpenSSH Multiple Vulnerabilities</name><family>General</family><cvss_base>7.5</cvss_base><refs><ref type="cve" id="CVE-2023-38408"/><ref type="url" id="https://example.com/advisory"/></refs></nvt>
+        <threat>High</threat>
+        <severity>7.5</severity>
+        <qod><value>80</value><type>remote_banner</type></qod>
+        <description>Installed version: 8.9p1</description>
+        <detection><result id="d-0001"><details><detail><name>product</name><value>cpe:/a:openbsd:openssh:8.9p1</value></detail></details></result></detection>
+      </result>
+      <result id="r-0002">
+        <name>SSL/TLS: Deprecated TLSv1.0 and TLSv1.1 Protocol Detection</name>
+        <host>10.0.0.6<asset asset_id="as-2"/><hostname>app-01.example.com</hostname></host>
+        <port>443/tcp</port>
+        <nvt oid="1.3.6.1.4.1.25623.1.0.117274"><type>nvt</type><name>SSL/TLS: Deprecated TLS</name><family>SSL and TLS</family><cvss_base>4.3</cvss_base><refs><ref type="cve" id="CVE-2011-3389"/></refs></nvt>
+        <threat>Medium</threat>
+        <severity>4.3</severity>
+        <description>TLSv1.0 is enabled.</description>
+      </result>
+      <result id="r-0003">
+        <name>OS Detection Consolidation and Reporting</name>
+        <host>10.0.0.6<asset asset_id="as-2"/></host>
+        <port>general/tcp</port>
+        <nvt oid="1.3.6.1.4.1.25623.1.0.105937"><type>nvt</type><name>OS Detection</name><family>Product detection</family><cvss_base>0.0</cvss_base></nvt>
+        <threat>Log</threat>
+        <severity>0.0</severity>
+        <description>Best matching OS: Debian 12</description>
+      </result>
+    </results>
+  </report>
+</report>

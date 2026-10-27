@@ -1,0 +1,26 @@
+{
+  "id": "cjis",
+  "name": "FBI Criminal Justice Information Services Security Policy",
+  "short_name": "CJIS",
+  "version": "5.9.5",
+  "catalog_version": "2024-10-01",
+  "description": "Security requirements for access to FBI criminal justice information and services",
+  "publisher": "Federal Bureau of Investigation / CJIS Division",
+  "category": "federal",
+  "tags": ["cjis", "fbi", "law-enforcement", "criminal-justice", "ncic", "nlets"],
+  "status": "available",
+  "terminology": {
+    "control": "Policy Area",
+    "requirement": "Section",
+    "finding": "Non-Compliance",
+    "severity_levels": ["Critical", "High", "Medium", "Low"],
+    "compliance_unit": "Section",
+    "assessment": "Security Audit"
+  },
+  "scoring": {
+    "method": "control_percentage",
+    "passing_threshold": 100
+  },
+  "icon": "fingerprint",
+  "color": "#263238"
+}

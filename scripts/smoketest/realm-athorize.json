@@ -1,0 +1,48 @@
+{
+  "realm": "athorize",
+  "enabled": true,
+  "sslRequired": "none",
+  "clients": [
+    {
+      "clientId": "athorize-universal",
+      "enabled": true,
+      "protocol": "openid-connect",
+      "publicClient": false,
+      "secret": "athorize-smoketest-secret",
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": true,
+      "redirectUris": [
+        "http://localhost:8001/api/auth/oidc/callback",
+        "http://localhost:8000/api/auth/oidc/callback",
+        "http://localhost:3001/api/auth/oidc/callback",
+        "http://localhost:3000/api/auth/oidc/callback"
+      ],
+      "webOrigins": ["+"],
+      "protocolMappers": [
+        {
+          "name": "aud-athorize",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-audience-mapper",
+          "config": {
+            "included.client.audience": "athorize-universal",
+            "id.token.claim": "true",
+            "access.token.claim": "false"
+          }
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "username": "pilot",
+      "enabled": true,
+      "email": "pilot@athorize.local",
+      "emailVerified": true,
+      "firstName": "Pilot",
+      "lastName": "User",
+      "credentials": [
+        { "type": "password", "value": "pilot-pass-12345", "temporary": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,327 @@
+{
+  "framework_id": "irs-1075",
+  "version": "1.0",
+  "source": "Identity mapping \u2014 IRS Pub 1075 \u00a79.3 is a tailored SP 800-53r5 control selection (title join + documented r4\u2192r5 rename aliases)",
+  "mappings": [
+    {
+      "control_id": "9.3.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 AC-1 (Access Control Policy and Procedures)"
+    },
+    {
+      "control_id": "9.3.10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-18",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 AC-18 (Wireless Access)"
+    },
+    {
+      "control_id": "9.3.11",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-20",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 AC-20 (Use of External Information Systems)"
+    },
+    {
+      "control_id": "9.3.12",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 AT-2 (Security Awareness Training)"
+    },
+    {
+      "control_id": "9.3.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-3",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 AT-3 (Role-Based Security Training)"
+    },
+    {
+      "control_id": "9.3.14",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 AU-2 (Audit Events)"
+    },
+    {
+      "control_id": "9.3.15",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-3",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 AU-3 (Content of Audit Records)"
+    },
+    {
+      "control_id": "9.3.16",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-4",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 AU-4 (Audit Storage Capacity)"
+    },
+    {
+      "control_id": "9.3.17",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-5",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 AU-5 (Response to Audit Processing Failures)"
+    },
+    {
+      "control_id": "9.3.18",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-6",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 AU-6 (Audit Review, Analysis, and Reporting)"
+    },
+    {
+      "control_id": "9.3.19",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-7",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 AU-7 (Audit Reduction and Report Generation)"
+    },
+    {
+      "control_id": "9.3.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 AC-2 (Account Management)"
+    },
+    {
+      "control_id": "9.3.20",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-8",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 AU-8 (Time Stamps)"
+    },
+    {
+      "control_id": "9.3.21",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-9",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 AU-9 (Protection of Audit Information)"
+    },
+    {
+      "control_id": "9.3.22",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 CM-2 (Baseline Configuration)"
+    },
+    {
+      "control_id": "9.3.23",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-3",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 CM-3 (Configuration Change Control)"
+    },
+    {
+      "control_id": "9.3.24",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-7",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 CM-7 (Least Functionality)"
+    },
+    {
+      "control_id": "9.3.25",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 CP-2 (Contingency Plan)"
+    },
+    {
+      "control_id": "9.3.26",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-9",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 CP-9 (Information System Backup)"
+    },
+    {
+      "control_id": "9.3.27",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-10",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 CP-10 (Information System Recovery and Reconstitution)"
+    },
+    {
+      "control_id": "9.3.28",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 IA-2 (Identification and Authentication)"
+    },
+    {
+      "control_id": "9.3.29",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-5",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 IA-5 (Authenticator Management)"
+    },
+    {
+      "control_id": "9.3.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 AC-3 (Access Enforcement)"
+    },
+    {
+      "control_id": "9.3.30",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 IR-1 (Incident Response Policy and Procedures)"
+    },
+    {
+      "control_id": "9.3.31",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-6",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 IR-6 (Incident Reporting)"
+    },
+    {
+      "control_id": "9.3.32",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 MP-1 (Media Protection Policy)"
+    },
+    {
+      "control_id": "9.3.33",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-6",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 MP-6 (Media Sanitization)"
+    },
+    {
+      "control_id": "9.3.34",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 PE-2 (Physical Access Authorizations)"
+    },
+    {
+      "control_id": "9.3.35",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-3",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 PE-3 (Physical Access Control)"
+    },
+    {
+      "control_id": "9.3.36",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-7",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 SC-7 (Boundary Protection)"
+    },
+    {
+      "control_id": "9.3.37",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-8",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 SC-8 (Transmission Confidentiality and Integrity)"
+    },
+    {
+      "control_id": "9.3.38",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-28",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 SC-28 (Protection of Information at Rest)"
+    },
+    {
+      "control_id": "9.3.39",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 SI-2 (Flaw Remediation)"
+    },
+    {
+      "control_id": "9.3.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-4",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 AC-4 (Information Flow Enforcement)"
+    },
+    {
+      "control_id": "9.3.40",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-3",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 SI-3 (Malicious Code Protection)"
+    },
+    {
+      "control_id": "9.3.5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-5",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 AC-5 (Separation of Duties)"
+    },
+    {
+      "control_id": "9.3.6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-6",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 AC-6 (Least Privilege)"
+    },
+    {
+      "control_id": "9.3.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-7",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 AC-7 (Unsuccessful Logon Attempts)"
+    },
+    {
+      "control_id": "9.3.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-12",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 AC-12 (Session Termination)"
+    },
+    {
+      "control_id": "9.3.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-17",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IRS Pub 1075 \u00a79.3 selects SP 800-53r5 AC-17 (Remote Access)"
+    }
+  ]
+}

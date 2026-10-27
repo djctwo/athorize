@@ -1,0 +1,26 @@
+{
+  "id": "glba",
+  "name": "Gramm-Leach-Bliley Act Safeguards Rule",
+  "short_name": "GLBA Safeguards",
+  "version": "2023",
+  "catalog_version": "2023-06-09",
+  "description": "Requirements for financial institutions to protect customer information security",
+  "publisher": "Federal Trade Commission",
+  "category": "finance",
+  "tags": ["glba", "financial", "safeguards", "ftc", "customer-information", "privacy"],
+  "status": "available",
+  "terminology": {
+    "control": "Requirement",
+    "requirement": "Element",
+    "finding": "Deficiency",
+    "severity_levels": ["High", "Medium", "Low"],
+    "compliance_unit": "Requirement",
+    "assessment": "Assessment"
+  },
+  "scoring": {
+    "method": "control_percentage",
+    "passing_threshold": 100
+  },
+  "icon": "landmark",
+  "color": "#1b5e20"
+}

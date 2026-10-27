@@ -1,0 +1,233 @@
+{
+  "framework_id": "stateramp",
+  "controls": [
+    {
+      "family": "Access Control",
+      "title": "Access Control Policy and Procedures",
+      "description": "Develop, document, and disseminate access control policy and procedures applicable to the information system for state government data.",
+      "id": "SR-AC-1"
+    },
+    {
+      "family": "Access Control",
+      "title": "Account Management",
+      "description": "Manage information system accounts including establishing, activating, modifying, reviewing, disabling, and removing accounts for state government data systems.",
+      "id": "SR-AC-2"
+    },
+    {
+      "family": "Access Control",
+      "title": "Access Enforcement",
+      "description": "Enforce approved authorizations for logical access to state government information and system resources.",
+      "id": "SR-AC-3"
+    },
+    {
+      "family": "Access Control",
+      "title": "Unsuccessful Logon Attempts",
+      "description": "Enforce a limit of consecutive invalid logon attempts and automatically lock the account for a defined time period.",
+      "id": "SR-AC-7"
+    },
+    {
+      "family": "Access Control",
+      "title": "System Use Notification",
+      "description": "Display a system use notification message before granting access that provides privacy and security notices.",
+      "id": "SR-AC-8"
+    },
+    {
+      "family": "Access Control",
+      "title": "Remote Access",
+      "description": "Establish, document, authorize, monitor, and control remote access methods to the information system.",
+      "id": "SR-AC-17"
+    },
+    {
+      "family": "Access Control",
+      "title": "Use of External Information Systems",
+      "description": "Establish terms and conditions for use of external information systems to access state government data.",
+      "id": "SR-AC-20"
+    },
+    {
+      "family": "Awareness and Training",
+      "title": "Security Awareness and Training Policy",
+      "description": "Develop, document, and disseminate security awareness and training policy to applicable personnel.",
+      "id": "SR-AT-1"
+    },
+    {
+      "family": "Awareness and Training",
+      "title": "Security Awareness Training",
+      "description": "Provide basic security awareness training to information system users as part of initial training and annually thereafter.",
+      "id": "SR-AT-2"
+    },
+    {
+      "family": "Audit and Accountability",
+      "title": "Audit and Accountability Policy",
+      "description": "Develop, document, and disseminate audit and accountability policy applicable to the information system.",
+      "id": "SR-AU-1"
+    },
+    {
+      "family": "Audit and Accountability",
+      "title": "Audit Events",
+      "description": "Determine that the information system is capable of auditing defined events and coordinate the security audit function.",
+      "id": "SR-AU-2"
+    },
+    {
+      "family": "Audit and Accountability",
+      "title": "Audit Review, Analysis, and Reporting",
+      "description": "Review and analyze information system audit records for indications of inappropriate or unusual activity and report findings.",
+      "id": "SR-AU-6"
+    },
+    {
+      "family": "Security Assessment",
+      "title": "Security Assessment Policy",
+      "description": "Develop and disseminate a security assessment and authorization policy and procedures.",
+      "id": "SR-CA-1"
+    },
+    {
+      "family": "Security Assessment",
+      "title": "Security Assessments",
+      "description": "Assess the security controls in the information system to determine the extent to which the controls are implemented correctly and operating as intended.",
+      "id": "SR-CA-2"
+    },
+    {
+      "family": "Security Assessment",
+      "title": "System Interconnections",
+      "description": "Authorize connections from the information system to other information systems through the use of Interconnection Security Agreements.",
+      "id": "SR-CA-3"
+    },
+    {
+      "family": "Configuration Management",
+      "title": "Configuration Management Policy",
+      "description": "Develop, document, and disseminate configuration management policy and procedures.",
+      "id": "SR-CM-1"
+    },
+    {
+      "family": "Configuration Management",
+      "title": "Baseline Configuration",
+      "description": "Develop, document, and maintain a current baseline configuration of the information system.",
+      "id": "SR-CM-2"
+    },
+    {
+      "family": "Configuration Management",
+      "title": "Configuration Settings",
+      "description": "Establish and document configuration settings for information technology products employed within the information system.",
+      "id": "SR-CM-6"
+    },
+    {
+      "family": "Contingency Planning",
+      "title": "Contingency Planning Policy",
+      "description": "Develop, document, and disseminate a contingency planning policy and procedures.",
+      "id": "SR-CP-1"
+    },
+    {
+      "family": "Contingency Planning",
+      "title": "Information System Backup",
+      "description": "Conduct backups of user-level and system-level information contained in the information system at defined frequencies.",
+      "id": "SR-CP-9"
+    },
+    {
+      "family": "Identification and Authentication",
+      "title": "Identification and Authentication Policy",
+      "description": "Develop, document, and disseminate identification and authentication policy and procedures.",
+      "id": "SR-IA-1"
+    },
+    {
+      "family": "Identification and Authentication",
+      "title": "Identification and Authentication (Organizational Users)",
+      "description": "Uniquely identify and authenticate organizational users and implement multi-factor authentication for network access to privileged accounts.",
+      "id": "SR-IA-2"
+    },
+    {
+      "family": "Incident Response",
+      "title": "Incident Response Policy",
+      "description": "Develop, document, and disseminate an incident response policy and procedures.",
+      "id": "SR-IR-1"
+    },
+    {
+      "family": "Incident Response",
+      "title": "Incident Reporting",
+      "description": "Require personnel to report suspected security incidents to the organizational incident response capability and report incidents to state government entities as required.",
+      "id": "SR-IR-6"
+    },
+    {
+      "family": "Media Protection",
+      "title": "Media Protection Policy",
+      "description": "Develop, document, and disseminate media protection policy and procedures.",
+      "id": "SR-MP-1"
+    },
+    {
+      "family": "Physical Protection",
+      "title": "Physical and Environmental Protection Policy",
+      "description": "Develop, document, and disseminate physical and environmental protection policy and procedures.",
+      "id": "SR-PE-1"
+    },
+    {
+      "family": "Planning",
+      "title": "Security Planning Policy",
+      "description": "Develop, document, and disseminate a security planning policy and procedures.",
+      "id": "SR-PL-1"
+    },
+    {
+      "family": "Risk Assessment",
+      "title": "Risk Assessment Policy",
+      "description": "Develop, document, and disseminate a risk assessment policy and procedures.",
+      "id": "SR-RA-1"
+    },
+    {
+      "family": "Risk Assessment",
+      "title": "Vulnerability Scanning",
+      "description": "Scan for vulnerabilities in the information system and hosted applications at defined frequencies and when new vulnerabilities are identified.",
+      "id": "SR-RA-5"
+    },
+    {
+      "family": "System and Services Acquisition",
+      "title": "System and Services Acquisition Policy",
+      "description": "Develop, document, and disseminate a system and services acquisition policy including information security considerations.",
+      "id": "SR-SA-1"
+    },
+    {
+      "family": "System and Communications Protection",
+      "title": "System and Communications Protection Policy",
+      "description": "Develop, document, and disseminate system and communications protection policy and procedures.",
+      "id": "SR-SC-1"
+    },
+    {
+      "family": "System and Communications Protection",
+      "title": "Boundary Protection",
+      "description": "Monitor and control communications at the external boundary and at key internal boundaries of the information system.",
+      "id": "SR-SC-7"
+    },
+    {
+      "family": "System and Communications Protection",
+      "title": "Transmission Confidentiality and Integrity",
+      "description": "Protect the confidentiality and integrity of transmitted information using cryptographic mechanisms.",
+      "id": "SR-SC-8"
+    },
+    {
+      "family": "System and Communications Protection",
+      "title": "Protection of Information at Rest",
+      "description": "Protect the confidentiality and integrity of state government information at rest.",
+      "id": "SR-SC-28"
+    },
+    {
+      "family": "System and Information Integrity",
+      "title": "System and Information Integrity Policy",
+      "description": "Develop, document, and disseminate system and information integrity policy and procedures.",
+      "id": "SR-SI-1"
+    },
+    {
+      "family": "System and Information Integrity",
+      "title": "Flaw Remediation",
+      "description": "Identify, report, and correct information system flaws in a timely manner.",
+      "id": "SR-SI-2"
+    },
+    {
+      "family": "System and Information Integrity",
+      "title": "Malicious Code Protection",
+      "description": "Implement malicious code protection mechanisms at entry and exit points and at workstations, servers, or mobile devices.",
+      "id": "SR-SI-3"
+    },
+    {
+      "family": "System and Information Integrity",
+      "title": "Information System Monitoring",
+      "description": "Monitor the information system to detect attacks and indicators of potential attacks and unauthorized connections.",
+      "id": "SR-SI-4"
+    }
+  ]
+}

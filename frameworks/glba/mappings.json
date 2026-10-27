@@ -1,0 +1,191 @@
+{
+  "framework_id": "glba",
+  "version": "1.0",
+  "source": "Advisory mapping (Athorize editorial judgment) \u2014 no published 800-53 crosswalk exists for this regulation. relationship='related' / confidence='vendor': navigation + evidence hints only, never propagates compliance status.",
+  "mappings": [
+    {
+      "control_id": "GLB-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: glba GLB-1 relates to SP 800-53r5 RA-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "GLB-10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: glba GLB-10 relates to SP 800-53r5 AU-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "GLB-10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-4",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: glba GLB-10 relates to SP 800-53r5 SI-4 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "GLB-11",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: glba GLB-11 relates to SP 800-53r5 AT-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "GLB-12",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-9",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: glba GLB-12 relates to SP 800-53r5 SA-9 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "GLB-12",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: glba GLB-12 relates to SP 800-53r5 SR-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "GLB-13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: glba GLB-13 relates to SP 800-53r5 IR-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "GLB-13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-8",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: glba GLB-13 relates to SP 800-53r5 IR-8 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "GLB-14",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: glba GLB-14 relates to SP 800-53r5 CA-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "GLB-14",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-7",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: glba GLB-14 relates to SP 800-53r5 CA-7 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "GLB-15",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PM-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: glba GLB-15 relates to SP 800-53r5 PM-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "GLB-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PM-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: glba GLB-2 relates to SP 800-53r5 PM-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "GLB-3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: glba GLB-3 relates to SP 800-53r5 AC-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "GLB-3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: glba GLB-3 relates to SP 800-53r5 AC-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "GLB-4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-8",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: glba GLB-4 relates to SP 800-53r5 CM-8 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "GLB-4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: glba GLB-4 relates to SP 800-53r5 RA-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "GLB-5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-13",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: glba GLB-5 relates to SP 800-53r5 SC-13 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "GLB-5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-28",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: glba GLB-5 relates to SP 800-53r5 SC-28 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "GLB-6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: glba GLB-6 relates to SP 800-53r5 SA-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "GLB-6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-8",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: glba GLB-6 relates to SP 800-53r5 SA-8 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "GLB-7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: glba GLB-7 relates to SP 800-53r5 IA-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "GLB-8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: glba GLB-8 relates to SP 800-53r5 MP-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "GLB-9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: glba GLB-9 relates to SP 800-53r5 CM-3 (vendor judgment, see-also only)"
+    }
+  ]
+}

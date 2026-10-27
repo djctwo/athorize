@@ -1,0 +1,2871 @@
+{
+  "framework_id": "iso-27001-2022",
+  "version": "1.0",
+  "source": "NIST OLIR #155 \u2014 SP 800-53 Rev 5 to ISO/IEC 27001:2022 crosswalk (Final 2023-11-13), inverted toward the hub",
+  "mappings": [
+    {
+      "control_id": "A.5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.1 \u2194 AC-1"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 AC-1"
+    },
+    {
+      "control_id": "A.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.4 \u2194 AC-1"
+    },
+    {
+      "control_id": "A.5.15",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.15 \u2194 AC-1"
+    },
+    {
+      "control_id": "A.5.31",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.31 \u2194 AC-1"
+    },
+    {
+      "control_id": "A.5.36",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.36 \u2194 AC-1"
+    },
+    {
+      "control_id": "A.5.37",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.37 \u2194 AC-1"
+    },
+    {
+      "control_id": "A.5.16",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.16 \u2194 AC-2"
+    },
+    {
+      "control_id": "A.5.18",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.18 \u2194 AC-2"
+    },
+    {
+      "control_id": "A.8.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.2 \u2194 AC-2"
+    },
+    {
+      "control_id": "A.5.15",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.15 \u2194 AC-3"
+    },
+    {
+      "control_id": "A.5.33",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.33 \u2194 AC-3"
+    },
+    {
+      "control_id": "A.8.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.3 \u2194 AC-3"
+    },
+    {
+      "control_id": "A.8.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.4 \u2194 AC-3"
+    },
+    {
+      "control_id": "A.8.18",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.18 \u2194 AC-3"
+    },
+    {
+      "control_id": "A.8.20",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.20 \u2194 AC-3"
+    },
+    {
+      "control_id": "A.8.26",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.26 \u2194 AC-3"
+    },
+    {
+      "control_id": "A.5.14",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.14 \u2194 AC-4"
+    },
+    {
+      "control_id": "A.8.22",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.22 \u2194 AC-4"
+    },
+    {
+      "control_id": "A.8.23",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.23 \u2194 AC-4"
+    },
+    {
+      "control_id": "A.5.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.3 \u2194 AC-5"
+    },
+    {
+      "control_id": "A.5.15",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.15 \u2194 AC-6"
+    },
+    {
+      "control_id": "A.8.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.2 \u2194 AC-6"
+    },
+    {
+      "control_id": "A.8.18",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.18 \u2194 AC-6"
+    },
+    {
+      "control_id": "A.8.5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.5 \u2194 AC-7"
+    },
+    {
+      "control_id": "A.8.5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.5 \u2194 AC-8"
+    },
+    {
+      "control_id": "A.7.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-11",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.7 \u2194 AC-11"
+    },
+    {
+      "control_id": "A.8.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-11",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.1 \u2194 AC-11"
+    },
+    {
+      "control_id": "A.5.14",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-17",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.14 \u2194 AC-17"
+    },
+    {
+      "control_id": "A.6.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-17",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.6.7 \u2194 AC-17"
+    },
+    {
+      "control_id": "A.5.14",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-18",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.14 \u2194 AC-18"
+    },
+    {
+      "control_id": "A.8.20",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-18",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.20 \u2194 AC-18"
+    },
+    {
+      "control_id": "A.5.14",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-19",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.14 \u2194 AC-19"
+    },
+    {
+      "control_id": "A.7.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-19",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.9 \u2194 AC-19"
+    },
+    {
+      "control_id": "A.8.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-19",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.1 \u2194 AC-19"
+    },
+    {
+      "control_id": "A.5.14",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-20",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.14 \u2194 AC-20"
+    },
+    {
+      "control_id": "A.7.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-20",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.9 \u2194 AC-20"
+    },
+    {
+      "control_id": "A.8.20",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-20",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.20 \u2194 AC-20"
+    },
+    {
+      "control_id": "A.5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.1 \u2194 AT-1"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 AT-1"
+    },
+    {
+      "control_id": "A.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.4 \u2194 AT-1"
+    },
+    {
+      "control_id": "A.5.31",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.31 \u2194 AT-1"
+    },
+    {
+      "control_id": "A.5.36",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.36 \u2194 AT-1"
+    },
+    {
+      "control_id": "A.5.37",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.37 \u2194 AT-1"
+    },
+    {
+      "control_id": "A.6.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.6.3 \u2194 AT-2"
+    },
+    {
+      "control_id": "A.8.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.7 \u2194 AT-2"
+    },
+    {
+      "control_id": "A.6.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.6.3 \u2194 AT-3"
+    },
+    {
+      "control_id": "A.5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.1 \u2194 AU-1"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 AU-1"
+    },
+    {
+      "control_id": "A.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.4 \u2194 AU-1"
+    },
+    {
+      "control_id": "A.5.31",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.31 \u2194 AU-1"
+    },
+    {
+      "control_id": "A.5.36",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.36 \u2194 AU-1"
+    },
+    {
+      "control_id": "A.5.37",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.37 \u2194 AU-1"
+    },
+    {
+      "control_id": "A.8.15",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.15 \u2194 AU-2"
+    },
+    {
+      "control_id": "A.5.28",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.28 \u2194 AU-3"
+    },
+    {
+      "control_id": "A.8.15",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.15 \u2194 AU-3"
+    },
+    {
+      "control_id": "A.8.6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.6 \u2194 AU-4"
+    },
+    {
+      "control_id": "A.5.25",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.25 \u2194 AU-6"
+    },
+    {
+      "control_id": "A.6.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.6.8 \u2194 AU-6"
+    },
+    {
+      "control_id": "A.8.15",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.15 \u2194 AU-6"
+    },
+    {
+      "control_id": "A.8.17",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.17 \u2194 AU-8"
+    },
+    {
+      "control_id": "A.5.33",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.33 \u2194 AU-9"
+    },
+    {
+      "control_id": "A.8.15",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.15 \u2194 AU-9"
+    },
+    {
+      "control_id": "A.5.28",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-11",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.28 \u2194 AU-11"
+    },
+    {
+      "control_id": "A.8.15",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-11",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.15 \u2194 AU-11"
+    },
+    {
+      "control_id": "A.8.15",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-12",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.15 \u2194 AU-12"
+    },
+    {
+      "control_id": "A.5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.1 \u2194 CA-1"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 CA-1"
+    },
+    {
+      "control_id": "A.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.4 \u2194 CA-1"
+    },
+    {
+      "control_id": "A.5.31",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.31 \u2194 CA-1"
+    },
+    {
+      "control_id": "A.5.36",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.36 \u2194 CA-1"
+    },
+    {
+      "control_id": "A.5.37",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.37 \u2194 CA-1"
+    },
+    {
+      "control_id": "A.5.30",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.30 \u2194 CA-2"
+    },
+    {
+      "control_id": "A.5.36",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.36 \u2194 CA-2"
+    },
+    {
+      "control_id": "A.8.29",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.29 \u2194 CA-2"
+    },
+    {
+      "control_id": "A.5.14",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.14 \u2194 CA-3"
+    },
+    {
+      "control_id": "A.8.21",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.21 \u2194 CA-3"
+    },
+    {
+      "control_id": "A.5.36",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.36 \u2194 CA-7"
+    },
+    {
+      "control_id": "A.5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.1 \u2194 CM-1"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 CM-1"
+    },
+    {
+      "control_id": "A.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.4 \u2194 CM-1"
+    },
+    {
+      "control_id": "A.5.31",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.31 \u2194 CM-1"
+    },
+    {
+      "control_id": "A.5.36",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.36 \u2194 CM-1"
+    },
+    {
+      "control_id": "A.5.37",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.37 \u2194 CM-1"
+    },
+    {
+      "control_id": "A.8.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.9 \u2194 CM-1"
+    },
+    {
+      "control_id": "A.8.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.9 \u2194 CM-2"
+    },
+    {
+      "control_id": "A.8.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.9 \u2194 CM-3"
+    },
+    {
+      "control_id": "A.8.32",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.32 \u2194 CM-3"
+    },
+    {
+      "control_id": "A.8.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.9 \u2194 CM-4"
+    },
+    {
+      "control_id": "A.8.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.2 \u2194 CM-5"
+    },
+    {
+      "control_id": "A.8.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.4 \u2194 CM-5"
+    },
+    {
+      "control_id": "A.8.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.9 \u2194 CM-5"
+    },
+    {
+      "control_id": "A.8.19",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.19 \u2194 CM-5"
+    },
+    {
+      "control_id": "A.8.31",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.31 \u2194 CM-5"
+    },
+    {
+      "control_id": "A.8.32",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.32 \u2194 CM-5"
+    },
+    {
+      "control_id": "A.8.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.9 \u2194 CM-6"
+    },
+    {
+      "control_id": "A.8.19",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.19 \u2194 CM-7"
+    },
+    {
+      "control_id": "A.5.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.9 \u2194 CM-8"
+    },
+    {
+      "control_id": "A.8.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.9 \u2194 CM-8"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 CM-9"
+    },
+    {
+      "control_id": "A.8.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.9 \u2194 CM-9"
+    },
+    {
+      "control_id": "A.5.32",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-10",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.32 \u2194 CM-10"
+    },
+    {
+      "control_id": "A.8.19",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-11",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.19 \u2194 CM-11"
+    },
+    {
+      "control_id": "A.5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.1 \u2194 CP-1"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 CP-1"
+    },
+    {
+      "control_id": "A.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.4 \u2194 CP-1"
+    },
+    {
+      "control_id": "A.5.31",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.31 \u2194 CP-1"
+    },
+    {
+      "control_id": "A.5.36",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.36 \u2194 CP-1"
+    },
+    {
+      "control_id": "A.5.37",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.37 \u2194 CP-1"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 CP-2"
+    },
+    {
+      "control_id": "A.5.29",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.29 \u2194 CP-2"
+    },
+    {
+      "control_id": "A.8.14",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.14 \u2194 CP-2"
+    },
+    {
+      "control_id": "A.6.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.6.3 \u2194 CP-3"
+    },
+    {
+      "control_id": "A.5.29",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.29 \u2194 CP-4"
+    },
+    {
+      "control_id": "A.5.30",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.30 \u2194 CP-4"
+    },
+    {
+      "control_id": "A.5.29",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.29 \u2194 CP-6"
+    },
+    {
+      "control_id": "A.7.5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.5 \u2194 CP-6"
+    },
+    {
+      "control_id": "A.8.14",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.14 \u2194 CP-6"
+    },
+    {
+      "control_id": "A.5.29",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.29 \u2194 CP-7"
+    },
+    {
+      "control_id": "A.7.5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.5 \u2194 CP-7"
+    },
+    {
+      "control_id": "A.8.14",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.14 \u2194 CP-7"
+    },
+    {
+      "control_id": "A.5.29",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.29 \u2194 CP-8"
+    },
+    {
+      "control_id": "A.7.11",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.11 \u2194 CP-8"
+    },
+    {
+      "control_id": "A.5.29",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.29 \u2194 CP-9"
+    },
+    {
+      "control_id": "A.5.33",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.33 \u2194 CP-9"
+    },
+    {
+      "control_id": "A.8.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.13 \u2194 CP-9"
+    },
+    {
+      "control_id": "A.5.29",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-10",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.29 \u2194 CP-10"
+    },
+    {
+      "control_id": "A.5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.1 \u2194 IA-1"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 IA-1"
+    },
+    {
+      "control_id": "A.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.4 \u2194 IA-1"
+    },
+    {
+      "control_id": "A.5.31",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.31 \u2194 IA-1"
+    },
+    {
+      "control_id": "A.5.36",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.36 \u2194 IA-1"
+    },
+    {
+      "control_id": "A.5.37",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.37 \u2194 IA-1"
+    },
+    {
+      "control_id": "A.5.16",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.16 \u2194 IA-2"
+    },
+    {
+      "control_id": "A.5.16",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.16 \u2194 IA-4"
+    },
+    {
+      "control_id": "A.5.16",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.16 \u2194 IA-5"
+    },
+    {
+      "control_id": "A.5.17",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.17 \u2194 IA-5"
+    },
+    {
+      "control_id": "A.8.5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.5 \u2194 IA-6"
+    },
+    {
+      "control_id": "A.5.16",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.16 \u2194 IA-8"
+    },
+    {
+      "control_id": "A.5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.1 \u2194 IR-1"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 IR-1"
+    },
+    {
+      "control_id": "A.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.4 \u2194 IR-1"
+    },
+    {
+      "control_id": "A.5.31",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.31 \u2194 IR-1"
+    },
+    {
+      "control_id": "A.5.36",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.36 \u2194 IR-1"
+    },
+    {
+      "control_id": "A.5.37",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.37 \u2194 IR-1"
+    },
+    {
+      "control_id": "A.6.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.6.3 \u2194 IR-2"
+    },
+    {
+      "control_id": "A.5.25",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.25 \u2194 IR-4"
+    },
+    {
+      "control_id": "A.5.26",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.26 \u2194 IR-4"
+    },
+    {
+      "control_id": "A.5.27",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.27 \u2194 IR-4"
+    },
+    {
+      "control_id": "A.5.5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.5 \u2194 IR-6"
+    },
+    {
+      "control_id": "A.6.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.6.8 \u2194 IR-6"
+    },
+    {
+      "control_id": "A.5.24",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.24 \u2194 IR-8"
+    },
+    {
+      "control_id": "A.5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.1 \u2194 MA-1"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 MA-1"
+    },
+    {
+      "control_id": "A.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.4 \u2194 MA-1"
+    },
+    {
+      "control_id": "A.5.37",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.37 \u2194 MA-1"
+    },
+    {
+      "control_id": "A.7.10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.10 \u2194 MA-2"
+    },
+    {
+      "control_id": "A.7.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.13 \u2194 MA-2"
+    },
+    {
+      "control_id": "A.8.10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.10 \u2194 MA-2"
+    },
+    {
+      "control_id": "A.7.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.13 \u2194 MA-6"
+    },
+    {
+      "control_id": "A.5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.1 \u2194 MP-1"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 MP-1"
+    },
+    {
+      "control_id": "A.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.4 \u2194 MP-1"
+    },
+    {
+      "control_id": "A.5.31",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.31 \u2194 MP-1"
+    },
+    {
+      "control_id": "A.5.36",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.36 \u2194 MP-1"
+    },
+    {
+      "control_id": "A.5.37",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.37 \u2194 MP-1"
+    },
+    {
+      "control_id": "A.5.10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.10 \u2194 MP-2"
+    },
+    {
+      "control_id": "A.7.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.7 \u2194 MP-2"
+    },
+    {
+      "control_id": "A.7.10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.10 \u2194 MP-2"
+    },
+    {
+      "control_id": "A.5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.13 \u2194 MP-3"
+    },
+    {
+      "control_id": "A.5.10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.10 \u2194 MP-4"
+    },
+    {
+      "control_id": "A.7.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.7 \u2194 MP-4"
+    },
+    {
+      "control_id": "A.7.10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.10 \u2194 MP-4"
+    },
+    {
+      "control_id": "A.8.10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.10 \u2194 MP-4"
+    },
+    {
+      "control_id": "A.5.10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.10 \u2194 MP-5"
+    },
+    {
+      "control_id": "A.7.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.9 \u2194 MP-5"
+    },
+    {
+      "control_id": "A.7.10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.10 \u2194 MP-5"
+    },
+    {
+      "control_id": "A.5.10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.10 \u2194 MP-6"
+    },
+    {
+      "control_id": "A.7.10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.10 \u2194 MP-6"
+    },
+    {
+      "control_id": "A.7.14",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.14 \u2194 MP-6"
+    },
+    {
+      "control_id": "A.8.10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.10 \u2194 MP-6"
+    },
+    {
+      "control_id": "A.5.10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.10 \u2194 MP-7"
+    },
+    {
+      "control_id": "A.7.10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.10 \u2194 MP-7"
+    },
+    {
+      "control_id": "A.5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.1 \u2194 PE-1"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 PE-1"
+    },
+    {
+      "control_id": "A.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.4 \u2194 PE-1"
+    },
+    {
+      "control_id": "A.5.31",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.31 \u2194 PE-1"
+    },
+    {
+      "control_id": "A.5.36",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.36 \u2194 PE-1"
+    },
+    {
+      "control_id": "A.5.37",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.37 \u2194 PE-1"
+    },
+    {
+      "control_id": "A.7.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.2 \u2194 PE-2"
+    },
+    {
+      "control_id": "A.7.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.1 \u2194 PE-3"
+    },
+    {
+      "control_id": "A.7.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.2 \u2194 PE-3"
+    },
+    {
+      "control_id": "A.7.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.3 \u2194 PE-3"
+    },
+    {
+      "control_id": "A.7.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.4 \u2194 PE-3"
+    },
+    {
+      "control_id": "A.7.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.2 \u2194 PE-4"
+    },
+    {
+      "control_id": "A.7.12",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.12 \u2194 PE-4"
+    },
+    {
+      "control_id": "A.7.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.2 \u2194 PE-5"
+    },
+    {
+      "control_id": "A.7.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.3 \u2194 PE-5"
+    },
+    {
+      "control_id": "A.7.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.7 \u2194 PE-5"
+    },
+    {
+      "control_id": "A.7.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.4 \u2194 PE-6"
+    },
+    {
+      "control_id": "A.8.16",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.16 \u2194 PE-6"
+    },
+    {
+      "control_id": "A.7.5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.5 \u2194 PE-9"
+    },
+    {
+      "control_id": "A.7.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.8 \u2194 PE-9"
+    },
+    {
+      "control_id": "A.7.11",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.11 \u2194 PE-9"
+    },
+    {
+      "control_id": "A.7.12",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.12 \u2194 PE-9"
+    },
+    {
+      "control_id": "A.7.11",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-10",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.11 \u2194 PE-10"
+    },
+    {
+      "control_id": "A.7.11",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-11",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.11 \u2194 PE-11"
+    },
+    {
+      "control_id": "A.7.11",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-12",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.11 \u2194 PE-12"
+    },
+    {
+      "control_id": "A.7.5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-13",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.5 \u2194 PE-13"
+    },
+    {
+      "control_id": "A.7.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-13",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.8 \u2194 PE-13"
+    },
+    {
+      "control_id": "A.7.5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-14",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.5 \u2194 PE-14"
+    },
+    {
+      "control_id": "A.7.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-14",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.8 \u2194 PE-14"
+    },
+    {
+      "control_id": "A.7.11",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-14",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.11 \u2194 PE-14"
+    },
+    {
+      "control_id": "A.7.5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-15",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.5 \u2194 PE-15"
+    },
+    {
+      "control_id": "A.7.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-15",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.8 \u2194 PE-15"
+    },
+    {
+      "control_id": "A.7.11",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-15",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.11 \u2194 PE-15"
+    },
+    {
+      "control_id": "A.5.10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-16",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.10 \u2194 PE-16"
+    },
+    {
+      "control_id": "A.7.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-16",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.2 \u2194 PE-16"
+    },
+    {
+      "control_id": "A.7.10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-16",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.10 \u2194 PE-16"
+    },
+    {
+      "control_id": "A.5.14",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-17",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.14 \u2194 PE-17"
+    },
+    {
+      "control_id": "A.6.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-17",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.6.7 \u2194 PE-17"
+    },
+    {
+      "control_id": "A.7.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-17",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.7.9 \u2194 PE-17"
+    },
+    {
+      "control_id": "A.5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PL-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.1 \u2194 PL-1"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PL-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 PL-1"
+    },
+    {
+      "control_id": "A.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PL-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.4 \u2194 PL-1"
+    },
+    {
+      "control_id": "A.5.31",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PL-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.31 \u2194 PL-1"
+    },
+    {
+      "control_id": "A.5.36",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PL-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.36 \u2194 PL-1"
+    },
+    {
+      "control_id": "A.5.37",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PL-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.37 \u2194 PL-1"
+    },
+    {
+      "control_id": "A.5.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PL-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.8 \u2194 PL-2"
+    },
+    {
+      "control_id": "A.5.34",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PL-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.34 \u2194 PL-2"
+    },
+    {
+      "control_id": "A.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PL-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.4 \u2194 PL-4"
+    },
+    {
+      "control_id": "A.5.10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PL-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.10 \u2194 PL-4"
+    },
+    {
+      "control_id": "A.6.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PL-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.6.2 \u2194 PL-4"
+    },
+    {
+      "control_id": "A.5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PM-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.1 \u2194 PM-1"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PM-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 PM-1"
+    },
+    {
+      "control_id": "A.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PM-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.4 \u2194 PM-1"
+    },
+    {
+      "control_id": "A.5.31",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PM-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.31 \u2194 PM-1"
+    },
+    {
+      "control_id": "A.5.36",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PM-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.36 \u2194 PM-1"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PM-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 PM-2"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PM-10",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 PM-10"
+    },
+    {
+      "control_id": "A.5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.1 \u2194 PS-1"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 PS-1"
+    },
+    {
+      "control_id": "A.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.4 \u2194 PS-1"
+    },
+    {
+      "control_id": "A.5.31",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.31 \u2194 PS-1"
+    },
+    {
+      "control_id": "A.5.36",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.36 \u2194 PS-1"
+    },
+    {
+      "control_id": "A.5.37",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.37 \u2194 PS-1"
+    },
+    {
+      "control_id": "A.6.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.6.1 \u2194 PS-3"
+    },
+    {
+      "control_id": "A.5.11",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.11 \u2194 PS-4"
+    },
+    {
+      "control_id": "A.6.5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.6.5 \u2194 PS-4"
+    },
+    {
+      "control_id": "A.5.11",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.11 \u2194 PS-5"
+    },
+    {
+      "control_id": "A.6.5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.6.5 \u2194 PS-5"
+    },
+    {
+      "control_id": "A.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.4 \u2194 PS-6"
+    },
+    {
+      "control_id": "A.5.14",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.14 \u2194 PS-6"
+    },
+    {
+      "control_id": "A.6.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.6.2 \u2194 PS-6"
+    },
+    {
+      "control_id": "A.6.6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.6.6 \u2194 PS-6"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 PS-7"
+    },
+    {
+      "control_id": "A.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.4 \u2194 PS-7"
+    },
+    {
+      "control_id": "A.6.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.6.4 \u2194 PS-8"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 PS-9"
+    },
+    {
+      "control_id": "A.5.34",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.34 \u2194 PT-1"
+    },
+    {
+      "control_id": "A.5.34",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.34 \u2194 PT-3"
+    },
+    {
+      "control_id": "A.5.34",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.34 \u2194 PT-7"
+    },
+    {
+      "control_id": "A.5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.1 \u2194 RA-1"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 RA-1"
+    },
+    {
+      "control_id": "A.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.4 \u2194 RA-1"
+    },
+    {
+      "control_id": "A.5.31",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.31 \u2194 RA-1"
+    },
+    {
+      "control_id": "A.5.36",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.36 \u2194 RA-1"
+    },
+    {
+      "control_id": "A.5.37",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.37 \u2194 RA-1"
+    },
+    {
+      "control_id": "A.5.12",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.12 \u2194 RA-2"
+    },
+    {
+      "control_id": "A.8.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.8 \u2194 RA-3"
+    },
+    {
+      "control_id": "A.8.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.8 \u2194 RA-5"
+    },
+    {
+      "control_id": "A.5.22",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.22 \u2194 RA-9"
+    },
+    {
+      "control_id": "A.5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.1 \u2194 SA-1"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 SA-1"
+    },
+    {
+      "control_id": "A.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.4 \u2194 SA-1"
+    },
+    {
+      "control_id": "A.5.23",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.23 \u2194 SA-1"
+    },
+    {
+      "control_id": "A.5.31",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.31 \u2194 SA-1"
+    },
+    {
+      "control_id": "A.5.36",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.36 \u2194 SA-1"
+    },
+    {
+      "control_id": "A.5.37",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.37 \u2194 SA-1"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 SA-3"
+    },
+    {
+      "control_id": "A.5.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.8 \u2194 SA-3"
+    },
+    {
+      "control_id": "A.8.25",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.25 \u2194 SA-3"
+    },
+    {
+      "control_id": "A.8.31",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.31 \u2194 SA-3"
+    },
+    {
+      "control_id": "A.5.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.8 \u2194 SA-4"
+    },
+    {
+      "control_id": "A.5.20",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.20 \u2194 SA-4"
+    },
+    {
+      "control_id": "A.5.23",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.23 \u2194 SA-4"
+    },
+    {
+      "control_id": "A.8.29",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.29 \u2194 SA-4"
+    },
+    {
+      "control_id": "A.8.30",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.30 \u2194 SA-4"
+    },
+    {
+      "control_id": "A.5.37",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.37 \u2194 SA-5"
+    },
+    {
+      "control_id": "A.8.27",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.27 \u2194 SA-8"
+    },
+    {
+      "control_id": "A.8.28",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.28 \u2194 SA-8"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 SA-9"
+    },
+    {
+      "control_id": "A.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.4 \u2194 SA-9"
+    },
+    {
+      "control_id": "A.5.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.8 \u2194 SA-9"
+    },
+    {
+      "control_id": "A.5.14",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.14 \u2194 SA-9"
+    },
+    {
+      "control_id": "A.5.22",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.22 \u2194 SA-9"
+    },
+    {
+      "control_id": "A.5.23",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.23 \u2194 SA-9"
+    },
+    {
+      "control_id": "A.8.21",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.21 \u2194 SA-9"
+    },
+    {
+      "control_id": "A.8.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-10",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.9 \u2194 SA-10"
+    },
+    {
+      "control_id": "A.8.28",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-10",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.28 \u2194 SA-10"
+    },
+    {
+      "control_id": "A.8.30",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-10",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.30 \u2194 SA-10"
+    },
+    {
+      "control_id": "A.8.32",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-10",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.32 \u2194 SA-10"
+    },
+    {
+      "control_id": "A.8.29",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-11",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.29 \u2194 SA-11"
+    },
+    {
+      "control_id": "A.8.30",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-11",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.30 \u2194 SA-11"
+    },
+    {
+      "control_id": "A.5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.1 \u2194 SC-1"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 SC-1"
+    },
+    {
+      "control_id": "A.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.4 \u2194 SC-1"
+    },
+    {
+      "control_id": "A.5.31",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.31 \u2194 SC-1"
+    },
+    {
+      "control_id": "A.5.36",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.36 \u2194 SC-1"
+    },
+    {
+      "control_id": "A.5.37",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.37 \u2194 SC-1"
+    },
+    {
+      "control_id": "A.5.14",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.14 \u2194 SC-7"
+    },
+    {
+      "control_id": "A.8.16",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.16 \u2194 SC-7"
+    },
+    {
+      "control_id": "A.8.20",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.20 \u2194 SC-7"
+    },
+    {
+      "control_id": "A.8.22",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.22 \u2194 SC-7"
+    },
+    {
+      "control_id": "A.8.23",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.23 \u2194 SC-7"
+    },
+    {
+      "control_id": "A.5.10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.10 \u2194 SC-8"
+    },
+    {
+      "control_id": "A.5.14",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.14 \u2194 SC-8"
+    },
+    {
+      "control_id": "A.5.33",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.33 \u2194 SC-8"
+    },
+    {
+      "control_id": "A.8.20",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.20 \u2194 SC-8"
+    },
+    {
+      "control_id": "A.8.26",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.26 \u2194 SC-8"
+    },
+    {
+      "control_id": "A.8.20",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-10",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.20 \u2194 SC-10"
+    },
+    {
+      "control_id": "A.8.24",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-12",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.24 \u2194 SC-12"
+    },
+    {
+      "control_id": "A.8.24",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-13",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.24 \u2194 SC-13"
+    },
+    {
+      "control_id": "A.8.26",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-13",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.26 \u2194 SC-13"
+    },
+    {
+      "control_id": "A.5.14",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-15",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.14 \u2194 SC-15"
+    },
+    {
+      "control_id": "A.8.24",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-17",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.24 \u2194 SC-17"
+    },
+    {
+      "control_id": "A.5.10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-28",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.10 \u2194 SC-28"
+    },
+    {
+      "control_id": "A.5.33",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-28",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.33 \u2194 SC-28"
+    },
+    {
+      "control_id": "A.5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.1 \u2194 SI-1"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 SI-1"
+    },
+    {
+      "control_id": "A.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.4 \u2194 SI-1"
+    },
+    {
+      "control_id": "A.5.31",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.31 \u2194 SI-1"
+    },
+    {
+      "control_id": "A.5.36",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.36 \u2194 SI-1"
+    },
+    {
+      "control_id": "A.5.37",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.37 \u2194 SI-1"
+    },
+    {
+      "control_id": "A.6.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.6.8 \u2194 SI-2"
+    },
+    {
+      "control_id": "A.8.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.8 \u2194 SI-2"
+    },
+    {
+      "control_id": "A.8.32",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.32 \u2194 SI-2"
+    },
+    {
+      "control_id": "A.8.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.7 \u2194 SI-3"
+    },
+    {
+      "control_id": "A.8.16",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.16 \u2194 SI-4"
+    },
+    {
+      "control_id": "A.5.6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.6 \u2194 SI-5"
+    },
+    {
+      "control_id": "A.8.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.8 \u2194 SI-5"
+    },
+    {
+      "control_id": "A.5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.1 \u2194 SR-1"
+    },
+    {
+      "control_id": "A.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.2 \u2194 SR-1"
+    },
+    {
+      "control_id": "A.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.4 \u2194 SR-1"
+    },
+    {
+      "control_id": "A.5.19",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.19 \u2194 SR-1"
+    },
+    {
+      "control_id": "A.5.31",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.31 \u2194 SR-1"
+    },
+    {
+      "control_id": "A.5.36",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.36 \u2194 SR-1"
+    },
+    {
+      "control_id": "A.5.37",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.37 \u2194 SR-1"
+    },
+    {
+      "control_id": "A.5.19",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.19 \u2194 SR-2"
+    },
+    {
+      "control_id": "A.5.20",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.20 \u2194 SR-2"
+    },
+    {
+      "control_id": "A.5.21",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.21 \u2194 SR-2"
+    },
+    {
+      "control_id": "A.8.30",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.8.30 \u2194 SR-2"
+    },
+    {
+      "control_id": "A.5.20",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.20 \u2194 SR-3"
+    },
+    {
+      "control_id": "A.5.21",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.21 \u2194 SR-3"
+    },
+    {
+      "control_id": "A.5.20",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.20 \u2194 SR-5"
+    },
+    {
+      "control_id": "A.5.21",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.21 \u2194 SR-5"
+    },
+    {
+      "control_id": "A.5.23",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.23 \u2194 SR-5"
+    },
+    {
+      "control_id": "A.5.22",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "SP 800-53r5 \u2194 ISO/IEC 27001:2022 crosswalk (OLIR #155): A.5.22 \u2194 SR-6"
+    }
+  ]
+}

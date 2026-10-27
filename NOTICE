@@ -1,0 +1,29 @@
+Athorize
+Copyright (C) 2026 Douglas Cleary
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU Affero General Public License as published by the Free
+Software Foundation, version 3 of the License.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU Affero General Public License (LICENSE) for
+more details.
+
+If you modify Athorize and let others use it (including over a network), you
+must make your modified source code available to those users under the same
+license. Keep this NOTICE and the copyright line above in any copy or
+derivative work.
+
+Framework content
+-----------------
+Where each bundled framework catalog and crosswalk comes from is documented in
+docs/FRAMEWORK_SOURCES.md. Framework and standard names (for example ISO/IEC
+27001, PCI DSS, IEC 62443, NERC CIP) are trademarks of their respective owners.
+Athorize is not affiliated with, or endorsed by, any standards body.
+
+Third-party software
+--------------------
+Athorize depends on open-source packages (FastAPI, SQLAlchemy, React, Recharts,
+PptxGenJS, Lucide and others) under their own permissive licenses (MIT, BSD,
+Apache-2.0, ISC). Their license texts ship with each package when installed.

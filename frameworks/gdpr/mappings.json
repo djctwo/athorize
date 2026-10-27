@@ -1,0 +1,271 @@
+{
+  "framework_id": "gdpr",
+  "version": "1.0",
+  "source": "Advisory mapping (Athorize editorial judgment) \u2014 no published 800-53 crosswalk exists for this regulation. relationship='related' / confidence='vendor': navigation + evidence hints only, never propagates compliance status.",
+  "mappings": [
+    {
+      "control_id": "Art.12",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-5",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.12 relates to SP 800-53r5 PT-5 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-5",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.13 relates to SP 800-53r5 PT-5 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.14",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-5",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.14 relates to SP 800-53r5 PT-5 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.15",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.15 relates to SP 800-53r5 AC-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.15",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.15 relates to SP 800-53r5 PT-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.16",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.16 relates to SP 800-53r5 PT-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.16",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-12",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.16 relates to SP 800-53r5 SI-12 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.17",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.17 relates to SP 800-53r5 MP-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.17",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-12",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.17 relates to SP 800-53r5 SI-12 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.20",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.20 relates to SP 800-53r5 PT-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.24",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PM-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.24 relates to SP 800-53r5 PM-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.24",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.24 relates to SP 800-53r5 PT-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.25",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.25 relates to SP 800-53r5 SA-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.25",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-8",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.25 relates to SP 800-53r5 SA-8 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.28",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-9",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.28 relates to SP 800-53r5 SA-9 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.28",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.28 relates to SP 800-53r5 SR-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.30",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-8",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.30 relates to SP 800-53r5 CM-8 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.30",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.30 relates to SP 800-53r5 PT-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.32",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-13",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.32 relates to SP 800-53r5 SC-13 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.32",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-28",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.32 relates to SP 800-53r5 SC-28 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.32",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-4",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.32 relates to SP 800-53r5 SI-4 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.33",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.33 relates to SP 800-53r5 IR-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.34",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.34 relates to SP 800-53r5 IR-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.35",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.35 relates to SP 800-53r5 RA-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.35",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-7",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.35 relates to SP 800-53r5 RA-7 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.37",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PM-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.37 relates to SP 800-53r5 PM-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.44",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-9",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.44 relates to SP 800-53r5 SA-9 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.46",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-9",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.46 relates to SP 800-53r5 SA-9 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.46",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-8",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.46 relates to SP 800-53r5 SC-8 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PM-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.5 relates to SP 800-53r5 PM-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.5 relates to SP 800-53r5 PT-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.6 relates to SP 800-53r5 PT-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "Art.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-4",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: gdpr Art.7 relates to SP 800-53r5 PT-4 (vendor judgment, see-also only)"
+    }
+  ]
+}

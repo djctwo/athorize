@@ -1,0 +1,4 @@
+MACAddress,EndPointPolicy,IdentityGroup,Hostname,OperatingSystem,IPAddress,Vendor
+AA:BB:CC:11:22:33,Workstation,Employees,LT-ENG-12,Windows 10 Enterprise,192.168.4.21,Intel Corporate
+DD:EE:FF:44:55:66,Cisco-IP-Phone-8845,Phones,,,192.168.4.55,Cisco Systems
+11:22:33:AA:BB:CC,HP-Printer,Printers,PRN-3F-01,,192.168.4.90,HP

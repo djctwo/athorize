@@ -1,0 +1,56 @@
+{
+  "title": "Sample known-exploited vulnerabilities — FICTIONAL DEMO FIXTURE (not CISA data; vendors, products and IDs are made up)",
+  "catalogVersion": "demo.2026.06.11",
+  "vulnerabilities": [
+    {
+      "cveID": "DEMO-2026-0101",
+      "vendorProject": "Woodgrove Software",
+      "product": "Woodgrove SQL",
+      "vulnerabilityName": "Woodgrove SQL Remote Code Execution Vulnerability (sample)",
+      "dateAdded": "2026-05-28",
+      "shortDescription": "Sample (fictional). Woodgrove SQL contains a remote code execution vulnerability allowing an authenticated attacker to execute commands on the host.",
+      "requiredAction": "Apply the May 2026 cumulative update per vendor instructions.",
+      "knownRansomwareCampaignUse": "Known"
+    },
+    {
+      "cveID": "DEMO-2026-0102",
+      "vendorProject": "Adatum Networks",
+      "product": "AdatumOS",
+      "vulnerabilityName": "Adatum Networks AdatumOS Authentication Bypass Vulnerability (sample)",
+      "dateAdded": "2026-05-15",
+      "shortDescription": "Sample (fictional). The AdatumOS management interface contains an authentication bypass enabling unauthenticated remote attackers to gain administrator privileges.",
+      "requiredAction": "Upgrade AdatumOS per vendor advisory; restrict the management interface to internal addresses.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "DEMO-2026-0103",
+      "vendorProject": "Fabrikam Automation",
+      "product": "FabView Operator Station",
+      "vulnerabilityName": "Fabrikam Automation FabView Operator Station Privilege Escalation Vulnerability (sample)",
+      "dateAdded": "2026-04-30",
+      "shortDescription": "Sample (fictional). FabView Operator Station contains a privilege escalation vulnerability allowing a local attacker to gain SYSTEM privileges on the HMI host.",
+      "requiredAction": "Apply the April 2026 FabView security update.",
+      "knownRansomwareCampaignUse": "Known"
+    },
+    {
+      "cveID": "DEMO-2026-0104",
+      "vendorProject": "Litware",
+      "product": "LitwareOS",
+      "vulnerabilityName": "LitwareOS Service-Restart Helper Privilege Escalation Vulnerability (sample)",
+      "dateAdded": "2026-03-22",
+      "shortDescription": "Sample (fictional). The LitwareOS service-restart helper allows local attackers to escalate privileges via unsanitized environment variables.",
+      "requiredAction": "Update the service-restart helper package; review local privilege boundaries.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "DEMO-2026-0105",
+      "vendorProject": "VanArsdel Controls",
+      "product": "VC-1500 PLC",
+      "vulnerabilityName": "VanArsdel Controls VC-1500 Unauthenticated Remote Code Execution (sample)",
+      "dateAdded": "2026-06-02",
+      "shortDescription": "Sample (fictional). VanArsdel Controls VC-1500 CPUs allow unauthenticated remote code execution over unencrypted engineering protocols.",
+      "requiredAction": "Apply firmware 3.0.0+; isolate engineering traffic to protected network segments.",
+      "knownRansomwareCampaignUse": "Unknown"
+    }
+  ]
+}

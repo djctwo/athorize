@@ -1,0 +1,3 @@
+<34>1 2026-10-20T09:15:02.003Z mymachine.example.com su - ID47 - 'su root' failed for lonvick on /dev/pts/8
+<11>1 2026-10-20T09:16:00.000Z app-01.example.com payments 1234 ERR42 [exampleSDID@32473 iut="3" eventSource="Application"] Payment gateway TLS handshake failed
+<12>1 2026-10-20T09:17:00.000Z app-01.example.com payments 1234 WARN7 - Certificate expires in 7 days

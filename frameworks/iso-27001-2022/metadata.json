@@ -1,0 +1,26 @@
+{
+  "id": "iso-27001-2022",
+  "name": "ISO/IEC 27001:2022 Information Security Management Systems",
+  "short_name": "ISO 27001:2022",
+  "version": "2022",
+  "catalog_version": "2022-10-25",
+  "description": "International standard for establishing, implementing, maintaining and continually improving an ISMS",
+  "publisher": "International Organization for Standardization / International Electrotechnical Commission",
+  "category": "general",
+  "tags": ["iso", "isms", "international", "certification", "information-security"],
+  "status": "available",
+  "terminology": {
+    "control": "Control",
+    "requirement": "Attribute",
+    "finding": "Nonconformity",
+    "severity_levels": ["Major Nonconformity", "Minor Nonconformity", "Observation", "Opportunity for Improvement"],
+    "compliance_unit": "Control",
+    "assessment": "Audit"
+  },
+  "scoring": {
+    "method": "control_percentage",
+    "passing_threshold": 100
+  },
+  "icon": "globe-lock",
+  "color": "#005baa"
+}

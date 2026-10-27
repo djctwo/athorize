@@ -1,0 +1,4 @@
+"Plugin","Plugin Name","Family","Severity","IP Address","Protocol","Port","Exploit?","DNS Name","NetBIOS Name","Plugin Text","Synopsis","Description","Solution","CVE"
+"97833","MS17-010: Security Update for Microsoft Windows SMB Server (ETERNALBLUE)","Windows","Critical","10.0.0.5","TCP","445","Yes","ws-fin-04.example.com","WS-FIN-04","","The remote host is affected by multiple vulnerabilities.","Missing update.","Apply the patch.","CVE-2017-0143"
+"42873","SSL Medium Strength Cipher Suites Supported (SWEET32)","General","High","10.0.0.6","TCP","443","No","web-01.example.com","","","Medium strength ciphers supported.","3DES","Reconfigure.","CVE-2016-2183"
+"19506","Nessus Scan Information","Settings","Info","10.0.0.6","TCP","0","No","web-01.example.com","","","Information about the scan.","Scan info","n/a",""

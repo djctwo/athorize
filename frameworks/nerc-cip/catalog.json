@@ -1,0 +1,610 @@
+{
+  "framework_id": "nerc-cip",
+  "controls": [
+    {
+      "family": "BES Cyber System Categorization",
+      "title": "BES Cyber System Categorization",
+      "description": "Inventory the cyber systems that support the bulk power system and rank each by how badly its loss or misuse would hurt grid reliability, so protections scale to that impact.",
+      "id": "CIP-002-5.1a"
+    },
+    {
+      "id": "CIP-002-5.1a-R1",
+      "family": "CIP-002",
+      "title": "Identify and categorize BES Cyber Systems",
+      "description": "Run a written process that finds every in-scope cyber system and sorts it into high, medium, or low impact against the bright-line criteria, revisiting the results at least every 15 months.",
+      "parent_id": "CIP-002-5.1a"
+    },
+    {
+      "id": "CIP-002-5.1a-R2",
+      "family": "CIP-002",
+      "title": "CIP Senior Manager approval of categorization",
+      "description": "Get the senior accountable manager (or a delegate) to sign off on the system list and impact ratings at least every 15 months, even when a site turns up no in-scope systems.",
+      "parent_id": "CIP-002-5.1a"
+    },
+    {
+      "family": "Security Management Controls",
+      "title": "Security Management Controls",
+      "description": "Set up governance that makes clear who owns cyber protection of grid systems and holds them accountable, so security controls are applied consistently and sustained over time.",
+      "id": "CIP-003-8"
+    },
+    {
+      "id": "CIP-003-8-R1",
+      "family": "CIP-003",
+      "title": "Documented cyber security policies",
+      "description": "Keep written cyber security policies covering each CIP topic area, approved by the senior accountable manager, and re-review and re-approve them at least every 15 months.",
+      "parent_id": "CIP-003-8"
+    },
+    {
+      "id": "CIP-003-8-R2",
+      "family": "CIP-003",
+      "title": "Low impact BES Cyber System plans",
+      "description": "For low impact assets, put written plans in place for awareness, physical and electronic access, incident handling, transient device use, and defenses against malicious code.",
+      "parent_id": "CIP-003-8"
+    },
+    {
+      "id": "CIP-003-8-R3",
+      "family": "CIP-003",
+      "title": "CIP Senior Manager identification",
+      "description": "Name a specific person as the accountable CIP senior manager and record any change of that person within 30 days.",
+      "parent_id": "CIP-003-8"
+    },
+    {
+      "id": "CIP-003-8-R4",
+      "family": "CIP-003",
+      "title": "Delegation of authority",
+      "description": "Record, by name or role, anyone the senior manager authorizes to act on their behalf, have the senior manager approve it, and refresh the record within 30 days of changes.",
+      "parent_id": "CIP-003-8"
+    },
+    {
+      "family": "Personnel and Training",
+      "title": "Personnel and Training",
+      "description": "Reduce insider-driven risk to grid systems by screening, training, and keeping security-aware everyone who gets logical or physical access to in-scope assets.",
+      "id": "CIP-004-6"
+    },
+    {
+      "family": "Personnel and Training",
+      "title": "Security Awareness Program",
+      "description": "Run a written security awareness program and push reminders or awareness content to staff at least every calendar quarter.",
+      "id": "CIP-004-6-R1"
+    },
+    {
+      "family": "Personnel and Training",
+      "title": "Training Program",
+      "description": "Provide cyber security training to everyone who holds approved logical access or unescorted physical access to in-scope systems, tailored to what they do.",
+      "id": "CIP-004-6-R2"
+    },
+    {
+      "id": "CIP-004-6-R2.1",
+      "family": "CIP-004",
+      "title": "Role-based training content",
+      "description": "Cover policies, access controls, visitor handling, incident response, recovery, and protected-information handling in training, scoped to each person's job.",
+      "parent_id": "CIP-004-6-R2"
+    },
+    {
+      "id": "CIP-004-6-R2.2",
+      "family": "CIP-004",
+      "title": "Train before access",
+      "description": "Make sure people finish their training before they are given logical or unescorted physical access, unless an emergency exception applies.",
+      "parent_id": "CIP-004-6-R2"
+    },
+    {
+      "id": "CIP-004-6-R2.3",
+      "family": "CIP-004",
+      "title": "15-month refresher training",
+      "description": "Retrain everyone who holds access no less often than once every 15 calendar months.",
+      "parent_id": "CIP-004-6-R2"
+    },
+    {
+      "family": "Personnel and Training",
+      "title": "Personnel Risk Assessment Program",
+      "description": "Run a written background-screening program that people must pass before getting, and while keeping, logical or unescorted physical access to in-scope systems.",
+      "id": "CIP-004-6-R3"
+    },
+    {
+      "family": "Personnel and Training",
+      "title": "Access Management Program",
+      "description": "Run a written program governing how people request, receive, and keep logical or unescorted physical entry to in-scope systems, and how approvals are tracked.",
+      "id": "CIP-004-6-R4"
+    },
+    {
+      "id": "CIP-004-6-R4.1",
+      "family": "CIP-004",
+      "title": "Authorization based on need",
+      "description": "Grant logical access, unescorted physical access, and access to protected system information only when a documented business reason supports it.",
+      "parent_id": "CIP-004-6-R4"
+    },
+    {
+      "id": "CIP-004-6-R4.2",
+      "family": "CIP-004",
+      "title": "Quarterly access verification",
+      "description": "Every quarter, confirm that each person holding active access still appears on the list of approved individuals.",
+      "parent_id": "CIP-004-6-R4"
+    },
+    {
+      "id": "CIP-004-6-R4.3",
+      "family": "CIP-004",
+      "title": "15-month privilege review",
+      "description": "At least every 15 months, confirm each user's privileges are accurate and no broader than their job actually requires.",
+      "parent_id": "CIP-004-6-R4"
+    },
+    {
+      "id": "CIP-004-6-R4.4",
+      "family": "CIP-004",
+      "title": "BES Cyber Information access review",
+      "description": "At least every 15 months, confirm that the people who can reach repositories of protected system information still need that access.",
+      "parent_id": "CIP-004-6-R4"
+    },
+    {
+      "family": "Personnel and Training",
+      "title": "Access Revocation Program",
+      "description": "Run a written process to pull access promptly when someone leaves, moves to a new role, or no longer needs their current permissions.",
+      "id": "CIP-004-6-R5"
+    },
+    {
+      "family": "Electronic Security Perimeters",
+      "title": "Electronic Security Perimeter(s)",
+      "description": "Control network access to grid cyber systems by wrapping them in a defined, managed network boundary that guards against compromise.",
+      "id": "CIP-005-5"
+    },
+    {
+      "family": "Electronic Security Perimeters",
+      "title": "Electronic Security Perimeter",
+      "description": "Place every in-scope system that talks over a routable network inside a defined, documented security perimeter.",
+      "id": "CIP-005-5-R1"
+    },
+    {
+      "id": "CIP-005-5-R1.1",
+      "family": "CIP-005",
+      "title": "Define Electronic Security Perimeters",
+      "description": "Draw a documented network security boundary around every in-scope system that communicates using a routable protocol.",
+      "parent_id": "CIP-005-5-R1"
+    },
+    {
+      "id": "CIP-005-5-R1.2",
+      "family": "CIP-005",
+      "title": "Identify Electronic Access Points",
+      "description": "Route all outside routable traffic through named access points sitting on the perimeter, so there are no undocumented paths in or out.",
+      "parent_id": "CIP-005-5-R1"
+    },
+    {
+      "id": "CIP-005-5-R1.3",
+      "family": "CIP-005",
+      "title": "Deny by default inbound and outbound",
+      "description": "Configure perimeter access points to allow only traffic with a documented business need in each direction and block everything else.",
+      "parent_id": "CIP-005-5-R1"
+    },
+    {
+      "id": "CIP-005-5-R1.4",
+      "family": "CIP-005",
+      "title": "Dial-up authentication",
+      "description": "Require authentication on any dial-up connection into in-scope systems wherever the equipment supports it.",
+      "parent_id": "CIP-005-5-R1"
+    },
+    {
+      "id": "CIP-005-5-R1.5",
+      "family": "CIP-005",
+      "title": "Malicious communication detection at EAPs",
+      "description": "At perimeter access points guarding high and medium impact control center systems, watch inbound and outbound traffic for known or suspected malicious activity.",
+      "parent_id": "CIP-005-5-R1"
+    },
+    {
+      "family": "Electronic Security Perimeters",
+      "title": "Remote Access Management",
+      "description": "Secure every interactive remote session into in-scope systems with multi-factor login and an encrypted connection.",
+      "id": "CIP-005-5-R2"
+    },
+    {
+      "id": "CIP-005-5-R2.1",
+      "family": "CIP-005",
+      "title": "Intermediate System for remote access",
+      "description": "Force all interactive remote sessions through a jump host or similar intermediary so outside users never reach protected systems directly.",
+      "parent_id": "CIP-005-5-R2"
+    },
+    {
+      "id": "CIP-005-5-R2.2",
+      "family": "CIP-005",
+      "title": "Encrypt remote access sessions",
+      "description": "Encrypt interactive remote sessions along the path from the user's device to the intermediary system.",
+      "parent_id": "CIP-005-5-R2"
+    },
+    {
+      "id": "CIP-005-5-R2.3",
+      "family": "CIP-005",
+      "title": "Multi-factor for remote access",
+      "description": "Require multi-factor login for every interactive remote session, so a stolen password alone is not enough to reach protected systems from outside.",
+      "parent_id": "CIP-005-5-R2"
+    },
+    {
+      "family": "Physical Security",
+      "title": "Physical Security of BES Cyber Systems",
+      "description": "Guard in-scope cyber systems against physical tampering by putting a documented physical security plan in place.",
+      "id": "CIP-006-6"
+    },
+    {
+      "family": "Physical Security",
+      "title": "Physical Security Plan",
+      "description": "Write and carry out physical security plans that keep unauthorized people away from in-scope systems and the devices that sit alongside them.",
+      "id": "CIP-006-6-R1"
+    },
+    {
+      "family": "Physical Security",
+      "title": "Visitor Control Program",
+      "description": "Run a visitor program that keeps visitors escorted at all times inside protected areas and records their entry and exit, manually or automatically.",
+      "id": "CIP-006-6-R2"
+    },
+    {
+      "family": "Physical Security",
+      "title": "Physical Access Control System Maintenance and Testing",
+      "description": "Maintain and periodically test the badge readers, locks, and other physical access control systems to confirm they work as designed.",
+      "id": "CIP-006-6-R3"
+    },
+    {
+      "family": "System Security Management",
+      "title": "System Security Management",
+      "description": "Harden and manage in-scope systems through a set of technical, operational, and procedural safeguards that reduce the chance of compromise.",
+      "id": "CIP-007-6"
+    },
+    {
+      "family": "System Security Management",
+      "title": "Ports and Services",
+      "description": "Disable network ports and services that are not needed, keeping open only those with a confirmed business purpose where the device allows.",
+      "id": "CIP-007-6-R1"
+    },
+    {
+      "family": "System Security Management",
+      "title": "Security Patch Management",
+      "description": "Run a written patching process that tracks, reviews, and installs security updates for in-scope systems.",
+      "id": "CIP-007-6-R2"
+    },
+    {
+      "id": "CIP-007-6-R2.1",
+      "family": "CIP-007",
+      "title": "Patch source identification",
+      "description": "For each in-scope asset, record where its security updates come from so new releases can be tracked.",
+      "parent_id": "CIP-007-6-R2"
+    },
+    {
+      "id": "CIP-007-6-R2.2",
+      "family": "CIP-007",
+      "title": "35-day patch evaluation",
+      "description": "Check newly released security updates for relevance no less than once every 35 days.",
+      "parent_id": "CIP-007-6-R2"
+    },
+    {
+      "id": "CIP-007-6-R2.3",
+      "family": "CIP-007",
+      "title": "Apply, plan, or mitigate within 35 days",
+      "description": "Within 35 days of deciding an update applies, either install it or write or update a dated mitigation plan with interim safeguards and a target finish date.",
+      "parent_id": "CIP-007-6-R2"
+    },
+    {
+      "id": "CIP-007-6-R2.4",
+      "family": "CIP-007",
+      "title": "Execute mitigation plans",
+      "description": "Carry out patch mitigation plans by their target dates, or get the senior manager or delegate to approve any change to the plan.",
+      "parent_id": "CIP-007-6-R2"
+    },
+    {
+      "family": "System Security Management",
+      "title": "Malicious Code Prevention",
+      "description": "Use anti-malware or equivalent controls to prevent, catch, or discourage malicious code on every in-scope asset.",
+      "id": "CIP-007-6-R3"
+    },
+    {
+      "family": "System Security Management",
+      "title": "Security Event Monitoring",
+      "description": "Capture security logs from in-scope systems so incidents can be spotted and investigated afterward.",
+      "id": "CIP-007-6-R4"
+    },
+    {
+      "id": "CIP-007-6-R4.1",
+      "family": "CIP-007",
+      "title": "Log security events",
+      "description": "Record security-relevant activity on in-scope systems, including successful and failed logins and any detected malicious behavior, to support detection and later investigation.",
+      "parent_id": "CIP-007-6-R4"
+    },
+    {
+      "id": "CIP-007-6-R4.2",
+      "family": "CIP-007",
+      "title": "Alert on security events",
+      "description": "Raise alerts for security events the organization flags as alert-worthy, such as malware detections and, where supported, failures of logging itself.",
+      "parent_id": "CIP-007-6-R4"
+    },
+    {
+      "id": "CIP-007-6-R4.3",
+      "family": "CIP-007",
+      "title": "90-day log retention",
+      "description": "Keep relevant security logs for a minimum of 90 days in a row, barring emergency exceptions.",
+      "parent_id": "CIP-007-6-R4"
+    },
+    {
+      "id": "CIP-007-6-R4.4",
+      "family": "CIP-007",
+      "title": "15-day log review",
+      "description": "For high impact control center systems, review a summary or sample of logs at least every 15 days to catch incidents that went unnoticed.",
+      "parent_id": "CIP-007-6-R4"
+    },
+    {
+      "family": "System Security Management",
+      "title": "System Access Controls",
+      "description": "Require login for interactive use, control shared and default accounts, apply password rules, and restrict repeated failed login attempts.",
+      "id": "CIP-007-6-R5"
+    },
+    {
+      "id": "CIP-007-6-R5.1",
+      "family": "CIP-007",
+      "title": "Enforce authentication of interactive access",
+      "description": "Make users authenticate before interactive access to in-scope systems, wherever the system supports it.",
+      "parent_id": "CIP-007-6-R5"
+    },
+    {
+      "id": "CIP-007-6-R5.2",
+      "family": "CIP-007",
+      "title": "Inventory default and generic accounts",
+      "description": "List the enabled default and generic accounts on each asset or asset group, so none of these non-personal logins go untracked.",
+      "parent_id": "CIP-007-6-R5"
+    },
+    {
+      "id": "CIP-007-6-R5.3",
+      "family": "CIP-007",
+      "title": "Identify shared-account users",
+      "description": "Keep a record of which people are allowed to use each shared account, so activity under that login can be traced back to individuals.",
+      "parent_id": "CIP-007-6-R5"
+    },
+    {
+      "id": "CIP-007-6-R5.4",
+      "family": "CIP-007",
+      "title": "Change known default passwords",
+      "description": "Replace vendor default passwords on assets before or when they go into service, as far as the device permits.",
+      "parent_id": "CIP-007-6-R5"
+    },
+    {
+      "id": "CIP-007-6-R5.5",
+      "family": "CIP-007",
+      "title": "Password strength parameters",
+      "description": "Set password rules requiring at least eight characters and three character types, or the most the system can support.",
+      "parent_id": "CIP-007-6-R5"
+    },
+    {
+      "id": "CIP-007-6-R5.6",
+      "family": "CIP-007",
+      "title": "15-month password changes",
+      "description": "Make users change passwords, or be required to, at least every 15 months where the system supports it.",
+      "parent_id": "CIP-007-6-R5"
+    },
+    {
+      "id": "CIP-007-6-R5.7",
+      "family": "CIP-007",
+      "title": "Limit or alert on failed authentication",
+      "description": "Cap failed login attempts or send an alert once failures pass a set threshold, where the system supports it.",
+      "parent_id": "CIP-007-6-R5"
+    },
+    {
+      "family": "Incident Reporting and Response",
+      "title": "Incident Reporting and Response Planning",
+      "description": "Reduce harm to grid reliability from cyber incidents by establishing how the organization detects, handles, and reports them.",
+      "id": "CIP-008-5"
+    },
+    {
+      "family": "Incident Reporting and Response",
+      "title": "Cyber Security Incident Response Plan",
+      "description": "Write incident response plans that explain how cyber incidents are recognized, classified, and responded to, including roles and reporting.",
+      "id": "CIP-008-5-R1"
+    },
+    {
+      "family": "Incident Reporting and Response",
+      "title": "Cyber Security Incident Response Plan Implementation and Testing",
+      "description": "Put incident response plans into practice and exercise each one, through a real event or a drill, at least every 15 months.",
+      "id": "CIP-008-5-R2"
+    },
+    {
+      "family": "Incident Reporting and Response",
+      "title": "Cyber Security Incident Response Plan Review and Update",
+      "description": "Revise incident response plans after lessons learned from incidents or tests and whenever the protected systems change.",
+      "id": "CIP-008-5-R3"
+    },
+    {
+      "family": "Recovery Plans",
+      "title": "Recovery Plans for BES Cyber Systems",
+      "description": "Make sure grid functions supported by cyber systems can be restored after an outage or attack by keeping workable recovery plans.",
+      "id": "CIP-009-6"
+    },
+    {
+      "family": "Recovery Plans",
+      "title": "Recovery Plan Specifications",
+      "description": "Write recovery plans spelling out when they kick in, who does what, how backups are taken and stored, and the steps to restore in-scope systems.",
+      "id": "CIP-009-6-R1"
+    },
+    {
+      "family": "Recovery Plans",
+      "title": "Recovery Plan Implementation and Testing",
+      "description": "Carry out and exercise each recovery plan, through real recovery or a test, at least every 15 months.",
+      "id": "CIP-009-6-R2"
+    },
+    {
+      "family": "Recovery Plans",
+      "title": "Recovery Plan Review and Update",
+      "description": "Keep recovery plans current, folding in lessons learned and any changes to the systems they cover.",
+      "id": "CIP-009-6-R3"
+    },
+    {
+      "family": "Configuration Change Management",
+      "title": "Configuration Change Management and Vulnerability Assessments",
+      "description": "Stop and catch unapproved changes to in-scope systems through baseline-driven change control and periodic vulnerability assessments.",
+      "id": "CIP-010-2"
+    },
+    {
+      "family": "Configuration Change Management",
+      "title": "Configuration Change Management",
+      "description": "Record a known-good configuration for in-scope systems and approve and document any change that departs from it.",
+      "id": "CIP-010-2-R1"
+    },
+    {
+      "id": "CIP-010-2-R1.1",
+      "family": "CIP-010",
+      "title": "Develop baseline configurations",
+      "description": "Capture a baseline for each asset or group listing OS or firmware, installed commercial and open-source software, custom code, open ports, and patches applied.",
+      "parent_id": "CIP-010-2-R1"
+    },
+    {
+      "id": "CIP-010-2-R1.2",
+      "family": "CIP-010",
+      "title": "Authorize baseline changes",
+      "description": "Approve and record any change that alters an asset's documented baseline before or as it happens.",
+      "parent_id": "CIP-010-2-R1"
+    },
+    {
+      "id": "CIP-010-2-R1.3",
+      "family": "CIP-010",
+      "title": "Update baselines within 30 days",
+      "description": "Bring the baseline record up to date within 30 days after a change is finished.",
+      "parent_id": "CIP-010-2-R1"
+    },
+    {
+      "id": "CIP-010-2-R1.4",
+      "family": "CIP-010",
+      "title": "Verify security controls after changes",
+      "description": "When a baseline changes, identify which perimeter and system security controls it could affect, confirm they still work, and record the outcome.",
+      "parent_id": "CIP-010-2-R1"
+    },
+    {
+      "id": "CIP-010-2-R1.5",
+      "family": "CIP-010",
+      "title": "Test changes before production (high impact)",
+      "description": "For high impact systems, test changes in a representative test setup or by another documented method before production, noting how the test setup differs.",
+      "parent_id": "CIP-010-2-R1"
+    },
+    {
+      "family": "Configuration Change Management",
+      "title": "Configuration Monitoring",
+      "description": "Check in-scope systems for unapproved deviations from their recorded baselines at least once every 35 days, and follow up on anything found.",
+      "id": "CIP-010-2-R2"
+    },
+    {
+      "id": "CIP-010-2-R2.1",
+      "family": "CIP-010",
+      "title": "35-day unauthorized-change monitoring",
+      "description": "For high impact systems, compare configurations against baselines at least every 35 days and record and investigate any unauthorized differences found.",
+      "parent_id": "CIP-010-2-R2"
+    },
+    {
+      "family": "Configuration Change Management",
+      "title": "Vulnerability Assessments",
+      "description": "Assess in-scope systems for vulnerabilities, through a document review or hands-on scan, at least every 15 months.",
+      "id": "CIP-010-2-R3"
+    },
+    {
+      "id": "CIP-010-2-R3.1",
+      "family": "CIP-010",
+      "title": "15-month vulnerability assessment",
+      "description": "Perform a vulnerability assessment, either desk-based or hands-on, no less than once every 15 months.",
+      "parent_id": "CIP-010-2-R3"
+    },
+    {
+      "id": "CIP-010-2-R3.2",
+      "family": "CIP-010",
+      "title": "36-month active assessment (high impact)",
+      "description": "For high impact systems, run a hands-on vulnerability assessment in test or production at least every 36 months where feasible.",
+      "parent_id": "CIP-010-2-R3"
+    },
+    {
+      "id": "CIP-010-2-R3.3",
+      "family": "CIP-010",
+      "title": "Assess new assets before connection",
+      "description": "For high impact systems, scan new assets for vulnerabilities before putting them into production.",
+      "parent_id": "CIP-010-2-R3"
+    },
+    {
+      "id": "CIP-010-2-R3.4",
+      "family": "CIP-010",
+      "title": "Document assessment results and action plans",
+      "description": "Write up assessment findings along with a remediation or mitigation plan and target dates, and track progress until closed.",
+      "parent_id": "CIP-010-2-R3"
+    },
+    {
+      "family": "Information Protection",
+      "title": "Information Protection",
+      "description": "Keep sensitive information about grid cyber systems out of unauthorized hands by putting information protection controls in place.",
+      "id": "CIP-011-2"
+    },
+    {
+      "family": "Information Protection",
+      "title": "Information Protection Program",
+      "description": "Run a written program that identifies sensitive system information and sets rules for how it is handled, stored, and shared.",
+      "id": "CIP-011-2-R1"
+    },
+    {
+      "family": "Information Protection",
+      "title": "BES Cyber Asset Reuse and Disposal",
+      "description": "Before reusing or disposing of in-scope assets, follow written procedures to wipe or destroy media so sensitive system data cannot be recovered.",
+      "id": "CIP-011-2-R2"
+    },
+    {
+      "id": "CIP-012-1",
+      "family": "CIP-012",
+      "title": "Communications between Control Centers",
+      "description": "Protect real-time operational and assessment data exchanged between control centers from disclosure and tampering under documented plans."
+    },
+    {
+      "id": "CIP-012-1-R1",
+      "family": "CIP-012",
+      "title": "Plan to protect Control Center communication links",
+      "description": "Maintain and follow a written plan that protects real-time data moving between control centers from snooping and alteration, naming the safeguards used, where responsibility hands off, and who owns each piece.",
+      "parent_id": "CIP-012-1"
+    },
+    {
+      "family": "Supply Chain Risk Management",
+      "title": "Supply Chain Risk Management",
+      "description": "Manage cyber risk introduced through vendors and the products and services bought for grid cyber systems.",
+      "id": "CIP-013-1"
+    },
+    {
+      "id": "CIP-013-1-R1",
+      "family": "CIP-013",
+      "title": "Supply chain risk management plan",
+      "description": "For high and medium impact systems, write supply chain risk plans covering vendor breach notification, joint incident response, verification of software integrity and origin, and control of vendor remote access.",
+      "parent_id": "CIP-013-1"
+    },
+    {
+      "id": "CIP-013-1-R2",
+      "family": "CIP-013",
+      "title": "Implement the supply chain plan",
+      "description": "Apply the supply chain risk plans when buying products and services for in-scope systems.",
+      "parent_id": "CIP-013-1"
+    },
+    {
+      "id": "CIP-013-1-R3",
+      "family": "CIP-013",
+      "title": "15-month CIP Senior Manager review",
+      "description": "Have the senior manager or delegate review and approve the supply chain risk plans at least every 15 months.",
+      "parent_id": "CIP-013-1"
+    },
+    {
+      "family": "Physical Security",
+      "title": "Physical Security of Transmission Stations and Substations",
+      "description": "Find the substations and their control centers whose physical loss could destabilize or split the grid, then protect them against physical attack.",
+      "id": "CIP-014-2"
+    },
+    {
+      "id": "CIP-014-2-R1",
+      "family": "CIP-014",
+      "title": "Risk assessment of critical stations",
+      "description": "Periodically study the transmission network to pinpoint which substations, if knocked out or damaged, would trigger grid instability, islanding, or cascading outages.",
+      "parent_id": "CIP-014-2"
+    },
+    {
+      "id": "CIP-014-2-R4",
+      "family": "CIP-014",
+      "title": "Threat and vulnerability evaluation",
+      "description": "For each critical site identified, assess the physical threats it faces and the weaknesses an attacker could exploit.",
+      "parent_id": "CIP-014-2"
+    },
+    {
+      "id": "CIP-014-2-R5",
+      "family": "CIP-014",
+      "title": "Physical security plan",
+      "description": "Create and carry out a written physical security plan for each critical site, with protective or resilience measures, coordination with law enforcement, and a schedule for upgrades.",
+      "parent_id": "CIP-014-2"
+    }
+  ]
+}

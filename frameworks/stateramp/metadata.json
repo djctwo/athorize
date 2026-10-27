@@ -1,0 +1,26 @@
+{
+  "id": "stateramp",
+  "name": "StateRAMP Security Framework",
+  "short_name": "StateRAMP",
+  "version": "4.0",
+  "catalog_version": "2024-06-01",
+  "description": "Standardized cybersecurity verification program for state and local government cloud providers",
+  "publisher": "StateRAMP",
+  "category": "federal",
+  "tags": ["stateramp", "state-government", "local-government", "cloud", "verification"],
+  "status": "available",
+  "terminology": {
+    "control": "Control",
+    "requirement": "Control Enhancement",
+    "finding": "Finding",
+    "severity_levels": ["High", "Moderate", "Low"],
+    "compliance_unit": "Control",
+    "assessment": "Assessment"
+  },
+  "scoring": {
+    "method": "control_percentage",
+    "passing_threshold": 100
+  },
+  "icon": "building-government",
+  "color": "#6a1b9a"
+}

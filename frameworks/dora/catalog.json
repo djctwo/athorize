@@ -1,0 +1,155 @@
+{
+  "framework_id": "dora",
+  "controls": [
+    {
+      "family": "ICT Risk Management",
+      "title": "Governance and Organisation",
+      "description": "Financial entities shall have in place an internal governance and control framework that ensures an effective and prudent management of ICT risk.",
+      "id": "DORA-5"
+    },
+    {
+      "family": "ICT Risk Management",
+      "title": "ICT Risk Management Framework",
+      "description": "Financial entities shall have a sound, comprehensive and well-documented ICT risk management framework as part of their overall risk management system.",
+      "id": "DORA-6"
+    },
+    {
+      "family": "ICT Risk Management",
+      "title": "ICT Systems, Protocols and Tools",
+      "description": "Financial entities shall identify, classify and adequately document all ICT supported business functions, roles, and ICT assets supporting those functions.",
+      "id": "DORA-7"
+    },
+    {
+      "family": "ICT Risk Management",
+      "title": "Identification",
+      "description": "Financial entities shall identify all sources of ICT risk, assess cyber threats and ICT vulnerabilities, and review ICT risk scenarios.",
+      "id": "DORA-8"
+    },
+    {
+      "family": "ICT Risk Management",
+      "title": "Protection and Prevention",
+      "description": "Financial entities shall continuously monitor and control the security and functioning of ICT systems and tools, and minimise the impact of ICT risk through appropriate tools, policies and procedures.",
+      "id": "DORA-9"
+    },
+    {
+      "family": "ICT Risk Management",
+      "title": "Detection",
+      "description": "Financial entities shall have in place mechanisms to promptly detect anomalous activities, including ICT network performance issues and ICT-related incidents.",
+      "id": "DORA-10"
+    },
+    {
+      "family": "ICT Risk Management",
+      "title": "Response and Recovery",
+      "description": "Financial entities shall put in place a comprehensive ICT business continuity policy and establish ICT response and recovery plans.",
+      "id": "DORA-11"
+    },
+    {
+      "family": "ICT Risk Management",
+      "title": "Backup Policies and Procedures, Restoration and Recovery",
+      "description": "Financial entities shall develop and document a backup policy specifying the scope and frequency of backups, and establish restoration and recovery procedures and methods.",
+      "id": "DORA-12"
+    },
+    {
+      "family": "ICT Risk Management",
+      "title": "Learning and Evolving",
+      "description": "Financial entities shall gather information on vulnerabilities and cyber threats, ICT-related incidents, and analyse the impact and lessons learned from them.",
+      "id": "DORA-13"
+    },
+    {
+      "family": "ICT Risk Management",
+      "title": "Communication",
+      "description": "Financial entities shall have in place communication plans enabling a responsible disclosure of ICT-related incidents or major vulnerabilities to clients and counterparts.",
+      "id": "DORA-14"
+    },
+    {
+      "family": "ICT-Related Incident Management",
+      "title": "ICT-Related Incident Management Process",
+      "description": "Financial entities shall define, establish and implement an ICT-related incident management process to detect, manage and notify ICT-related incidents.",
+      "id": "DORA-17"
+    },
+    {
+      "family": "ICT-Related Incident Management",
+      "title": "Classification of ICT-Related Incidents",
+      "description": "Financial entities shall classify ICT-related incidents and determine their impact based on criteria including number of clients affected, duration, geographical spread, data losses, criticality of services affected, and economic impact.",
+      "id": "DORA-18"
+    },
+    {
+      "family": "ICT-Related Incident Management",
+      "title": "Reporting of Major ICT-Related Incidents",
+      "description": "Financial entities shall report major ICT-related incidents to the relevant competent authority using initial, intermediate and final notifications.",
+      "id": "DORA-19"
+    },
+    {
+      "family": "ICT-Related Incident Management",
+      "title": "Harmonisation of Reporting Content and Templates",
+      "description": "ESAs shall develop common draft regulatory technical standards for the content and time limits of incident reports.",
+      "id": "DORA-20"
+    },
+    {
+      "family": "ICT-Related Incident Management",
+      "title": "Voluntary Notification of Significant Cyber Threats",
+      "description": "Financial entities may, on a voluntary basis, notify the relevant competent authority of significant cyber threats that they deem to be relevant.",
+      "id": "DORA-23"
+    },
+    {
+      "family": "Digital Operational Resilience Testing",
+      "title": "General Requirements for Digital Operational Resilience Testing",
+      "description": "Financial entities shall establish, maintain and review a sound and comprehensive digital operational resilience testing programme as an integral part of the ICT risk management framework.",
+      "id": "DORA-24"
+    },
+    {
+      "family": "Digital Operational Resilience Testing",
+      "title": "Testing of ICT Tools and Systems",
+      "description": "The digital operational resilience testing programme shall include a range of assessments, tests, methodologies, practices and tools including vulnerability assessments and scans, open source analyses, network security assessments, gap analyses, physical security reviews, source code reviews, scenario-based tests, compatibility testing, performance testing, end-to-end testing and penetration testing.",
+      "id": "DORA-25"
+    },
+    {
+      "family": "Digital Operational Resilience Testing",
+      "title": "Advanced Testing of ICT Tools, Systems and Processes based on TLPT",
+      "description": "Financial entities identified as significant shall carry out threat-led penetration testing (TLPT) at least every 3 years covering critical or important functions.",
+      "id": "DORA-26"
+    },
+    {
+      "family": "ICT Third-Party Risk",
+      "title": "General Principles",
+      "description": "Financial entities shall manage ICT third-party risk as an integral component of ICT risk within their ICT risk management framework.",
+      "id": "DORA-28"
+    },
+    {
+      "family": "ICT Third-Party Risk",
+      "title": "Preliminary Assessment of ICT Concentration Risk",
+      "description": "Before entering into a contractual arrangement on the use of ICT services, financial entities shall identify and assess all relevant risks, including whether the contractual arrangement may lead to ICT concentration risk.",
+      "id": "DORA-29"
+    },
+    {
+      "family": "ICT Third-Party Risk",
+      "title": "Key Contractual Provisions",
+      "description": "The rights and obligations of the financial entity and of the ICT third-party service provider shall be clearly allocated and set out in writing. The contract shall include provisions on accessibility, availability, integrity, security and protection of personal data.",
+      "id": "DORA-30"
+    },
+    {
+      "family": "ICT Third-Party Risk",
+      "title": "Designation of Critical ICT Third-Party Service Providers",
+      "description": "The ESAs shall designate ICT third-party service providers that are critical for financial entities based on systemic importance criteria.",
+      "id": "DORA-31"
+    },
+    {
+      "family": "ICT Third-Party Risk",
+      "title": "Structure of the Oversight Framework",
+      "description": "The Joint Committee shall establish the Oversight Forum to support the work of the Lead Overseer in monitoring critical ICT third-party service providers.",
+      "id": "DORA-32"
+    },
+    {
+      "family": "ICT Third-Party Risk",
+      "title": "Tasks of the Lead Overseer",
+      "description": "The Lead Overseer shall assess whether each critical ICT third-party service provider has in place comprehensive, sound and effective rules, procedures, mechanisms and arrangements to manage the ICT risk which it may pose to financial entities.",
+      "id": "DORA-33"
+    },
+    {
+      "family": "Information Sharing",
+      "title": "Information-Sharing Arrangements on Cyber Threat Intelligence",
+      "description": "Financial entities may exchange amongst themselves cyber threat information and intelligence, including indicators of compromise, tactics, techniques, and procedures.",
+      "id": "DORA-45"
+    }
+  ]
+}

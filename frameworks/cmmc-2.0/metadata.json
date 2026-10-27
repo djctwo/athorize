@@ -1,0 +1,50 @@
+{
+  "id": "cmmc-2.0",
+  "name": "Cybersecurity Maturity Model Certification 2.0",
+  "short_name": "CMMC 2.0",
+  "version": "2.0",
+  "catalog_version": "2024-10-15",
+  "description": "DoD cybersecurity maturity model for the Defense Industrial Base",
+  "publisher": "U.S. Department of Defense",
+  "category": "federal",
+  "tags": [
+    "dod",
+    "cmmc",
+    "cui",
+    "dfars",
+    "defense-industrial-base",
+    "nist-800-171"
+  ],
+  "status": "available",
+  "terminology": {
+    "control": "Practice",
+    "requirement": "Assessment Objective",
+    "finding": "Deficiency",
+    "severity_levels": [
+      "MET",
+      "NOT MET"
+    ],
+    "compliance_unit": "Practice",
+    "assessment": "Assessment"
+  },
+  "scoring": {
+    "method": "control_percentage",
+    "passing_threshold": 100
+  },
+  "icon": "shield-star",
+  "color": "#003366",
+  "conmon_cadences": [
+    {
+      "activity_type": "ACCOUNT_REVIEW",
+      "interval_days": 90
+    },
+    {
+      "activity_type": "RISK_ASSESSMENT",
+      "interval_days": 365
+    },
+    {
+      "activity_type": "USER_TRAINING",
+      "interval_days": 365
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "sox",
+  "name": "Sarbanes-Oxley Act IT General Controls",
+  "short_name": "SOX ITGC",
+  "version": "2002",
+  "catalog_version": "2024-01-01",
+  "description": "IT General Controls supporting financial reporting integrity under the Sarbanes-Oxley Act",
+  "publisher": "U.S. Securities and Exchange Commission / PCAOB",
+  "category": "finance",
+  "tags": ["sox", "itgc", "financial-reporting", "internal-controls", "pcaob", "sec"],
+  "status": "available",
+  "terminology": {
+    "control": "Control Objective",
+    "requirement": "Control Activity",
+    "finding": "Deficiency",
+    "severity_levels": ["Material Weakness", "Significant Deficiency", "Deficiency"],
+    "compliance_unit": "Control Objective",
+    "assessment": "Integrated Audit"
+  },
+  "scoring": {
+    "method": "control_percentage",
+    "passing_threshold": 100
+  },
+  "icon": "building-columns",
+  "color": "#4a148c"
+}

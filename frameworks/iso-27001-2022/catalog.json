@@ -1,0 +1,563 @@
+{
+  "framework_id": "iso-27001-2022",
+  "controls": [
+    {
+      "family": "Organizational Controls",
+      "title": "Policies for information security",
+      "description": "Write an overall security policy plus supporting policies on specific topics, get leadership sign-off, make sure staff and relevant outside parties know and accept them, and revisit them regularly or after major changes.",
+      "id": "A.5.1"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Information security roles and responsibilities",
+      "description": "Decide who owns each security duty in the organization, write those assignments down, and make sure every role knows what it is accountable for.",
+      "id": "A.5.2"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Segregation of duties",
+      "description": "Split sensitive or conflicting tasks across different people so no single person can both perform and approve, or misuse, a critical activity unchecked.",
+      "id": "A.5.3"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Management responsibilities",
+      "description": "Leaders should actively require everyone, including contractors, to follow the organization's security policies and procedures and back that expectation with visible support.",
+      "id": "A.5.4"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Contact with authorities",
+      "description": "Keep up working relationships and current contact details for regulators, law enforcement and emergency services so you can reach them quickly when something happens.",
+      "id": "A.5.5"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Contact with special interest groups",
+      "description": "Stay connected with security forums, industry groups and professional associations to share knowledge, get early warnings and keep skills current.",
+      "id": "A.5.6"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Threat intelligence",
+      "description": "Gather information about threats relevant to your organization, analyze it, and use the results to adjust defenses and inform decisions.",
+      "id": "A.5.7"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Information security in project management",
+      "description": "Build security into every project from the start, covering risks and requirements throughout planning, delivery and closure regardless of project type.",
+      "id": "A.5.8"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Inventory of information and other associated assets",
+      "description": "Keep an up-to-date register of your information and the systems, devices and services that handle it, with a named owner for each item.",
+      "id": "A.5.9"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Acceptable use of information and other associated assets",
+      "description": "Set clear rules for how people may use and handle information and related assets, document them, and put them into practice.",
+      "id": "A.5.10"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Return of assets",
+      "description": "Make sure staff, contractors and other parties hand back every company asset in their possession when their job, contract or agreement ends or changes.",
+      "id": "A.5.11"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Classification of information",
+      "description": "Sort information into sensitivity tiers, weighing how damaging disclosure, corruption or loss would be along with legal and stakeholder expectations, so protection matches its value.",
+      "id": "A.5.12"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Labelling of information",
+      "description": "Create and apply a consistent way to mark information so its classification is obvious to anyone who handles it.",
+      "id": "A.5.13"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Information transfer",
+      "description": "Put rules, procedures or agreements in place for moving information between people, systems or organizations, covering electronic, physical and verbal exchanges.",
+      "id": "A.5.14"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Access control",
+      "description": "Define who may reach which information and systems, both logically and physically, based on business need and security requirements, and enforce it.",
+      "id": "A.5.15"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Identity management",
+      "description": "Manage digital identities across their whole life, from creation to removal, so every account maps to a real person or system.",
+      "id": "A.5.16"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Authentication information",
+      "description": "Control how passwords, keys and other secrets are issued and handled, and coach people on keeping their own credentials safe.",
+      "id": "A.5.17"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Access rights",
+      "description": "Grant, review, change and revoke access permissions according to policy and business need, checking them periodically so they stay appropriate.",
+      "id": "A.5.18"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Information security in supplier relationships",
+      "description": "Identify the security risks that come with using vendors' products and services and set up processes to manage them.",
+      "id": "A.5.19"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Addressing information security within supplier agreements",
+      "description": "Write the relevant security expectations into each supplier contract, tailored to the kind of access or service that supplier provides.",
+      "id": "A.5.20"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Managing information security in the ICT supply chain",
+      "description": "Manage security risks that flow through the technology supply chain, such as components, software and services sourced from upstream vendors.",
+      "id": "A.5.21"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Monitoring, review and change management of supplier services",
+      "description": "Keep watch on how suppliers handle security and deliver services, review their performance regularly, and manage any changes they make.",
+      "id": "A.5.22"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Information security for use of cloud services",
+      "description": "Set up processes for choosing, using, managing and leaving cloud services that reflect your own security needs and the shared responsibility model.",
+      "id": "A.5.23"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Information security incident management planning and preparation",
+      "description": "Prepare for security incidents ahead of time by defining roles, procedures and communication paths for handling them.",
+      "id": "A.5.24"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Assessment and decision on information security events",
+      "description": "Review reported security events and decide whether each one counts as an incident that needs a formal response.",
+      "id": "A.5.25"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Response to information security incidents",
+      "description": "Respond to incidents using the documented procedures, containing damage and restoring normal operations.",
+      "id": "A.5.26"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Learning from information security incidents",
+      "description": "After an incident, study what happened and feed the lessons back into controls so similar problems are less likely or less harmful.",
+      "id": "A.5.27"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Collection of evidence",
+      "description": "Have procedures for identifying, gathering, preserving and handling evidence from security events so it holds up for disciplinary or legal use.",
+      "id": "A.5.28"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Information security during disruption",
+      "description": "Plan how to keep information protected at an acceptable level while the business is dealing with a crisis or outage.",
+      "id": "A.5.29"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "ICT readiness for business continuity",
+      "description": "Make sure technology services can be restored and kept running to meet the recovery targets set by business continuity planning, and test that regularly.",
+      "id": "A.5.30"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Legal, statutory, regulatory and contractual requirements",
+      "description": "Identify every law, regulation and contractual obligation that touches information security, record them, and keep the list current along with your approach to meeting each.",
+      "id": "A.5.31"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Intellectual property rights",
+      "description": "Put procedures in place to respect copyrights, licenses, patents and other intellectual property, including proper software licensing.",
+      "id": "A.5.32"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Protection of records",
+      "description": "Guard business records against loss, tampering, destruction, unauthorized access or release, according to retention and legal needs.",
+      "id": "A.5.33"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Privacy and protection of PII",
+      "description": "Know which privacy laws apply to personal data you handle, and put measures in place to protect that data and meet those obligations.",
+      "id": "A.5.34"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Independent review of information security",
+      "description": "Have someone independent periodically assess how the organization manages security, and also after significant changes, covering people, process and technology.",
+      "id": "A.5.35"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Compliance with policies, rules and standards for information security",
+      "description": "Check on a regular basis that teams actually follow the organization's security policies and standards, and fix gaps that turn up.",
+      "id": "A.5.36"
+    },
+    {
+      "family": "Organizational Controls",
+      "title": "Documented operating procedures",
+      "description": "Write down how to run information-processing facilities and tasks, and keep those procedures available to the people who need them.",
+      "id": "A.5.37"
+    },
+    {
+      "family": "People Controls",
+      "title": "Screening",
+      "description": "Run background checks on job candidates before hiring and periodically afterward, proportionate to legal rules, the role and the information they'll see.",
+      "id": "A.6.1"
+    },
+    {
+      "family": "People Controls",
+      "title": "Terms and conditions of employment",
+      "description": "Make security duties part of hiring agreements, so both the worker and the organization know what's expected around protecting information.",
+      "id": "A.6.2"
+    },
+    {
+      "family": "People Controls",
+      "title": "Information security awareness, education and training",
+      "description": "Give staff and relevant outsiders ongoing security awareness and training suited to their roles, with regular updates on policies and procedures.",
+      "id": "A.6.3"
+    },
+    {
+      "family": "People Controls",
+      "title": "Disciplinary process",
+      "description": "Have a formal, communicated process for dealing with people who break security policy.",
+      "id": "A.6.4"
+    },
+    {
+      "family": "People Controls",
+      "title": "Responsibilities after termination or change of employment",
+      "description": "Spell out which confidentiality and security obligations continue after someone leaves or changes roles, tell them, and hold them to it.",
+      "id": "A.6.5"
+    },
+    {
+      "family": "People Controls",
+      "title": "Confidentiality or non-disclosure agreements",
+      "description": "Use NDAs or confidentiality agreements that match what you need to protect, get employees and partners to sign them, and refresh the templates periodically.",
+      "id": "A.6.6"
+    },
+    {
+      "family": "People Controls",
+      "title": "Remote working",
+      "description": "Apply extra safeguards for staff working from home or on the road, since company data they open or keep there sits outside your physical control.",
+      "id": "A.6.7"
+    },
+    {
+      "family": "People Controls",
+      "title": "Information security event reporting",
+      "description": "Give people an easy, prompt way to report suspected or observed security events through the right channels.",
+      "id": "A.6.8"
+    },
+    {
+      "family": "Physical Controls",
+      "title": "Physical security perimeters",
+      "description": "Draw clear physical boundaries around areas that hold sensitive information or systems and protect them appropriately.",
+      "id": "A.7.1"
+    },
+    {
+      "family": "Physical Controls",
+      "title": "Physical entry",
+      "description": "Limit physical access to secure areas with entry controls and checkpoints so only authorized people get in.",
+      "id": "A.7.2"
+    },
+    {
+      "family": "Physical Controls",
+      "title": "Securing offices, rooms and facilities",
+      "description": "Design and apply physical protections for offices, rooms and other facilities.",
+      "id": "A.7.3"
+    },
+    {
+      "family": "Physical Controls",
+      "title": "Physical security monitoring",
+      "description": "Watch premises continuously, for example with alarms, guards or cameras, to detect unauthorized physical entry.",
+      "id": "A.7.4"
+    },
+    {
+      "family": "Physical Controls",
+      "title": "Protecting against physical and environmental threats",
+      "description": "Plan and build protection against hazards such as fire, flood, earthquakes, storms and deliberate physical attacks on infrastructure.",
+      "id": "A.7.5"
+    },
+    {
+      "family": "Physical Controls",
+      "title": "Working in secure areas",
+      "description": "Set rules and protective practices for anyone working inside secure areas.",
+      "id": "A.7.6"
+    },
+    {
+      "family": "Physical Controls",
+      "title": "Clear desk and clear screen",
+      "description": "Require clear desks of papers and removable media, and lock or clear screens when unattended, enforcing it consistently.",
+      "id": "A.7.7"
+    },
+    {
+      "family": "Physical Controls",
+      "title": "Equipment siting and protection",
+      "description": "Place and protect equipment carefully to reduce physical and environmental risks and opportunities for unauthorized access.",
+      "id": "A.7.8"
+    },
+    {
+      "family": "Physical Controls",
+      "title": "Security of assets off-premises",
+      "description": "Protect devices and data that leave the office, keeping in mind the added risks of working outside company premises.",
+      "id": "A.7.9"
+    },
+    {
+      "family": "Physical Controls",
+      "title": "Storage media",
+      "description": "Manage storage media throughout its life, from acquisition and use through transport and disposal, in line with classification and handling rules.",
+      "id": "A.7.10"
+    },
+    {
+      "family": "Physical Controls",
+      "title": "Supporting utilities",
+      "description": "Shield server rooms and other technology facilities from outages in electricity, cooling, water, telecoms and similar services they depend on, for example with UPS units and generators.",
+      "id": "A.7.11"
+    },
+    {
+      "family": "Physical Controls",
+      "title": "Cabling security",
+      "description": "Route and shield power and network cabling so it can't easily be tapped, disrupted or physically damaged.",
+      "id": "A.7.12"
+    },
+    {
+      "family": "Physical Controls",
+      "title": "Equipment maintenance",
+      "description": "Service equipment properly so it stays available, reliable and secure, and so information isn't exposed during maintenance.",
+      "id": "A.7.13"
+    },
+    {
+      "family": "Physical Controls",
+      "title": "Secure disposal or re-use of equipment",
+      "description": "Before throwing away or repurposing any device with storage, confirm that sensitive data and licensed software have been wiped or overwritten so nothing can be recovered.",
+      "id": "A.7.14"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "User endpoint devices",
+      "description": "Secure laptops, phones and other endpoints so the information they store, process or reach is protected.",
+      "id": "A.8.1"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Privileged access rights",
+      "description": "Tightly restrict and closely manage who receives administrator or other elevated privileges and how they are used.",
+      "id": "A.8.2"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Information access restriction",
+      "description": "Limit who can get to information and application functions according to the access control policy.",
+      "id": "A.8.3"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Access to source code",
+      "description": "Limit who can view or modify code repositories, development tooling and shared libraries, so the codebase stays protected from tampering and leaks.",
+      "id": "A.8.4"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Secure authentication",
+      "description": "Use strong, appropriate login technologies and procedures, such as MFA, matched to the sensitivity of the systems and access involved.",
+      "id": "A.8.5"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Capacity management",
+      "description": "Track how resources are used today and forecast future needs so systems keep enough capacity.",
+      "id": "A.8.6"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Protection against malware",
+      "description": "Defend against malware with technical tools backed by user awareness.",
+      "id": "A.8.7"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Management of technical vulnerabilities",
+      "description": "Find out about technical weaknesses in your systems quickly, judge how exposed you are, and take timely action such as patching.",
+      "id": "A.8.8"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Configuration management",
+      "description": "Set secure baseline settings for hardware, software, services and networks, record them, roll them out, and check over time that systems haven't drifted from them.",
+      "id": "A.8.9"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Information deletion",
+      "description": "Remove data from systems, devices and storage once it is no longer needed.",
+      "id": "A.8.10"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Data masking",
+      "description": "Hide or obscure sensitive data, for example through masking, pseudonymization or anonymization, in line with access policy, business needs and legal rules.",
+      "id": "A.8.11"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Data leakage prevention",
+      "description": "Apply controls to systems, networks and devices that handle sensitive data to spot and stop unauthorized leaks or exfiltration.",
+      "id": "A.8.12"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Information backup",
+      "description": "Take backups of data, software and systems per an agreed backup policy and test restoring them regularly.",
+      "id": "A.8.13"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Redundancy of information processing facilities",
+      "description": "Build enough redundancy into processing facilities to meet the organization's availability needs.",
+      "id": "A.8.14"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Logging",
+      "description": "Capture user actions, errors, failures and other security-relevant events in logs, keep those logs safe from tampering, and review them.",
+      "id": "A.8.15"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Monitoring activities",
+      "description": "Watch for unusual activity across your infrastructure and applications, and investigate anything suspicious to determine whether it is an incident.",
+      "id": "A.8.16"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Clock synchronization",
+      "description": "Keep the clocks on all systems synced to an approved time source so logs and events line up.",
+      "id": "A.8.17"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Use of privileged utility programs",
+      "description": "Tightly limit and supervise tools that can bypass normal system or application safeguards, such as admin utilities.",
+      "id": "A.8.18"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Installation of software on operational systems",
+      "description": "Use controlled procedures and measures for putting software onto production systems.",
+      "id": "A.8.19"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Networks security",
+      "description": "Harden and administer your networks and network equipment so the systems and data riding on them stay protected.",
+      "id": "A.8.20"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Security of network services",
+      "description": "Spell out the security features and service levels you need from network services, whether in-house or outsourced, put them in place and keep checking they're delivered.",
+      "id": "A.8.21"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Segregation of networks",
+      "description": "Split the network into separate zones for different groups of services, users and systems.",
+      "id": "A.8.22"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Web filtering",
+      "description": "Filter or block risky websites so people are less likely to land on malicious content while browsing.",
+      "id": "A.8.23"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Use of cryptography",
+      "description": "Set and follow rules for using encryption properly, including how cryptographic keys are managed.",
+      "id": "A.8.24"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Secure development life cycle",
+      "description": "Set rules for building software and systems securely across the full development lifecycle.",
+      "id": "A.8.25"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Application security requirements",
+      "description": "Identify, specify and approve security needs before developing or buying applications.",
+      "id": "A.8.26"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Secure system architecture and engineering principles",
+      "description": "Establish, document, maintain and apply sound security engineering principles whenever systems are designed or built.",
+      "id": "A.8.27"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Secure coding",
+      "description": "Follow secure coding practices when writing software so code has fewer exploitable flaws.",
+      "id": "A.8.28"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Security testing in development and acceptance",
+      "description": "Define and run security tests during development and before accepting systems into production.",
+      "id": "A.8.29"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Outsourced development",
+      "description": "When outsiders build software or systems for you, steer and oversee their work and check it meets your security requirements.",
+      "id": "A.8.30"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Separation of development, test and production environments",
+      "description": "Keep dev, test and live environments apart and protect each one.",
+      "id": "A.8.31"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Change management",
+      "description": "Run changes to systems and processing facilities through a formal change control process.",
+      "id": "A.8.32"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Test information",
+      "description": "Choose test data carefully and protect and manage it, avoiding unprotected use of real sensitive data.",
+      "id": "A.8.33"
+    },
+    {
+      "family": "Technological Controls",
+      "title": "Protection of information systems during audit testing",
+      "description": "Plan audits and other assessments of live systems jointly with management so testing doesn't disrupt operations.",
+      "id": "A.8.34"
+    }
+  ]
+}

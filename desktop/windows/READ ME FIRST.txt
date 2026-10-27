@@ -1,0 +1,36 @@
+Athorize for Windows (beta)
+===========================
+
+This Windows app is a beta for trying Athorize on one computer. For a team
+server, use the Docker or Linux install in the project's docs/INSTALL.md.
+
+1. Double-click the Athorize .exe.
+   Windows may warn "unknown publisher" because the file is not code-signed.
+   Click "More info", then "Run anyway".
+2. Your browser opens to Athorize. Keep the black console window open while you
+   use the app; closing it stops Athorize.
+3. Demo build: sign in with admin / admin. Settings > Reset demo data gives
+   you a clean copy of the demo.
+   Blank build: the Setup screen asks for a one-time setup token. It is
+   printed in the black console window (look for FIRST-RUN SETUP TOKEN) and
+   saved in the file setup-token in your data folder (below). Then choose:
+     - Set up my company: creates your organization and first admin, or
+     - Explore with demo data: loads sample companies and signs you in as
+       admin. Every demo password is the username (admin, manager, auditor).
+       When you are done, Settings > Start fresh deletes the demo and shows
+       the Setup screen again, with a NEW token in the console window.
+
+Where your data is kept:
+  Blank build: C:\Users\<you>\.athorize-universal
+               Kept between runs and updates.
+  Demo build:  C:\Users\<you>\.athorize-universal-demo
+               Kept between runs. When you run a NEWER demo build, it starts
+               a fresh demo with the new example data; your previous demo
+               folder (including any files you uploaded and any backups) is
+               kept next to it as .athorize-universal-demo.old-<date-time>,
+               and the black window prints its location.
+Don't put real data in the demo build.
+
+Athorize is free and open-source software under the GNU AGPL v3.0, provided
+without warranty. Source code, documentation and new versions:
+https://github.com/djctwo/athorize

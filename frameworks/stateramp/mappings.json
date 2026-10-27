@@ -1,0 +1,311 @@
+{
+  "framework_id": "stateramp",
+  "version": "1.0",
+  "source": "Identity mapping \u2014 StateRAMP baselines are SP 800-53r5 control selections (SR- prefix stripped)",
+  "mappings": [
+    {
+      "control_id": "SR-AC-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 AC-1"
+    },
+    {
+      "control_id": "SR-AC-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 AC-2"
+    },
+    {
+      "control_id": "SR-AC-3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 AC-3"
+    },
+    {
+      "control_id": "SR-AC-7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-7",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 AC-7"
+    },
+    {
+      "control_id": "SR-AC-8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-8",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 AC-8"
+    },
+    {
+      "control_id": "SR-AC-17",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-17",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 AC-17"
+    },
+    {
+      "control_id": "SR-AC-20",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-20",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 AC-20"
+    },
+    {
+      "control_id": "SR-AT-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 AT-1"
+    },
+    {
+      "control_id": "SR-AT-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 AT-2"
+    },
+    {
+      "control_id": "SR-AU-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 AU-1"
+    },
+    {
+      "control_id": "SR-AU-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 AU-2"
+    },
+    {
+      "control_id": "SR-AU-6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-6",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 AU-6"
+    },
+    {
+      "control_id": "SR-CA-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 CA-1"
+    },
+    {
+      "control_id": "SR-CA-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 CA-2"
+    },
+    {
+      "control_id": "SR-CA-3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-3",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 CA-3"
+    },
+    {
+      "control_id": "SR-CM-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 CM-1"
+    },
+    {
+      "control_id": "SR-CM-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 CM-2"
+    },
+    {
+      "control_id": "SR-CM-6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-6",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 CM-6"
+    },
+    {
+      "control_id": "SR-CP-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 CP-1"
+    },
+    {
+      "control_id": "SR-CP-9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-9",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 CP-9"
+    },
+    {
+      "control_id": "SR-IA-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 IA-1"
+    },
+    {
+      "control_id": "SR-IA-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 IA-2"
+    },
+    {
+      "control_id": "SR-IR-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 IR-1"
+    },
+    {
+      "control_id": "SR-IR-6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-6",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 IR-6"
+    },
+    {
+      "control_id": "SR-MP-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 MP-1"
+    },
+    {
+      "control_id": "SR-PE-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 PE-1"
+    },
+    {
+      "control_id": "SR-PL-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PL-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 PL-1"
+    },
+    {
+      "control_id": "SR-RA-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 RA-1"
+    },
+    {
+      "control_id": "SR-RA-5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-5",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 RA-5"
+    },
+    {
+      "control_id": "SR-SA-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 SA-1"
+    },
+    {
+      "control_id": "SR-SC-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 SC-1"
+    },
+    {
+      "control_id": "SR-SC-7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-7",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 SC-7"
+    },
+    {
+      "control_id": "SR-SC-8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-8",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 SC-8"
+    },
+    {
+      "control_id": "SR-SC-28",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-28",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 SC-28"
+    },
+    {
+      "control_id": "SR-SI-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 SI-1"
+    },
+    {
+      "control_id": "SR-SI-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 SI-2"
+    },
+    {
+      "control_id": "SR-SI-3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-3",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 SI-3"
+    },
+    {
+      "control_id": "SR-SI-4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-4",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "StateRAMP baseline selection of SP 800-53r5 SI-4"
+    }
+  ]
+}

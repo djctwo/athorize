@@ -1,0 +1,26 @@
+{
+  "id": "fedramp",
+  "name": "Federal Risk and Authorization Management Program",
+  "short_name": "FedRAMP",
+  "version": "5.0",
+  "catalog_version": "2024-11-01",
+  "description": "Standardized security assessment and authorization for cloud services used by federal agencies",
+  "publisher": "General Services Administration / FedRAMP PMO",
+  "category": "federal",
+  "tags": ["fedramp", "cloud", "federal", "csp", "ato", "nist-800-53"],
+  "status": "available",
+  "terminology": {
+    "control": "Control",
+    "requirement": "Control Enhancement",
+    "finding": "Finding",
+    "severity_levels": ["High", "Moderate", "Low"],
+    "compliance_unit": "Control",
+    "assessment": "Assessment"
+  },
+  "scoring": {
+    "method": "control_percentage",
+    "passing_threshold": 100
+  },
+  "icon": "cloud-shield",
+  "color": "#112e51"
+}

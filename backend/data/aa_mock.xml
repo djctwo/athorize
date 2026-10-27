@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Sample campaign advisories — FICTIONAL DEMO FIXTURE (not CISA data)</title>
+    <item>
+      <title>DEMO-AA26-158A: Ransomware Actors Exploiting Unpatched Edge Devices for Initial Access (sample)</title>
+      <link></link>
+      <description>Sample (fictional) campaign advisory: ransomware affiliates are exploiting unpatched VPN and firewall appliances (including DEMO-2026-0102) for initial access, then escalating privileges and disabling backups before encryption. Includes indicators and mitigations.</description>
+      <pubDate>Sun, 07 Jun 2026 12:00:00 EST</pubDate>
+    </item>
+    <item>
+      <title>DEMO-AA26-152A: State-Sponsored Actors Pre-Positioning in Critical Infrastructure OT Networks (sample)</title>
+      <link></link>
+      <description>Sample (fictional) campaign advisory: state-sponsored cyber actors maintain persistent access to industrial control systems via living-off-the-land techniques, targeting engineering workstations and unencrypted OT protocols for lateral movement.</description>
+      <pubDate>Mon, 01 Jun 2026 09:00:00 EST</pubDate>
+    </item>
+  </channel>
+</rss>

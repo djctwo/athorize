@@ -1,0 +1,40 @@
+{
+  "format": "NVD_CVE",
+  "version": "2.0-demo",
+  "_note": "FICTIONAL DEMO FIXTURE in NVD 2.0 shape. Not NVD data: vendors, products and DEMO- IDs are made up.",
+  "vulnerabilities": [
+    {
+      "cve": {
+        "id": "DEMO-2026-0201",
+        "published": "2026-06-05T14:00:00.000",
+        "descriptions": [
+          {"lang": "en", "value": "Sample (fictional). The LitwareOS update agent processes package metadata with excessive privileges, allowing a local user to escalate privileges to root."}
+        ],
+        "metrics": {"cvssMetricV31": [{"cvssData": {"baseScore": 7.8, "baseSeverity": "HIGH"}}]},
+        "configurations": [{"nodes": [{"cpeMatch": [{"criteria": "cpe:2.3:o:litware:litwareos:9.3:*:*:*:*:*:*:*"}]}]}]
+      }
+    },
+    {
+      "cve": {
+        "id": "DEMO-2026-0202",
+        "published": "2026-06-03T09:30:00.000",
+        "descriptions": [
+          {"lang": "en", "value": "Sample (fictional). Adatum Networks Secure Mail Gateway attachment scanning can be bypassed so crafted files are delivered without reputation checks. Exploited in phishing campaigns delivering credential-stealing malware."}
+        ],
+        "metrics": {"cvssMetricV31": [{"cvssData": {"baseScore": 8.8, "baseSeverity": "HIGH"}}]},
+        "configurations": [{"nodes": [{"cpeMatch": [{"criteria": "cpe:2.3:a:adatum_networks:secure_mail_gateway:5.2:*:*:*:*:*:*:*"}]}]}]
+      }
+    },
+    {
+      "cve": {
+        "id": "DEMO-2026-0203",
+        "published": "2026-06-08T00:00:00.000",
+        "descriptions": [
+          {"lang": "en", "value": "Sample (fictional). Proseware ProHistorian unauthenticated denial of service via malformed archive requests causes historian data collection outage."}
+        ],
+        "metrics": {"cvssMetricV31": [{"cvssData": {"baseScore": 9.1, "baseSeverity": "CRITICAL"}}]},
+        "configurations": [{"nodes": [{"cpeMatch": [{"criteria": "cpe:2.3:a:proseware:prohistorian:2023:*:*:*:*:*:*:*"}]}]}]
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "pci-dss-v4",
+  "name": "Payment Card Industry Data Security Standard v4.0.1",
+  "short_name": "PCI DSS v4.0",
+  "version": "4.0.1",
+  "catalog_version": "2024-06-01",
+  "description": "Security standards for organizations that handle branded credit cards",
+  "publisher": "PCI Security Standards Council",
+  "category": "finance",
+  "tags": [
+    "pci",
+    "payment-card",
+    "credit-card",
+    "merchant",
+    "acquirer",
+    "cardholder-data"
+  ],
+  "status": "available",
+  "terminology": {
+    "control": "Requirement",
+    "requirement": "Defined Approach Testing Procedure",
+    "finding": "Finding",
+    "severity_levels": [
+      "In Place",
+      "In Place with CCW",
+      "Not Applicable",
+      "Not Tested",
+      "Not in Place"
+    ],
+    "compliance_unit": "Requirement",
+    "assessment": "Assessment"
+  },
+  "scoring": {
+    "method": "control_percentage",
+    "passing_threshold": 100
+  },
+  "icon": "credit-card",
+  "color": "#1a237e",
+  "conmon_cadences": [
+    {
+      "activity_type": "VULNERABILITY_SCAN",
+      "interval_days": 90
+    },
+    {
+      "activity_type": "ACCESS_REVIEW",
+      "interval_days": 180
+    },
+    {
+      "activity_type": "POLICY_REVIEW",
+      "interval_days": 365
+    }
+  ]
+}

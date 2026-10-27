@@ -1,0 +1,26 @@
+{
+  "id": "nist-800-53-r5",
+  "name": "NIST Special Publication 800-53 Revision 5",
+  "short_name": "NIST 800-53r5",
+  "version": "5.1.1",
+  "catalog_version": "2024-12-10",
+  "description": "Security and Privacy Controls for Information Systems and Organizations",
+  "publisher": "National Institute of Standards and Technology",
+  "category": "federal",
+  "tags": ["nist", "fisma", "rmf", "federal", "security-controls", "privacy"],
+  "status": "available",
+  "terminology": {
+    "control": "Control",
+    "requirement": "Control Enhancement",
+    "finding": "Finding",
+    "severity_levels": ["Very High", "High", "Moderate", "Low", "Very Low"],
+    "compliance_unit": "Control",
+    "assessment": "Assessment"
+  },
+  "scoring": {
+    "method": "control_percentage",
+    "passing_threshold": 100
+  },
+  "icon": "shield-check",
+  "color": "#1a4480"
+}

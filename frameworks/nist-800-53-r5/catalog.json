@@ -1,0 +1,5463 @@
+{
+  "framework_id": "nist-800-53-r5",
+  "controls": [
+    {
+      "id": "AC-1",
+      "family": "AC",
+      "family_name": "Access Control",
+      "title": "Policy and Procedures",
+      "description": "Develop, document, and disseminate access control policy and procedures.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AC-1"
+        }
+      ]
+    },
+    {
+      "id": "AC-2",
+      "family": "AC",
+      "family_name": "Access Control",
+      "title": "Account Management",
+      "description": "Define and document types of system accounts. Create, enable, modify, disable, and remove accounts. Monitor and report account usage.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AC-2"
+        }
+      ]
+    },
+    {
+      "id": "AC-3",
+      "family": "AC",
+      "family_name": "Access Control",
+      "title": "Access Enforcement",
+      "description": "Enforce approved authorizations for logical access to information and system resources.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AC-3"
+        }
+      ]
+    },
+    {
+      "id": "AC-4",
+      "family": "AC",
+      "family_name": "Access Control",
+      "title": "Information Flow Enforcement",
+      "description": "Enforce approved authorizations for controlling the flow of information within the system and between connected systems.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AC-4"
+        }
+      ]
+    },
+    {
+      "id": "AC-5",
+      "family": "AC",
+      "family_name": "Access Control",
+      "title": "Separation of Duties",
+      "description": "Identify and document duties requiring separation. Define system access authorizations to support separation of duties.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AC-5"
+        }
+      ]
+    },
+    {
+      "id": "AC-6",
+      "family": "AC",
+      "family_name": "Access Control",
+      "title": "Least Privilege",
+      "description": "Employ the principle of least privilege, allowing only authorized accesses that are necessary for users to accomplish assigned organizational tasks.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AC-6"
+        }
+      ]
+    },
+    {
+      "id": "AC-7",
+      "family": "AC",
+      "family_name": "Access Control",
+      "title": "Unsuccessful Logon Attempts",
+      "description": "Enforce a limit of consecutive invalid logon attempts by a user. Automatically lock the account when the maximum number is exceeded.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AC-7"
+        }
+      ]
+    },
+    {
+      "id": "AC-8",
+      "family": "AC",
+      "family_name": "Access Control",
+      "title": "System Use Notification",
+      "description": "Display a system use notification message before granting access informing users of applicable conditions of use.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AC-8"
+        }
+      ]
+    },
+    {
+      "id": "AC-10",
+      "family": "AC",
+      "family_name": "Access Control",
+      "title": "Concurrent Session Control",
+      "description": "Limit the number of concurrent sessions for each system account.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AC-10"
+        }
+      ]
+    },
+    {
+      "id": "AC-11",
+      "family": "AC",
+      "family_name": "Access Control",
+      "title": "Device Lock",
+      "description": "Prevent further access to the system by initiating a device lock after a period of inactivity.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AC-11"
+        }
+      ]
+    },
+    {
+      "id": "AC-12",
+      "family": "AC",
+      "family_name": "Access Control",
+      "title": "Session Termination",
+      "description": "Automatically terminate a user session after defined conditions or trigger events.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AC-12"
+        }
+      ]
+    },
+    {
+      "id": "AC-14",
+      "family": "AC",
+      "family_name": "Access Control",
+      "title": "Permitted Actions Without Identification or Authentication",
+      "description": "Identify and document user actions that can be performed without identification or authentication.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AC-14"
+        }
+      ]
+    },
+    {
+      "id": "AC-17",
+      "family": "AC",
+      "family_name": "Access Control",
+      "title": "Remote Access",
+      "description": "Establish and document usage restrictions and implementation guidance for each type of remote access allowed. Authorize each type before use.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AC-17"
+        }
+      ]
+    },
+    {
+      "id": "AC-18",
+      "family": "AC",
+      "family_name": "Access Control",
+      "title": "Wireless Access",
+      "description": "Establish configuration requirements, connection requirements, and implementation guidance for each type of wireless access.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AC-18"
+        }
+      ]
+    },
+    {
+      "id": "AC-19",
+      "family": "AC",
+      "family_name": "Access Control",
+      "title": "Access Control for Mobile Devices",
+      "description": "Establish configuration requirements, connection requirements, and implementation guidance for organization-controlled mobile devices.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AC-19"
+        }
+      ]
+    },
+    {
+      "id": "AC-20",
+      "family": "AC",
+      "family_name": "Access Control",
+      "title": "Use of External Systems",
+      "description": "Establish terms and conditions for authorized individuals to access the system from external systems.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AC-20"
+        }
+      ]
+    },
+    {
+      "id": "AC-21",
+      "family": "AC",
+      "family_name": "Access Control",
+      "title": "Information Sharing",
+      "description": "Enable authorized users to determine whether access authorizations assigned to a sharing partner match the access restrictions on the information.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AC-21"
+        }
+      ]
+    },
+    {
+      "id": "AC-22",
+      "family": "AC",
+      "family_name": "Access Control",
+      "title": "Publicly Accessible Content",
+      "description": "Designate individuals authorized to make information publicly accessible. Review publicly accessible information for nonpublic information. Remove nonpublic information.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AC-22"
+        }
+      ]
+    },
+    {
+      "id": "AT-1",
+      "family": "AT",
+      "family_name": "Awareness and Training",
+      "title": "Policy and Procedures",
+      "description": "Develop, document, and disseminate awareness and training policy and procedures.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AT-1"
+        }
+      ]
+    },
+    {
+      "id": "AT-2",
+      "family": "AT",
+      "family_name": "Awareness and Training",
+      "title": "Literacy Training and Awareness",
+      "description": "Provide security and privacy literacy training to system users including awareness of the need for operations security.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AT-2"
+        }
+      ]
+    },
+    {
+      "id": "AT-3",
+      "family": "AT",
+      "family_name": "Awareness and Training",
+      "title": "Role-Based Training",
+      "description": "Provide role-based security and privacy training to personnel with assigned security roles before authorizing access.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AT-3"
+        }
+      ]
+    },
+    {
+      "id": "AT-4",
+      "family": "AT",
+      "family_name": "Awareness and Training",
+      "title": "Training Records",
+      "description": "Document and monitor information security and privacy training activities.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AT-4"
+        }
+      ]
+    },
+    {
+      "id": "AT-6",
+      "family": "AT",
+      "family_name": "Awareness and Training",
+      "title": "Training Feedback",
+      "description": "Provide feedback on organizational training results on an ongoing basis.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AT-6"
+        }
+      ]
+    },
+    {
+      "id": "AU-1",
+      "family": "AU",
+      "family_name": "Audit and Accountability",
+      "title": "Policy and Procedures",
+      "description": "Develop, document, and disseminate audit and accountability policy and procedures.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AU-1"
+        }
+      ]
+    },
+    {
+      "id": "AU-2",
+      "family": "AU",
+      "family_name": "Audit and Accountability",
+      "title": "Event Logging",
+      "description": "Identify types of events that the system is capable of logging in support of the audit function.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AU-2"
+        }
+      ]
+    },
+    {
+      "id": "AU-3",
+      "family": "AU",
+      "family_name": "Audit and Accountability",
+      "title": "Content of Audit Records",
+      "description": "Ensure that audit records contain information that establishes what type of event occurred, when it occurred, where it occurred, the source, the outcome, and the identity of individuals or subjects.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AU-3"
+        }
+      ]
+    },
+    {
+      "id": "AU-4",
+      "family": "AU",
+      "family_name": "Audit and Accountability",
+      "title": "Audit Log Storage Capacity",
+      "description": "Allocate audit log storage capacity to accommodate anticipated audit log volume.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AU-4"
+        }
+      ]
+    },
+    {
+      "id": "AU-5",
+      "family": "AU",
+      "family_name": "Audit and Accountability",
+      "title": "Response to Audit Logging Process Failures",
+      "description": "Alert designated personnel in the event of an audit logging process failure and take additional actions.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AU-5"
+        }
+      ]
+    },
+    {
+      "id": "AU-6",
+      "family": "AU",
+      "family_name": "Audit and Accountability",
+      "title": "Audit Record Review, Analysis, and Reporting",
+      "description": "Review and analyze system audit records for indications of inappropriate or unusual activity and report findings.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AU-6"
+        }
+      ]
+    },
+    {
+      "id": "AU-7",
+      "family": "AU",
+      "family_name": "Audit and Accountability",
+      "title": "Audit Record Reduction and Report Generation",
+      "description": "Provide and implement an audit record reduction and report generation capability that supports on-demand audit review, analysis, and reporting.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AU-7"
+        }
+      ]
+    },
+    {
+      "id": "AU-8",
+      "family": "AU",
+      "family_name": "Audit and Accountability",
+      "title": "Time Stamps",
+      "description": "Use internal system clocks to generate time stamps for audit records.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AU-8"
+        }
+      ]
+    },
+    {
+      "id": "AU-9",
+      "family": "AU",
+      "family_name": "Audit and Accountability",
+      "title": "Protection of Audit Information",
+      "description": "Protect audit information and audit logging tools from unauthorized access, modification, and deletion.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AU-9"
+        }
+      ]
+    },
+    {
+      "id": "AU-10",
+      "family": "AU",
+      "family_name": "Audit and Accountability",
+      "title": "Non-repudiation",
+      "description": "Provide irrefutable evidence that an individual performed certain actions within the system.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AU-10"
+        }
+      ]
+    },
+    {
+      "id": "AU-11",
+      "family": "AU",
+      "family_name": "Audit and Accountability",
+      "title": "Audit Record Retention",
+      "description": "Retain audit records for a defined period to provide support for after-the-fact investigations and meet regulatory retention requirements.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AU-11"
+        }
+      ]
+    },
+    {
+      "id": "AU-12",
+      "family": "AU",
+      "family_name": "Audit and Accountability",
+      "title": "Audit Record Generation",
+      "description": "Provide audit record generation capability for the event types the system is capable of auditing. Allow designated personnel to select events to be audited.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AU-12"
+        }
+      ]
+    },
+    {
+      "id": "CA-1",
+      "family": "CA",
+      "family_name": "Assessment, Authorization, and Monitoring",
+      "title": "Policy and Procedures",
+      "description": "Develop, document, and disseminate assessment, authorization, and monitoring policy and procedures.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CA-1"
+        }
+      ]
+    },
+    {
+      "id": "CA-2",
+      "family": "CA",
+      "family_name": "Assessment, Authorization, and Monitoring",
+      "title": "Control Assessments",
+      "description": "Develop a control assessment plan and assess the controls in the system and its environment of operation to determine effectiveness.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CA-2"
+        }
+      ]
+    },
+    {
+      "id": "CA-3",
+      "family": "CA",
+      "family_name": "Assessment, Authorization, and Monitoring",
+      "title": "Information Exchange",
+      "description": "Approve and manage the exchange of information between the system and other systems using interconnection security agreements.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CA-3"
+        }
+      ]
+    },
+    {
+      "id": "CA-5",
+      "family": "CA",
+      "family_name": "Assessment, Authorization, and Monitoring",
+      "title": "Plan of Action and Milestones",
+      "description": "Develop a plan of action and milestones for the system to document planned remediation actions.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CA-5"
+        }
+      ]
+    },
+    {
+      "id": "CA-6",
+      "family": "CA",
+      "family_name": "Assessment, Authorization, and Monitoring",
+      "title": "Authorization",
+      "description": "Assign a senior official as the authorizing official for the system. Ensure the authorizing official authorizes the system before commencing operations.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CA-6"
+        }
+      ]
+    },
+    {
+      "id": "CA-7",
+      "family": "CA",
+      "family_name": "Assessment, Authorization, and Monitoring",
+      "title": "Continuous Monitoring",
+      "description": "Develop a system-level continuous monitoring strategy and implement continuous monitoring program.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CA-7"
+        }
+      ]
+    },
+    {
+      "id": "CA-8",
+      "family": "CA",
+      "family_name": "Assessment, Authorization, and Monitoring",
+      "title": "Penetration Testing",
+      "description": "Conduct penetration testing on systems or system components.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CA-8"
+        }
+      ]
+    },
+    {
+      "id": "CA-9",
+      "family": "CA",
+      "family_name": "Assessment, Authorization, and Monitoring",
+      "title": "Internal System Connections",
+      "description": "Authorize, document, and manage internal connections to the system.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CA-9"
+        }
+      ]
+    },
+    {
+      "id": "CM-1",
+      "family": "CM",
+      "family_name": "Configuration Management",
+      "title": "Policy and Procedures",
+      "description": "Develop, document, and disseminate configuration management policy and procedures.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CM-1"
+        }
+      ]
+    },
+    {
+      "id": "CM-2",
+      "family": "CM",
+      "family_name": "Configuration Management",
+      "title": "Baseline Configuration",
+      "description": "Develop, document, and maintain a current baseline configuration of the system.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CM-2"
+        }
+      ]
+    },
+    {
+      "id": "CM-3",
+      "family": "CM",
+      "family_name": "Configuration Management",
+      "title": "Configuration Change Control",
+      "description": "Determine and document types of changes to the system that are configuration-controlled.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CM-3"
+        }
+      ]
+    },
+    {
+      "id": "CM-4",
+      "family": "CM",
+      "family_name": "Configuration Management",
+      "title": "Impact Analyses",
+      "description": "Analyze changes to the system to determine potential security and privacy impacts prior to change implementation.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CM-4"
+        }
+      ]
+    },
+    {
+      "id": "CM-5",
+      "family": "CM",
+      "family_name": "Configuration Management",
+      "title": "Access Restrictions for Change",
+      "description": "Define, document, approve, and enforce physical and logical access restrictions associated with changes to the system.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CM-5"
+        }
+      ]
+    },
+    {
+      "id": "CM-6",
+      "family": "CM",
+      "family_name": "Configuration Management",
+      "title": "Configuration Settings",
+      "description": "Establish and document configuration settings for components employed within the system using security configuration checklists.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CM-6"
+        }
+      ]
+    },
+    {
+      "id": "CM-7",
+      "family": "CM",
+      "family_name": "Configuration Management",
+      "title": "Least Functionality",
+      "description": "Configure the system to provide only mission-essential capabilities. Prohibit or restrict the use of functions, ports, protocols, and services.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CM-7"
+        }
+      ]
+    },
+    {
+      "id": "CM-8",
+      "family": "CM",
+      "family_name": "Configuration Management",
+      "title": "System Component Inventory",
+      "description": "Develop and document an inventory of system components that accurately reflects the system and is consistent with the authorization boundary.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CM-8"
+        }
+      ]
+    },
+    {
+      "id": "CM-9",
+      "family": "CM",
+      "family_name": "Configuration Management",
+      "title": "Configuration Management Plan",
+      "description": "Develop, document, and implement a configuration management plan.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CM-9"
+        }
+      ]
+    },
+    {
+      "id": "CM-10",
+      "family": "CM",
+      "family_name": "Configuration Management",
+      "title": "Software Usage Restrictions",
+      "description": "Use software and associated documentation in accordance with contract agreements and copyright laws.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CM-10"
+        }
+      ]
+    },
+    {
+      "id": "CM-11",
+      "family": "CM",
+      "family_name": "Configuration Management",
+      "title": "User-Installed Software",
+      "description": "Establish and enforce policies governing the installation of software by users.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CM-11"
+        }
+      ]
+    },
+    {
+      "id": "CP-1",
+      "family": "CP",
+      "family_name": "Contingency Planning",
+      "title": "Policy and Procedures",
+      "description": "Develop, document, and disseminate contingency planning policy and procedures.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CP-1"
+        }
+      ]
+    },
+    {
+      "id": "CP-2",
+      "family": "CP",
+      "family_name": "Contingency Planning",
+      "title": "Contingency Plan",
+      "description": "Develop a contingency plan that identifies essential mission and business functions, provides recovery objectives and metrics, and addresses contingency roles and responsibilities.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CP-2"
+        }
+      ]
+    },
+    {
+      "id": "CP-3",
+      "family": "CP",
+      "family_name": "Contingency Planning",
+      "title": "Contingency Training",
+      "description": "Provide contingency training to system users consistent with assigned roles and responsibilities.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CP-3"
+        }
+      ]
+    },
+    {
+      "id": "CP-4",
+      "family": "CP",
+      "family_name": "Contingency Planning",
+      "title": "Contingency Plan Testing",
+      "description": "Test the contingency plan to determine effectiveness and organizational readiness.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CP-4"
+        }
+      ]
+    },
+    {
+      "id": "CP-6",
+      "family": "CP",
+      "family_name": "Contingency Planning",
+      "title": "Alternate Storage Site",
+      "description": "Establish an alternate storage site and initiate agreements to permit storage and retrieval of system backup information.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CP-6"
+        }
+      ]
+    },
+    {
+      "id": "CP-7",
+      "family": "CP",
+      "family_name": "Contingency Planning",
+      "title": "Alternate Processing Site",
+      "description": "Establish an alternate processing site that provides security measures equivalent to the primary site.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CP-7"
+        }
+      ]
+    },
+    {
+      "id": "CP-8",
+      "family": "CP",
+      "family_name": "Contingency Planning",
+      "title": "Telecommunications Services",
+      "description": "Establish alternate telecommunications services to support the system if primary services are unavailable.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CP-8"
+        }
+      ]
+    },
+    {
+      "id": "CP-9",
+      "family": "CP",
+      "family_name": "Contingency Planning",
+      "title": "System Backup",
+      "description": "Conduct backups of user-level, system-level, and system documentation information.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CP-9"
+        }
+      ]
+    },
+    {
+      "id": "CP-10",
+      "family": "CP",
+      "family_name": "Contingency Planning",
+      "title": "System Recovery and Reconstitution",
+      "description": "Provide for the recovery and reconstitution of the system to a known state within an established time period after a disruption.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=CP-10"
+        }
+      ]
+    },
+    {
+      "id": "IA-1",
+      "family": "IA",
+      "family_name": "Identification and Authentication",
+      "title": "Policy and Procedures",
+      "description": "Develop, document, and disseminate identification and authentication policy and procedures.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=IA-1"
+        }
+      ]
+    },
+    {
+      "id": "IA-2",
+      "family": "IA",
+      "family_name": "Identification and Authentication",
+      "title": "Identification and Authentication (Organizational Users)",
+      "description": "Uniquely identify and authenticate organizational users and associate that unique identification with processes acting on behalf of those users.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=IA-2"
+        }
+      ]
+    },
+    {
+      "id": "IA-3",
+      "family": "IA",
+      "family_name": "Identification and Authentication",
+      "title": "Device Identification and Authentication",
+      "description": "Uniquely identify and authenticate devices before establishing a connection.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=IA-3"
+        }
+      ]
+    },
+    {
+      "id": "IA-4",
+      "family": "IA",
+      "family_name": "Identification and Authentication",
+      "title": "Identifier Management",
+      "description": "Manage system identifiers by receiving authorization to assign an individual, group, role, service, or device identifier.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=IA-4"
+        }
+      ]
+    },
+    {
+      "id": "IA-5",
+      "family": "IA",
+      "family_name": "Identification and Authentication",
+      "title": "Authenticator Management",
+      "description": "Manage system authenticators by verifying the identity of the individual, group, role, service, or device as part of the initial authenticator distribution.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=IA-5"
+        }
+      ]
+    },
+    {
+      "id": "IA-6",
+      "family": "IA",
+      "family_name": "Identification and Authentication",
+      "title": "Authentication Feedback",
+      "description": "Obscure feedback of authentication information during the authentication process to protect the information from possible exploitation.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=IA-6"
+        }
+      ]
+    },
+    {
+      "id": "IA-7",
+      "family": "IA",
+      "family_name": "Identification and Authentication",
+      "title": "Cryptographic Module Authentication",
+      "description": "Implement mechanisms for authentication to a cryptographic module that meet applicable requirements.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=IA-7"
+        }
+      ]
+    },
+    {
+      "id": "IA-8",
+      "family": "IA",
+      "family_name": "Identification and Authentication",
+      "title": "Identification and Authentication (Non-Organizational Users)",
+      "description": "Uniquely identify and authenticate non-organizational users or processes acting on behalf of non-organizational users.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=IA-8"
+        }
+      ]
+    },
+    {
+      "id": "IA-11",
+      "family": "IA",
+      "family_name": "Identification and Authentication",
+      "title": "Re-authentication",
+      "description": "Require users to re-authenticate when defined circumstances or situations require re-authentication.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=IA-11"
+        }
+      ]
+    },
+    {
+      "id": "IA-12",
+      "family": "IA",
+      "family_name": "Identification and Authentication",
+      "title": "Identity Proofing",
+      "description": "Identity proof users that require accounts for logical access to systems based on appropriate identity assurance level requirements.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=IA-12"
+        }
+      ]
+    },
+    {
+      "id": "IR-1",
+      "family": "IR",
+      "family_name": "Incident Response",
+      "title": "Policy and Procedures",
+      "description": "Develop, document, and disseminate incident response policy and procedures.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=IR-1"
+        }
+      ]
+    },
+    {
+      "id": "IR-2",
+      "family": "IR",
+      "family_name": "Incident Response",
+      "title": "Incident Response Training",
+      "description": "Provide incident response training to system users consistent with assigned roles and responsibilities.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=IR-2"
+        }
+      ]
+    },
+    {
+      "id": "IR-3",
+      "family": "IR",
+      "family_name": "Incident Response",
+      "title": "Incident Response Testing",
+      "description": "Test the effectiveness of the incident response capability.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=IR-3"
+        }
+      ]
+    },
+    {
+      "id": "IR-4",
+      "family": "IR",
+      "family_name": "Incident Response",
+      "title": "Incident Handling",
+      "description": "Implement an incident handling capability that includes preparation, detection and analysis, containment, eradication, and recovery.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=IR-4"
+        }
+      ]
+    },
+    {
+      "id": "IR-5",
+      "family": "IR",
+      "family_name": "Incident Response",
+      "title": "Incident Monitoring",
+      "description": "Track and document system security and privacy incidents.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=IR-5"
+        }
+      ]
+    },
+    {
+      "id": "IR-6",
+      "family": "IR",
+      "family_name": "Incident Response",
+      "title": "Incident Reporting",
+      "description": "Require personnel to report suspected incidents to the organizational incident response capability within required time periods.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=IR-6"
+        }
+      ]
+    },
+    {
+      "id": "IR-7",
+      "family": "IR",
+      "family_name": "Incident Response",
+      "title": "Incident Response Assistance",
+      "description": "Provide an incident response support resource that offers advice and assistance to users of the system for the handling and reporting of incidents.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=IR-7"
+        }
+      ]
+    },
+    {
+      "id": "IR-8",
+      "family": "IR",
+      "family_name": "Incident Response",
+      "title": "Incident Response Plan",
+      "description": "Develop an incident response plan that provides the organization with a roadmap for implementing its incident response capability.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=IR-8"
+        }
+      ]
+    },
+    {
+      "id": "MA-1",
+      "family": "MA",
+      "family_name": "Maintenance",
+      "title": "Policy and Procedures",
+      "description": "Develop, document, and disseminate maintenance policy and procedures.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=MA-1"
+        }
+      ]
+    },
+    {
+      "id": "MA-2",
+      "family": "MA",
+      "family_name": "Maintenance",
+      "title": "Controlled Maintenance",
+      "description": "Schedule, document, and review records of maintenance, repair, and replacement on system components.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=MA-2"
+        }
+      ]
+    },
+    {
+      "id": "MA-3",
+      "family": "MA",
+      "family_name": "Maintenance",
+      "title": "Maintenance Tools",
+      "description": "Approve, control, and monitor the use of system maintenance tools.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=MA-3"
+        }
+      ]
+    },
+    {
+      "id": "MA-4",
+      "family": "MA",
+      "family_name": "Maintenance",
+      "title": "Nonlocal Maintenance",
+      "description": "Approve and monitor nonlocal maintenance and diagnostic activities.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=MA-4"
+        }
+      ]
+    },
+    {
+      "id": "MA-5",
+      "family": "MA",
+      "family_name": "Maintenance",
+      "title": "Maintenance Personnel",
+      "description": "Establish a process for maintenance personnel authorization and maintain a list of authorized maintenance organizations or personnel.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=MA-5"
+        }
+      ]
+    },
+    {
+      "id": "MA-6",
+      "family": "MA",
+      "family_name": "Maintenance",
+      "title": "Timely Maintenance",
+      "description": "Obtain maintenance support and spare parts within a defined time period of failure for system components.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=MA-6"
+        }
+      ]
+    },
+    {
+      "id": "MP-1",
+      "family": "MP",
+      "family_name": "Media Protection",
+      "title": "Policy and Procedures",
+      "description": "Develop, document, and disseminate media protection policy and procedures.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=MP-1"
+        }
+      ]
+    },
+    {
+      "id": "MP-2",
+      "family": "MP",
+      "family_name": "Media Protection",
+      "title": "Media Access",
+      "description": "Restrict access to digital and non-digital media to authorized individuals.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=MP-2"
+        }
+      ]
+    },
+    {
+      "id": "MP-3",
+      "family": "MP",
+      "family_name": "Media Protection",
+      "title": "Media Marking",
+      "description": "Mark system media indicating distribution limitations, handling caveats, and applicable security markings.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=MP-3"
+        }
+      ]
+    },
+    {
+      "id": "MP-4",
+      "family": "MP",
+      "family_name": "Media Protection",
+      "title": "Media Storage",
+      "description": "Physically control and securely store digital and non-digital media within controlled areas.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=MP-4"
+        }
+      ]
+    },
+    {
+      "id": "MP-5",
+      "family": "MP",
+      "family_name": "Media Protection",
+      "title": "Media Transport",
+      "description": "Protect and control digital and non-digital media during transport outside of controlled areas.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=MP-5"
+        }
+      ]
+    },
+    {
+      "id": "MP-6",
+      "family": "MP",
+      "family_name": "Media Protection",
+      "title": "Media Sanitization",
+      "description": "Sanitize system media prior to disposal, release out of organizational control, or release for reuse.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=MP-6"
+        }
+      ]
+    },
+    {
+      "id": "MP-7",
+      "family": "MP",
+      "family_name": "Media Protection",
+      "title": "Media Use",
+      "description": "Restrict or prohibit the use of portable storage devices on system components.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=MP-7"
+        }
+      ]
+    },
+    {
+      "id": "PE-1",
+      "family": "PE",
+      "family_name": "Physical and Environmental Protection",
+      "title": "Policy and Procedures",
+      "description": "Develop, document, and disseminate physical and environmental protection policy and procedures.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PE-1"
+        }
+      ]
+    },
+    {
+      "id": "PE-2",
+      "family": "PE",
+      "family_name": "Physical and Environmental Protection",
+      "title": "Physical Access Authorizations",
+      "description": "Develop, approve, and maintain a list of individuals with authorized access to the facility.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PE-2"
+        }
+      ]
+    },
+    {
+      "id": "PE-3",
+      "family": "PE",
+      "family_name": "Physical and Environmental Protection",
+      "title": "Physical Access Control",
+      "description": "Enforce physical access authorizations at entry and exit points to the facility.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PE-3"
+        }
+      ]
+    },
+    {
+      "id": "PE-4",
+      "family": "PE",
+      "family_name": "Physical and Environmental Protection",
+      "title": "Access Control for Transmission",
+      "description": "Control physical access to system distribution and transmission lines within organizational facilities.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PE-4"
+        }
+      ]
+    },
+    {
+      "id": "PE-5",
+      "family": "PE",
+      "family_name": "Physical and Environmental Protection",
+      "title": "Access Control for Output Devices",
+      "description": "Control physical access to output from output devices to prevent unauthorized individuals from obtaining the output.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PE-5"
+        }
+      ]
+    },
+    {
+      "id": "PE-6",
+      "family": "PE",
+      "family_name": "Physical and Environmental Protection",
+      "title": "Monitoring Physical Access",
+      "description": "Monitor physical access to the facility where the system resides to detect and respond to physical security incidents.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PE-6"
+        }
+      ]
+    },
+    {
+      "id": "PE-8",
+      "family": "PE",
+      "family_name": "Physical and Environmental Protection",
+      "title": "Visitor Access Records",
+      "description": "Maintain visitor access records to the facility where the system resides.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PE-8"
+        }
+      ]
+    },
+    {
+      "id": "PE-9",
+      "family": "PE",
+      "family_name": "Physical and Environmental Protection",
+      "title": "Power Equipment and Cabling",
+      "description": "Protect power equipment and power cabling for the system from damage and destruction.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PE-9"
+        }
+      ]
+    },
+    {
+      "id": "PE-10",
+      "family": "PE",
+      "family_name": "Physical and Environmental Protection",
+      "title": "Emergency Shutoff",
+      "description": "Provide the capability of shutting off power to the system or individual system components in emergency situations.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PE-10"
+        }
+      ]
+    },
+    {
+      "id": "PE-11",
+      "family": "PE",
+      "family_name": "Physical and Environmental Protection",
+      "title": "Emergency Power",
+      "description": "Provide an uninterruptible power supply to facilitate an orderly shutdown of the system in the event of a primary power source loss.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PE-11"
+        }
+      ]
+    },
+    {
+      "id": "PE-12",
+      "family": "PE",
+      "family_name": "Physical and Environmental Protection",
+      "title": "Emergency Lighting",
+      "description": "Employ and maintain automatic emergency lighting for the system that activates in the event of a power outage.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PE-12"
+        }
+      ]
+    },
+    {
+      "id": "PE-13",
+      "family": "PE",
+      "family_name": "Physical and Environmental Protection",
+      "title": "Fire Protection",
+      "description": "Employ and maintain fire detection and suppression systems that are supported by an independent energy source.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PE-13"
+        }
+      ]
+    },
+    {
+      "id": "PE-14",
+      "family": "PE",
+      "family_name": "Physical and Environmental Protection",
+      "title": "Environmental Controls",
+      "description": "Maintain temperature and humidity levels within the facility where the system resides at acceptable levels.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PE-14"
+        }
+      ]
+    },
+    {
+      "id": "PE-15",
+      "family": "PE",
+      "family_name": "Physical and Environmental Protection",
+      "title": "Water Damage Protection",
+      "description": "Protect the system from damage resulting from water leakage by providing master shutoff valves.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PE-15"
+        }
+      ]
+    },
+    {
+      "id": "PE-16",
+      "family": "PE",
+      "family_name": "Physical and Environmental Protection",
+      "title": "Delivery and Removal",
+      "description": "Authorize and control system components entering and exiting the facility and maintain records of the items.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PE-16"
+        }
+      ]
+    },
+    {
+      "id": "PE-17",
+      "family": "PE",
+      "family_name": "Physical and Environmental Protection",
+      "title": "Alternate Work Site",
+      "description": "Employ management, operational, and technical controls at alternate work sites equivalent to those at the primary site.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PE-17"
+        }
+      ]
+    },
+    {
+      "id": "PL-1",
+      "family": "PL",
+      "family_name": "Planning",
+      "title": "Policy and Procedures",
+      "description": "Develop, document, and disseminate planning policy and procedures.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PL-1"
+        }
+      ]
+    },
+    {
+      "id": "PL-2",
+      "family": "PL",
+      "family_name": "Planning",
+      "title": "System Security and Privacy Plans",
+      "description": "Develop security and privacy plans for the system that are consistent with the enterprise architecture.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PL-2"
+        }
+      ]
+    },
+    {
+      "id": "PL-4",
+      "family": "PL",
+      "family_name": "Planning",
+      "title": "Rules of Behavior",
+      "description": "Establish and provide to individuals requiring access to the system the rules that describe their responsibilities and expected behavior.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PL-4"
+        }
+      ]
+    },
+    {
+      "id": "PL-10",
+      "family": "PL",
+      "family_name": "Planning",
+      "title": "Baseline Selection",
+      "description": "Select a control baseline for the system.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PL-10"
+        }
+      ]
+    },
+    {
+      "id": "PL-11",
+      "family": "PL",
+      "family_name": "Planning",
+      "title": "Baseline Tailoring",
+      "description": "Tailor the selected control baseline by applying specified tailoring actions.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PL-11"
+        }
+      ]
+    },
+    {
+      "id": "PM-1",
+      "family": "PM",
+      "family_name": "Program Management",
+      "title": "Information Security Program Plan",
+      "description": "Develop and disseminate an organization-wide information security program plan.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PM-1"
+        }
+      ]
+    },
+    {
+      "id": "PM-2",
+      "family": "PM",
+      "family_name": "Program Management",
+      "title": "Information Security Program Leadership Role",
+      "description": "Appoint a senior information security officer with the mission and resources to coordinate, develop, implement, and maintain an organization-wide information security program.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PM-2"
+        }
+      ]
+    },
+    {
+      "id": "PM-3",
+      "family": "PM",
+      "family_name": "Program Management",
+      "title": "Information Security and Privacy Resources",
+      "description": "Include the resources needed to implement the information security and privacy programs.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PM-3"
+        }
+      ]
+    },
+    {
+      "id": "PM-4",
+      "family": "PM",
+      "family_name": "Program Management",
+      "title": "Plan of Action and Milestones Process",
+      "description": "Implement a process to ensure that plans of action and milestones for the information security, privacy, and supply chain risk management programs are maintained.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PM-4"
+        }
+      ]
+    },
+    {
+      "id": "PM-5",
+      "family": "PM",
+      "family_name": "Program Management",
+      "title": "System Inventory",
+      "description": "Develop and maintain an inventory of organizational systems.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PM-5"
+        }
+      ]
+    },
+    {
+      "id": "PM-6",
+      "family": "PM",
+      "family_name": "Program Management",
+      "title": "Measures of Performance",
+      "description": "Develop, monitor, and report on the results of information security and privacy measures of performance.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PM-6"
+        }
+      ]
+    },
+    {
+      "id": "PM-9",
+      "family": "PM",
+      "family_name": "Program Management",
+      "title": "Risk Management Strategy",
+      "description": "Develop a comprehensive strategy to manage security risk, privacy risk, and supply chain risk to organizational operations.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PM-9"
+        }
+      ]
+    },
+    {
+      "id": "PM-10",
+      "family": "PM",
+      "family_name": "Program Management",
+      "title": "Authorization Process",
+      "description": "Manage the security and privacy state of organizational systems through authorization processes.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PM-10"
+        }
+      ]
+    },
+    {
+      "id": "PM-11",
+      "family": "PM",
+      "family_name": "Program Management",
+      "title": "Mission and Business Process Definition",
+      "description": "Define organizational mission and business processes with consideration for information security and privacy.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PM-11"
+        }
+      ]
+    },
+    {
+      "id": "PM-14",
+      "family": "PM",
+      "family_name": "Program Management",
+      "title": "Testing, Training, and Monitoring",
+      "description": "Implement a process for ensuring that plans for testing, training, and monitoring associated with controls are developed and maintained.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PM-14"
+        }
+      ]
+    },
+    {
+      "id": "PS-1",
+      "family": "PS",
+      "family_name": "Personnel Security",
+      "title": "Policy and Procedures",
+      "description": "Develop, document, and disseminate personnel security policy and procedures.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PS-1"
+        }
+      ]
+    },
+    {
+      "id": "PS-2",
+      "family": "PS",
+      "family_name": "Personnel Security",
+      "title": "Position Risk Designation",
+      "description": "Assign a risk designation to all organizational positions. Establish screening criteria for individuals filling those positions.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PS-2"
+        }
+      ]
+    },
+    {
+      "id": "PS-3",
+      "family": "PS",
+      "family_name": "Personnel Security",
+      "title": "Personnel Screening",
+      "description": "Screen individuals prior to authorizing access to the system.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PS-3"
+        }
+      ]
+    },
+    {
+      "id": "PS-4",
+      "family": "PS",
+      "family_name": "Personnel Security",
+      "title": "Personnel Termination",
+      "description": "Upon termination of individual employment, disable system access within a defined time period.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PS-4"
+        }
+      ]
+    },
+    {
+      "id": "PS-5",
+      "family": "PS",
+      "family_name": "Personnel Security",
+      "title": "Personnel Transfer",
+      "description": "Review and confirm ongoing operational need for current logical and physical access authorizations when individuals are reassigned or transferred.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PS-5"
+        }
+      ]
+    },
+    {
+      "id": "PS-6",
+      "family": "PS",
+      "family_name": "Personnel Security",
+      "title": "Access Agreements",
+      "description": "Develop and document access agreements for organizational systems. Review and update the access agreements.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PS-6"
+        }
+      ]
+    },
+    {
+      "id": "PS-7",
+      "family": "PS",
+      "family_name": "Personnel Security",
+      "title": "External Personnel Security",
+      "description": "Establish personnel security requirements for external providers and monitor provider compliance.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PS-7"
+        }
+      ]
+    },
+    {
+      "id": "PS-8",
+      "family": "PS",
+      "family_name": "Personnel Security",
+      "title": "Personnel Sanctions",
+      "description": "Employ a formal sanctions process for individuals failing to comply with established information security and privacy policies and procedures.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PS-8"
+        }
+      ]
+    },
+    {
+      "id": "PS-9",
+      "family": "PS",
+      "family_name": "Personnel Security",
+      "title": "Position Descriptions",
+      "description": "Incorporate security and privacy role responsibilities into organizational position descriptions.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PS-9"
+        }
+      ]
+    },
+    {
+      "id": "PT-1",
+      "family": "PT",
+      "family_name": "PII Processing and Transparency",
+      "title": "Policy and Procedures",
+      "description": "Develop, document, and disseminate PII processing and transparency policy and procedures.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PT-1"
+        }
+      ]
+    },
+    {
+      "id": "PT-2",
+      "family": "PT",
+      "family_name": "PII Processing and Transparency",
+      "title": "Authority to Process Personally Identifiable Information",
+      "description": "Determine and document the legal authority that permits the processing of personally identifiable information.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PT-2"
+        }
+      ]
+    },
+    {
+      "id": "PT-3",
+      "family": "PT",
+      "family_name": "PII Processing and Transparency",
+      "title": "Personally Identifiable Information Processing Purposes",
+      "description": "Identify and document the purpose for processing personally identifiable information.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PT-3"
+        }
+      ]
+    },
+    {
+      "id": "PT-4",
+      "family": "PT",
+      "family_name": "PII Processing and Transparency",
+      "title": "Consent",
+      "description": "Implement tools or mechanisms for individuals to consent to the processing of their personally identifiable information.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PT-4"
+        }
+      ]
+    },
+    {
+      "id": "PT-5",
+      "family": "PT",
+      "family_name": "PII Processing and Transparency",
+      "title": "Privacy Notice",
+      "description": "Provide notice to individuals about the processing of personally identifiable information.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PT-5"
+        }
+      ]
+    },
+    {
+      "id": "PT-6",
+      "family": "PT",
+      "family_name": "PII Processing and Transparency",
+      "title": "System of Records Notice",
+      "description": "Publish system of records notices in the Federal Register for systems containing personally identifiable information.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PT-6"
+        }
+      ]
+    },
+    {
+      "id": "PT-7",
+      "family": "PT",
+      "family_name": "PII Processing and Transparency",
+      "title": "Specific Categories of Personally Identifiable Information",
+      "description": "Apply processing conditions for specific categories of personally identifiable information.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PT-7"
+        }
+      ]
+    },
+    {
+      "id": "PT-8",
+      "family": "PT",
+      "family_name": "PII Processing and Transparency",
+      "title": "Computer Matching Requirements",
+      "description": "Implement applicable requirements when entering into computer matching agreements.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=PT-8"
+        }
+      ]
+    },
+    {
+      "id": "RA-1",
+      "family": "RA",
+      "family_name": "Risk Assessment",
+      "title": "Policy and Procedures",
+      "description": "Develop, document, and disseminate risk assessment policy and procedures.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=RA-1"
+        }
+      ]
+    },
+    {
+      "id": "RA-2",
+      "family": "RA",
+      "family_name": "Risk Assessment",
+      "title": "Security Categorization",
+      "description": "Categorize the system and information it processes, stores, and transmits.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=RA-2"
+        }
+      ]
+    },
+    {
+      "id": "RA-3",
+      "family": "RA",
+      "family_name": "Risk Assessment",
+      "title": "Risk Assessment",
+      "description": "Conduct a risk assessment to identify threats to and vulnerabilities of the system.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=RA-3"
+        }
+      ]
+    },
+    {
+      "id": "RA-5",
+      "family": "RA",
+      "family_name": "Risk Assessment",
+      "title": "Vulnerability Monitoring and Scanning",
+      "description": "Monitor and scan for vulnerabilities in the system and hosted applications.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=RA-5"
+        }
+      ]
+    },
+    {
+      "id": "RA-7",
+      "family": "RA",
+      "family_name": "Risk Assessment",
+      "title": "Risk Response",
+      "description": "Respond to findings from security and privacy assessments, monitoring, and audits.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=RA-7"
+        }
+      ]
+    },
+    {
+      "id": "RA-9",
+      "family": "RA",
+      "family_name": "Risk Assessment",
+      "title": "Criticality Analysis",
+      "description": "Identify critical system components and functions by performing a criticality analysis.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=RA-9"
+        }
+      ]
+    },
+    {
+      "id": "SA-1",
+      "family": "SA",
+      "family_name": "System and Services Acquisition",
+      "title": "Policy and Procedures",
+      "description": "Develop, document, and disseminate system and services acquisition policy and procedures.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SA-1"
+        }
+      ]
+    },
+    {
+      "id": "SA-2",
+      "family": "SA",
+      "family_name": "System and Services Acquisition",
+      "title": "Allocation of Resources",
+      "description": "Determine the high-level information security and privacy requirements for the system.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SA-2"
+        }
+      ]
+    },
+    {
+      "id": "SA-3",
+      "family": "SA",
+      "family_name": "System and Services Acquisition",
+      "title": "System Development Life Cycle",
+      "description": "Acquire, develop, and manage the system using a system development life cycle that incorporates information security and privacy considerations.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SA-3"
+        }
+      ]
+    },
+    {
+      "id": "SA-4",
+      "family": "SA",
+      "family_name": "System and Services Acquisition",
+      "title": "Acquisition Process",
+      "description": "Include security and privacy functional requirements in the acquisition contract for the system.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SA-4"
+        }
+      ]
+    },
+    {
+      "id": "SA-5",
+      "family": "SA",
+      "family_name": "System and Services Acquisition",
+      "title": "System Documentation",
+      "description": "Obtain or develop administrator documentation and user documentation for the system.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SA-5"
+        }
+      ]
+    },
+    {
+      "id": "SA-8",
+      "family": "SA",
+      "family_name": "System and Services Acquisition",
+      "title": "Security and Privacy Engineering Principles",
+      "description": "Apply systems security and privacy engineering principles in the specification, design, development, implementation, and modification of the system.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SA-8"
+        }
+      ]
+    },
+    {
+      "id": "SA-9",
+      "family": "SA",
+      "family_name": "System and Services Acquisition",
+      "title": "External System Services",
+      "description": "Require that providers of external system services comply with organizational security and privacy requirements.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SA-9"
+        }
+      ]
+    },
+    {
+      "id": "SA-10",
+      "family": "SA",
+      "family_name": "System and Services Acquisition",
+      "title": "Developer Configuration Management",
+      "description": "Require the developer of the system to perform configuration management during design, development, implementation, and operation.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SA-10"
+        }
+      ]
+    },
+    {
+      "id": "SA-11",
+      "family": "SA",
+      "family_name": "System and Services Acquisition",
+      "title": "Developer Testing and Evaluation",
+      "description": "Require the developer of the system to create and implement a security and privacy assessment plan.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SA-11"
+        }
+      ]
+    },
+    {
+      "id": "SA-22",
+      "family": "SA",
+      "family_name": "System and Services Acquisition",
+      "title": "Unsupported System Components",
+      "description": "Replace system components when support for the components is no longer available from the developer, vendor, or manufacturer.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SA-22"
+        }
+      ]
+    },
+    {
+      "id": "SC-1",
+      "family": "SC",
+      "family_name": "System and Communications Protection",
+      "title": "Policy and Procedures",
+      "description": "Develop, document, and disseminate system and communications protection policy and procedures.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SC-1"
+        }
+      ]
+    },
+    {
+      "id": "SC-2",
+      "family": "SC",
+      "family_name": "System and Communications Protection",
+      "title": "Separation of System and User Functionality",
+      "description": "Separate user functionality from system management functionality.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SC-2"
+        }
+      ]
+    },
+    {
+      "id": "SC-4",
+      "family": "SC",
+      "family_name": "System and Communications Protection",
+      "title": "Information in Shared System Resources",
+      "description": "Prevent unauthorized and unintended information transfer via shared system resources.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SC-4"
+        }
+      ]
+    },
+    {
+      "id": "SC-5",
+      "family": "SC",
+      "family_name": "System and Communications Protection",
+      "title": "Denial-of-Service Protection",
+      "description": "Protect against or limit the effects of denial-of-service attacks by employing controls.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SC-5"
+        }
+      ]
+    },
+    {
+      "id": "SC-7",
+      "family": "SC",
+      "family_name": "System and Communications Protection",
+      "title": "Boundary Protection",
+      "description": "Monitor and control communications at the external managed interfaces to the system and at key internal boundaries within the system.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SC-7"
+        }
+      ]
+    },
+    {
+      "id": "SC-8",
+      "family": "SC",
+      "family_name": "System and Communications Protection",
+      "title": "Transmission Confidentiality and Integrity",
+      "description": "Protect the confidentiality and integrity of transmitted information.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SC-8"
+        }
+      ]
+    },
+    {
+      "id": "SC-10",
+      "family": "SC",
+      "family_name": "System and Communications Protection",
+      "title": "Network Disconnect",
+      "description": "Terminate the network connection associated with a communications session at the end of the session or after a defined period of inactivity.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SC-10"
+        }
+      ]
+    },
+    {
+      "id": "SC-12",
+      "family": "SC",
+      "family_name": "System and Communications Protection",
+      "title": "Cryptographic Key Establishment and Management",
+      "description": "Establish and manage cryptographic keys when cryptography is employed within the system.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SC-12"
+        }
+      ]
+    },
+    {
+      "id": "SC-13",
+      "family": "SC",
+      "family_name": "System and Communications Protection",
+      "title": "Cryptographic Protection",
+      "description": "Determine the cryptographic uses and implement the types of cryptography required for each specified cryptographic use.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SC-13"
+        }
+      ]
+    },
+    {
+      "id": "SC-15",
+      "family": "SC",
+      "family_name": "System and Communications Protection",
+      "title": "Collaborative Computing Devices and Applications",
+      "description": "Prohibit remote activation of collaborative computing devices and applications and provide an explicit indication of use to users.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SC-15"
+        }
+      ]
+    },
+    {
+      "id": "SC-17",
+      "family": "SC",
+      "family_name": "System and Communications Protection",
+      "title": "Public Key Infrastructure Certificates",
+      "description": "Issue public key certificates under an organizational policy or obtain public key certificates from an approved service provider.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SC-17"
+        }
+      ]
+    },
+    {
+      "id": "SC-18",
+      "family": "SC",
+      "family_name": "System and Communications Protection",
+      "title": "Mobile Code",
+      "description": "Define acceptable and unacceptable mobile code and mobile code technologies. Establish implementation guidance for acceptable mobile code.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SC-18"
+        }
+      ]
+    },
+    {
+      "id": "SC-20",
+      "family": "SC",
+      "family_name": "System and Communications Protection",
+      "title": "Secure Name/Address Resolution Service (Authoritative Source)",
+      "description": "Provide additional data origin authentication and integrity verification artifacts along with the authoritative name resolution data.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SC-20"
+        }
+      ]
+    },
+    {
+      "id": "SC-21",
+      "family": "SC",
+      "family_name": "System and Communications Protection",
+      "title": "Secure Name/Address Resolution Service (Recursive or Caching Resolver)",
+      "description": "Request and perform data origin authentication and data integrity verification on name/address resolution responses.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SC-21"
+        }
+      ]
+    },
+    {
+      "id": "SC-22",
+      "family": "SC",
+      "family_name": "System and Communications Protection",
+      "title": "Architecture and Provisioning for Name/Address Resolution Service",
+      "description": "Ensure the systems that collectively provide name/address resolution service are fault-tolerant and implement role separation.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SC-22"
+        }
+      ]
+    },
+    {
+      "id": "SC-23",
+      "family": "SC",
+      "family_name": "System and Communications Protection",
+      "title": "Session Authenticity",
+      "description": "Protect the authenticity of communications sessions.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SC-23"
+        }
+      ]
+    },
+    {
+      "id": "SC-28",
+      "family": "SC",
+      "family_name": "System and Communications Protection",
+      "title": "Protection of Information at Rest",
+      "description": "Protect the confidentiality and integrity of information at rest.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SC-28"
+        }
+      ]
+    },
+    {
+      "id": "SC-39",
+      "family": "SC",
+      "family_name": "System and Communications Protection",
+      "title": "Process Isolation",
+      "description": "Maintain a separate execution domain for each executing system process.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SC-39"
+        }
+      ]
+    },
+    {
+      "id": "SI-1",
+      "family": "SI",
+      "family_name": "System and Information Integrity",
+      "title": "Policy and Procedures",
+      "description": "Develop, document, and disseminate system and information integrity policy and procedures.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SI-1"
+        }
+      ]
+    },
+    {
+      "id": "SI-2",
+      "family": "SI",
+      "family_name": "System and Information Integrity",
+      "title": "Flaw Remediation",
+      "description": "Identify, report, and correct system flaws. Install security-relevant software and firmware updates.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SI-2"
+        }
+      ]
+    },
+    {
+      "id": "SI-3",
+      "family": "SI",
+      "family_name": "System and Information Integrity",
+      "title": "Malicious Code Protection",
+      "description": "Implement malicious code protection mechanisms at system entry and exit points to detect and eradicate malicious code.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SI-3"
+        }
+      ]
+    },
+    {
+      "id": "SI-4",
+      "family": "SI",
+      "family_name": "System and Information Integrity",
+      "title": "System Monitoring",
+      "description": "Monitor the system to detect attacks and indicators of potential attacks, unauthorized local/network/remote connections.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SI-4"
+        }
+      ]
+    },
+    {
+      "id": "SI-5",
+      "family": "SI",
+      "family_name": "System and Information Integrity",
+      "title": "Security Alerts, Advisories, and Directives",
+      "description": "Receive system security alerts, advisories, and directives from designated organizations on an ongoing basis.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SI-5"
+        }
+      ]
+    },
+    {
+      "id": "SI-6",
+      "family": "SI",
+      "family_name": "System and Information Integrity",
+      "title": "Security and Privacy Function Verification",
+      "description": "Verify the correct operation of security and privacy functions.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SI-6"
+        }
+      ]
+    },
+    {
+      "id": "SI-7",
+      "family": "SI",
+      "family_name": "System and Information Integrity",
+      "title": "Software, Firmware, and Information Integrity",
+      "description": "Employ integrity verification tools to detect unauthorized changes to software, firmware, and information.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SI-7"
+        }
+      ]
+    },
+    {
+      "id": "SI-8",
+      "family": "SI",
+      "family_name": "System and Information Integrity",
+      "title": "Spam Protection",
+      "description": "Employ spam protection mechanisms at system entry and exit points to detect and act on unsolicited messages.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SI-8"
+        }
+      ]
+    },
+    {
+      "id": "SI-10",
+      "family": "SI",
+      "family_name": "System and Information Integrity",
+      "title": "Information Input Validation",
+      "description": "Check the validity of information inputs to the system.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SI-10"
+        }
+      ]
+    },
+    {
+      "id": "SI-11",
+      "family": "SI",
+      "family_name": "System and Information Integrity",
+      "title": "Error Handling",
+      "description": "Generate error messages that provide information necessary for corrective actions without revealing information that could be exploited.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SI-11"
+        }
+      ]
+    },
+    {
+      "id": "SI-12",
+      "family": "SI",
+      "family_name": "System and Information Integrity",
+      "title": "Information Management and Retention",
+      "description": "Manage and retain information within the system and information output from the system in accordance with applicable laws and policies.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SI-12"
+        }
+      ]
+    },
+    {
+      "id": "SI-16",
+      "family": "SI",
+      "family_name": "System and Information Integrity",
+      "title": "Memory Protection",
+      "description": "Implement controls to protect the system memory from unauthorized code execution.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SI-16"
+        }
+      ]
+    },
+    {
+      "id": "SR-1",
+      "family": "SR",
+      "family_name": "Supply Chain Risk Management",
+      "title": "Policy and Procedures",
+      "description": "Develop, document, and disseminate supply chain risk management policy and procedures.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SR-1"
+        }
+      ]
+    },
+    {
+      "id": "SR-2",
+      "family": "SR",
+      "family_name": "Supply Chain Risk Management",
+      "title": "Supply Chain Risk Management Plan",
+      "description": "Develop a plan for managing supply chain risks associated with the development, acquisition, maintenance, and disposal of systems.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SR-2"
+        }
+      ]
+    },
+    {
+      "id": "SR-3",
+      "family": "SR",
+      "family_name": "Supply Chain Risk Management",
+      "title": "Supply Chain Controls and Processes",
+      "description": "Establish a process to identify and address weaknesses or deficiencies in the supply chain elements and processes.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SR-3"
+        }
+      ]
+    },
+    {
+      "id": "SR-5",
+      "family": "SR",
+      "family_name": "Supply Chain Risk Management",
+      "title": "Acquisition Strategies, Tools, and Methods",
+      "description": "Employ acquisition strategies, contract tools, and procurement methods to protect against, identify, and mitigate supply chain risks.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SR-5"
+        }
+      ]
+    },
+    {
+      "id": "SR-6",
+      "family": "SR",
+      "family_name": "Supply Chain Risk Management",
+      "title": "Supplier Assessments and Reviews",
+      "description": "Assess and review the supply chain-related risks associated with suppliers or contractors.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SR-6"
+        }
+      ]
+    },
+    {
+      "id": "SR-8",
+      "family": "SR",
+      "family_name": "Supply Chain Risk Management",
+      "title": "Notification Agreements",
+      "description": "Establish agreements with suppliers and contractors regarding notification of supply chain compromises.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SR-8"
+        }
+      ]
+    },
+    {
+      "id": "SR-10",
+      "family": "SR",
+      "family_name": "Supply Chain Risk Management",
+      "title": "Inspection of Systems or Components",
+      "description": "Inspect systems or system components to detect tampering.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SR-10"
+        }
+      ]
+    },
+    {
+      "id": "SR-11",
+      "family": "SR",
+      "family_name": "Supply Chain Risk Management",
+      "title": "Component Authenticity",
+      "description": "Develop and implement anti-counterfeit policy and procedures that include means to detect and prevent counterfeit components.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SR-11"
+        }
+      ]
+    },
+    {
+      "id": "SR-12",
+      "family": "SR",
+      "family_name": "Supply Chain Risk Management",
+      "title": "Component Disposal",
+      "description": "Dispose of system components using organization-defined techniques and methods.",
+      "supplemental_guidance": "",
+      "baselines": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "parent_id": null,
+      "related_controls": [],
+      "typical_evidence": [
+        {
+          "type": "POLICY",
+          "freshness_days": 365
+        }
+      ],
+      "assessment_objectives": [],
+      "external_references": [
+        {
+          "source": "NIST CPRT",
+          "url": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SR-12"
+        }
+      ]
+    }
+  ]
+}

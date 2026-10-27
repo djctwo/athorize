@@ -1,0 +1,2087 @@
+{
+  "framework_id": "cjis",
+  "version": "1.0",
+  "source": "FBI CJIS ISO \u2014 Security Control Mapping of CJIS Security Policy to NIST SP 800-53 Rev 5 (2021)",
+  "mappings": [
+    {
+      "control_id": "5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-21",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.1 \u2192 AC-21"
+    },
+    {
+      "control_id": "5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.1 \u2192 CA-3"
+    },
+    {
+      "control_id": "5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.1 \u2192 CA-7"
+    },
+    {
+      "control_id": "5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.1 \u2192 CA-8"
+    },
+    {
+      "control_id": "5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.1 \u2192 CM-9"
+    },
+    {
+      "control_id": "5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.1 \u2192 CP-6"
+    },
+    {
+      "control_id": "5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.1 \u2192 CP-7"
+    },
+    {
+      "control_id": "5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.1 \u2192 IR-8"
+    },
+    {
+      "control_id": "5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.1 \u2192 PE-3"
+    },
+    {
+      "control_id": "5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PL-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.1 \u2192 PL-2"
+    },
+    {
+      "control_id": "5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PM-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.1 \u2192 PM-1"
+    },
+    {
+      "control_id": "5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.1 \u2192 PS-1"
+    },
+    {
+      "control_id": "5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.1 \u2192 PS-2"
+    },
+    {
+      "control_id": "5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.1 \u2192 PS-3"
+    },
+    {
+      "control_id": "5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.1 \u2192 PS-6"
+    },
+    {
+      "control_id": "5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.1 \u2192 PS-7"
+    },
+    {
+      "control_id": "5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.1 \u2192 RA-3"
+    },
+    {
+      "control_id": "5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.1 \u2192 SA-2"
+    },
+    {
+      "control_id": "5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.1 \u2192 SA-4"
+    },
+    {
+      "control_id": "5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.1 \u2192 SA-9"
+    },
+    {
+      "control_id": "5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-12",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.1 \u2192 SI-12"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-17",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 AC-17"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-20",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 AC-20"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 AC-4"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 CA-3"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 CA-8"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 CA-9"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 CP-1"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-10",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 CP-10"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 CP-2"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 CP-6"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 CP-7"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 CP-9"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 IA-1"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 IA-2"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 IA-5"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 IA-7"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 IA-8"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 IR-1"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 IR-6"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 IR-8"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 MA-1"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 MA-4"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 MA-5"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 MP-1"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 MP-2"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 MP-4"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 MP-5"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 MP-6"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 MP-7"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 PE-1"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 PE-2"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 PE-3"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PL-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 PL-1"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PL-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 PL-2"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PL-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 PL-4"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 PS-1"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 PS-3"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 PS-7"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-12",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 SC-12"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-13",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 SC-13"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 SC-2"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-20",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 SC-20"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-21",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 SC-21"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-22",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 SC-22"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-23",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 SC-23"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-28",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 SC-28"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 SC-4"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 SC-5"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 SC-7"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 SC-8"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 SI-1"
+    },
+    {
+      "control_id": "5.10.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.1 \u2192 SI-4"
+    },
+    {
+      "control_id": "5.10.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.3 \u2192 AC-3"
+    },
+    {
+      "control_id": "5.10.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.3 \u2192 AC-4"
+    },
+    {
+      "control_id": "5.10.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.3 \u2192 SC-2"
+    },
+    {
+      "control_id": "5.10.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.3 \u2192 SC-4"
+    },
+    {
+      "control_id": "5.10.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.3 \u2192 SC-7"
+    },
+    {
+      "control_id": "5.10.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.4 \u2192 AC-6"
+    },
+    {
+      "control_id": "5.10.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.4 \u2192 CM-3"
+    },
+    {
+      "control_id": "5.10.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.4 \u2192 CM-4"
+    },
+    {
+      "control_id": "5.10.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.4 \u2192 CM-8"
+    },
+    {
+      "control_id": "5.10.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.4 \u2192 IR-8"
+    },
+    {
+      "control_id": "5.10.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.4 \u2192 MA-3"
+    },
+    {
+      "control_id": "5.10.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.4 \u2192 MP-7"
+    },
+    {
+      "control_id": "5.10.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.4 \u2192 RA-5"
+    },
+    {
+      "control_id": "5.10.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-11",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.4 \u2192 SA-11"
+    },
+    {
+      "control_id": "5.10.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-10",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.4 \u2192 SI-10"
+    },
+    {
+      "control_id": "5.10.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-11",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.4 \u2192 SI-11"
+    },
+    {
+      "control_id": "5.10.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-12",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.4 \u2192 SI-12"
+    },
+    {
+      "control_id": "5.10.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.4 \u2192 SI-3"
+    },
+    {
+      "control_id": "5.10.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.4 \u2192 SI-5"
+    },
+    {
+      "control_id": "5.10.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.10.4 \u2192 SI-8"
+    },
+    {
+      "control_id": "5.11",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.11 \u2192 CA-1"
+    },
+    {
+      "control_id": "5.11",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.11 \u2192 CA-2"
+    },
+    {
+      "control_id": "5.11",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.11 \u2192 CA-3"
+    },
+    {
+      "control_id": "5.11",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.11 \u2192 CA-5"
+    },
+    {
+      "control_id": "5.11",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.11 \u2192 CA-6"
+    },
+    {
+      "control_id": "5.11",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.11 \u2192 CA-7"
+    },
+    {
+      "control_id": "5.11",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.11 \u2192 CM-3"
+    },
+    {
+      "control_id": "5.12",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.12 \u2192 PS-1"
+    },
+    {
+      "control_id": "5.12",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.12 \u2192 PS-2"
+    },
+    {
+      "control_id": "5.12",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.12 \u2192 PS-3"
+    },
+    {
+      "control_id": "5.12",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.12 \u2192 PS-4"
+    },
+    {
+      "control_id": "5.12",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.12 \u2192 PS-5"
+    },
+    {
+      "control_id": "5.12",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.12 \u2192 PS-6"
+    },
+    {
+      "control_id": "5.12",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.12 \u2192 PS-7"
+    },
+    {
+      "control_id": "5.12",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.12 \u2192 PS-8"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 AC-1"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-18",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 AC-18"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-19",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 AC-19"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 AC-5"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 AC-6"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 CM-1"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 CM-2"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 CM-3"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 CM-4"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 IA-1"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 IA-2"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 IA-3"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 IA-5"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 IR-1"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 IR-2"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 IR-4"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 IR-8"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 MA-3"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 MA-4"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 MP-7"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 RA-5"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-10",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 SA-10"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-11",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 SA-11"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 SA-3"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 SA-8"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-18",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 SC-18"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 SI-3"
+    },
+    {
+      "control_id": "5.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.13 \u2192 SI-4"
+    },
+    {
+      "control_id": "5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.2 \u2192 AT-1"
+    },
+    {
+      "control_id": "5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.2 \u2192 AT-2"
+    },
+    {
+      "control_id": "5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.2 \u2192 AT-3"
+    },
+    {
+      "control_id": "5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.2 \u2192 AT-4"
+    },
+    {
+      "control_id": "5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-10",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.2 \u2192 CM-10"
+    },
+    {
+      "control_id": "5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-11",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.2 \u2192 CM-11"
+    },
+    {
+      "control_id": "5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.2 \u2192 CM-9"
+    },
+    {
+      "control_id": "5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.2 \u2192 CP-3"
+    },
+    {
+      "control_id": "5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.2 \u2192 IA-1"
+    },
+    {
+      "control_id": "5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.2 \u2192 IR-2"
+    },
+    {
+      "control_id": "5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.2 \u2192 MP-1"
+    },
+    {
+      "control_id": "5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.2 \u2192 PE-1"
+    },
+    {
+      "control_id": "5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PL-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.2 \u2192 PL-4"
+    },
+    {
+      "control_id": "5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.2 \u2192 PS-6"
+    },
+    {
+      "control_id": "5.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-11",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.3 \u2192 AU-11"
+    },
+    {
+      "control_id": "5.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.3 \u2192 AU-6"
+    },
+    {
+      "control_id": "5.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.3 \u2192 AU-9"
+    },
+    {
+      "control_id": "5.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.3 \u2192 IR-1"
+    },
+    {
+      "control_id": "5.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.3 \u2192 IR-2"
+    },
+    {
+      "control_id": "5.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.3 \u2192 IR-3"
+    },
+    {
+      "control_id": "5.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.3 \u2192 IR-4"
+    },
+    {
+      "control_id": "5.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.3 \u2192 IR-5"
+    },
+    {
+      "control_id": "5.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.3 \u2192 IR-6"
+    },
+    {
+      "control_id": "5.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.3 \u2192 IR-7"
+    },
+    {
+      "control_id": "5.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.3 \u2192 IR-8"
+    },
+    {
+      "control_id": "5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-11",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.4 \u2192 AU-11"
+    },
+    {
+      "control_id": "5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.4 \u2192 AU-4"
+    },
+    {
+      "control_id": "5.4.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-17",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.4.1 \u2192 AC-17"
+    },
+    {
+      "control_id": "5.4.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.4.1 \u2192 AC-2"
+    },
+    {
+      "control_id": "5.4.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.4.1 \u2192 AC-6"
+    },
+    {
+      "control_id": "5.4.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-12",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.4.1 \u2192 AU-12"
+    },
+    {
+      "control_id": "5.4.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.4.1 \u2192 AU-2"
+    },
+    {
+      "control_id": "5.4.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.4.1 \u2192 AU-3"
+    },
+    {
+      "control_id": "5.4.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.4.1 \u2192 AU-6"
+    },
+    {
+      "control_id": "5.4.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.4.1 \u2192 CA-7"
+    },
+    {
+      "control_id": "5.4.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.4.1 \u2192 SI-4"
+    },
+    {
+      "control_id": "5.4.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.4.2 \u2192 AU-5"
+    },
+    {
+      "control_id": "5.4.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.4.3 \u2192 AU-6"
+    },
+    {
+      "control_id": "5.4.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.4.3 \u2192 AU-7"
+    },
+    {
+      "control_id": "5.4.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.4.3 \u2192 CA-2"
+    },
+    {
+      "control_id": "5.4.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.4.3 \u2192 CA-7"
+    },
+    {
+      "control_id": "5.4.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.4.4 \u2192 AU-8"
+    },
+    {
+      "control_id": "5.4.5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.4.5 \u2192 AU-9"
+    },
+    {
+      "control_id": "5.4.6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-11",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.4.6 \u2192 AU-11"
+    },
+    {
+      "control_id": "5.4.6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.4.6 \u2192 AU-4"
+    },
+    {
+      "control_id": "5.4.6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.4.6 \u2192 AU-5"
+    },
+    {
+      "control_id": "5.4.6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.4.6 \u2192 AU-9"
+    },
+    {
+      "control_id": "5.5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.5.1 \u2192 AC-2"
+    },
+    {
+      "control_id": "5.5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.5.1 \u2192 AC-5"
+    },
+    {
+      "control_id": "5.5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.5.1 \u2192 PS-4"
+    },
+    {
+      "control_id": "5.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-10",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.5.2 \u2192 AC-10"
+    },
+    {
+      "control_id": "5.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.5.2 \u2192 AC-2"
+    },
+    {
+      "control_id": "5.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.5.2 \u2192 AC-3"
+    },
+    {
+      "control_id": "5.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.5.2 \u2192 AC-5"
+    },
+    {
+      "control_id": "5.5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.5.2 \u2192 AC-6"
+    },
+    {
+      "control_id": "5.5.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.5.3 \u2192 AC-7"
+    },
+    {
+      "control_id": "5.5.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.5.3 \u2192 IA-5"
+    },
+    {
+      "control_id": "5.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-11",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.5.4 \u2192 AC-11"
+    },
+    {
+      "control_id": "5.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-22",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.5.4 \u2192 AC-22"
+    },
+    {
+      "control_id": "5.5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.5.4 \u2192 AC-8"
+    },
+    {
+      "control_id": "5.5.5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-11",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.5.5 \u2192 AC-11"
+    },
+    {
+      "control_id": "5.5.6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-17",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.5.6 \u2192 AC-17"
+    },
+    {
+      "control_id": "5.5.6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-20",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.5.6 \u2192 AC-20"
+    },
+    {
+      "control_id": "5.5.6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-22",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.5.6 \u2192 AC-22"
+    },
+    {
+      "control_id": "5.5.6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.5.6 \u2192 SI-4"
+    },
+    {
+      "control_id": "5.6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.6 \u2192 AC-2"
+    },
+    {
+      "control_id": "5.6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.6 \u2192 AC-3"
+    },
+    {
+      "control_id": "5.6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-12",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.6 \u2192 IA-12"
+    },
+    {
+      "control_id": "5.6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.6 \u2192 IA-2"
+    },
+    {
+      "control_id": "5.6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.6 \u2192 IA-4"
+    },
+    {
+      "control_id": "5.6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.6 \u2192 IA-5"
+    },
+    {
+      "control_id": "5.6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.6 \u2192 IA-8"
+    },
+    {
+      "control_id": "5.6.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.6.1 \u2192 AC-3"
+    },
+    {
+      "control_id": "5.6.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.6.1 \u2192 AC-4"
+    },
+    {
+      "control_id": "5.6.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.6.1 \u2192 IA-1"
+    },
+    {
+      "control_id": "5.6.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.6.1 \u2192 IA-2"
+    },
+    {
+      "control_id": "5.6.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.6.2 \u2192 IA-1"
+    },
+    {
+      "control_id": "5.6.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-12",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.6.2 \u2192 IA-12"
+    },
+    {
+      "control_id": "5.6.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.6.2 \u2192 IA-2"
+    },
+    {
+      "control_id": "5.6.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.6.2 \u2192 IA-3"
+    },
+    {
+      "control_id": "5.6.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.6.2 \u2192 IA-5"
+    },
+    {
+      "control_id": "5.6.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.6.2 \u2192 IA-6"
+    },
+    {
+      "control_id": "5.6.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.6.2 \u2192 MA-1"
+    },
+    {
+      "control_id": "5.6.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.6.2 \u2192 MA-4"
+    },
+    {
+      "control_id": "5.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.7 \u2192 CA-3"
+    },
+    {
+      "control_id": "5.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.7 \u2192 CA-9"
+    },
+    {
+      "control_id": "5.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.7 \u2192 CM-2"
+    },
+    {
+      "control_id": "5.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.7 \u2192 CM-3"
+    },
+    {
+      "control_id": "5.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.7 \u2192 CM-4"
+    },
+    {
+      "control_id": "5.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.7 \u2192 CM-5"
+    },
+    {
+      "control_id": "5.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.7 \u2192 CM-6"
+    },
+    {
+      "control_id": "5.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.7 \u2192 CM-7"
+    },
+    {
+      "control_id": "5.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.7 \u2192 CM-8"
+    },
+    {
+      "control_id": "5.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.7 \u2192 CM-9"
+    },
+    {
+      "control_id": "5.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.7 \u2192 MA-2"
+    },
+    {
+      "control_id": "5.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PL-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.7 \u2192 PL-2"
+    },
+    {
+      "control_id": "5.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.7 \u2192 SA-4"
+    },
+    {
+      "control_id": "5.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.7 \u2192 SA-5"
+    },
+    {
+      "control_id": "5.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.7 \u2192 SC-7"
+    },
+    {
+      "control_id": "5.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-20",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.8 \u2192 AC-20"
+    },
+    {
+      "control_id": "5.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.8 \u2192 CP-6"
+    },
+    {
+      "control_id": "5.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.8 \u2192 CP-7"
+    },
+    {
+      "control_id": "5.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.8 \u2192 MA-2"
+    },
+    {
+      "control_id": "5.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.8 \u2192 MA-3"
+    },
+    {
+      "control_id": "5.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.8 \u2192 MP-1"
+    },
+    {
+      "control_id": "5.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.8 \u2192 MP-2"
+    },
+    {
+      "control_id": "5.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.8 \u2192 MP-3"
+    },
+    {
+      "control_id": "5.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.8 \u2192 MP-4"
+    },
+    {
+      "control_id": "5.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.8 \u2192 MP-5"
+    },
+    {
+      "control_id": "5.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.8 \u2192 MP-6"
+    },
+    {
+      "control_id": "5.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-28",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.8 \u2192 SC-28"
+    },
+    {
+      "control_id": "5.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.9 \u2192 CA-8"
+    },
+    {
+      "control_id": "5.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.9 \u2192 MA-1"
+    },
+    {
+      "control_id": "5.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.9 \u2192 MA-4"
+    },
+    {
+      "control_id": "5.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.9 \u2192 MA-5"
+    },
+    {
+      "control_id": "5.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.9 \u2192 MP-1"
+    },
+    {
+      "control_id": "5.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.9 \u2192 PE-1"
+    },
+    {
+      "control_id": "5.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-16",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.9 \u2192 PE-16"
+    },
+    {
+      "control_id": "5.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.9 \u2192 PE-2"
+    },
+    {
+      "control_id": "5.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.9 \u2192 PE-3"
+    },
+    {
+      "control_id": "5.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.9 \u2192 PE-4"
+    },
+    {
+      "control_id": "5.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.9 \u2192 PE-5"
+    },
+    {
+      "control_id": "5.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.9 \u2192 PE-6"
+    },
+    {
+      "control_id": "5.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "FBI CJIS Security Policy \u2192 SP 800-53 r5 best-fit mapping: CSP 5.9 \u2192 PE-8"
+    }
+  ]
+}

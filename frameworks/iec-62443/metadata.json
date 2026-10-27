@@ -1,0 +1,26 @@
+{
+  "id": "iec-62443",
+  "name": "IEC 62443 — Industrial Automation and Control Systems Security",
+  "short_name": "IEC 62443",
+  "version": "3-3:2013 / 4-2:2019",
+  "catalog_version": "2019",
+  "description": "Security for Industrial Automation and Control Systems (IACS). Combines the system security requirements and security levels of IEC 62443-3-3 with the technical component requirements of IEC 62443-4-2. Organized around seven Foundational Requirements (FR 1-7) and four Security Levels (SL 1-4). This catalog is an original-authored reference keyed to the public requirement identifiers; it does not reproduce the copyrighted standard text.",
+  "publisher": "International Electrotechnical Commission / ISA",
+  "category": "energy",
+  "tags": ["iec", "isa", "62443", "ot", "ics", "iacs", "scada", "industrial-control", "critical-infrastructure", "manufacturing"],
+  "status": "available",
+  "terminology": {
+    "control": "Requirement",
+    "requirement": "Security Requirement",
+    "finding": "Finding",
+    "severity_levels": ["High", "Moderate", "Low"],
+    "compliance_unit": "Requirement",
+    "assessment": "Assessment"
+  },
+  "scoring": {
+    "method": "control_percentage",
+    "passing_threshold": 100
+  },
+  "icon": "cpu",
+  "color": "#00695c"
+}

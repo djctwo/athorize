@@ -1,0 +1,5 @@
+Computer Name,Operating System,IP Address,MAC Address,Manufacturer,Model,Chassis Type,Serial Number,Count
+WS-FIN-04.example.com,Microsoft Windows 11 Enterprise,"10.20.5.40
+fe80::1c2d:3e4f:5a6b:7c8d",00:1A:2B:3C:4D:5E,Dell Inc.,Latitude 7440,Laptop,SN-0001,1
+APP-SRV-09.example.com,Red Hat Enterprise Linux 9.3,10.10.1.9,00:AA:BB:CC:DD:EE,VMware Inc.,VMware Virtual Platform,Server,,1
+mac-des-02.example.com,macOS 14.6,2001:db8::42,3C:22:FB:00:11:22,Apple Inc.,MacBookPro18,Notebook,SN-0003,1

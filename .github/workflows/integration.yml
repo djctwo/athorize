@@ -1,0 +1,60 @@
+name: integration
+
+# Proves the two live external paths — OIDC SSO and email digests — against a
+# REAL Keycloak and a REAL MailHog on the runner. No local Docker needed.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "backend/services/oidc.py"
+      - "backend/services/email.py"
+      - "backend/tests/integration/**"
+      - "scripts/smoketest/**"
+      - ".github/workflows/integration.yml"
+  workflow_dispatch:
+
+jobs:
+  live-oidc-email:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: "3.12"
+
+      - name: Install backend dependencies
+        run: pip install -r backend/requirements.txt pytest
+
+      - name: Start Keycloak + MailHog
+        run: docker compose -f scripts/smoketest/docker-compose.yml up -d
+
+      - name: Wait for Keycloak realm to be ready
+        run: |
+          for i in $(seq 1 60); do
+            if curl -sf http://localhost:8080/realms/athorize/.well-known/openid-configuration >/dev/null; then
+              echo "Keycloak ready after ${i}0s"; exit 0
+            fi
+            sleep 10
+          done
+          echo "Keycloak did not become ready" >&2
+          docker compose -f scripts/smoketest/docker-compose.yml logs keycloak | tail -50
+          exit 1
+
+      - name: Wait for MailHog
+        run: |
+          for _ in $(seq 1 12); do
+            curl -sf http://localhost:8025/api/v2/messages >/dev/null && exit 0
+            sleep 5
+          done
+          echo "MailHog did not become ready" >&2; exit 1
+
+      - name: Run live integration tests
+        env:
+          INTEGRATION: "1"
+        run: cd backend && python -m pytest tests/integration/ -v
+
+      - name: Tear down
+        if: always()
+        run: docker compose -f scripts/smoketest/docker-compose.yml down

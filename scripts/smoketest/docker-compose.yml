@@ -1,0 +1,26 @@
+# Local stack to prove the two live external paths — OIDC SSO and email digests —
+# without any cloud accounts. Brings up Keycloak (an IdP) and MailHog (a catch-all
+# SMTP server with a web inbox). See README.md for the 10-minute runbook.
+#
+#   docker compose -f scripts/smoketest/docker-compose.yml up
+#
+# Keycloak admin : http://localhost:8080  (admin / admin)
+# MailHog inbox  : http://localhost:8025
+
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.0
+    command: ["start-dev", "--import-realm"]
+    environment:
+      KC_BOOTSTRAP_ADMIN_USERNAME: admin
+      KC_BOOTSTRAP_ADMIN_PASSWORD: admin
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./realm-athorize.json:/opt/keycloak/data/import/realm-athorize.json:ro
+
+  mailhog:
+    image: mailhog/mailhog:latest
+    ports:
+      - "1025:1025"   # SMTP endpoint the app sends to
+      - "8025:8025"   # web inbox to read what was sent

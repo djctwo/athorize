@@ -1,0 +1,56 @@
+# Keep the build context small and secret-free. Only what the Dockerfile
+# COPYs is needed: backend/ (minus tests; includes the demo seed,
+# services/demo_seed.py), frameworks/, frontend/ sources, docker/, LICENSE, NOTICE.
+.git
+.github
+**/.DS_Store
+**/__pycache__
+**/*.py[cod]
+**/.pytest_cache
+**/.mypy_cache
+**/.ruff_cache
+.venv
+**/.venv
+venv
+wheelhouse
+.env
+.env.*
+**/.env
+**/*.db
+**/*.db-*
+**/*.sqlite*
+**/*.key
+**/*.pem
+**/*.p12
+**/*.pfx
+setup-token
+secrets.env
+
+# Node
+**/node_modules
+frontend/dist
+frontend/coverage
+test-results
+playwright-report
+
+# Not needed in the image
+backend/tests
+backend/test-appdata
+frontend/src/test
+**/*.test.ts
+**/*.test.tsx
+desktop
+docs
+dist
+build
+htmlcov
+.coverage
+coverage
+*.md
+!frameworks/**/*.md
+Dockerfile
+docker-compose*.yml
+.dockerignore
+
+# Docker install settings
+athorize.env

@@ -1,0 +1,26 @@
+{
+  "id": "hipaa-security",
+  "name": "HIPAA Security Rule",
+  "short_name": "HIPAA Security",
+  "version": "2013",
+  "catalog_version": "2024-01-01",
+  "description": "Standards for the protection of electronic protected health information",
+  "publisher": "U.S. Department of Health and Human Services",
+  "category": "healthcare",
+  "tags": ["hipaa", "healthcare", "phi", "ephi", "hhs", "covered-entity"],
+  "status": "available",
+  "terminology": {
+    "control": "Standard",
+    "requirement": "Implementation Specification",
+    "finding": "Violation",
+    "severity_levels": ["Willful Neglect - Uncorrected", "Willful Neglect - Corrected", "Reasonable Cause", "Did Not Know"],
+    "compliance_unit": "Standard",
+    "assessment": "Risk Assessment"
+  },
+  "scoring": {
+    "method": "control_percentage",
+    "passing_threshold": 100
+  },
+  "icon": "heart-pulse",
+  "color": "#d32f2f"
+}

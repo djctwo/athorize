@@ -1,0 +1,271 @@
+{
+  "framework_id": "nist-800-82-r3",
+  "version": "1.0",
+  "source": "SP 800-82r3 OT overlay \u2014 prefix-stripped identity to the tailored SP 800-53r5 base controls",
+  "mappings": [
+    {
+      "control_id": "OT-AC-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 AC-1"
+    },
+    {
+      "control_id": "OT-AC-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 AC-2"
+    },
+    {
+      "control_id": "OT-AC-3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 AC-3"
+    },
+    {
+      "control_id": "OT-AC-4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-4",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 AC-4"
+    },
+    {
+      "control_id": "OT-AC-5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-5",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 AC-5"
+    },
+    {
+      "control_id": "OT-AT-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 AT-1"
+    },
+    {
+      "control_id": "OT-AU-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 AU-1"
+    },
+    {
+      "control_id": "OT-AU-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 AU-2"
+    },
+    {
+      "control_id": "OT-CA-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 CA-1"
+    },
+    {
+      "control_id": "OT-CM-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 CM-1"
+    },
+    {
+      "control_id": "OT-CM-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 CM-2"
+    },
+    {
+      "control_id": "OT-CM-3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-3",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 CM-3"
+    },
+    {
+      "control_id": "OT-CP-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 CP-1"
+    },
+    {
+      "control_id": "OT-CP-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 CP-2"
+    },
+    {
+      "control_id": "OT-IA-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 IA-1"
+    },
+    {
+      "control_id": "OT-IA-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 IA-2"
+    },
+    {
+      "control_id": "OT-IR-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 IR-1"
+    },
+    {
+      "control_id": "OT-IR-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 IR-2"
+    },
+    {
+      "control_id": "OT-MA-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 MA-1"
+    },
+    {
+      "control_id": "OT-MP-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 MP-1"
+    },
+    {
+      "control_id": "OT-PE-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 PE-1"
+    },
+    {
+      "control_id": "OT-PE-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 PE-2"
+    },
+    {
+      "control_id": "OT-PE-3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-3",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 PE-3"
+    },
+    {
+      "control_id": "OT-RA-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 RA-1"
+    },
+    {
+      "control_id": "OT-RA-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 RA-2"
+    },
+    {
+      "control_id": "OT-SC-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 SC-1"
+    },
+    {
+      "control_id": "OT-SC-7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-7",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 SC-7"
+    },
+    {
+      "control_id": "OT-SC-8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-8",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 SC-8"
+    },
+    {
+      "control_id": "OT-SI-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 SI-1"
+    },
+    {
+      "control_id": "OT-SI-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 SI-2"
+    },
+    {
+      "control_id": "OT-SI-4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-4",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 SI-4"
+    },
+    {
+      "control_id": "OT-SA-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 SA-1"
+    },
+    {
+      "control_id": "OT-PS-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "SP 800-82r3 OT overlay of SP 800-53r5 PS-1"
+    }
+  ]
+}

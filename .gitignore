@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Node
+node_modules/
+frontend/dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env
+.env.*
+!.env.example
+# Docker install settings (INSTALL.md §14d)
+athorize.env
+*.db
+
+# Secret/key material
+*.key
+*.p12
+*.pfx
+*.keystore
+serviceAccountKey.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data
+~/.athorize-universal/
+
+# Test
+.coverage
+htmlcov/
+.pytest_cache/
+test-results/
+test.db*
+backend/test-appdata/
+*.pem
+desktop/dist/
+desktop/build/
+desktop/_staging/
+playwright-report/
+frontend/playwright-report/
+frontend/test-results/
+frontend/e2e/.shots/

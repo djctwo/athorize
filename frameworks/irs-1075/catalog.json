@@ -1,0 +1,245 @@
+{
+  "framework_id": "irs-1075",
+  "controls": [
+    {
+      "family": "Access Control",
+      "title": "Access Control Policy and Procedures",
+      "description": "The agency shall develop, document, and disseminate an access control policy and procedures.",
+      "id": "9.3.1"
+    },
+    {
+      "family": "Access Control",
+      "title": "Account Management",
+      "description": "The agency shall manage information system accounts, including establishing, activating, modifying, reviewing, disabling, and removing accounts.",
+      "id": "9.3.2"
+    },
+    {
+      "family": "Access Control",
+      "title": "Access Enforcement",
+      "description": "The information system shall enforce approved authorizations for logical access to information and system resources.",
+      "id": "9.3.3"
+    },
+    {
+      "family": "Access Control",
+      "title": "Information Flow Enforcement",
+      "description": "The information system shall enforce approved authorizations for controlling the flow of FTI within the system and between interconnected systems.",
+      "id": "9.3.4"
+    },
+    {
+      "family": "Access Control",
+      "title": "Separation of Duties",
+      "description": "The agency shall separate duties of individuals as necessary to prevent malevolent activity.",
+      "id": "9.3.5"
+    },
+    {
+      "family": "Access Control",
+      "title": "Least Privilege",
+      "description": "The agency shall employ the principle of least privilege, allowing only authorized accesses for users which are necessary.",
+      "id": "9.3.6"
+    },
+    {
+      "family": "Access Control",
+      "title": "Unsuccessful Logon Attempts",
+      "description": "The information system shall enforce a limit of consecutive invalid logon attempts within a specified time period and automatically lock the account.",
+      "id": "9.3.7"
+    },
+    {
+      "family": "Access Control",
+      "title": "Session Termination",
+      "description": "The information system shall automatically terminate a user session after conditions defined by the agency have been met.",
+      "id": "9.3.8"
+    },
+    {
+      "family": "Access Control",
+      "title": "Remote Access",
+      "description": "The agency shall authorize, monitor, and control all remote access methods to the information system.",
+      "id": "9.3.9"
+    },
+    {
+      "family": "Access Control",
+      "title": "Wireless Access",
+      "description": "The agency shall authorize, monitor, and control wireless access to the information system.",
+      "id": "9.3.10"
+    },
+    {
+      "family": "Access Control",
+      "title": "Use of External Information Systems",
+      "description": "The agency shall establish terms and conditions governing the use of external information systems.",
+      "id": "9.3.11"
+    },
+    {
+      "family": "Awareness and Training",
+      "title": "Security Awareness Training",
+      "description": "The agency shall provide basic security awareness training to all information system users as part of initial training and at least annually thereafter.",
+      "id": "9.3.12"
+    },
+    {
+      "family": "Awareness and Training",
+      "title": "Role-Based Security Training",
+      "description": "The agency shall provide role-based security training to personnel with assigned security roles and responsibilities.",
+      "id": "9.3.13"
+    },
+    {
+      "family": "Audit and Accountability",
+      "title": "Audit Events",
+      "description": "The information system shall generate audit records for specified events including successful and unsuccessful logon attempts, and other security-relevant events.",
+      "id": "9.3.14"
+    },
+    {
+      "family": "Audit and Accountability",
+      "title": "Content of Audit Records",
+      "description": "The information system shall produce audit records that contain sufficient information to establish what events occurred, when, where, the source, outcome, and identity of individuals/subjects associated with each event.",
+      "id": "9.3.15"
+    },
+    {
+      "family": "Audit and Accountability",
+      "title": "Audit Storage Capacity",
+      "description": "The agency shall allocate audit record storage capacity and configure auditing to reduce the likelihood of such capacity being exceeded.",
+      "id": "9.3.16"
+    },
+    {
+      "family": "Audit and Accountability",
+      "title": "Response to Audit Processing Failures",
+      "description": "The information system shall alert appropriate organizational officials in the event of an audit processing failure and take defined additional actions.",
+      "id": "9.3.17"
+    },
+    {
+      "family": "Audit and Accountability",
+      "title": "Audit Review, Analysis, and Reporting",
+      "description": "The agency shall review and analyze information system audit records on a regular basis for indications of inappropriate or unusual activity.",
+      "id": "9.3.18"
+    },
+    {
+      "family": "Audit and Accountability",
+      "title": "Audit Reduction and Report Generation",
+      "description": "The information system shall provide an audit reduction and report generation capability that supports on-demand audit review, analysis, and reporting requirements.",
+      "id": "9.3.19"
+    },
+    {
+      "family": "Audit and Accountability",
+      "title": "Time Stamps",
+      "description": "The information system shall use internal system clocks to generate time stamps for audit records.",
+      "id": "9.3.20"
+    },
+    {
+      "family": "Audit and Accountability",
+      "title": "Protection of Audit Information",
+      "description": "The information system shall protect audit information and audit tools from unauthorized access, modification, and deletion.",
+      "id": "9.3.21"
+    },
+    {
+      "family": "Configuration Management",
+      "title": "Baseline Configuration",
+      "description": "The agency shall develop, document, and maintain a current baseline configuration of the information system.",
+      "id": "9.3.22"
+    },
+    {
+      "family": "Configuration Management",
+      "title": "Configuration Change Control",
+      "description": "The agency shall authorize, document, and control changes to the information system.",
+      "id": "9.3.23"
+    },
+    {
+      "family": "Configuration Management",
+      "title": "Least Functionality",
+      "description": "The agency shall configure the information system to provide only essential capabilities and prohibit or restrict the use of specified functions, ports, protocols, and services.",
+      "id": "9.3.24"
+    },
+    {
+      "family": "Contingency Planning",
+      "title": "Contingency Plan",
+      "description": "The agency shall develop a contingency plan for the information system that identifies essential missions and business functions.",
+      "id": "9.3.25"
+    },
+    {
+      "family": "Contingency Planning",
+      "title": "Information System Backup",
+      "description": "The agency shall conduct backups of user-level and system-level information at defined frequencies.",
+      "id": "9.3.26"
+    },
+    {
+      "family": "Contingency Planning",
+      "title": "Information System Recovery and Reconstitution",
+      "description": "The agency shall provide for the recovery and reconstitution of the information system to a known state after a disruption.",
+      "id": "9.3.27"
+    },
+    {
+      "family": "Identification and Authentication",
+      "title": "Identification and Authentication",
+      "description": "The information system shall uniquely identify and authenticate organizational users or processes acting on behalf of users.",
+      "id": "9.3.28"
+    },
+    {
+      "family": "Identification and Authentication",
+      "title": "Authenticator Management",
+      "description": "The agency shall manage information system authenticators by defining initial authenticator content, establishing administrative procedures, and requiring changes when authenticators are compromised.",
+      "id": "9.3.29"
+    },
+    {
+      "family": "Incident Response",
+      "title": "Incident Response Policy and Procedures",
+      "description": "The agency shall develop and implement an incident response capability for the information system that includes preparation, detection, analysis, containment, eradication, and recovery.",
+      "id": "9.3.30"
+    },
+    {
+      "family": "Incident Response",
+      "title": "Incident Reporting",
+      "description": "The agency shall report suspected or confirmed FTI data incidents to the appropriate IRS office within 24 hours of discovery.",
+      "id": "9.3.31"
+    },
+    {
+      "family": "Media Protection",
+      "title": "Media Protection Policy",
+      "description": "The agency shall restrict access to FTI on digital and non-digital media to authorized individuals only.",
+      "id": "9.3.32"
+    },
+    {
+      "family": "Media Protection",
+      "title": "Media Sanitization",
+      "description": "The agency shall sanitize information system media prior to disposal, release, or reuse.",
+      "id": "9.3.33"
+    },
+    {
+      "family": "Physical and Environmental Protection",
+      "title": "Physical Access Authorizations",
+      "description": "The agency shall authorize, monitor, and control physical access to the facility where the information system resides.",
+      "id": "9.3.34"
+    },
+    {
+      "family": "Physical and Environmental Protection",
+      "title": "Physical Access Control",
+      "description": "The agency shall control physical access to information system distribution and transmission lines within organizational facilities.",
+      "id": "9.3.35"
+    },
+    {
+      "family": "System and Communications Protection",
+      "title": "Boundary Protection",
+      "description": "The information system shall monitor and control communications at the external boundary and at key internal boundaries within the system.",
+      "id": "9.3.36"
+    },
+    {
+      "family": "System and Communications Protection",
+      "title": "Transmission Confidentiality and Integrity",
+      "description": "The information system shall protect the confidentiality and integrity of transmitted FTI using FIPS 140-2 validated cryptographic mechanisms.",
+      "id": "9.3.37"
+    },
+    {
+      "family": "System and Communications Protection",
+      "title": "Protection of Information at Rest",
+      "description": "The information system shall protect the confidentiality and integrity of FTI at rest.",
+      "id": "9.3.38"
+    },
+    {
+      "family": "System and Information Integrity",
+      "title": "Flaw Remediation",
+      "description": "The agency shall identify, report, and correct information system flaws in a timely manner.",
+      "id": "9.3.39"
+    },
+    {
+      "family": "System and Information Integrity",
+      "title": "Malicious Code Protection",
+      "description": "The agency shall implement malicious code protection mechanisms at information system entry and exit points.",
+      "id": "9.3.40"
+    }
+  ]
+}

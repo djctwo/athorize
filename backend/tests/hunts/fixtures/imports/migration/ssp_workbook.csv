@@ -1,0 +1,4 @@
+Control ID,Implementation Status,Implementation Narrative,Responsible Role
+HUNT-1,Implemented,Access is enforced by the IdP with MFA for all users and quarterly reviews.,IAM Team
+HUNT-2,Partially Implemented,Audit logs collected centrally; retention not yet one year.,SecOps
+HUNT-3,Planned,Encryption at rest planned for Q1.,Platform Team

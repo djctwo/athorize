@@ -1,0 +1,26 @@
+{
+  "id": "nist-800-82-r3",
+  "name": "NIST Special Publication 800-82 Revision 3",
+  "short_name": "NIST 800-82r3",
+  "version": "3.0",
+  "catalog_version": "2023-09-28",
+  "description": "Guide to Operational Technology (OT) Security",
+  "publisher": "National Institute of Standards and Technology",
+  "category": "energy",
+  "tags": ["nist", "ot", "ics", "scada", "industrial-control", "critical-infrastructure"],
+  "status": "available",
+  "terminology": {
+    "control": "Control",
+    "requirement": "OT Overlay Guidance",
+    "finding": "Finding",
+    "severity_levels": ["High", "Moderate", "Low"],
+    "compliance_unit": "Control",
+    "assessment": "Assessment"
+  },
+  "scoring": {
+    "method": "control_percentage",
+    "passing_threshold": 100
+  },
+  "icon": "cpu",
+  "color": "#2e7d32"
+}

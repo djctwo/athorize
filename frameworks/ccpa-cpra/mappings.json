@@ -1,0 +1,191 @@
+{
+  "framework_id": "ccpa-cpra",
+  "version": "1.0",
+  "source": "Advisory mapping (Athorize editorial judgment) \u2014 no published 800-53 crosswalk exists for this regulation. relationship='related' / confidence='vendor': navigation + evidence hints only, never propagates compliance status.",
+  "mappings": [
+    {
+      "control_id": "1798.100",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: ccpa-cpra 1798.100 relates to SP 800-53r5 PT-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "1798.100",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-5",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: ccpa-cpra 1798.100 relates to SP 800-53r5 PT-5 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "1798.105",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: ccpa-cpra 1798.105 relates to SP 800-53r5 MP-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "1798.105",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-12",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: ccpa-cpra 1798.105 relates to SP 800-53r5 SI-12 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "1798.106",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: ccpa-cpra 1798.106 relates to SP 800-53r5 PT-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "1798.106",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-12",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: ccpa-cpra 1798.106 relates to SP 800-53r5 SI-12 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "1798.110",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-5",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: ccpa-cpra 1798.110 relates to SP 800-53r5 PT-5 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "1798.115",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-5",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: ccpa-cpra 1798.115 relates to SP 800-53r5 PT-5 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "1798.120",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-4",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: ccpa-cpra 1798.120 relates to SP 800-53r5 PT-4 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "1798.121",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: ccpa-cpra 1798.121 relates to SP 800-53r5 AC-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "1798.121",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-4",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: ccpa-cpra 1798.121 relates to SP 800-53r5 PT-4 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "1798.125",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: ccpa-cpra 1798.125 relates to SP 800-53r5 PT-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "1798.130",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-5",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: ccpa-cpra 1798.130 relates to SP 800-53r5 PT-5 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "1798.135",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-4",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: ccpa-cpra 1798.135 relates to SP 800-53r5 PT-4 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "1798.135",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-5",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: ccpa-cpra 1798.135 relates to SP 800-53r5 PT-5 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "1798.140",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: ccpa-cpra 1798.140 relates to SP 800-53r5 PT-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "1798.145",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PT-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: ccpa-cpra 1798.145 relates to SP 800-53r5 PT-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "1798.150",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: ccpa-cpra 1798.150 relates to SP 800-53r5 IR-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "1798.150",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-28",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: ccpa-cpra 1798.150 relates to SP 800-53r5 SC-28 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "1798.155",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PM-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: ccpa-cpra 1798.155 relates to SP 800-53r5 PM-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "1798.185",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PM-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: ccpa-cpra 1798.185 relates to SP 800-53r5 PM-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "1798.199.40",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: ccpa-cpra 1798.199.40 relates to SP 800-53r5 AU-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "1798.199.40",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: ccpa-cpra 1798.199.40 relates to SP 800-53r5 CA-2 (vendor judgment, see-also only)"
+    }
+  ]
+}

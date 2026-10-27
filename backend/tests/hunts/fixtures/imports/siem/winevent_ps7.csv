@@ -1,0 +1,5 @@
+"Message","Id","Version","Level","ProviderName","LogName","MachineName","TimeCreated","LevelDisplayName"
+"An account failed to log on.
+Subject: ...","4625","0","0","Microsoft-Windows-Security-Auditing","Security","DC01.example.com","10/20/2026 9:15:02 AM","Information"
+"The Windows Defender Firewall service terminated unexpectedly.","7034","0","2","Service Control Manager","System","WS-FIN-04.example.com","10/20/2026 9:20:00 AM","Error"
+"The time service has not synchronized the system time for 86400 seconds.","129","0","3","Microsoft-Windows-Time-Service","System","WS-FIN-07.example.com","10/20/2026 9:30:00 AM","Warning"

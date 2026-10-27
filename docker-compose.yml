@@ -1,0 +1,52 @@
+# Athorize — "keep it" install: a blank instance that opens on the Setup screen.
+#
+#   docker compose up -d
+#   docker compose logs athorize | grep -A2 "SETUP TOKEN"    # one-time token
+#   open http://localhost:8001
+#
+# Data (database, evidence, backups, generated keys) lives in the named volume
+# "athorize-data" and survives restarts, `down`/`up` and image upgrades.
+# `docker compose down -v` DELETES it.
+#
+# Compose settings (shell env or a .env file next to this file):
+#   ATHORIZE_PORT  host port                              (default 8001)
+#   ATHORIZE_BIND  host address to publish on             (default 127.0.0.1;
+#                  set 0.0.0.0 to let other machines reach it — put a TLS
+#                  reverse proxy in front for anything beyond a trial)
+#   ATHORIZE_IMAGE image to run                           (default athorize:local)
+# App settings from docs/INSTALL.md §5 (ATHORIZE_ALLOWED_HOSTS, ATHORIZE_TRUST_XFF,
+# FORWARDED_ALLOW_IPS, SMTP_*, OIDC_*, ...): put them in athorize.env next to
+# this file, one NAME=value per line. Don't edit this file for settings — then
+# `git pull` upgrades never conflict (INSTALL.md §14d/§14e).
+name: athorize
+
+services:
+  athorize:
+    image: ${ATHORIZE_IMAGE:-athorize:local}
+    build: .
+    restart: unless-stopped
+    ports:
+      - "${ATHORIZE_BIND:-127.0.0.1}:${ATHORIZE_PORT:-8001}:8001"
+    volumes:
+      - athorize-data:/data
+    # Your settings (optional file; needs Docker Compose 2.24+). SECRET_KEY and
+    # ATHORIZE_AUDIT_HMAC_KEY are generated on first start and kept in the
+    # volume (/data/secrets.env); set them in athorize.env only if you manage
+    # keys yourself, and then keep them set. Behind a TLS reverse proxy:
+    #   ATHORIZE_TRUST_XFF=1
+    #   FORWARDED_ALLOW_IPS=<the proxy's address>   (never "*")
+    #   ATHORIZE_ALLOWED_HOSTS=<the name users browse to>
+    env_file:
+      - path: ./athorize.env
+        required: false
+    environment:
+      ATHORIZE_DEMO_SEED: "0"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8001/api/health', timeout=4).status == 200 else 1)"]
+      interval: 30s
+      timeout: 5s
+      start_period: 60s
+      retries: 3
+
+volumes:
+  athorize-data:

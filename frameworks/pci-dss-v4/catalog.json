@@ -1,0 +1,383 @@
+{
+  "framework_id": "pci-dss-v4",
+  "controls": [
+    {
+      "family": "Network Security Controls",
+      "title": "Network security control governance",
+      "description": "Keep written policies and procedures for firewalls and similar network controls current, in use, and known to staff, with clear ownership of each related duty.",
+      "id": "1.1"
+    },
+    {
+      "family": "Network Security Controls",
+      "title": "Configure and maintain network controls",
+      "description": "Set up firewalls, routers, and cloud security groups from approved standards, keep network and data-flow diagrams accurate, justify every allowed service, and review rulesets on a regular cycle.",
+      "id": "1.2"
+    },
+    {
+      "family": "Network Security Controls",
+      "title": "Restrict traffic into and out of the CDE",
+      "description": "Allow only the specific inbound and outbound traffic the cardholder environment truly needs, deny everything else, and tightly limit traffic between wireless networks and the CDE.",
+      "id": "1.3"
+    },
+    {
+      "family": "Network Security Controls",
+      "title": "Control trusted-to-untrusted network connections",
+      "description": "Place filtering controls between internal and public networks, keep systems holding card data off directly reachable segments, block spoofed addresses, and avoid exposing internal addressing externally.",
+      "id": "1.4"
+    },
+    {
+      "family": "Network Security Controls",
+      "title": "Protect devices that roam onto untrusted networks",
+      "description": "Laptops and other endpoints that touch the CDE and also join outside networks such as home Wi-Fi need firewall-style protection that users cannot switch off without authorization.",
+      "id": "1.5"
+    },
+    {
+      "family": "Secure Configuration",
+      "title": "Secure configuration governance",
+      "description": "Maintain documented, current procedures for hardening systems, communicate them to the people who use them, and assign responsibility for configuration activities.",
+      "id": "2.1"
+    },
+    {
+      "family": "Secure Configuration",
+      "title": "Harden and manage system components",
+      "description": "Build systems from hardening baselines, change or disable vendor default accounts, run one primary function per server where practical, strip unneeded services, and encrypt administrative access.",
+      "id": "2.2"
+    },
+    {
+      "family": "Secure Configuration",
+      "title": "Secure wireless environments",
+      "description": "For any Wi-Fi tied to the CDE or carrying card data, replace vendor defaults such as keys and passwords, and rotate keys whenever someone with knowledge of them leaves.",
+      "id": "2.3"
+    },
+    {
+      "family": "Account Data Protection",
+      "title": "Stored data protection governance",
+      "description": "Document and maintain procedures for safeguarding stored cardholder data, keep them current and in use, and make sure staff know who is responsible for what.",
+      "id": "3.1"
+    },
+    {
+      "family": "Account Data Protection",
+      "title": "Minimize stored account data",
+      "description": "Keep only the cardholder data the business needs, set retention limits, and securely purge anything past its retention period, checking at least quarterly.",
+      "id": "3.2"
+    },
+    {
+      "family": "Account Data Protection",
+      "title": "Never retain sensitive authentication data",
+      "description": "Once a transaction is authorized, do not keep full track data, card verification codes, or PINs, even in encrypted form, unless the organization is an issuer with a documented need.",
+      "id": "3.3"
+    },
+    {
+      "family": "Account Data Protection",
+      "title": "Limit PAN display and copying",
+      "description": "Mask card numbers on screens and reports so only people with a genuine need see more than the first six and last four digits, and block copying of card data through remote access tools.",
+      "id": "3.4"
+    },
+    {
+      "family": "Account Data Protection",
+      "title": "Make stored PAN unreadable",
+      "description": "Render card numbers unreadable wherever they are kept, using strong one-way hashes, truncation, tokenization, or encryption with sound key management, including on removable media and backups.",
+      "id": "3.5"
+    },
+    {
+      "family": "Account Data Protection",
+      "title": "Protect stored-data encryption keys",
+      "description": "Keep keys that protect card data away from unauthorized people, store as few copies as possible in as few places as possible, and wrap data-encrypting keys with stronger key-encrypting keys.",
+      "id": "3.6"
+    },
+    {
+      "family": "Account Data Protection",
+      "title": "Key lifecycle management",
+      "description": "Document and follow a full key management process: generating strong keys, distributing and storing them safely, rotating at end of cryptoperiod, retiring compromised keys, split knowledge, and custodian acknowledgment.",
+      "id": "3.7"
+    },
+    {
+      "family": "Encryption in Transit",
+      "title": "Transmission encryption governance",
+      "description": "Maintain current, documented procedures for encrypting card data sent over networks, keep them in use, and make sure the responsible staff understand them.",
+      "id": "4.1"
+    },
+    {
+      "family": "Encryption in Transit",
+      "title": "Encrypt PAN sent over open networks",
+      "description": "Use trusted certificates and modern protocols such as current TLS when card numbers cross public networks, keep an inventory of those certificates, and never send PAN unprotected via email or chat.",
+      "id": "4.2"
+    },
+    {
+      "family": "Malware Protection",
+      "title": "Malware defense governance",
+      "description": "Keep anti-malware policies and procedures documented, up to date, and actually followed, and assign clear ownership for malware protection activities.",
+      "id": "5.1"
+    },
+    {
+      "family": "Malware Protection",
+      "title": "Prevent and detect malware",
+      "description": "Run anti-malware software on systems at risk, and for systems judged low-risk, periodically reassess that judgment to confirm they still do not need it.",
+      "id": "5.2"
+    },
+    {
+      "family": "Malware Protection",
+      "title": "Keep anti-malware active and current",
+      "description": "Keep anti-malware tools updated, scanning or monitoring continuously, logging their activity, and protected so users cannot turn them off without approval; scan removable media when connected.",
+      "id": "5.3"
+    },
+    {
+      "family": "Malware Protection",
+      "title": "Defend users against phishing",
+      "description": "Deploy technical measures, such as email filtering and link protection, that catch phishing messages before they reach staff or limit the damage when they do.",
+      "id": "5.4"
+    },
+    {
+      "family": "Secure Development",
+      "title": "Secure development governance",
+      "description": "Keep documented, current procedures for building and maintaining secure systems and software, ensure they are followed, and assign responsibility for each activity.",
+      "id": "6.1"
+    },
+    {
+      "family": "Secure Development",
+      "title": "Build custom software securely",
+      "description": "Develop in-house and bespoke software using secure coding practices, train developers at least yearly, and review code before release to catch flaws like injection and broken authentication.",
+      "id": "6.2"
+    },
+    {
+      "family": "Secure Development",
+      "title": "Find and fix vulnerabilities",
+      "description": "Track new vulnerabilities from reliable sources, rank them by risk, keep a software and component inventory, and patch critical issues quickly and others within a reasonable window.",
+      "id": "6.3"
+    },
+    {
+      "family": "Secure Development",
+      "title": "Protect public-facing web applications",
+      "description": "Shield internet-facing web apps with an automated attack-blocking solution such as a WAF, and manage and authorize every script running on payment pages in the consumer's browser.",
+      "id": "6.4"
+    },
+    {
+      "family": "Secure Development",
+      "title": "Manage changes securely",
+      "description": "Run changes through a documented process with impact analysis, approval, testing, and rollback plans; keep test and production separate and never use live card numbers in testing.",
+      "id": "6.5"
+    },
+    {
+      "family": "Access Control",
+      "title": "Access restriction governance",
+      "description": "Document and maintain procedures for limiting access to systems and card data based on business need, keep them current, and assign who owns each duty.",
+      "id": "7.1"
+    },
+    {
+      "family": "Access Control",
+      "title": "Define and assign access by need",
+      "description": "Grant access using least privilege based on each person's job role, require approval for privileges, review user and application accounts on a regular cycle, and limit database query access.",
+      "id": "7.2"
+    },
+    {
+      "family": "Access Control",
+      "title": "Enforce access through a control system",
+      "description": "Use an access control mechanism that grants rights by role and need, applies to every system component, and denies everything by default.",
+      "id": "7.3"
+    },
+    {
+      "family": "Identification and Authentication",
+      "title": "Identity and authentication governance",
+      "description": "Keep identification and authentication procedures documented, current, and in use, with clear roles for the people who carry them out.",
+      "id": "8.1"
+    },
+    {
+      "family": "Identification and Authentication",
+      "title": "Manage user IDs across their lifecycle",
+      "description": "Give every person a unique ID, avoid shared or generic accounts, authorize account creation and changes, promptly remove leavers, disable dormant accounts, and limit vendor remote access windows.",
+      "id": "8.2"
+    },
+    {
+      "family": "Identification and Authentication",
+      "title": "Strong authentication for users",
+      "description": "Protect authentication factors in transit and storage, verify identity before resetting credentials, lock out repeated failures, require reasonably long and complex passwords, and change them when compromised.",
+      "id": "8.3"
+    },
+    {
+      "family": "Identification and Authentication",
+      "title": "Require MFA for CDE access",
+      "description": "Require multi-factor authentication for all administrative access into the cardholder environment, for any non-console access to it, and for every remote network connection.",
+      "id": "8.4"
+    },
+    {
+      "family": "Identification and Authentication",
+      "title": "Harden MFA against misuse",
+      "description": "Configure MFA so it resists replay, cannot be bypassed without documented approval, needs at least two distinct factor types, and grants access only after every factor succeeds.",
+      "id": "8.5"
+    },
+    {
+      "family": "Identification and Authentication",
+      "title": "Control system and application accounts",
+      "description": "Limit interactive logins on system and service accounts, keep their passwords out of scripts and config files, and rotate those passwords based on risk.",
+      "id": "8.6"
+    },
+    {
+      "family": "Physical Access",
+      "title": "Physical security governance",
+      "description": "Maintain documented, current procedures for limiting physical access to card data and make sure staff understand their roles in carrying them out.",
+      "id": "9.1"
+    },
+    {
+      "family": "Physical Access",
+      "title": "Control entry to sensitive facilities",
+      "description": "Use badge systems, locks, or cameras to govern entry to sites and rooms holding card data, retain entry records, and restrict network jacks and console access in public areas.",
+      "id": "9.2"
+    },
+    {
+      "family": "Physical Access",
+      "title": "Authorize and manage personnel and visitors",
+      "description": "Make employees and visitors easy to tell apart, approve and escort visitors, issue badges that expire, revoke access promptly when no longer needed, and keep a visitor log.",
+      "id": "9.3"
+    },
+    {
+      "family": "Physical Access",
+      "title": "Secure media containing card data",
+      "description": "Physically secure, classify, and inventory media holding card data, track it when moved off-site, and destroy it so the data cannot be recovered once it is no longer needed.",
+      "id": "9.4"
+    },
+    {
+      "family": "Physical Access",
+      "title": "Protect payment terminals from tampering",
+      "description": "Keep a list of card-reading devices, inspect them regularly for tampering or swapped units, and train staff at the point of sale to spot and report suspicious activity.",
+      "id": "9.5"
+    },
+    {
+      "family": "Logging and Monitoring",
+      "title": "Logging and monitoring governance",
+      "description": "Document and maintain logging and monitoring procedures for activity on systems and card data, keep them in use, and assign clear ownership.",
+      "id": "10.1"
+    },
+    {
+      "family": "Logging and Monitoring",
+      "title": "Capture audit logs of key events",
+      "description": "Log user access to card data, admin actions, log access, failed logins, account changes, and audit setting changes, recording who, what, when, where, and the outcome.",
+      "id": "10.2"
+    },
+    {
+      "family": "Logging and Monitoring",
+      "title": "Protect audit logs",
+      "description": "Restrict read access to logs, prevent unauthorized changes, back them up promptly to a central server, and use integrity monitoring so tampering is noticed.",
+      "id": "10.3"
+    },
+    {
+      "family": "Logging and Monitoring",
+      "title": "Review logs for suspicious activity",
+      "description": "Look at security event and critical system logs every day, preferably with automated tools, review other logs at a risk-based interval, and follow up on exceptions.",
+      "id": "10.4"
+    },
+    {
+      "family": "Logging and Monitoring",
+      "title": "Retain audit log history",
+      "description": "Keep at least a year of audit log history, with the most recent three months readily accessible for investigation.",
+      "id": "10.5"
+    },
+    {
+      "family": "Logging and Monitoring",
+      "title": "Synchronize system clocks",
+      "description": "Use a time-synchronization service so all systems agree on the time, restrict who can change time settings, and get time from trusted sources.",
+      "id": "10.6"
+    },
+    {
+      "family": "Logging and Monitoring",
+      "title": "Detect security control failures",
+      "description": "Monitor critical controls such as firewalls, IDS, anti-malware, and logging for failures, raise alerts quickly, and restore them while documenting cause and remediation.",
+      "id": "10.7"
+    },
+    {
+      "family": "Security Testing",
+      "title": "Security testing governance",
+      "description": "Keep documented, current procedures for routinely testing systems and networks, ensure they are followed, and assign responsibility for testing tasks.",
+      "id": "11.1"
+    },
+    {
+      "family": "Security Testing",
+      "title": "Find and handle rogue wireless access points",
+      "description": "Check for wireless access points at least quarterly, keep an inventory of authorized ones, and act on any unauthorized devices discovered.",
+      "id": "11.2"
+    },
+    {
+      "family": "Security Testing",
+      "title": "Run internal and external vulnerability scans",
+      "description": "Scan internal systems and use an approved scanning vendor externally at least every quarter and after major changes, then rescan to confirm high-risk findings are fixed.",
+      "id": "11.3"
+    },
+    {
+      "family": "Security Testing",
+      "title": "Perform penetration testing",
+      "description": "Test networks and applications from inside and outside at least yearly and after big changes using a defined methodology, verify segmentation, and fix exploitable findings.",
+      "id": "11.4"
+    },
+    {
+      "family": "Security Testing",
+      "title": "Detect intrusions and unexpected file changes",
+      "description": "Use intrusion detection or prevention at the CDE perimeter and key points, keep detection engines current, and monitor critical files for unauthorized modifications.",
+      "id": "11.5"
+    },
+    {
+      "family": "Security Testing",
+      "title": "Detect tampering on payment pages",
+      "description": "Watch the payment pages served to customer browsers for unauthorized changes to scripts or security headers and alert staff when something is altered.",
+      "id": "11.6"
+    },
+    {
+      "family": "Information Security Policy",
+      "title": "Information security policy",
+      "description": "Publish an overall security policy, revisit it at least annually, spell out security roles for all personnel, and give a named executive responsibility for the security program.",
+      "id": "12.1"
+    },
+    {
+      "family": "Information Security Policy",
+      "title": "Acceptable use of end-user technology",
+      "description": "Set rules for how staff may use laptops, mobile devices, removable media, and similar technology, require management approval, and list permitted products and uses.",
+      "id": "12.2"
+    },
+    {
+      "family": "Information Security Policy",
+      "title": "Identify and manage risks to the CDE",
+      "description": "Perform targeted risk analyses for flexible requirements, justify any customized approaches, review cryptography and hardware or software in use, and keep these analyses current.",
+      "id": "12.3"
+    },
+    {
+      "family": "Information Security Policy",
+      "title": "Executive ownership of PCI compliance",
+      "description": "Assign leadership accountability for protecting card data and running the compliance program; service providers also confirm staff perform their assigned tasks through periodic reviews.",
+      "id": "12.4"
+    },
+    {
+      "family": "Information Security Policy",
+      "title": "Document and confirm PCI scope",
+      "description": "Keep an inventory of in-scope systems, confirm the scope and data flows at least yearly and after major changes, and verify segmentation boundaries remain accurate.",
+      "id": "12.5"
+    },
+    {
+      "family": "Information Security Policy",
+      "title": "Ongoing security awareness training",
+      "description": "Run a security awareness program covering threats like phishing and social engineering, train staff at hire and at least yearly, and have them acknowledge the policies.",
+      "id": "12.6"
+    },
+    {
+      "family": "Information Security Policy",
+      "title": "Screen personnel before hiring",
+      "description": "Run background checks, as far as local law permits, on new hires whose role gives them reach into the card data environment, before they begin work.",
+      "id": "12.7"
+    },
+    {
+      "family": "Information Security Policy",
+      "title": "Manage third-party service provider risk",
+      "description": "Keep a list of service providers that touch card data, get written agreements on their security duties, vet them before engagement, and monitor their compliance status yearly.",
+      "id": "12.8"
+    },
+    {
+      "family": "Information Security Policy",
+      "title": "Service providers support customer compliance",
+      "description": "Service providers acknowledge in writing their responsibility for card data they handle and give customers the information needed to understand which requirements each party covers.",
+      "id": "12.9"
+    },
+    {
+      "family": "Information Security Policy",
+      "title": "Incident response readiness",
+      "description": "Maintain and test an incident response plan, have staff available around the clock to respond to alerts, train responders, and act on any card data found where it should not be.",
+      "id": "12.10"
+    }
+  ]
+}

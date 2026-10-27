@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Athorize framework crosswalk mappings",
+  "description": "Per-plugin control-to-control mappings, shipped alongside catalog.json. Edges point toward the hub framework (nist-800-53-r5) unless a direct pairwise mapping exists; the reverse direction is derived at query time.",
+  "type": "object",
+  "required": ["framework_id", "version", "source", "mappings"],
+  "properties": {
+    "framework_id": { "type": "string" },
+    "version": { "type": "string" },
+    "source": { "type": "string", "description": "Provenance of the mapping data (publication, URL, method)" },
+    "mappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["control_id", "target_framework", "target_control", "relationship", "confidence"],
+        "properties": {
+          "control_id": { "type": "string" },
+          "target_framework": { "type": "string" },
+          "target_control": { "type": "string" },
+          "relationship": { "enum": ["equivalent", "subset", "superset", "intersects", "related"] },
+          "confidence": { "enum": ["official", "derived", "vendor"] },
+          "rationale": { "type": "string" }
+        }
+      }
+    }
+  }
+}

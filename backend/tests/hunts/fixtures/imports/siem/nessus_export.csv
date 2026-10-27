@@ -1,0 +1,4 @@
+"Plugin ID","CVE","CVSS v2.0 Base Score","Risk","Host","Protocol","Port","Name","Synopsis","Description","Solution","See Also","Plugin Output"
+"97833","CVE-2017-0143","9.3","Critical","10.0.0.5","tcp","445","MS17-010: Security Update for Microsoft Windows SMB Server (4013389) (ETERNALBLUE)","The remote Windows host is affected by multiple vulnerabilities.","The remote host is missing a security update.","Apply the patch.","https://example.com/ms17-010",""
+"51192","","6.4","Medium","10.0.0.6","tcp","443","SSL Certificate Cannot Be Trusted","The SSL certificate for this service cannot be trusted.","The X.509 certificate chain is not signed by a recognized CA.","Purchase or generate a proper certificate.","",""
+"42873","CVE-2016-2183","5.0","High","10.0.0.6","tcp","443","SSL Medium Strength Cipher Suites Supported (SWEET32)","The remote service supports the use of medium strength SSL ciphers.","3DES is supported.","Reconfigure the service.","",""

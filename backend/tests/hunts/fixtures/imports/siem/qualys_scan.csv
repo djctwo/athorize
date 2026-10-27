@@ -1,0 +1,4 @@
+"IP","DNS","NetBIOS","OS","IP Status","QID","Title","Type","Severity","Port","Protocol","FQDN","SSL","CVE ID","Vendor Reference","Bugtraq ID","Threat","Impact","Solution"
+"10.0.0.5","ws-fin-04.example.com","WS-FIN-04","Windows 10","host scanned, found vuln","91345","Microsoft Windows Security Update for March 2017","Vuln","5","445","tcp","","","CVE-2017-0143","MS17-010","","Remote code execution in SMBv1.","Full compromise","Apply MS17-010"
+"10.0.0.6","web-01.example.com","WEB-01","Linux","host scanned, found vuln","38173","SSL Certificate - Signature Verification Failed Vulnerability","Vuln","4","443","tcp","","over ssl","","","","Certificate chain cannot be verified.","MITM","Install a trusted certificate"
+"10.0.0.6","web-01.example.com","WEB-01","Linux","host scanned, found vuln","38628","SSL/TLS Server supports TLSv1.0","Vuln","2","443","tcp","","over ssl","","","","Deprecated protocol supported.","Weak crypto","Disable TLSv1.0"

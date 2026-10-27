@@ -1,0 +1,247 @@
+{
+  "framework_id": "sox",
+  "version": "1.0",
+  "source": "Advisory mapping (Athorize editorial judgment) \u2014 no published 800-53 crosswalk exists for this regulation. relationship='related' / confidence='vendor': navigation + evidence hints only, never propagates compliance status.",
+  "mappings": [
+    {
+      "control_id": "ITGC-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-1 relates to SP 800-53r5 AC-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-10 relates to SP 800-53r5 CM-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-11",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-10",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-11 relates to SP 800-53r5 CP-10 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-11",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-9",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-11 relates to SP 800-53r5 CP-9 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-12",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-12 relates to SP 800-53r5 CM-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-12",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-4",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-12 relates to SP 800-53r5 SI-4 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-13 relates to SP 800-53r5 IR-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-4",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-13 relates to SP 800-53r5 IR-4 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-14",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-13",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-14 relates to SP 800-53r5 PE-13 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-14",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-14 relates to SP 800-53r5 PE-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-15",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-15 relates to SP 800-53r5 SA-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-15",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-8",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-15 relates to SP 800-53r5 SA-8 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-16",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-16 relates to SP 800-53r5 CM-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-16",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-7",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-16 relates to SP 800-53r5 SI-7 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-17",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-17 relates to SP 800-53r5 AU-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-17",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-17 relates to SP 800-53r5 AU-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-17",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-17 relates to SP 800-53r5 AU-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-2 relates to SP 800-53r5 AC-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-3 relates to SP 800-53r5 AC-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-3 relates to SP 800-53r5 AC-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-4 relates to SP 800-53r5 IA-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-5",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-4 relates to SP 800-53r5 IA-5 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-5",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-5 relates to SP 800-53r5 AC-5 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-6 relates to SP 800-53r5 AC-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-7 relates to SP 800-53r5 CM-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-7 relates to SP 800-53r5 CM-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-8 relates to SP 800-53r5 CM-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-4",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-8 relates to SP 800-53r5 CM-4 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-5",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-9 relates to SP 800-53r5 AC-5 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "ITGC-9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-4",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: sox ITGC-9 relates to SP 800-53r5 CM-4 (vendor judgment, see-also only)"
+    }
+  ]
+}

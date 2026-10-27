@@ -1,0 +1,26 @@
+{
+  "id": "nist-csf-2.0",
+  "name": "NIST Cybersecurity Framework 2.0",
+  "short_name": "CSF 2.0",
+  "version": "2.0",
+  "catalog_version": "2024-02-26",
+  "description": "Framework for improving critical infrastructure cybersecurity",
+  "publisher": "National Institute of Standards and Technology",
+  "category": "general",
+  "tags": ["nist", "csf", "cybersecurity", "risk-management", "critical-infrastructure"],
+  "status": "available",
+  "terminology": {
+    "control": "Subcategory",
+    "requirement": "Implementation Example",
+    "finding": "Gap",
+    "severity_levels": ["Tier 4 - Adaptive", "Tier 3 - Repeatable", "Tier 2 - Risk Informed", "Tier 1 - Partial"],
+    "compliance_unit": "Subcategory",
+    "assessment": "Profile Assessment"
+  },
+  "scoring": {
+    "method": "maturity_level",
+    "passing_threshold": 3
+  },
+  "icon": "layers",
+  "color": "#0071bc"
+}

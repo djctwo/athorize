@@ -1,0 +1,5 @@
+_time,search_name,rule_name,urgency,src,dest,src_port,dest_port,transport,description
+2026-10-20T09:15:02.000+00:00,Access - Brute Force Access Behavior Detected - Rule,Brute Force Access,high,203.0.113.10,10.0.0.5,51515,22,tcp,"Multiple failed logins, then a success"
+2026-10-20T09:20:44.000+00:00,Threat - Malware Detected - Rule,Malware Detected,critical,10.0.0.23,198.51.100.7,49152,443,tcp,"Endpoint AV hit on
+two lines"
+2026-10-20T10:01:13.000+00:00,Network - Unusual DNS - Rule,Unusual DNS,low,10.0.0.40,10.0.0.2,53001,53,udp,Long TXT queries

@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #0f1419;
+  --bg-secondary: #1a2027;
+  --bg-tertiary: #242d35;
+  --text-primary: #e7e9ea;
+  --text-secondary: #a3acb9;
+  --text-tertiary: #6b7785;
+  --text-muted: #6b7785;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --accent-soft: rgba(59, 130, 246, 0.10);
+  --accent-2: #22c55e;
+  --border: #2f3942;
+  --border-hover: #3d4a55;
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --info: #5ca8ff;
+  --ot-accent: #f59e0b;
+  --ot-soft: rgba(245, 158, 11, 0.10);
+  --risk-low: #22c55e;
+  --risk-med: #f59e0b;
+  --risk-high: #ef4444;
+  --risk-crit: #dc2626;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Desktop/tablet keep the fixed-width layout the app was designed for; phones
+   (< md) get the drawer sidebar + full-width main instead (E2E-19). */
+@media (min-width: 768px) {
+  body {
+    min-width: 1280px;
+  }
+}
+
+input, select, textarea {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+button {
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Phones (E2E-19): wide tables scroll sideways inside their own box instead
+   of pushing the page wider than the screen. Desktop is unchanged (so row
+   popovers are never clipped there). */
+@media (max-width: 767px) {
+  div:has(> table) {
+    overflow-x: auto;
+  }
+  /* Toolbars, filter rows and KPI strips wrap onto a second line rather than
+     running off the side of the screen. Rows that fit are unaffected. */
+  main .flex:not(.flex-col):not(.flex-nowrap) {
+    flex-wrap: wrap;
+  }
+  main select,
+  main input {
+    max-width: 100%;
+  }
+}
+
+th {
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.875rem;
+}
+
+tr:hover td {
+  background: var(--bg-secondary);
+}
+
+@keyframes pulse-bg {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.7; }
+}
+.animate-pulse-bg {
+  animation: pulse-bg 1.5s ease-in-out infinite;
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-slide-up {
+  animation: slide-up 0.2s ease-out;
+}

@@ -1,0 +1,359 @@
+{
+  "framework_id": "dora",
+  "version": "1.0",
+  "source": "Advisory mapping (Athorize editorial judgment) \u2014 no published 800-53 crosswalk exists for this regulation. relationship='related' / confidence='vendor': navigation + evidence hints only, never propagates compliance status.",
+  "mappings": [
+    {
+      "control_id": "DORA-10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-10 relates to SP 800-53r5 AU-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-4",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-10 relates to SP 800-53r5 SI-4 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-11",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-11 relates to SP 800-53r5 CP-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-11",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-4",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-11 relates to SP 800-53r5 IR-4 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-12",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-10",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-12 relates to SP 800-53r5 CP-10 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-12",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-9",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-12 relates to SP 800-53r5 CP-9 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-7",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-13 relates to SP 800-53r5 CA-7 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-4",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-13 relates to SP 800-53r5 IR-4 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-14",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-14 relates to SP 800-53r5 IR-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-17",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-17 relates to SP 800-53r5 IR-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-17",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-4",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-17 relates to SP 800-53r5 IR-4 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-18",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-4",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-18 relates to SP 800-53r5 IR-4 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-18",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-18 relates to SP 800-53r5 RA-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-19",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-19 relates to SP 800-53r5 IR-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-20",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-20 relates to SP 800-53r5 IR-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-23",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-23 relates to SP 800-53r5 IR-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-23",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-5",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-23 relates to SP 800-53r5 SI-5 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-24",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-24 relates to SP 800-53r5 CA-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-24",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-8",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-24 relates to SP 800-53r5 CA-8 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-25",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-8",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-25 relates to SP 800-53r5 CA-8 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-25",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-5",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-25 relates to SP 800-53r5 RA-5 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-26",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-8",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-26 relates to SP 800-53r5 CA-8 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-28",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-9",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-28 relates to SP 800-53r5 SA-9 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-28",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-28 relates to SP 800-53r5 SR-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-29",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-29 relates to SP 800-53r5 RA-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-29",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-29 relates to SP 800-53r5 SR-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-30",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-4",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-30 relates to SP 800-53r5 SA-4 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-30",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-30 relates to SP 800-53r5 SR-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-31",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-31 relates to SP 800-53r5 SR-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-32",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-32 relates to SP 800-53r5 SR-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-33",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-33 relates to SP 800-53r5 SR-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-45",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-45 relates to SP 800-53r5 IR-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-45",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-5",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-45 relates to SP 800-53r5 SI-5 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PL-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-5 relates to SP 800-53r5 PL-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PM-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-5 relates to SP 800-53r5 PM-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PM-9",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-6 relates to SP 800-53r5 PM-9 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-6 relates to SP 800-53r5 RA-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-7 relates to SP 800-53r5 CM-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-4",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-7 relates to SP 800-53r5 SA-4 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-8",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-8 relates to SP 800-53r5 CM-8 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-8 relates to SP 800-53r5 RA-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-9 relates to SP 800-53r5 AC-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-7",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-9 relates to SP 800-53r5 SC-7 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "DORA-9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: dora DORA-9 relates to SP 800-53r5 SI-3 (vendor judgment, see-also only)"
+    }
+  ]
+}

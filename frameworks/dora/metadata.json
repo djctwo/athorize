@@ -1,0 +1,26 @@
+{
+  "id": "dora",
+  "name": "Digital Operational Resilience Act",
+  "short_name": "DORA",
+  "version": "2022/2554",
+  "catalog_version": "2025-01-17",
+  "description": "EU regulation on ICT risk management for financial entities ensuring digital operational resilience",
+  "publisher": "European Parliament and Council of the European Union",
+  "category": "finance",
+  "tags": ["dora", "eu", "ict-risk", "financial", "operational-resilience", "third-party"],
+  "status": "available",
+  "terminology": {
+    "control": "Article",
+    "requirement": "Provision",
+    "finding": "Non-Compliance",
+    "severity_levels": ["Critical", "Major", "Minor"],
+    "compliance_unit": "Article",
+    "assessment": "Compliance Assessment"
+  },
+  "scoring": {
+    "method": "control_percentage",
+    "passing_threshold": 100
+  },
+  "icon": "shield-euro",
+  "color": "#0d47a1"
+}

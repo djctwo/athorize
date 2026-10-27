@@ -1,0 +1,26 @@
+{
+  "id": "gdpr",
+  "name": "General Data Protection Regulation",
+  "short_name": "GDPR",
+  "version": "2016/679",
+  "catalog_version": "2024-01-01",
+  "description": "EU regulation on data protection and privacy for individuals within the European Union and EEA",
+  "publisher": "European Parliament and Council of the European Union",
+  "category": "privacy",
+  "tags": ["gdpr", "eu", "privacy", "data-protection", "dpa", "personal-data"],
+  "status": "available",
+  "terminology": {
+    "control": "Article",
+    "requirement": "Provision",
+    "finding": "Infringement",
+    "severity_levels": ["Upper Tier (4% global turnover)", "Lower Tier (2% global turnover)", "Warning", "Reprimand"],
+    "compliance_unit": "Article",
+    "assessment": "Data Protection Impact Assessment"
+  },
+  "scoring": {
+    "method": "control_percentage",
+    "passing_threshold": 100
+  },
+  "icon": "shield-eu",
+  "color": "#003399"
+}

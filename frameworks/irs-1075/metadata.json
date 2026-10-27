@@ -1,0 +1,26 @@
+{
+  "id": "irs-1075",
+  "name": "IRS Publication 1075 Tax Information Security Guidelines",
+  "short_name": "IRS 1075",
+  "version": "2024",
+  "catalog_version": "2024-01-01",
+  "description": "Safeguard requirements for federal tax information received from the IRS",
+  "publisher": "Internal Revenue Service",
+  "category": "federal",
+  "tags": ["irs", "tax", "fti", "federal-tax-information", "safeguards", "1075"],
+  "status": "available",
+  "terminology": {
+    "control": "Safeguard",
+    "requirement": "Requirement",
+    "finding": "Deficiency",
+    "severity_levels": ["Serious", "Significant", "Minor"],
+    "compliance_unit": "Safeguard",
+    "assessment": "Safeguard Review"
+  },
+  "scoring": {
+    "method": "control_percentage",
+    "passing_threshold": 100
+  },
+  "icon": "file-tax",
+  "color": "#004d40"
+}

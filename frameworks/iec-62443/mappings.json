@@ -1,0 +1,479 @@
+{
+  "framework_id": "iec-62443",
+  "version": "1.0",
+  "source": "IEC 62443-3-3 System Requirements mapped to NIST SP 800-53r5, informed by the published NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence (Athorize editorial rendering). 'equivalent' edges auto-propagate a satisfied status via the hub; 'intersects' edges provide crosswalk navigation and shared-evidence hints only.",
+  "mappings": [
+    {
+      "control_id": "SR-1.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-1.1 is equivalent to SP 800-53r5 IA-2 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-1.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-1.2 intersects SP 800-53r5 IA-3 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-1.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-1.3 is equivalent to SP 800-53r5 AC-2 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-1.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-4",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-1.4 is equivalent to SP 800-53r5 IA-4 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-1.5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-5",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-1.5 is equivalent to SP 800-53r5 IA-5 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-1.6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-18",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-1.6 intersects SP 800-53r5 AC-18 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-1.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-1.7 intersects SP 800-53r5 IA-5 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-1.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-1.8 intersects SP 800-53r5 IA-5 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-1.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-1.9 intersects SP 800-53r5 IA-5 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-1.10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-6",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-1.10 is equivalent to SP 800-53r5 IA-6 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-1.11",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-7",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-1.11 is equivalent to SP 800-53r5 AC-7 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-1.12",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-8",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-1.12 is equivalent to SP 800-53r5 AC-8 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-1.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-17",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-1.13 intersects SP 800-53r5 AC-17 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-1.13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-1.13 intersects SP 800-53r5 SC-7 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-2.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-2.1 is equivalent to SP 800-53r5 AC-3 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-2.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-2.1 intersects SP 800-53r5 AC-6 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-2.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-18",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-2.2 intersects SP 800-53r5 AC-18 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-2.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-19",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-2.3 is equivalent to SP 800-53r5 AC-19 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-2.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-18",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-2.4 is equivalent to SP 800-53r5 SC-18 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-2.5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-11",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-2.5 is equivalent to SP 800-53r5 AC-11 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-2.6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-12",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-2.6 is equivalent to SP 800-53r5 AC-12 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-2.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-10",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-2.7 is equivalent to SP 800-53r5 AC-10 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-2.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-2.8 is equivalent to SP 800-53r5 AU-2 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-2.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-2.8 intersects SP 800-53r5 AU-3 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-2.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-4",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-2.9 is equivalent to SP 800-53r5 AU-4 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-2.10",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-5",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-2.10 is equivalent to SP 800-53r5 AU-5 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-2.11",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-8",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-2.11 is equivalent to SP 800-53r5 AU-8 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-2.12",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-10",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-2.12 is equivalent to SP 800-53r5 AU-10 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-3.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-8",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-3.1 is equivalent to SP 800-53r5 SC-8 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-3.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-3",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-3.2 is equivalent to SP 800-53r5 SI-3 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-3.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-6",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-3.3 is equivalent to SP 800-53r5 SI-6 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-3.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-7",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-3.4 is equivalent to SP 800-53r5 SI-7 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-3.5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-10",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-3.5 is equivalent to SP 800-53r5 SI-10 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-3.6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-3.6 intersects SP 800-53r5 SC-5 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-3.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-11",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-3.7 is equivalent to SP 800-53r5 SI-11 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-3.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-23",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-3.8 is equivalent to SP 800-53r5 SC-23 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-3.9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-9",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-3.9 is equivalent to SP 800-53r5 AU-9 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-4.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-28",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-4.1 intersects SP 800-53r5 SC-28 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-4.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-4.1 intersects SP 800-53r5 SC-8 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-4.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-4.2 intersects SP 800-53r5 SC-4 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-4.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-4.2 intersects SP 800-53r5 MP-6 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-4.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-13",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-4.3 is equivalent to SP 800-53r5 SC-13 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-5.1 intersects SP 800-53r5 SC-7 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-5.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-5.1 intersects SP 800-53r5 AC-4 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-5.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-7",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-5.2 is equivalent to SP 800-53r5 SC-7 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-5.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-5.3 intersects SP 800-53r5 AC-4 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-5.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-5.4 is equivalent to SP 800-53r5 SC-2 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-6.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-6.1 intersects SP 800-53r5 AU-6 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-6.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-6.1 intersects SP 800-53r5 AU-7 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-6.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-4",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-6.2 is equivalent to SP 800-53r5 SI-4 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-6.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-6.2 intersects SP 800-53r5 CA-7 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-7.1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-5",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-7.1 is equivalent to SP 800-53r5 SC-5 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-7.2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-7.2 intersects SP 800-53r5 SC-5 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-7.3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-9",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-7.3 is equivalent to SP 800-53r5 CP-9 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-7.4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-10",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-7.4 is equivalent to SP 800-53r5 CP-10 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-7.5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-11",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-7.5 intersects SP 800-53r5 PE-11 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-7.6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-6",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-7.6 is equivalent to SP 800-53r5 CM-6 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-7.7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-7",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-7.7 is equivalent to SP 800-53r5 CM-7 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    },
+    {
+      "control_id": "SR-7.8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-8",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "IEC 62443 SR-7.8 is equivalent to SP 800-53r5 CM-8 (NIST SP 800-82r3 / ISA-IEC 62443-3-3 correspondence)"
+    }
+  ]
+}

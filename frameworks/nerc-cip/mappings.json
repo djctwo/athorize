@@ -1,0 +1,519 @@
+{
+  "framework_id": "nerc-cip",
+  "version": "1.0",
+  "source": "Advisory mapping (Athorize editorial judgment) \u2014 no published 800-53 crosswalk exists for this regulation. relationship='related' / confidence='vendor': navigation + evidence hints only, never propagates compliance status.",
+  "mappings": [
+    {
+      "control_id": "CIP-002-5.1a",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-8",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-002-5.1a relates to SP 800-53r5 CM-8 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-002-5.1a",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PM-5",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-002-5.1a relates to SP 800-53r5 PM-5 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-002-5.1a",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-002-5.1a relates to SP 800-53r5 RA-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-003-8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-003-8 relates to SP 800-53r5 AC-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-003-8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PL-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-003-8 relates to SP 800-53r5 PL-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-003-8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PM-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-003-8 relates to SP 800-53r5 PM-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-004-6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-004-6 relates to SP 800-53r5 AT-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-004-6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-004-6 relates to SP 800-53r5 PS-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-004-6-R1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-004-6-R1 relates to SP 800-53r5 AT-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-004-6-R2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-004-6-R2 relates to SP 800-53r5 AT-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-004-6-R3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-004-6-R3 relates to SP 800-53r5 PS-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-004-6-R4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-004-6-R4 relates to SP 800-53r5 AC-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-004-6-R4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-004-6-R4 relates to SP 800-53r5 AC-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-004-6-R5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-004-6-R5 relates to SP 800-53r5 AC-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-004-6-R5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-4",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-004-6-R5 relates to SP 800-53r5 PS-4 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-005-5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-7",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-005-5 relates to SP 800-53r5 SC-7 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-005-5-R1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-7",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-005-5-R1 relates to SP 800-53r5 SC-7 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-005-5-R2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-17",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-005-5-R2 relates to SP 800-53r5 AC-17 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-006-6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-006-6 relates to SP 800-53r5 PE-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-006-6-R1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-006-6-R1 relates to SP 800-53r5 PE-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-006-6-R1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-006-6-R1 relates to SP 800-53r5 PE-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-006-6-R2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-006-6-R2 relates to SP 800-53r5 PE-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-006-6-R2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-8",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-006-6-R2 relates to SP 800-53r5 PE-8 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-006-6-R3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-006-6-R3 relates to SP 800-53r5 MA-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-006-6-R3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-006-6-R3 relates to SP 800-53r5 PE-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-007-6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-007-6 relates to SP 800-53r5 CM-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-007-6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-007-6 relates to SP 800-53r5 SI-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-007-6-R1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-7",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-007-6-R1 relates to SP 800-53r5 CM-7 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-007-6-R2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-007-6-R2 relates to SP 800-53r5 SI-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-007-6-R3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-007-6-R3 relates to SP 800-53r5 SI-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-007-6-R4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-007-6-R4 relates to SP 800-53r5 AU-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-007-6-R4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-4",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-007-6-R4 relates to SP 800-53r5 SI-4 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-007-6-R5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-007-6-R5 relates to SP 800-53r5 AC-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-007-6-R5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-7",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-007-6-R5 relates to SP 800-53r5 AC-7 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-007-6-R5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-007-6-R5 relates to SP 800-53r5 IA-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-008-5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-008-5 relates to SP 800-53r5 IR-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-008-5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-8",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-008-5 relates to SP 800-53r5 IR-8 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-008-5-R1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-8",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-008-5-R1 relates to SP 800-53r5 IR-8 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-008-5-R2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-008-5-R2 relates to SP 800-53r5 IR-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-008-5-R2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-4",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-008-5-R2 relates to SP 800-53r5 IR-4 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-008-5-R3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-8",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-008-5-R3 relates to SP 800-53r5 IR-8 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-009-6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-009-6 relates to SP 800-53r5 CP-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-009-6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-009-6 relates to SP 800-53r5 CP-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-009-6-R1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-009-6-R1 relates to SP 800-53r5 CP-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-009-6-R2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-10",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-009-6-R2 relates to SP 800-53r5 CP-10 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-009-6-R2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-4",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-009-6-R2 relates to SP 800-53r5 CP-4 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-009-6-R3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-009-6-R3 relates to SP 800-53r5 CP-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-010-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-010-2 relates to SP 800-53r5 CM-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-010-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-5",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-010-2 relates to SP 800-53r5 RA-5 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-010-2-R1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-2",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-010-2-R1 relates to SP 800-53r5 CM-2 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-010-2-R1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-010-2-R1 relates to SP 800-53r5 CM-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-010-2-R2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-010-2-R2 relates to SP 800-53r5 CM-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-010-2-R2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-4",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-010-2-R2 relates to SP 800-53r5 SI-4 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-010-2-R3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-8",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-010-2-R3 relates to SP 800-53r5 CA-8 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-010-2-R3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-5",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-010-2-R3 relates to SP 800-53r5 RA-5 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-011-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-011-2 relates to SP 800-53r5 MP-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-011-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-28",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-011-2 relates to SP 800-53r5 SC-28 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-011-2-R1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-011-2-R1 relates to SP 800-53r5 MP-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-011-2-R2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-6",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-011-2-R2 relates to SP 800-53r5 MP-6 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-013-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-1",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-013-1 relates to SP 800-53r5 SR-1 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-013-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-013-1 relates to SP 800-53r5 SR-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-013-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SR-5",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-013-1 relates to SP 800-53r5 SR-5 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-014-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-014-2 relates to SP 800-53r5 PE-3 (vendor judgment, see-also only)"
+    },
+    {
+      "control_id": "CIP-014-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-3",
+      "relationship": "related",
+      "confidence": "vendor",
+      "rationale": "Advisory: nerc-cip CIP-014-2 relates to SP 800-53r5 RA-3 (vendor judgment, see-also only)"
+    }
+  ]
+}

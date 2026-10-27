@@ -1,0 +1,26 @@
+{
+  "id": "nerc-cip",
+  "name": "NERC Critical Infrastructure Protection Standards",
+  "short_name": "NERC CIP",
+  "version": "7",
+  "catalog_version": "2024-01-01",
+  "description": "Mandatory cybersecurity standards for the North American bulk electric system",
+  "publisher": "North American Electric Reliability Corporation",
+  "category": "energy",
+  "tags": ["nerc", "cip", "energy", "electric", "bulk-power", "critical-infrastructure"],
+  "status": "available",
+  "terminology": {
+    "control": "Standard",
+    "requirement": "Requirement",
+    "finding": "Violation",
+    "severity_levels": ["High", "Medium", "Lower", "Minimal"],
+    "compliance_unit": "Requirement",
+    "assessment": "Compliance Audit"
+  },
+  "scoring": {
+    "method": "control_percentage",
+    "passing_threshold": 100
+  },
+  "icon": "bolt",
+  "color": "#f57c00"
+}

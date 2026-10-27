@@ -1,0 +1,221 @@
+{
+  "framework_id": "cjis",
+  "controls": [
+    {
+      "family": "Policy and Implementation",
+      "title": "Policy Area 1 - Information Exchange Agreements",
+      "description": "Information exchange agreements shall be in place between agencies sharing Criminal Justice Information.",
+      "id": "5.1"
+    },
+    {
+      "family": "Security Awareness Training",
+      "title": "Policy Area 2 - Security Awareness Training",
+      "description": "Basic security awareness training shall be required within six months of initial assignment, and biennially thereafter.",
+      "id": "5.2"
+    },
+    {
+      "family": "Incident Response",
+      "title": "Policy Area 3 - Incident Response",
+      "description": "The agency shall establish operational incident handling procedures, reporting structure, and response capabilities.",
+      "id": "5.3"
+    },
+    {
+      "family": "Auditing and Accountability",
+      "title": "Policy Area 4 - Auditing and Accountability",
+      "description": "Agencies shall implement audit and accountability controls to provide for the creation, protection, and retention of information system audit records.",
+      "id": "5.4"
+    },
+    {
+      "family": "Auditing and Accountability",
+      "title": "Auditable Events",
+      "description": "The information system shall generate audit records for defined events including successful/unsuccessful logon attempts, file accesses, and account management.",
+      "id": "5.4.1"
+    },
+    {
+      "family": "Auditing and Accountability",
+      "title": "Content of Audit Records",
+      "description": "The information system shall produce audit records that contain sufficient information to establish what events occurred, the sources, and outcomes.",
+      "id": "5.4.2"
+    },
+    {
+      "family": "Auditing and Accountability",
+      "title": "Audit Monitoring, Analysis, and Reporting",
+      "description": "The agency shall designate an individual or position to review/analyze information system audit records for indications of inappropriate or unusual activity.",
+      "id": "5.4.3"
+    },
+    {
+      "family": "Auditing and Accountability",
+      "title": "Time Stamps",
+      "description": "The information system shall use internal system clocks to generate time stamps for audit records.",
+      "id": "5.4.4"
+    },
+    {
+      "family": "Auditing and Accountability",
+      "title": "Protection of Audit Information",
+      "description": "The information system shall protect audit information and audit tools from unauthorized access, modification, and deletion.",
+      "id": "5.4.5"
+    },
+    {
+      "family": "Auditing and Accountability",
+      "title": "Audit Record Retention",
+      "description": "The agency shall retain audit records for at least one year.",
+      "id": "5.4.6"
+    },
+    {
+      "family": "Access Control",
+      "title": "Policy Area 5 - Access Control",
+      "description": "Access control provides the planning and implementation of mechanisms to restrict reading, writing, processing, and transmission of CJIS information.",
+      "id": "5.5"
+    },
+    {
+      "family": "Access Control",
+      "title": "Account Management",
+      "description": "The agency shall manage information system accounts, including establishing, activating, modifying, reviewing, disabling, and removing accounts.",
+      "id": "5.5.1"
+    },
+    {
+      "family": "Access Control",
+      "title": "Access Enforcement",
+      "description": "The information system shall enforce assigned authorizations for controlling access to the system and contained information.",
+      "id": "5.5.2"
+    },
+    {
+      "family": "Access Control",
+      "title": "Unsuccessful Login Attempts",
+      "description": "The system shall enforce a limit of no more than 5 consecutive invalid access attempts by a user.",
+      "id": "5.5.3"
+    },
+    {
+      "family": "Access Control",
+      "title": "System Use Notification",
+      "description": "The information system shall display an approved system use notification message before granting access.",
+      "id": "5.5.4"
+    },
+    {
+      "family": "Access Control",
+      "title": "Session Lock",
+      "description": "The information system shall prevent further access to the system by initiating a session lock after a maximum of 30 minutes of inactivity.",
+      "id": "5.5.5"
+    },
+    {
+      "family": "Access Control",
+      "title": "Remote Access",
+      "description": "The agency shall authorize, monitor, and control all methods of remote access to the information system.",
+      "id": "5.5.6"
+    },
+    {
+      "family": "Access Control",
+      "title": "Personally Owned Information Systems",
+      "description": "A personally owned information system shall not be authorized to access, process, store, or transmit CJI unless approved agency policies and procedures are in place.",
+      "id": "5.5.7"
+    },
+    {
+      "family": "Identification and Authentication",
+      "title": "Policy Area 6 - Identification and Authentication",
+      "description": "The information system shall uniquely identify and authenticate organizational users or processes acting on behalf of organizational users.",
+      "id": "5.6"
+    },
+    {
+      "family": "Identification and Authentication",
+      "title": "Use of Standard Authentication",
+      "description": "Authentication shall include the use of a password, token, biometric, or other approved mechanism at the AAL2 level.",
+      "id": "5.6.1"
+    },
+    {
+      "family": "Identification and Authentication",
+      "title": "Advanced Authentication",
+      "description": "Advanced authentication shall be required for all users accessing CJI remotely or from a network that is not a physically secure location.",
+      "id": "5.6.2"
+    },
+    {
+      "family": "Configuration Management",
+      "title": "Policy Area 7 - Configuration Management",
+      "description": "The agency shall establish mandatory configuration requirements and manage changes to information systems.",
+      "id": "5.7"
+    },
+    {
+      "family": "Media Protection",
+      "title": "Policy Area 8 - Media Protection",
+      "description": "The agency shall restrict access to system media containing CJI to authorized individuals and shall sanitize or destroy system media before disposal or release.",
+      "id": "5.8"
+    },
+    {
+      "family": "Physical Protection",
+      "title": "Policy Area 9 - Physical Protection",
+      "description": "The agency shall protect the physical facility and support infrastructure for information systems containing CJI.",
+      "id": "5.9"
+    },
+    {
+      "family": "Systems and Communications Protection",
+      "title": "Policy Area 10 - Systems and Communications Protection and Information Integrity",
+      "description": "The agency shall monitor, control, and protect communications at external and key internal boundaries, and employ architectural designs and software development techniques to protect system integrity.",
+      "id": "5.10"
+    },
+    {
+      "family": "Systems and Communications Protection",
+      "title": "Information Flow Enforcement",
+      "description": "The information system shall enforce approved authorizations for controlling the flow of CJI within the system and between interconnected systems.",
+      "id": "5.10.1"
+    },
+    {
+      "family": "Systems and Communications Protection",
+      "title": "Boundary Protection",
+      "description": "The information system shall monitor and control communications at the external boundary and at key internal boundaries.",
+      "id": "5.10.2"
+    },
+    {
+      "family": "Systems and Communications Protection",
+      "title": "Encryption",
+      "description": "The agency shall ensure encryption is used for CJI in transit and at rest using FIPS 140-2 certified or NSA-approved cryptographic modules.",
+      "id": "5.10.3"
+    },
+    {
+      "family": "Systems and Communications Protection",
+      "title": "Intrusion Detection Tools and Techniques",
+      "description": "The agency shall implement network-based and/or host-based intrusion detection tools.",
+      "id": "5.10.4"
+    },
+    {
+      "family": "Systems and Communications Protection",
+      "title": "Patch Management",
+      "description": "The agency shall identify, report, and correct information system flaws in a timely manner.",
+      "id": "5.10.5"
+    },
+    {
+      "family": "Systems and Communications Protection",
+      "title": "Malicious Code Protection",
+      "description": "The agency shall implement malicious code protection mechanisms at information system entry and exit points.",
+      "id": "5.10.6"
+    },
+    {
+      "family": "Systems and Communications Protection",
+      "title": "Spam and Spyware Protection",
+      "description": "The agency shall implement spam and spyware protection.",
+      "id": "5.10.7"
+    },
+    {
+      "family": "Systems and Communications Protection",
+      "title": "Personal Firewall",
+      "description": "A personal firewall shall be employed on all devices that access CJI remotely.",
+      "id": "5.10.8"
+    },
+    {
+      "family": "Formal Audits",
+      "title": "Policy Area 11 - Formal Audits",
+      "description": "The agency shall perform a comprehensive audit at a minimum of every three years.",
+      "id": "5.11"
+    },
+    {
+      "family": "Personnel Security",
+      "title": "Policy Area 12 - Personnel Security",
+      "description": "All personnel who have unescorted access to unencrypted CJI shall have a fingerprint-based record check.",
+      "id": "5.12"
+    },
+    {
+      "family": "Mobile Devices",
+      "title": "Policy Area 13 - Mobile Devices",
+      "description": "The agency shall implement controls on mobile devices used to access, store, process or transmit CJI.",
+      "id": "5.13"
+    }
+  ]
+}

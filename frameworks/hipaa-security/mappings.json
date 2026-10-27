@@ -1,0 +1,1399 @@
+{
+  "framework_id": "hipaa-security",
+  "version": "1.0",
+  "source": "NIST OLIR #110 \u2014 HIPAA Security Rule to SP 800-53 Rev 5.1.1 crosswalk (2024), inverted to point at the 800-53 hub",
+  "mappings": [
+    {
+      "control_id": "164.308(a)(1)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(1) \u2192 RA-1"
+    },
+    {
+      "control_id": "164.308(a)(1)(ii)(A)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(1)(ii)(A) \u2192 RA-2"
+    },
+    {
+      "control_id": "164.308(a)(1)(ii)(A)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(1)(ii)(A) \u2192 RA-3"
+    },
+    {
+      "control_id": "164.308(a)(1)(ii)(B)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PL-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(1)(ii)(B) \u2192 PL-2"
+    },
+    {
+      "control_id": "164.308(a)(1)(ii)(B)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(1)(ii)(B) \u2192 RA-2"
+    },
+    {
+      "control_id": "164.308(a)(1)(ii)(B)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(1)(ii)(B) \u2192 RA-3"
+    },
+    {
+      "control_id": "164.308(a)(1)(ii)(C)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(1)(ii)(C) \u2192 PS-8"
+    },
+    {
+      "control_id": "164.308(a)(1)(ii)(D)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(1)(ii)(D) \u2192 AU-6"
+    },
+    {
+      "control_id": "164.308(a)(1)(ii)(D)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(1)(ii)(D) \u2192 AU-7"
+    },
+    {
+      "control_id": "164.308(a)(1)(ii)(D)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(1)(ii)(D) \u2192 CA-7"
+    },
+    {
+      "control_id": "164.308(a)(1)(ii)(D)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(1)(ii)(D) \u2192 IR-5"
+    },
+    {
+      "control_id": "164.308(a)(1)(ii)(D)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(1)(ii)(D) \u2192 IR-6"
+    },
+    {
+      "control_id": "164.308(a)(1)(ii)(D)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(1)(ii)(D) \u2192 SI-4"
+    },
+    {
+      "control_id": "164.308(a)(2)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(2) \u2192 CA-6"
+    },
+    {
+      "control_id": "164.308(a)(2)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PM-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(2) \u2192 PM-2"
+    },
+    {
+      "control_id": "164.308(a)(3)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(3) \u2192 AC-1"
+    },
+    {
+      "control_id": "164.308(a)(3)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(3) \u2192 AC-2"
+    },
+    {
+      "control_id": "164.308(a)(3)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(3) \u2192 AC-3"
+    },
+    {
+      "control_id": "164.308(a)(3)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(3) \u2192 AC-5"
+    },
+    {
+      "control_id": "164.308(a)(3)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(3) \u2192 AC-6"
+    },
+    {
+      "control_id": "164.308(a)(3)(ii)(A)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(3)(ii)(A) \u2192 AC-1"
+    },
+    {
+      "control_id": "164.308(a)(3)(ii)(A)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(3)(ii)(A) \u2192 AC-2"
+    },
+    {
+      "control_id": "164.308(a)(3)(ii)(A)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(3)(ii)(A) \u2192 AC-3"
+    },
+    {
+      "control_id": "164.308(a)(3)(ii)(A)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(3)(ii)(A) \u2192 AC-4"
+    },
+    {
+      "control_id": "164.308(a)(3)(ii)(A)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(3)(ii)(A) \u2192 MA-5"
+    },
+    {
+      "control_id": "164.308(a)(3)(ii)(A)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(3)(ii)(A) \u2192 MP-2"
+    },
+    {
+      "control_id": "164.308(a)(3)(ii)(A)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(3)(ii)(A) \u2192 PS-1"
+    },
+    {
+      "control_id": "164.308(a)(3)(ii)(A)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(3)(ii)(A) \u2192 PS-6"
+    },
+    {
+      "control_id": "164.308(a)(3)(ii)(A)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(3)(ii)(A) \u2192 PS-7"
+    },
+    {
+      "control_id": "164.308(a)(3)(ii)(B)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(3)(ii)(B) \u2192 AC-2"
+    },
+    {
+      "control_id": "164.308(a)(3)(ii)(B)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(3)(ii)(B) \u2192 PS-1"
+    },
+    {
+      "control_id": "164.308(a)(3)(ii)(B)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(3)(ii)(B) \u2192 PS-2"
+    },
+    {
+      "control_id": "164.308(a)(3)(ii)(B)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(3)(ii)(B) \u2192 PS-3"
+    },
+    {
+      "control_id": "164.308(a)(3)(ii)(B)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(3)(ii)(B) \u2192 PS-5"
+    },
+    {
+      "control_id": "164.308(a)(3)(ii)(B)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(3)(ii)(B) \u2192 PS-6"
+    },
+    {
+      "control_id": "164.308(a)(3)(ii)(B)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(3)(ii)(B) \u2192 PS-7"
+    },
+    {
+      "control_id": "164.308(a)(3)(ii)(C)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(3)(ii)(C) \u2192 PS-1"
+    },
+    {
+      "control_id": "164.308(a)(3)(ii)(C)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(3)(ii)(C) \u2192 PS-4"
+    },
+    {
+      "control_id": "164.308(a)(3)(ii)(C)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(3)(ii)(C) \u2192 PS-5"
+    },
+    {
+      "control_id": "164.308(a)(4)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(4) \u2192 AC-1"
+    },
+    {
+      "control_id": "164.308(a)(4)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(4) \u2192 AC-2"
+    },
+    {
+      "control_id": "164.308(a)(4)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(4) \u2192 AC-5"
+    },
+    {
+      "control_id": "164.308(a)(4)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(4) \u2192 AC-6"
+    },
+    {
+      "control_id": "164.308(a)(4)(ii)(A)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(4)(ii)(A) \u2192 AC-5"
+    },
+    {
+      "control_id": "164.308(a)(4)(ii)(A)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(4)(ii)(A) \u2192 AC-6"
+    },
+    {
+      "control_id": "164.308(a)(4)(ii)(A)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(4)(ii)(A) \u2192 CA-3"
+    },
+    {
+      "control_id": "164.308(a)(4)(ii)(B)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(4)(ii)(B) \u2192 AC-1"
+    },
+    {
+      "control_id": "164.308(a)(4)(ii)(B)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(4)(ii)(B) \u2192 AC-2"
+    },
+    {
+      "control_id": "164.308(a)(4)(ii)(B)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(4)(ii)(B) \u2192 AC-3"
+    },
+    {
+      "control_id": "164.308(a)(4)(ii)(B)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(4)(ii)(B) \u2192 AC-4"
+    },
+    {
+      "control_id": "164.308(a)(4)(ii)(B)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(4)(ii)(B) \u2192 PS-6"
+    },
+    {
+      "control_id": "164.308(a)(4)(ii)(B)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(4)(ii)(B) \u2192 PS-7"
+    },
+    {
+      "control_id": "164.308(a)(4)(ii)(C)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(4)(ii)(C) \u2192 AC-1"
+    },
+    {
+      "control_id": "164.308(a)(4)(ii)(C)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(4)(ii)(C) \u2192 AC-2"
+    },
+    {
+      "control_id": "164.308(a)(5)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(5) \u2192 AT-1"
+    },
+    {
+      "control_id": "164.308(a)(5)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(5) \u2192 AT-2"
+    },
+    {
+      "control_id": "164.308(a)(5)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(5) \u2192 AT-3"
+    },
+    {
+      "control_id": "164.308(a)(5)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(5) \u2192 AT-4"
+    },
+    {
+      "control_id": "164.308(a)(5)(ii)(A)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(5)(ii)(A) \u2192 AT-2"
+    },
+    {
+      "control_id": "164.308(a)(5)(ii)(A)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(5)(ii)(A) \u2192 AT-3"
+    },
+    {
+      "control_id": "164.308(a)(5)(ii)(B)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(5)(ii)(B) \u2192 AT-2"
+    },
+    {
+      "control_id": "164.308(a)(5)(ii)(B)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(5)(ii)(B) \u2192 AT-3"
+    },
+    {
+      "control_id": "164.308(a)(5)(ii)(C)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(5)(ii)(C) \u2192 AT-3"
+    },
+    {
+      "control_id": "164.308(a)(5)(ii)(C)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(5)(ii)(C) \u2192 AU-6"
+    },
+    {
+      "control_id": "164.308(a)(5)(ii)(D)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(5)(ii)(D) \u2192 AT-2"
+    },
+    {
+      "control_id": "164.308(a)(5)(ii)(D)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(5)(ii)(D) \u2192 AT-3"
+    },
+    {
+      "control_id": "164.308(a)(6)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(6) \u2192 IR-1"
+    },
+    {
+      "control_id": "164.308(a)(6)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(6) \u2192 IR-2"
+    },
+    {
+      "control_id": "164.308(a)(6)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(6) \u2192 IR-3"
+    },
+    {
+      "control_id": "164.308(a)(6)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(6) \u2192 IR-4"
+    },
+    {
+      "control_id": "164.308(a)(6)(ii)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(6)(ii) \u2192 IR-4"
+    },
+    {
+      "control_id": "164.308(a)(6)(ii)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(6)(ii) \u2192 IR-5"
+    },
+    {
+      "control_id": "164.308(a)(6)(ii)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(6)(ii) \u2192 IR-6"
+    },
+    {
+      "control_id": "164.308(a)(6)(ii)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(6)(ii) \u2192 IR-7"
+    },
+    {
+      "control_id": "164.308(a)(6)(ii)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(6)(ii) \u2192 IR-8"
+    },
+    {
+      "control_id": "164.308(a)(7)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(7) \u2192 CP-1"
+    },
+    {
+      "control_id": "164.308(a)(7)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(7) \u2192 CP-2"
+    },
+    {
+      "control_id": "164.308(a)(7)(ii)(A)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(7)(ii)(A) \u2192 CP-6"
+    },
+    {
+      "control_id": "164.308(a)(7)(ii)(A)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(7)(ii)(A) \u2192 CP-9"
+    },
+    {
+      "control_id": "164.308(a)(7)(ii)(B)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-10",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(7)(ii)(B) \u2192 CP-10"
+    },
+    {
+      "control_id": "164.308(a)(7)(ii)(B)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(7)(ii)(B) \u2192 CP-2"
+    },
+    {
+      "control_id": "164.308(a)(7)(ii)(B)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(7)(ii)(B) \u2192 CP-6"
+    },
+    {
+      "control_id": "164.308(a)(7)(ii)(B)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(7)(ii)(B) \u2192 CP-7"
+    },
+    {
+      "control_id": "164.308(a)(7)(ii)(B)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(7)(ii)(B) \u2192 CP-8"
+    },
+    {
+      "control_id": "164.308(a)(7)(ii)(B)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(7)(ii)(B) \u2192 CP-9"
+    },
+    {
+      "control_id": "164.308(a)(7)(ii)(C)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-10",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(7)(ii)(C) \u2192 CP-10"
+    },
+    {
+      "control_id": "164.308(a)(7)(ii)(C)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(7)(ii)(C) \u2192 CP-2"
+    },
+    {
+      "control_id": "164.308(a)(7)(ii)(D)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(7)(ii)(D) \u2192 CP-2"
+    },
+    {
+      "control_id": "164.308(a)(7)(ii)(D)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(7)(ii)(D) \u2192 CP-3"
+    },
+    {
+      "control_id": "164.308(a)(7)(ii)(D)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(7)(ii)(D) \u2192 CP-4"
+    },
+    {
+      "control_id": "164.308(a)(7)(ii)(E)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(7)(ii)(E) \u2192 CP-2"
+    },
+    {
+      "control_id": "164.308(a)(7)(ii)(E)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(7)(ii)(E) \u2192 RA-2"
+    },
+    {
+      "control_id": "164.308(a)(8)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(8) \u2192 CA-1"
+    },
+    {
+      "control_id": "164.308(a)(8)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(8) \u2192 CA-2"
+    },
+    {
+      "control_id": "164.308(a)(8)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(8) \u2192 CA-6"
+    },
+    {
+      "control_id": "164.308(a)(8)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(8) \u2192 CA-7"
+    },
+    {
+      "control_id": "164.308(a)(8)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(a)(8) \u2192 CA-8"
+    },
+    {
+      "control_id": "164.308(b)(1)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(b)(1) \u2192 CA-3"
+    },
+    {
+      "control_id": "164.308(b)(1)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(b)(1) \u2192 PS-7"
+    },
+    {
+      "control_id": "164.308(b)(1)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(b)(1) \u2192 SA-9"
+    },
+    {
+      "control_id": "164.308(b)(4)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(b)(4) \u2192 CA-3"
+    },
+    {
+      "control_id": "164.308(b)(4)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(b)(4) \u2192 SA-4"
+    },
+    {
+      "control_id": "164.308(b)(4)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.308(b)(4) \u2192 SA-9"
+    },
+    {
+      "control_id": "164.310(a)(2)(i)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(a)(2)(i) \u2192 CP-2"
+    },
+    {
+      "control_id": "164.310(a)(2)(i)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(a)(2)(i) \u2192 CP-6"
+    },
+    {
+      "control_id": "164.310(a)(2)(i)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(a)(2)(i) \u2192 CP-7"
+    },
+    {
+      "control_id": "164.310(a)(2)(i)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-17",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(a)(2)(i) \u2192 PE-17"
+    },
+    {
+      "control_id": "164.310(a)(2)(i)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(a)(2)(i) \u2192 PE-2"
+    },
+    {
+      "control_id": "164.310(a)(2)(i)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(a)(2)(i) \u2192 PE-3"
+    },
+    {
+      "control_id": "164.310(a)(2)(ii)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(a)(2)(ii) \u2192 PE-1"
+    },
+    {
+      "control_id": "164.310(a)(2)(ii)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PL-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(a)(2)(ii) \u2192 PL-2"
+    },
+    {
+      "control_id": "164.310(a)(2)(iii)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(a)(2)(iii) \u2192 PE-1"
+    },
+    {
+      "control_id": "164.310(a)(2)(iii)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(a)(2)(iii) \u2192 PE-2"
+    },
+    {
+      "control_id": "164.310(a)(2)(iii)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(a)(2)(iii) \u2192 PE-3"
+    },
+    {
+      "control_id": "164.310(a)(2)(iii)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(a)(2)(iii) \u2192 PE-6"
+    },
+    {
+      "control_id": "164.310(a)(2)(iii)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(a)(2)(iii) \u2192 PE-8"
+    },
+    {
+      "control_id": "164.310(a)(2)(iv)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(a)(2)(iv) \u2192 MA-1"
+    },
+    {
+      "control_id": "164.310(a)(2)(iv)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(a)(2)(iv) \u2192 MA-2"
+    },
+    {
+      "control_id": "164.310(a)(2)(iv)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MA-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(a)(2)(iv) \u2192 MA-6"
+    },
+    {
+      "control_id": "164.310(b)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-11",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(b) \u2192 AC-11"
+    },
+    {
+      "control_id": "164.310(b)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-12",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(b) \u2192 AC-12"
+    },
+    {
+      "control_id": "164.310(b)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-17",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(b) \u2192 AC-17"
+    },
+    {
+      "control_id": "164.310(b)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-19",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(b) \u2192 AC-19"
+    },
+    {
+      "control_id": "164.310(b)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(b) \u2192 AC-3"
+    },
+    {
+      "control_id": "164.310(b)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(b) \u2192 AC-4"
+    },
+    {
+      "control_id": "164.310(b)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(b) \u2192 PE-3"
+    },
+    {
+      "control_id": "164.310(b)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(b) \u2192 PE-5"
+    },
+    {
+      "control_id": "164.310(b)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PL-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(b) \u2192 PL-4"
+    },
+    {
+      "control_id": "164.310(b)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(b) \u2192 PS-6"
+    },
+    {
+      "control_id": "164.310(c)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(c) \u2192 MP-2"
+    },
+    {
+      "control_id": "164.310(c)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(c) \u2192 MP-3"
+    },
+    {
+      "control_id": "164.310(c)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(c) \u2192 MP-4"
+    },
+    {
+      "control_id": "164.310(c)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(c) \u2192 PE-2"
+    },
+    {
+      "control_id": "164.310(c)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(c) \u2192 PE-3"
+    },
+    {
+      "control_id": "164.310(c)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(c) \u2192 PE-4"
+    },
+    {
+      "control_id": "164.310(c)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(c) \u2192 PE-5"
+    },
+    {
+      "control_id": "164.310(d)(2)(i)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(d)(2)(i) \u2192 MP-6"
+    },
+    {
+      "control_id": "164.310(d)(2)(ii)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(d)(2)(ii) \u2192 MP-6"
+    },
+    {
+      "control_id": "164.310(d)(2)(iii)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(d)(2)(iii) \u2192 CM-8"
+    },
+    {
+      "control_id": "164.310(d)(2)(iii)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-5",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(d)(2)(iii) \u2192 MP-5"
+    },
+    {
+      "control_id": "164.310(d)(2)(iii)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-16",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(d)(2)(iii) \u2192 PE-16"
+    },
+    {
+      "control_id": "164.310(d)(2)(iii)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PS-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(d)(2)(iii) \u2192 PS-6"
+    },
+    {
+      "control_id": "164.310(d)(2)(iv)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-9",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(d)(2)(iv) \u2192 CP-9"
+    },
+    {
+      "control_id": "164.310(d)(2)(iv)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "MP-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.310(d)(2)(iv) \u2192 MP-4"
+    },
+    {
+      "control_id": "164.312(a)(2)(i)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(a)(2)(i) \u2192 AC-2"
+    },
+    {
+      "control_id": "164.312(a)(2)(i)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(a)(2)(i) \u2192 AC-3"
+    },
+    {
+      "control_id": "164.312(a)(2)(i)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(a)(2)(i) \u2192 IA-2"
+    },
+    {
+      "control_id": "164.312(a)(2)(i)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(a)(2)(i) \u2192 IA-3"
+    },
+    {
+      "control_id": "164.312(a)(2)(i)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(a)(2)(i) \u2192 IA-4"
+    },
+    {
+      "control_id": "164.312(a)(2)(i)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(a)(2)(i) \u2192 IA-8"
+    },
+    {
+      "control_id": "164.312(a)(2)(ii)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(a)(2)(ii) \u2192 AC-2"
+    },
+    {
+      "control_id": "164.312(a)(2)(ii)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(a)(2)(ii) \u2192 AC-3"
+    },
+    {
+      "control_id": "164.312(a)(2)(ii)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(a)(2)(ii) \u2192 CP-2"
+    },
+    {
+      "control_id": "164.312(a)(2)(iii)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-12",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(a)(2)(iii) \u2192 AC-12"
+    },
+    {
+      "control_id": "164.312(a)(2)(iv)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-13",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(a)(2)(iv) \u2192 SC-13"
+    },
+    {
+      "control_id": "164.312(b)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-1",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(b) \u2192 AU-1"
+    },
+    {
+      "control_id": "164.312(b)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(b) \u2192 AU-2"
+    },
+    {
+      "control_id": "164.312(b)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(b) \u2192 AU-3"
+    },
+    {
+      "control_id": "164.312(b)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(b) \u2192 AU-4"
+    },
+    {
+      "control_id": "164.312(b)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-6",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(b) \u2192 AU-6"
+    },
+    {
+      "control_id": "164.312(b)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(b) \u2192 AU-7"
+    },
+    {
+      "control_id": "164.312(b)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(b) \u2192 AU-8"
+    },
+    {
+      "control_id": "164.312(c)(2)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(c)(2) \u2192 SC-8"
+    },
+    {
+      "control_id": "164.312(c)(2)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(c)(2) \u2192 SI-7"
+    },
+    {
+      "control_id": "164.312(d)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-2",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(d) \u2192 IA-2"
+    },
+    {
+      "control_id": "164.312(d)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-3",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(d) \u2192 IA-3"
+    },
+    {
+      "control_id": "164.312(d)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-4",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(d) \u2192 IA-4"
+    },
+    {
+      "control_id": "164.312(d)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(d) \u2192 IA-8"
+    },
+    {
+      "control_id": "164.312(e)(1)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(e)(1) \u2192 SC-8"
+    },
+    {
+      "control_id": "164.312(e)(2)(i)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(e)(2)(i) \u2192 SC-8"
+    },
+    {
+      "control_id": "164.312(e)(2)(i)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-7",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(e)(2)(i) \u2192 SI-7"
+    },
+    {
+      "control_id": "164.312(e)(2)(ii)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-12",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(e)(2)(ii) \u2192 SC-12"
+    },
+    {
+      "control_id": "164.312(e)(2)(ii)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-13",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(e)(2)(ii) \u2192 SC-13"
+    },
+    {
+      "control_id": "164.312(e)(2)(ii)",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-8",
+      "relationship": "intersects",
+      "confidence": "official",
+      "rationale": "HIPAA Security Rule \u2194 SP 800-53 r5 OLIR crosswalk (#110): 164.312(e)(2)(ii) \u2192 SC-8"
+    }
+  ]
+}

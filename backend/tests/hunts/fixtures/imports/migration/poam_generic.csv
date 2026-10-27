@@ -1,0 +1,4 @@
+POA&M ID,Weakness,Description,Severity,Status,Control,Scheduled Completion Date,Point of Contact,Owner Email,Remediation Plan
+P-001,Stale privileged accounts,Three admin accounts unused for 120 days,High,Open,AC-2,2026-12-31,Jane Example,jane@example.com,Disable and review
+P-002,Missing audit log retention,Logs kept 30 days,Moderate,Ongoing,AU-11,01/15/2027,Ops Team,ops@example.com,Extend retention to 1 year
+P-003,Outdated TLS configuration,TLS1.0 enabled on load balancer,Low,Completed,SC-8,15-Nov-2026,Net Team,net@example.com,Disable TLS1.0

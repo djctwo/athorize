@@ -1,0 +1,3 @@
+Timestamp,DetectId,DetectName,DetectDescription,SeverityName,ComputerName,LocalIP,Tactic,Technique
+2026-10-20T09:15:02Z,ldt:abc123:111,CredentialDumping,A process attempted to dump credentials from LSASS,Critical,WS-FIN-04,10.20.5.40,Credential Access,OS Credential Dumping
+2026-10-20T09:40:00Z,ldt:abc123:222,SuspiciousPowerShell,Encoded PowerShell command line,High,WS-FIN-07,10.20.5.47,Execution,PowerShell

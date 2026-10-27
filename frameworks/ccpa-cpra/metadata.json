@@ -1,0 +1,26 @@
+{
+  "id": "ccpa-cpra",
+  "name": "California Consumer Privacy Act / California Privacy Rights Act",
+  "short_name": "CCPA/CPRA",
+  "version": "2023",
+  "catalog_version": "2024-03-01",
+  "description": "California state privacy law granting consumers rights over their personal information",
+  "publisher": "California Privacy Protection Agency",
+  "category": "privacy",
+  "tags": ["ccpa", "cpra", "california", "privacy", "consumer-rights", "personal-information"],
+  "status": "available",
+  "terminology": {
+    "control": "Requirement",
+    "requirement": "Obligation",
+    "finding": "Violation",
+    "severity_levels": ["Intentional ($7,500 per violation)", "Unintentional ($2,500 per violation)"],
+    "compliance_unit": "Requirement",
+    "assessment": "Compliance Audit"
+  },
+  "scoring": {
+    "method": "control_percentage",
+    "passing_threshold": 100
+  },
+  "icon": "user-shield",
+  "color": "#b71c1c"
+}

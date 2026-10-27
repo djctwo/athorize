@@ -1,0 +1,359 @@
+{
+  "framework_id": "fedramp",
+  "version": "1.0",
+  "source": "Identity mapping \u2014 FedRAMP baseline controls are SP 800-53r5 controls",
+  "mappings": [
+    {
+      "control_id": "AC-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "AC-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "AC-3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-3",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "AC-4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-4",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "AC-5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-5",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "AC-6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-6",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "AC-7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-7",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "AC-8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-8",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "AC-17",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AC-17",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "AT-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "AT-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AT-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "AU-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "AU-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "AU-6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "AU-6",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "CA-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "CA-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "CA-7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CA-7",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "CM-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "CM-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "CM-6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-6",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "CM-8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CM-8",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "CP-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "CP-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "CP-9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "CP-9",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "IA-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "IA-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "IA-5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IA-5",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "IR-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "IR-4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-4",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "IR-6",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "IR-6",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "PE-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "PE-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PE-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "PL-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "PL-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "RA-5",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "RA-5",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "SA-9",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SA-9",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "SC-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "SC-7",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-7",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "SC-8",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-8",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "SC-13",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-13",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "SC-28",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SC-28",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "SI-1",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-1",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "SI-2",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-2",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "SI-3",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-3",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    },
+    {
+      "control_id": "SI-4",
+      "target_framework": "nist-800-53-r5",
+      "target_control": "SI-4",
+      "relationship": "equivalent",
+      "confidence": "official",
+      "rationale": "FedRAMP baselines are SP 800-53 control selections; ids are shared"
+    }
+  ]
+}
