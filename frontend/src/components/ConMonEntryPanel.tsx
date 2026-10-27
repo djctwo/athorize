@@ -134,7 +134,7 @@ export default function ConMonEntryPanel({ open, onClose }: Props) {
             ))}
           </select>
           <p className="text-[11px] text-[var(--text-secondary)] mt-1">
-            Pick a framework to satisfy its own cadence (e.g. PCI DSS quarterly scans). Every entry also counts org-wide.
+            Org-wide entries count toward every framework's cadence for this activity. Pick a framework when the activity was done only for it (e.g. a PCI DSS ASV scan); framework entries also count org-wide.
           </p>
         </div>
 

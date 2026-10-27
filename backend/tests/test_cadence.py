@@ -57,6 +57,34 @@ class TestResolution:
         assert rows[("pci-dss-v4", "VULNERABILITY_SCAN")]["interval_days"] == 90
         assert rows[("pci-dss-v4", "VULNERABILITY_SCAN")]["source"] == "framework"
 
+    def test_org_wide_entry_counts_for_every_framework(self, db, seeded):
+        """An entry logged "Org-wide (all frameworks)" satisfies each framework's
+        cadence for that activity too. The demo logged a vulnerability scan a
+        week earlier and still showed "PCI DSS · VULNERABILITY SCAN — never
+        logged, 310d overdue"."""
+        org = seeded["org"]
+        db.add(FrameworkActivation(organization_id=org.id, framework_id="pci-dss-v4", is_active=True))
+        _seed_entry(db, org, "VULNERABILITY_SCAN", 7)  # framework_id "" = org-wide
+        db.commit()
+        rows = {(r["framework_id"], r["activity_type"]): r for r in svc.list_cadences(db, org.id)}
+        pci = rows[("pci-dss-v4", "VULNERABILITY_SCAN")]
+        assert pci["last_done"] == (date.today() - timedelta(days=7)).isoformat()
+        assert pci["status"] == "OK"
+
+    def test_framework_entry_does_not_count_for_another_framework(self, db, seeded):
+        org = seeded["org"]
+        for fw in ("pci-dss-v4", "cmmc-2.0"):
+            db.add(FrameworkActivation(organization_id=org.id, framework_id=fw, is_active=True))
+        sid = _system(db, org)
+        # Two different framework-tagged entries: each satisfies its own framework
+        # (and org-wide), never the other framework.
+        _seed_entry(db, org, "ACCESS_REVIEW", 5, framework_id="cmmc-2.0", system_id=sid)
+        _seed_entry(db, org, "ACCESS_REVIEW", 400, framework_id="pci-dss-v4", system_id=sid)
+        db.commit()
+        rows = {(r["framework_id"], r["activity_type"]): r for r in svc.list_cadences(db, org.id)}
+        assert rows[("pci-dss-v4", "ACCESS_REVIEW")]["status"] == "OVERDUE"
+        assert rows[("", "ACCESS_REVIEW")]["status"] == "OK"
+
     def test_org_override_wins(self, db, seeded):
         org = seeded["org"]
         svc.set_cadence(db, org.id, "", "LOG_REVIEW", 7, True)

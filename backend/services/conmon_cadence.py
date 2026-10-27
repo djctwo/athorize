@@ -6,7 +6,13 @@ Resolution order for a cadence interval, highest priority first:
   3. Built-in default (DEFAULT_CADENCES below)
 
 Status for each requirement is computed from ConMonEntry history (the most
-recent matching entry's date = "last done").
+recent matching entry's date = "last done"). Which entries match:
+  - an org-wide requirement (framework_id "") is met by ANY entry of that
+    activity type;
+  - a framework's requirement is met by an entry tagged with that framework OR
+    an org-wide entry (framework_id ""): the log form offers "Org-wide (all
+    frameworks)", and one vulnerability scan is a scan for every framework.
+    An entry tagged with a different framework does not count.
 """
 from __future__ import annotations
 
@@ -117,7 +123,12 @@ def list_cadences(db: Session, organization_id: int) -> list[dict]:
     for (fw, at), req in sorted(requirements.items()):
         if not req["enabled"]:
             continue
-        last = last_by_fw_at.get((fw, at)) if fw else last_by_at.get(at)
+        if fw:
+            # Tagged with this framework, or logged org-wide (counts for all).
+            candidates = [d for d in (last_by_fw_at.get((fw, at)), last_by_fw_at.get(("", at))) if d]
+            last = max(candidates) if candidates else None
+        else:
+            last = last_by_at.get(at)
         interval = req["interval_days"]
         if last is None and started is None:
             status, next_due, days_overdue = "NEVER", None, None

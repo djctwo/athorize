@@ -17,6 +17,10 @@ async function orgWideOverdue(page: import('@playwright/test').Page): Promise<st
 }
 const cadenceOverdue = async (page: import('@playwright/test').Page) =>
   Number((await page.locator('main').innerText()).match(/Cadence Overdue \((\d+)\)/i)![1])
+/** Overdue cadences of one activity type in ANY scope (org-wide + each framework). An
+ *  org-wide log entry satisfies all of them, so that is exactly how far the count drops. */
+const overdueOfType = async (page: import('@playwright/test').Page, type: string) =>
+  [...(await page.locator('main').innerText()).matchAll(new RegExp(`· ${type.replace(/_/g, ' ')} —`, 'gi'))].length
 
 test('ConMon: log an activity with only the required fields', async ({ page }) => {
   await apiLogin(page, 'manager')
@@ -38,6 +42,8 @@ test('ConMon: logging an activity (all fields) clears its org-wide overdue caden
   const pending = await orgWideOverdue(page)
   test.skip(pending.length === 0, 'no org-wide cadence left overdue on this instance')
   const type = pending[0]
+  const cleared = await overdueOfType(page, type)
+  expect(cleared).toBeGreaterThanOrEqual(1)
 
   const panel = await openConMonPanel(page)
   await labelled(panel, 'System').selectOption({ index: 1 })
@@ -53,8 +59,9 @@ test('ConMon: logging an activity (all fields) clears its org-wide overdue caden
   // (reload: the banner itself does not refresh — E2E-CONMON-STALE, asserted below)
   await page.reload()
   await settle(page)
-  expect(await cadenceOverdue(page)).toBe(before - 1)
+  expect(await cadenceOverdue(page)).toBe(before - cleared)
   expect(await orgWideOverdue(page)).not.toContain(type)
+  expect(await overdueOfType(page, type)).toBe(0)
 
   await page.getByRole('button', { name: /Cadence Requirements/ }).click()
   await expect(page.locator('main')).toContainText(new RegExp(type.replace(/_/g, '.'), 'i'))
@@ -68,6 +75,7 @@ test('ConMon: the Cadence Overdue banner updates right after logging (no reload)
   const before = await cadenceOverdue(page)
   const pending = await orgWideOverdue(page)
   test.skip(pending.length === 0, 'no org-wide cadence left overdue on this instance')
+  const cleared = await overdueOfType(page, pending[0])
   const panel = await openConMonPanel(page)
   await labelled(panel, 'System').selectOption({ index: 1 })
   await labelled(panel, 'Activity Type').selectOption(pending[0])
@@ -77,7 +85,7 @@ test('ConMon: the Cadence Overdue banner updates right after logging (no reload)
   await labelled(panel, 'Actions Taken').fill('None')
   await panel.getByRole('button', { name: 'Log Activity' }).click()
   await expect(panel).toHaveCount(0)
-  await expect.poll(() => cadenceOverdue(page), { timeout: 5000 }).toBe(before - 1)
+  await expect.poll(() => cadenceOverdue(page), { timeout: 5000 }).toBe(before - cleared)
 })
 
 test('ConMon: a framework-specific cadence (PCI DSS · VULNERABILITY SCAN) can be satisfied from the UI', async ({ page }) => {
