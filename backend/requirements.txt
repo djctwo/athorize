@@ -2,16 +2,16 @@
 # 2026-10-22) that the test suite passes on; upper bounds stop a future major
 # version from changing APIs under us. Verified at both ends: every floor and
 # the newest release in range.
-fastapi>=0.136.1,<1
-uvicorn[standard]>=0.46.0,<1
-sqlalchemy>=2.0.49,<3
-alembic>=1.14.0,<2
-pydantic>=2.13.3,<3
-pydantic-settings>=2.14.2,<3
-python-multipart>=0.0.31,<1
+fastapi>=0.162.0,<1
+uvicorn[standard]>=0.54.0,<1
+sqlalchemy>=2.1.6,<3
+alembic>=1.20.1,<2
+pydantic>=2.14.1,<3
+pydantic-settings>=2.16.1,<3
+python-multipart>=0.0.32,<1
 argon2-cffi>=25.1.0,<26
-cryptography>=50.0.0
-jsonschema>=4.23.0,<5
+cryptography>=50.0.2
+jsonschema>=4.26.0,<5
 aiofiles>=24.1.0
 # services/safe_http.py builds on httpx/httpcore transport internals.
 httpx>=0.28.1,<0.29
@@ -19,8 +19,8 @@ httpcore>=1.0.9,<2
 defusedxml>=0.7.1
 
 # Security floors for transitive dependencies (not imported directly).
-starlette>=1.3.1,<2
+starlette>=1.9.0,<2
 h11>=0.16.0
-anyio>=4.14.2
-idna>=3.15
-certifi>=2026.10.19
+anyio>=4.15.1
+idna>=3.20
+certifi>=2026.10.23
