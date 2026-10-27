@@ -232,6 +232,8 @@ export interface ComplianceScore {
   implemented: number
   open_findings: number
   critical_findings: number
+  /** Controls with any status but Not Assessed; 0 = nobody has started this pair. */
+  assessed_controls?: number
 }
 
 export interface ConMonEntry {

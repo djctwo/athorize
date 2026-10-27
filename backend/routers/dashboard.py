@@ -214,6 +214,7 @@ def compliance_overview(system_id: int | None = None, user: User = Depends(get_c
                 "implemented": s.implemented,
                 "open_findings": s.open_findings,
                 "critical_findings": s.critical_findings,
+                "assessed_controls": s.assessed,
             })
 
     return scores

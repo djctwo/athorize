@@ -9,6 +9,7 @@ import type {
   DashboardSnapshot, FindingAging, EvidenceFreshness, ActivityEntry, ComplianceScore, System,
 } from '../types'
 import { KpiCard } from '../components/KpiCard'
+import { splitPairs } from '../lib/compliancePairs'
 import {
   PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, Tooltip, LabelList,
   ResponsiveContainer, Legend, LineChart, Line,
@@ -110,7 +111,9 @@ export default function Dashboard() {
       ].filter(d => d.value > 0)
     : []
 
-  const complianceBars = compliance.map(c => {
+  // Only pairs someone has started (or with open findings): 76 bars at mostly 0% said nothing.
+  const { shown: chartedPairs, hidden: hiddenPairs } = splitPairs(compliance)
+  const complianceBars = chartedPairs.map(c => {
     const sys = c.system_name.length > 22 ? `${c.system_name.slice(0, 21)}…` : c.system_name
     return {
       label: `${sys} · ${fwShort[c.framework_id] ?? c.framework_id}`,
@@ -241,7 +244,12 @@ export default function Dashboard() {
       {/* Compliance scores bar chart */}
       {complianceBars.length > 0 && (
         <div className="bg-[var(--bg-secondary)] border border-[var(--border)] p-4 mb-6">
-          <h3 className="text-xs uppercase tracking-wider text-[var(--text-secondary)] mb-3">Compliance Scores by System × Framework</h3>
+          <h3 className="text-xs uppercase tracking-wider text-[var(--text-secondary)] mb-1">Compliance Scores by System × Framework</h3>
+          <p className="text-[11px] text-[var(--text-secondary)] mb-3">
+            {hiddenPairs > 0
+              ? `Pairs with assessed controls or open findings. ${hiddenPairs} not started yet (no control assessed, no open finding) are hidden.`
+              : 'Every active system × framework pair.'}
+          </p>
           <ResponsiveContainer width="100%" height={Math.max(200, complianceBars.length * 36)}>
             <BarChart data={complianceBars} layout="vertical" margin={{ left: 110, right: 45, top: 5, bottom: 5 }}>
               <XAxis type="number" domain={[0, 100]} tick={{ fontSize: 11 }} />

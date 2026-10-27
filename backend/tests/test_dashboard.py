@@ -51,3 +51,24 @@ def test_snapshot_system_filter(auth_client, db):
     one = client.get(f"/api/dashboard/snapshot?system_id={s1.id}").json()
     assert allsys["open_findings"] >= 2
     assert one["open_findings"] == 1
+
+
+def test_compliance_reports_assessed_controls_per_pair(auth_client, db):
+    """The Dashboard bar chart hides system x framework pairs nobody has started
+    (76 bars, most at 0%, in the demo). It needs to know which pairs have data:
+    a 0% pair whose controls are assessed Not Implemented is real information."""
+    client, seeded, _ = auth_client
+    from models import Control, ControlImplementation, FrameworkActivation, System
+    org = seeded["org"]
+    for fw in ("x", "y"):
+        db.add(FrameworkActivation(organization_id=org.id, framework_id=fw, is_active=True))
+        db.add(Control(framework_id=fw, control_id="AC-2", title="x"))
+        db.add(Control(framework_id=fw, control_id="AC-3", title="x"))
+    s = System(organization_id=org.id, name="S1", acronym="S1", description="", system_type="", environment="production", criticality="moderate")
+    db.add(s); db.flush()
+    db.add(ControlImplementation(system_id=s.id, framework_id="x", control_id="AC-2", implementation_status="NOT_IMPLEMENTED"))
+    db.add(ControlImplementation(system_id=s.id, framework_id="x", control_id="AC-3", implementation_status="NOT_ASSESSED"))
+    db.commit()
+    rows = {r["framework_id"]: r for r in client.get("/api/dashboard/compliance").json()}
+    assert rows["x"]["score_percentage"] == 0 and rows["x"]["assessed_controls"] == 1
+    assert rows["y"]["assessed_controls"] == 0
