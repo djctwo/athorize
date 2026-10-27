@@ -117,8 +117,6 @@ function money(n: number): string {
   return `$${n}`
 }
 
-// Open = not Closed / Risk Accepted / False Positive (services/metrics.py).
-const ACTIVE_STATUSES = new Set(['OPEN', 'IN_PROGRESS', 'DELAYED'])
 
 function sevColor(sev: string): string {
   if (sev === 'CRITICAL') return C.red
@@ -162,7 +160,8 @@ export async function generateExecBriefing(): Promise<void> {
   const orgName = snapshot.organization_name || 'Compliance Program'
   const fwName = (id: string) => frameworks.find(f => f.id === id)?.short_name || id
   const openFindings = findings
-    .filter(f => ACTIVE_STATUSES.has(f.status))
+    // Open = the server's is_open (services/metrics.py), as on every page.
+    .filter(f => f.is_open)
     .sort((a, b) => {
       const rank: Record<string, number> = { CRITICAL: 0, HIGH: 1, MEDIUM: 2, LOW: 3 }
       return (rank[a.severity] ?? 9) - (rank[b.severity] ?? 9)

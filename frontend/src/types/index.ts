@@ -64,6 +64,8 @@ export interface Finding {
   aging_bucket: AgingBucket
   days_until_due: number | null
   days_open: number | null
+  /** Server-side definition of "open" (services/metrics.py): Open, In Progress and Delayed. */
+  is_open: boolean
   created_at: string
   updated_at: string
 }
@@ -183,7 +185,10 @@ export interface AuditEntry {
 export interface DashboardSnapshot {
   cadence_overdue: number
   total_systems: number
+  /** Open = not Closed / Risk Accepted / False Positive; includes Delayed. */
   open_findings: number
+  /** How many of open_findings are Delayed (shown as "incl. N delayed"). */
+  delayed_findings?: number
   critical_findings: number
   overdue_findings: number
   expiring_evidence: number

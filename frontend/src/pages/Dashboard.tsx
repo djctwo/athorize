@@ -74,9 +74,12 @@ export default function Dashboard() {
     queryFn: () => api.get<{ date: string; avg_score: number; open_findings: number; overdue_findings: number }[]>(`/dashboard/history${qs}`),
   })
 
-  const cards: { label: string; value: number; icon: typeof Server; tone: 'default' | 'warning' | 'danger' }[] = [
+  const delayed = snapshot?.delayed_findings ?? 0
+  const cards: { label: string; value: number; icon: typeof Server; tone: 'default' | 'warning' | 'danger'; sub?: string }[] = [
     { label: 'Systems', value: snapshot?.total_systems ?? 0, icon: Server, tone: 'default' },
-    { label: 'Open Findings', value: snapshot?.open_findings ?? 0, icon: AlertTriangle, tone: (snapshot?.open_findings ?? 0) > 0 ? 'warning' : 'default' },
+    // Open = Open + In Progress + Delayed (services/metrics.py) — the Findings page counts the same way.
+    { label: 'Open Findings', value: snapshot?.open_findings ?? 0, icon: AlertTriangle, tone: (snapshot?.open_findings ?? 0) > 0 ? 'warning' : 'default',
+      sub: delayed > 0 ? `incl. ${delayed} delayed` : undefined },
     { label: 'Critical', value: snapshot?.critical_findings ?? 0, icon: Flame, tone: (snapshot?.critical_findings ?? 0) > 0 ? 'danger' : 'default' },
     { label: 'Overdue', value: snapshot?.overdue_findings ?? 0, icon: Clock, tone: (snapshot?.overdue_findings ?? 0) > 0 ? 'danger' : 'default' },
     { label: 'Frameworks', value: snapshot?.active_frameworks ?? 0, icon: Shield, tone: 'default' },
@@ -145,8 +148,8 @@ export default function Dashboard() {
 
       {/* KPI strip */}
       <div className="flex border border-[var(--border)] bg-[var(--bg-secondary)] mb-6">
-        {cards.map(({ label, value, icon, tone }) => (
-          <KpiCard key={label} label={label} value={value} tone={tone} icon={icon} />
+        {cards.map(({ label, value, icon, tone, sub }) => (
+          <KpiCard key={label} label={label} value={value} tone={tone} icon={icon} sub={sub} />
         ))}
       </div>
 

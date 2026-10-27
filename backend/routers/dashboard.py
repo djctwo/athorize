@@ -69,6 +69,7 @@ def dashboard_snapshot(system_id: int | None = None, user: User = Depends(get_cu
         counted_framework_clause(org_id),
     ), Finding, system_id))
     open_findings = counts["open"]
+    delayed_findings = counts["delayed"]
     critical_findings = counts["critical"]
     overdue_findings = counts["overdue"]
 
@@ -105,6 +106,7 @@ def dashboard_snapshot(system_id: int | None = None, user: User = Depends(get_cu
         "organization_name": org.name if org else "",
         "total_systems": total_systems,
         "open_findings": open_findings,
+        "delayed_findings": delayed_findings,
         "critical_findings": critical_findings,
         "overdue_findings": overdue_findings,
         "expiring_evidence": expiring_evidence,

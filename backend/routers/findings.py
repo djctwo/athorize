@@ -11,6 +11,7 @@ from schemas import FindingCreate, FindingUpdate, BulkImportPayload
 from dependencies import get_current_user, require_min_role, require_can
 from services import audit as audit_svc
 from services.aging import compute_aging
+from services.metrics import is_open_status
 from services.payload import safe_commit, coerce_dates
 from services.bulk_import import run_bulk_import
 from services.control_catalog import CatalogIndex, active_framework_ids, require_active_framework, require_known_control
@@ -59,6 +60,9 @@ IMPORT_FIELDS = {
 def _serialize(f: Finding) -> dict:
     data = {c.name: getattr(f, c.name) for c in f.__table__.columns}
     data.update(compute_aging(f.due_date or f.scheduled_completion, f.created_at, f.status))
+    # The one definition of "open" (services/metrics.py): every page counts
+    # open findings with this flag instead of re-deriving it from status.
+    data["is_open"] = is_open_status(f.status)
     return data
 
 
