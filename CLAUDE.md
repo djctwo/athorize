@@ -61,3 +61,8 @@ as JSON (`frameworks/`). AGPL-3.0, © 2026 Douglas Cleary.
   (ffmpeg needed for those two; raw .webm stays in `<scratch-dir>/work`). Fails on page errors, failed API calls,
   error alerts or the word "Universal" on screen. Script: `frontend/e2e/media/capture_media.mjs`.
   The UI is dark-only, so every shot is dark.
+
+## Website
+- https://djctwo.github.io/athorize/ is served by GitHub Pages from the `gh-pages` branch (static HTML, separate history; not in `main`).
+  To change it: `git worktree add ../athorize-site gh-pages`, edit, commit, push `gh-pages`. Keep `googlefef3924f77af7b34.html`
+  (Google Search Console verification) and `.nojekyll`. Copy claims only from this README.
