@@ -27,7 +27,8 @@ Definitions (mirrored in the in-app Help):
     when it is Implemented/Inherited AND has a narrative of at least 80 chars
     AND evidence uploaded for THAT system (tagged with the control and
     framework, or linked on the implementation) that is unexpired on the
-    inspection date (today when none is set). See
+    inspection date (today when none is set) AND has no open finding filed
+    against that control on that system under that framework. See
     services.inspection_prep.build_prep.
   - Average score (company / trend): the plain mean of the per-pair scores over
     every system x active framework pair whose catalog is loaded.

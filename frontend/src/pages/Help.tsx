@@ -323,7 +323,7 @@ const SECTIONS: Section[] = [
         title: 'Generate a readiness package',
         steps: [
           'Open Inspection Prep; pick the framework, system(s), and the inspection date.',
-          'Readiness = ready controls ÷ (controls × selected systems, minus Not Applicable ones). A control is ready on a system when it is Implemented or Inherited, has a narrative of ~80+ characters, and has evidence uploaded for THAT system that is still unexpired on the inspection date (today when no date is set). Not Applicable controls are left out, exactly as in the compliance score.',
+          'Readiness = ready controls ÷ (controls × selected systems, minus Not Applicable ones). A control is ready on a system when it is Implemented or Inherited, has a narrative of ~80+ characters, and has evidence uploaded for THAT system that is still unexpired on the inspection date (today when no date is set), and has no open finding (Open, In Progress or Delayed) filed against it on that system. A control with an open finding shows up in the punch list as Remediate, in the first window of the timeline. Not Applicable controls are left out, exactly as in the compliance score.',
           'The punch list ranks what to fix first: Implement gaps, then missing evidence, then stale evidence, then weak narratives — each with an owner.',
           'The 90/60/30 timeline tells you what must be done by when, anchored on the inspection date.',
           'Print the package or export the punch list as CSV for the team.',

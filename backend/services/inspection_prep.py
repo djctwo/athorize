@@ -9,8 +9,9 @@ For a chosen framework + system(s) + inspection date, produces:
 It reuses the same data the compliance score and red-team analyzer read, but
 reframes it as "what an assessor will find" rather than adversarial findings.
 Readiness is defined in services/metrics.py: Not Applicable controls leave the
-denominator (as they do for the compliance score) and evidence counts only for
-the system it belongs to.
+denominator (as they do for the compliance score), evidence counts only for
+the system it belongs to, and a control with an open finding (same system,
+framework and control; "open" as everywhere else) is not ready.
 """
 from __future__ import annotations
 
@@ -25,7 +26,7 @@ from models.evidence import EvidenceArtifact
 from models.finding import Finding
 from models.system import System
 
-from services.metrics import NOT_APPLICABLE, SATISFIED_STATUSES as SATISFIED
+from services.metrics import NOT_APPLICABLE, SATISFIED_STATUSES as SATISFIED, open_finding_clause
 
 NARRATIVE_MIN_CHARS = 80  # below this a narrative reads as a stub to an assessor
 
@@ -65,6 +66,24 @@ def _evidence_index(db: Session, organization_id: int, framework_id: str,
     return idx
 
 
+def _open_findings_index(db: Session, organization_id: int, framework_id: str,
+                         system_ids: list[int]) -> dict[tuple[int, str], list[str]]:
+    """(system_id, control_id) -> titles of OPEN findings filed against that
+    control on that system under this framework. "Open" is the one definition
+    (services/metrics.open_finding_clause): Open, In Progress and Delayed."""
+    idx: dict[tuple[int, str], list[str]] = defaultdict(list)
+    rows = db.query(Finding.system_id, Finding.control_id, Finding.title).filter(
+        Finding.organization_id == organization_id,
+        Finding.framework_id == framework_id,
+        Finding.system_id.in_(system_ids),
+        Finding.control_id.isnot(None),
+        open_finding_clause(),
+    ).order_by(Finding.id).all()
+    for sid, cid, title in rows:
+        idx[(sid, cid)].append(title)
+    return idx
+
+
 def build_prep(
     db: Session,
     organization_id: int,
@@ -96,10 +115,12 @@ def build_prep(
         impls[(i.system_id, i.control_id)] = i
 
     ev_idx = _evidence_index(db, organization_id, framework_id, list(systems.keys()), impls, as_of=inspection_date)
+    open_idx = _open_findings_index(db, organization_id, framework_id, list(systems.keys()))
 
     fam_stat: dict[str, dict] = defaultdict(lambda: {
         "family": "", "family_name": "", "total": 0, "ready": 0, "not_applicable": 0,
         "implemented": 0, "narrative_gaps": 0, "evidence_gaps": 0, "stale_evidence": 0,
+        "open_findings": 0,
     })
     punch: list[dict] = []
 
@@ -123,12 +144,19 @@ def build_prep(
             fs["total"] += 1
             narrative = (impl.narrative or "").strip() if impl else ""
             ev = ev_idx.get((sid, ctrl.control_id), {"has_any": False, "has_fresh": False})
+            open_titles = open_idx.get((sid, ctrl.control_id), [])
 
             issues = []
             if status not in SATISFIED:
                 issues.append(f"status is {status}")
             else:
                 fs["implemented"] += 1
+            if open_titles:
+                # An assessor tests the control and finds the open weakness: it
+                # is not ready however good the paperwork is.
+                fs["open_findings"] += 1
+                more = f" (+{len(open_titles) - 1} more)" if len(open_titles) > 1 else ""
+                issues.append(f"open finding: {open_titles[0]}{more}")
             if status in SATISFIED and len(narrative) < NARRATIVE_MIN_CHARS:
                 fs["narrative_gaps"] += 1
                 issues.append("narrative is thin or missing")
@@ -139,21 +167,27 @@ def build_prep(
                 fs["stale_evidence"] += 1
                 issues.append("evidence is expired")
 
-            ready = status in SATISFIED and len(narrative) >= NARRATIVE_MIN_CHARS and ev["has_fresh"]
+            ready = (status in SATISFIED and len(narrative) >= NARRATIVE_MIN_CHARS
+                     and ev["has_fresh"] and not open_titles)
             if ready:
                 fs["ready"] += 1
             elif issues:
-                # Priority: not-implemented > evidence gap > stale > narrative
+                # Priority: not-implemented / open finding > evidence gap >
+                # stale > narrative. Implementing and remediating are the
+                # long-lead work, so both land in the first window.
                 if status not in SATISFIED:
-                    pri = 1
+                    pri, action = 1, "implement"
+                elif open_titles:
+                    pri, action = 1, "remediate"
                 elif "no evidence linked" in issues:
-                    pri = 2
+                    pri, action = 2, "evidence"
                 elif "evidence is expired" in issues:
-                    pri = 3
+                    pri, action = 3, "refresh"
                 else:
-                    pri = 4
+                    pri, action = 4, "narrative"
                 punch.append({
                     "priority": pri,
+                    "action": action,
                     "system_id": sid,
                     "system_acronym": system.acronym,
                     "control_id": ctrl.control_id,
@@ -182,6 +216,7 @@ def build_prep(
             "narrative_gaps": fs["narrative_gaps"],
             "evidence_gaps": fs["evidence_gaps"],
             "stale_evidence": fs["stale_evidence"],
+            "open_findings": fs["open_findings"],
             "not_applicable": fs["not_applicable"],
         })
 
@@ -214,8 +249,8 @@ def _timeline(inspection_date: date, punch: list[dict]) -> list[dict]:
     p3 = [p for p in punch if p["priority"] == 3]
     p4 = [p for p in punch if p["priority"] == 4]
     return [
-        {"window": "T-90 to T-60", "focus": "Close implementation gaps",
-         "items": len(p1), "detail": "Stand up the controls that are not yet implemented — the longest-lead work."},
+        {"window": "T-90 to T-60", "focus": "Close implementation gaps & open findings",
+         "items": len(p1), "detail": "Stand up the controls that are not yet implemented and remediate open findings — the longest-lead work."},
         {"window": "T-60 to T-30", "focus": "Collect missing evidence",
          "items": len(p2) + len(p3), "detail": "Gather evidence for implemented controls and refresh anything expired."},
         {"window": "T-30 to inspection", "focus": "Tighten narratives & dry run",
