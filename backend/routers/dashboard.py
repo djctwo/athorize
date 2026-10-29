@@ -15,7 +15,7 @@ from models.conmon import ConMonEntry
 from models.risk import RiskRegisterEntry
 from dependencies import get_current_user
 from services.compliance_score import score_system
-from services.metrics import counted_framework_clause, finding_counts, open_finding_clause
+from services.metrics import counted_framework_clause, finding_counts, open_finding_clause, pair_has_work
 from services import conmon_cadence as cadence_svc
 from services.system_scope import system_scope_filter, system_scope_filter_nullable, require_system_allowed, allowed_system_ids
 
@@ -237,6 +237,9 @@ def compliance_overview(system_id: int | None = None, user: User = Depends(get_c
                 "open_findings": s.open_findings,
                 "critical_findings": s.critical_findings,
                 "assessed_controls": s.assessed,
+                # The one "has work" rule (services/metrics.py): the chart and
+                # the briefing show these pairs, the averages count only these.
+                "has_work": pair_has_work({"open_findings": s.open_findings, "assessed_controls": s.assessed}),
             })
 
     return scores
@@ -252,22 +255,19 @@ def compliance_history(
 ):
     """Per-day compliance trend: average score + finding counts, from the daily
     snapshots. Optional system/framework filters narrow the aggregate.
+    The average is over the system x framework pairs with work in them that
+    day (services.metrics.pair_has_work), and each point says how many
+    (`active_pairs`); finding counts sum every pair.
     Today's point is always computed live (the same computation the snapshot
     job stores), so the trend's last point matches the live Dashboard and
     Portfolio instead of lagging up to a day behind."""
     from models.compliance_snapshot import ComplianceSnapshot
-    from services.history import live_pair_scores, live_trend_point
+    from services.history import live_pair_scores, trend_point
 
     days = max(1, min(days, 730))
     today = date.today()
     since = today - timedelta(days=days)
-    q = db.query(
-        ComplianceSnapshot.snapshot_date,
-        func.avg(ComplianceSnapshot.score_percentage),
-        func.sum(ComplianceSnapshot.open_findings),
-        func.sum(ComplianceSnapshot.overdue_findings),
-        func.sum(ComplianceSnapshot.critical_findings),
-    ).filter(
+    q = db.query(ComplianceSnapshot).filter(
         ComplianceSnapshot.organization_id == user.organization_id, *system_scope_filter(ComplianceSnapshot.system_id, db, user),
         ComplianceSnapshot.snapshot_date >= since,
         ComplianceSnapshot.snapshot_date < today,
@@ -276,23 +276,23 @@ def compliance_history(
         q = q.filter(ComplianceSnapshot.system_id == system_id)
     if framework_id:
         q = q.filter(ComplianceSnapshot.framework_id == framework_id)
-    rows = q.group_by(ComplianceSnapshot.snapshot_date).order_by(ComplianceSnapshot.snapshot_date).all()
+    by_day: dict[date, list[dict]] = {}
+    for r in q.order_by(ComplianceSnapshot.snapshot_date).all():
+        by_day.setdefault(r.snapshot_date, []).append({
+            "score_percentage": r.score_percentage or 0.0,
+            "implemented": r.implemented or 0,
+            "assessed_controls": r.assessed_controls,
+            "open_findings": r.open_findings or 0,
+            "overdue_findings": r.overdue_findings or 0,
+            "critical_findings": r.critical_findings or 0,
+        })
 
     scope = allowed_system_ids(db, user)
     if system_id:
         scope = {system_id} if scope is None or system_id in scope else set()
     live = live_pair_scores(db, user.organization_id, system_ids=scope, framework_id=framework_id, on=today)
-    today_point = [live_trend_point(live, today)] if live else []
-    return [
-        {
-            "date": d.isoformat(),
-            "avg_score": round(float(score or 0), 1),
-            "open_findings": int(open_f or 0),
-            "overdue_findings": int(over_f or 0),
-            "critical_findings": int(crit_f or 0),
-        }
-        for d, score, open_f, over_f, crit_f in rows
-    ] + today_point
+    today_point = [trend_point(live, today)] if live else []
+    return [trend_point(rows, d) for d, rows in by_day.items()] + today_point
 
 
 @router.get("/my-work")

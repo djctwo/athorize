@@ -209,7 +209,7 @@ def portfolio(user: User = Depends(get_current_user), db: Session = Depends(get_
 
     from models import EvidenceArtifact, Finding, System
     from services.history import live_pair_scores
-    from services.metrics import average_score, counted_framework_clause, finding_counts
+    from services.metrics import active_average, counted_framework_clause, finding_counts
 
     if not user.is_operator:
         raise HTTPException(403, "Only operators can view the portfolio")
@@ -228,8 +228,9 @@ def portfolio(user: User = Depends(get_current_user), db: Session = Depends(get_
             EvidenceArtifact.expiration_date <= ev_horizon,
         ).count()
         # Live, same computation as the Dashboard score cards and today's trend
-        # point (services.history.live_pair_scores) — never a stale snapshot.
-        avg_score = average_score(p["score_percentage"] for p in live_pair_scores(db, org.id, on=today))
+        # point (services.history.live_pair_scores) — never a stale snapshot —
+        # averaged over the pairs with work in them (services.metrics.active_average).
+        avg_score, active_pairs = active_average(live_pair_scores(db, org.id, on=today))
         out.append({
             "id": org.id, "name": org.name, "slug": org.slug,
             "systems": systems,
@@ -238,5 +239,6 @@ def portfolio(user: User = Depends(get_current_user), db: Session = Depends(get_
             "critical_findings": critical,
             "evidence_stale": evidence_stale,
             "avg_score": avg_score,
+            "active_pairs": active_pairs,
         })
     return {"companies": out, "active_organization_id": user.organization_id}

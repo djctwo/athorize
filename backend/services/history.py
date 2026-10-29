@@ -7,7 +7,8 @@ scheduler can both call it safely. Purely local computation — no network.
 
 `live_pair_scores` is the single computation behind every snapshot row AND
 every live company/trend number (Portfolio average, today's trend point), so
-the stored history and the live Dashboard can't drift apart.
+the stored history and the live Dashboard can't drift apart. Averages count
+only the pairs with work in them (services.metrics.active_average).
 """
 from __future__ import annotations
 
@@ -18,7 +19,7 @@ from sqlalchemy.orm import Session
 from models import FrameworkActivation, Organization, System
 from models.compliance_snapshot import ComplianceSnapshot
 from services.compliance_score import score_system
-from services.metrics import average_score
+from services.metrics import active_average, pair_has_work
 
 
 def live_pair_scores(
@@ -58,16 +59,21 @@ def live_pair_scores(
                 "open_findings": s.open_findings,
                 "critical_findings": s.critical_findings,
                 "overdue_findings": s.overdue_findings,
+                "assessed_controls": s.assessed,
             })
+            rows[-1]["has_work"] = pair_has_work(rows[-1])
     return rows
 
 
-def live_trend_point(rows: list[dict], on: date | None = None) -> dict:
-    """Aggregate pair rows exactly like GET /dashboard/history aggregates
-    snapshot rows (mean score, summed counts)."""
+def trend_point(rows: list[dict], on: date) -> dict:
+    """One trend point from one day's pair rows (live or snapshot): the mean
+    score over the pairs with work, how many pairs that is, and finding counts
+    summed over every pair. GET /dashboard/history builds every point with this."""
+    avg, active = active_average(rows)
     return {
-        "date": (on or date.today()).isoformat(),
-        "avg_score": average_score(r["score_percentage"] for r in rows) or 0.0,
+        "date": on.isoformat(),
+        "avg_score": avg,
+        "active_pairs": active,
         "open_findings": sum(r["open_findings"] for r in rows),
         "overdue_findings": sum(r["overdue_findings"] for r in rows),
         "critical_findings": sum(r["critical_findings"] for r in rows),
@@ -97,6 +103,7 @@ def snapshot_org(db: Session, organization_id: int, on: date | None = None) -> i
         row.open_findings = pair["open_findings"]
         row.critical_findings = pair["critical_findings"]
         row.overdue_findings = pair["overdue_findings"]
+        row.assessed_controls = pair["assessed_controls"]
         written += 1
     db.flush()
     return written

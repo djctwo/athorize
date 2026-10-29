@@ -30,13 +30,19 @@ Definitions (mirrored in the in-app Help):
     inspection date (today when none is set) AND has no open finding filed
     against that control on that system under that framework. See
     services.inspection_prep.build_prep.
+  - Pair with work (per system x framework): at least one catalog control
+    assessed (any status but Not Assessed) OR an open finding. A pair nobody
+    has started is shown nowhere and averaged nowhere. See pair_has_work; the
+    API returns it per pair as `has_work`, so the UI never re-derives it.
   - Average score (company / trend): the plain mean of the per-pair scores over
-    every system x active framework pair whose catalog is loaded.
+    the system x active framework pairs (catalog loaded) that have work, and
+    how many pairs that is. Frameworks nobody has started don't drag it toward
+    0%. See active_average.
 """
 from __future__ import annotations
 
 from datetime import date
-from typing import Iterable
+from typing import Iterable, Mapping
 
 from sqlalchemy import exists, select
 
@@ -95,3 +101,28 @@ def average_score(scores: Iterable[float]) -> float | None:
     if not vals:
         return None
     return round(sum(vals) / len(vals), 1)
+
+
+def pair_has_work(pair: Mapping) -> bool:
+    """Does this system x framework pair have work in it: at least one catalog
+    control assessed, or an open finding? The one rule behind the Dashboard's
+    score-by-pair chart, the Executive Briefing table, every average score
+    (Dashboard trend, daily snapshots, Portfolio) and the seeded demo history.
+
+    `pair` is a score row: open_findings, implemented, assessed_controls.
+    Snapshot rows recorded before assessed_controls was stored have it as None;
+    for those, Implemented/Inherited controls are the evidence of work (they
+    are assessed controls)."""
+    if (pair.get("open_findings") or 0) > 0:
+        return True
+    assessed = pair.get("assessed_controls")
+    if assessed is None:
+        return (pair.get("implemented") or 0) > 0
+    return assessed > 0
+
+
+def active_average(pairs: Iterable[Mapping]) -> tuple[float | None, int]:
+    """(average score, number of pairs averaged) over the pairs with work.
+    The average is None when no pair has work yet."""
+    active = [p for p in pairs if pair_has_work(p)]
+    return average_score(p["score_percentage"] for p in active), len(active)

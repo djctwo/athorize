@@ -919,7 +919,9 @@ def seed_history(db: Session, organization_id: int, weeks: int = 12) -> int:
     """Weekly ComplianceSnapshot rows for the past `weeks` weeks for every
     (system x active framework) pair the daily job records. Finding counts are
     what was open on each day (from the backdated filing / resolution dates);
-    scores ramp up to today's, so the trend shows a program improving. Today's
+    scores ramp up to today's, so the trend shows a program improving. Every
+    row records its assessed-control count, so each seeded point averages the
+    pairs with work exactly like a real daily snapshot. Today's
     point stays live (GET /dashboard/history computes it). Returns rows written."""
     from models.compliance_snapshot import ComplianceSnapshot
     from services.history import live_pair_scores
@@ -939,6 +941,10 @@ def seed_history(db: Session, organization_id: int, weeks: int = 12) -> int:
                 score_percentage=round(p["score_percentage"] * ramp, 1),
                 total_controls=p["total_controls"],
                 implemented=round(p["implemented"] * ramp),
+                # Assessment ramps with implementation; a started pair stays
+                # started (>= 1), so the seeded trend averages the same pairs
+                # with work as today's live point (services.metrics.pair_has_work).
+                assessed_controls=max(1, round(p["assessed_controls"] * ramp)) if p["assessed_controls"] else 0,
                 open_findings=len(fs),
                 critical_findings=sum(1 for f in fs if f.severity == "CRITICAL"),
                 overdue_findings=sum(1 for f in fs if f.due_date and f.due_date < day),

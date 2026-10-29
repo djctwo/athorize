@@ -419,6 +419,7 @@ const SECTIONS: Section[] = [
         title: 'Read the compliance trend',
         steps: [
           'The Dashboard\'s Compliance Trend chart plots average score, open findings, and overdue findings over time.',
+          'The average counts only system × framework pairs with work in them (at least one control assessed, or an open finding); the line\'s caption and tooltip say how many. Frameworks nobody has started don\'t pull it toward 0%.',
           'Snapshots are recorded automatically once a day (and at startup) — no setup required.',
           'The same history appears in the Audit Binder, so you can show an assessor the trajectory, not just today.',
         ],
@@ -774,7 +775,7 @@ const GLOSSARY: { term: string; def: string }[] = [
   { term: 'Confidence tiers', def: 'official = from a NIST/framework-author mapping; derived = composed through the hub (two hops); vendor = shipped by a third party. Propagation only ever uses official/derived equivalent-or-superset edges.' },
   { term: 'Evidence freshness', def: 'Every artifact carries an expiration. Fresh → Expiring (30 days out) → Expired. Stale evidence drags down Inspection Prep readiness.' },
   { term: 'Open finding', def: 'Any finding not Closed, Risk Accepted or False Positive — Delayed and In Progress findings are open. Every Open / Critical / Overdue count (Dashboard tiles and charts, the Findings page tiles, score cards, Portfolio, trend, Executive Briefing) uses this one definition, and the Open tiles say how many of them are Delayed ("incl. 1 delayed"). Overdue = open with a due date before today.' },
-  { term: 'Average score', def: 'The Portfolio and trend average is the plain mean of the per-system × framework scores (frameworks with a loaded catalog). Today\'s trend point and the Portfolio are live; earlier points are the daily snapshots.' },
+  { term: 'Average score', def: 'The Portfolio and trend average is the plain mean of the per-system × framework scores over the active pairs: frameworks with a loaded catalog where at least one control is assessed or a finding is open (the same pairs the Dashboard\'s score chart shows). Pairs nobody has started are left out, and the count of pairs averaged is shown. Today\'s trend point and the Portfolio are live; earlier points are the daily snapshots.' },
   { term: 'Aging buckets', def: 'Overdue / Due 7 / Due 30 / On Track, computed from a finding\'s due date. Terminal findings (closed, risk-accepted, false positive) show Resolved.' },
   { term: 'ConMon cadence', def: 'How often a monitoring activity must recur (e.g. PCI quarterly scans). Resolution order: your org override → framework requirement → built-in default. An activity logged Org-wide counts toward every framework\'s cadence; one logged for a framework counts for that framework and org-wide.' },
   { term: 'KEV', def: 'CISA\'s Known Exploited Vulnerabilities catalog — vulnerabilities confirmed exploited in the wild. KEV items matching your assets deserve top priority.' },

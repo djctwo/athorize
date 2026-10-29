@@ -93,6 +93,7 @@ const cell = (row: unknown[], i: number) => (row[i] as { text: string }).text
 const pair = (system_id: number, system_name: string, framework_id: string, score: number, assessed: number, open = 0) => ({
   system_id, system_name, framework_id, score_percentage: score, total_controls: 10,
   implemented: Math.round(score / 10), open_findings: open, critical_findings: 0, assessed_controls: assessed,
+  has_work: assessed > 0 || open > 0,
 })
 
 describe('executive briefing scope', () => {

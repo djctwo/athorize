@@ -32,6 +32,7 @@ interface ComplianceScore {
   open_findings: number
   critical_findings: number
   assessed_controls?: number
+  has_work: boolean
 }
 
 interface FindingImpact {
