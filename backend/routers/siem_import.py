@@ -12,7 +12,8 @@ from services.payload import safe_commit
 from services.control_catalog import require_active_framework
 from services.import_common import ImportFileError, decode_text, read_upload_capped
 from services.siem_import import (
-    SUPPORTED_FORMATS, MAX_FILE_SIZE, FORMAT_LABELS, ParseReport, detect_format, parse_file_report,
+    SUPPORTED_FORMATS, MAX_FILE_SIZE, FORMAT_LABELS, ParseReport, describe_unrecognized, detect_format,
+    parse_file_report,
 )
 from services.system_scope import system_scope_filter, system_scope_filter_nullable, require_system_allowed
 
@@ -37,7 +38,12 @@ def _decode_and_parse(raw: bytes, filename: str, format_override: str) -> tuple[
         content = decode_text(raw, notes)
         fmt = format_override.strip() or detect_format(filename, content)
         if not fmt:
-            raise HTTPException(422, "Could not detect the file format. Choose it under Format Override.")
+            raise HTTPException(
+                422,
+                "Could not detect the file format; nothing was imported."
+                + describe_unrecognized(filename, content)
+                + " Choose the format under Format Override if it is listed.",
+            )
         if fmt not in FORMAT_LABELS:
             raise HTTPException(422, f"Unknown format: {fmt}")
         rep = parse_file_report(content, fmt)

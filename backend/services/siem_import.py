@@ -6,6 +6,7 @@ Each parsed alert produces a Finding with network metadata in extra_data.
 """
 import csv
 import hashlib
+import io
 import json
 import re
 
@@ -41,6 +42,28 @@ MAX_FILE_SIZE = 16 * 1024 * 1024  # 16 MiB
 MAX_ROWS = 5000
 
 FORMAT_LABELS = {f["key"]: f["label"] for f in SUPPORTED_FORMATS}
+
+
+# Header names each CSV parser reads for its ESSENTIAL fields. The parsers and
+# the layout check below share these tuples, so they cannot drift apart: a file
+# whose header carries none of a field's names fails with a clear error instead
+# of importing rows with that field silently empty (a changed export layout).
+SPLUNK_TITLE = ("alert_name", "search_name", "name", "signature", "rule_name")
+NESSUS_TITLE = ("Name", "Plugin Name", "name")
+NESSUS_RISK = ("Risk", "Severity", "risk", "severity")
+NESSUS_HOST = ("Host", "IP", "host", "ip")
+TENABLE_TITLE = ("Plugin Name", "Name", "name")
+TENABLE_SEVERITY = ("Severity", "Risk", "severity")
+TENABLE_HOST = ("IP Address", "Host", "Asset", "IP", "ip")
+QUALYS_TITLE = ("Title", "title")
+QUALYS_SEVERITY = ("Severity", "severity")
+QUALYS_HOST = ("IP", "IP Address", "ip")
+SENTINEL_TITLE = ("AlertName", "DisplayName", "alertname")
+SENTINEL_SEVERITY = ("AlertSeverity", "Severity", "alertseverity")
+CROWDSTRIKE_TITLE = ("DetectName", "Detect Name", "DetectDescription", "Name")
+CROWDSTRIKE_SEVERITY = ("SeverityName", "Severity Name", "MaxSeverityDisplayName", "Severity")
+WINEVENT_ID = ("Id", "EventID", "Event ID", "event_id")
+WINEVENT_PROVIDER = ("ProviderName", "Provider Name", "Source", "provider")
 
 
 def _split_cves(raw) -> list[str]:
@@ -137,6 +160,10 @@ def _find_header_line(content: str, required: set[str], max_lines: int = 60) -> 
         pos = nl + 1
     return None
 
+
+# Column-name words that only vulnerability-scanner / EDR exports carry (whole
+# words: a Splunk "uniqid" column is not a Qualys "QID").
+_SCANNER_HINT = re.compile(r"\b(plugin|qid|cvss|detectid|detect name|alertseverity)")
 
 _WS = re.compile(r"\s*")
 
@@ -274,7 +301,14 @@ def detect_format(filename: str, content: str) -> str | None:
         # Only consulted when the first line matched nothing above.
         if _find_header_line(content, _QUALYS_HEADER):
             return "qualys_csv"
-        return "splunk_csv"
+        # Scanner columns that matched no full signature above = a scanner export
+        # whose layout changed. Never read it as Splunk (wrong source, host and
+        # severity silently lost): report it as unrecognised instead.
+        if any(_SCANNER_HINT.search(c) for c in cols):
+            return None
+        if set(cols) & set(SPLUNK_TITLE):
+            return "splunk_csv"
+        return None
 
     if lower.endswith((".json", ".ndjson")):
         stripped = content.lstrip()
@@ -325,7 +359,7 @@ def detect_format(filename: str, content: str) -> str | None:
 def parse_splunk_csv(content: str, rep: "ParseReport | None" = None) -> list[dict]:
     rep = rep if rep is not None else ParseReport()
     for row in _csv_rows(content):
-        title = _pick(row, "alert_name", "search_name", "name", "signature", "rule_name")
+        title = _pick(row, *SPLUNK_TITLE)
         if not title:
             rep.skip("no alert name (alert_name / search_name / name / signature column)")
             continue
@@ -565,19 +599,19 @@ _INFORMATIONAL_RISK = frozenset({"none", "0", "info", "informational"})
 def parse_nessus_csv(content: str, rep: "ParseReport | None" = None) -> list[dict]:
     rep = rep if rep is not None else ParseReport()
     for row in _csv_rows(content):
-        title = _pick(row, "Name", "Plugin Name", "name")
+        title = _pick(row, *NESSUS_TITLE)
         if not title:
             rep.skip("no plugin name")
             continue
 
-        risk_raw = _pick(row, "Risk", "Severity", "risk", "severity").strip()
+        risk_raw = _pick(row, *NESSUS_RISK).strip()
         if risk_raw.lower() in _INFORMATIONAL_RISK:
             # Nessus "Risk = None" rows are informational plugins (scan info,
             # port scanner, traceroute) — dozens per host, never weaknesses.
             rep.skip("informational (Risk=None)")
             continue
         severity = _normalize_severity(risk_raw)
-        dst_ip = _pick(row, "Host", "IP", "host", "ip")
+        dst_ip = _pick(row, *NESSUS_HOST)
         dst_port = _pick(row, "Port", "port")
         cve = _pick(row, "CVE", "cve")
         synopsis = _pick(row, "Synopsis", "synopsis", "Description", "description")
@@ -680,11 +714,11 @@ def parse_sentinel_csv(content: str, rep: "ParseReport | None" = None) -> list[d
     for row in _csv_rows(content):
         # Log Analytics exports suffix datetime columns: "TimeGenerated [UTC]".
         row = {_UNIT_SUFFIX.sub("", k) if isinstance(k, str) else k: v for k, v in row.items()}
-        title = _pick(row, "AlertName", "DisplayName", "alertname")
+        title = _pick(row, *SENTINEL_TITLE)
         if not title:
             rep.skip("no alert name")
             continue
-        severity = _normalize_severity(_pick(row, "AlertSeverity", "Severity", "alertseverity"))
+        severity = _normalize_severity(_pick(row, *SENTINEL_SEVERITY))
         ts = _pick(row, "TimeGenerated", "StartTime", "timegenerated")
         rule_id = _pick(row, "SystemAlertId", "AlertType", "VendorOriginalId")
         src_ip = _pick(row, "SourceIP", "src_ip", "IPAddress")
@@ -713,11 +747,11 @@ def parse_crowdstrike_csv(content: str, rep: "ParseReport | None" = None) -> lis
     """CrowdStrike Falcon detections export."""
     rep = rep if rep is not None else ParseReport()
     for row in _csv_rows(content):
-        title = _pick(row, "DetectName", "Detect Name", "DetectDescription", "Name")
+        title = _pick(row, *CROWDSTRIKE_TITLE)
         if not title:
             rep.skip("no detection name")
             continue
-        severity = _normalize_severity(_pick(row, "SeverityName", "Severity Name", "MaxSeverityDisplayName", "Severity"))
+        severity = _normalize_severity(_pick(row, *CROWDSTRIKE_SEVERITY))
         host = _pick(row, "ComputerName", "Computer Name", "Hostname")
         src_ip = _pick(row, "LocalIP", "Local IP", "local_ip")
         ts = _pick(row, "Timestamp", "DetectTime", "FirstBehavior", "ProcessStartTime")
@@ -972,13 +1006,13 @@ def parse_qualys_csv(content: str, rep: "ParseReport | None" = None) -> list[dic
     if offset:
         content = content[offset:]
     for row in _csv_rows(content):
-        title = _pick(row, "Title", "title")
+        title = _pick(row, *QUALYS_TITLE)
         if not title:
             rep.skip("no title")
             continue
-        sev_raw = _pick(row, "Severity", "severity").strip()
+        sev_raw = _pick(row, *QUALYS_SEVERITY).strip()
         severity = _QUALYS_SEVERITY.get(sev_raw, _normalize_severity(sev_raw))
-        dst_ip = _pick(row, "IP", "IP Address", "ip")
+        dst_ip = _pick(row, *QUALYS_HOST)
         dst_port = _pick(row, "Port", "port")
         qid = _pick(row, "QID", "qid")
         cve = _pick(row, "CVE ID", "CVE", "cve")
@@ -1011,16 +1045,16 @@ def parse_tenable_csv(content: str, rep: "ParseReport | None" = None) -> list[di
     """Tenable.io / Tenable.sc exported findings CSV."""
     rep = rep if rep is not None else ParseReport()
     for row in _csv_rows(content):
-        title = _pick(row, "Plugin Name", "Name", "name")
+        title = _pick(row, *TENABLE_TITLE)
         if not title:
             rep.skip("no plugin name")
             continue
-        sev_raw = _pick(row, "Severity", "Risk", "severity").strip()
+        sev_raw = _pick(row, *TENABLE_SEVERITY).strip()
         if sev_raw.lower() in _INFORMATIONAL_RISK:
             rep.skip("informational (Severity=Info)")  # same plugins as Nessus Risk=None
             continue
         severity = _TENABLE_SEVERITY.get(sev_raw, _normalize_severity(sev_raw))
-        dst_ip = _pick(row, "IP Address", "Host", "Asset", "IP", "ip")
+        dst_ip = _pick(row, *TENABLE_HOST)
         dst_port = _pick(row, "Port", "port")
         plugin_id = _pick(row, "Plugin ID", "Plugin", "plugin_id")
         cve = _pick(row, "CVE", "cve")
@@ -1171,8 +1205,8 @@ def parse_winevent_csv(content: str, rep: "ParseReport | None" = None) -> list[d
     """Windows Event Log CSV — Get-WinEvent or Event Viewer export."""
     rep = rep if rep is not None else ParseReport()
     for row in _csv_rows(content):
-        event_id = _pick(row, "Id", "EventID", "Event ID", "event_id")
-        provider = _pick(row, "ProviderName", "Provider Name", "Source", "provider")
+        event_id = _pick(row, *WINEVENT_ID)
+        provider = _pick(row, *WINEVENT_PROVIDER)
         message = _pick(row, "Message", "Description", "message")
         if not event_id and not provider:
             rep.skip("no event id or provider")
@@ -1227,6 +1261,91 @@ assert {f["key"] for f in SUPPORTED_FORMATS} == set(PARSERS), \
     "SUPPORTED_FORMATS and PARSERS are out of sync"
 
 
+# CSV formats → (field, header names) the parser cannot do without.
+_CSV_LAYOUT: dict[str, tuple[tuple[str, tuple[str, ...]], ...]] = {
+    "splunk_csv": (("alert name", SPLUNK_TITLE),),
+    "nessus_csv": (("plugin name", NESSUS_TITLE), ("risk", NESSUS_RISK), ("host", NESSUS_HOST)),
+    "tenable_csv": (("plugin name", TENABLE_TITLE), ("severity", TENABLE_SEVERITY), ("host", TENABLE_HOST)),
+    "qualys_csv": (("title", QUALYS_TITLE), ("severity", QUALYS_SEVERITY), ("IP", QUALYS_HOST)),
+    "sentinel_csv": (("alert name", SENTINEL_TITLE), ("severity", SENTINEL_SEVERITY)),
+    "crowdstrike_csv": (("detection name", CROWDSTRIKE_TITLE), ("severity", CROWDSTRIKE_SEVERITY)),
+    "winevent_csv": (("event id or provider", WINEVENT_ID + WINEVENT_PROVIDER),),
+}
+assert set(_CSV_LAYOUT) <= set(PARSERS)
+
+_CONTROL_CHARS = re.compile(r"[\x00-\x1f\x7f-\x9f]")
+_MAX_LISTED_COLUMNS = 30
+_MAX_COLUMN_NAME = 64
+
+
+def _csv_header(content: str, format_key: str = "") -> list[str] | None:
+    """The header cells exactly as the CSV parser will key its rows by, or None
+    when the file has no readable header (the parser reports that itself)."""
+    content = _strip_type_line(content)
+    if format_key == "qualys_csv":
+        offset = _find_header_line(content, _QUALYS_HEADER)
+        if offset:
+            content = content[offset:]
+    try:
+        for cells in csv.reader(io.StringIO(content[:1024 * 1024], newline="")):
+            if cells:  # csv.DictReader takes the first non-empty record as its header
+                if format_key == "sentinel_csv":
+                    cells = [_UNIT_SUFFIX.sub("", c) for c in cells]
+                return cells if any(c.strip() for c in cells) else None
+    except csv.Error:
+        return None
+    return None
+
+
+def describe_columns(header: list[str]) -> str:
+    """Column NAMES only (never a data row), cleaned for display: control
+    characters removed, each name trimmed and capped, the list capped."""
+    names = []
+    for raw in header[:_MAX_LISTED_COLUMNS]:
+        name = _CONTROL_CHARS.sub("", str(raw)).strip()[:_MAX_COLUMN_NAME]
+        names.append(f'"{name}"')
+    more = len(header) - _MAX_LISTED_COLUMNS
+    return ", ".join(names) + (f" (+{more} more)" if more > 0 else "")
+
+
+def check_csv_layout(content: str, format_key: str) -> None:
+    """Raise ImportFileError when a CSV lacks a column its parser needs, naming
+    the missing field and the columns that ARE there (names only)."""
+    spec = _CSV_LAYOUT.get(format_key)
+    if not spec:
+        return
+    header = _csv_header(content, format_key)
+    if header is None:
+        return
+    present = set(header)
+    missing = [(field, names) for field, names in spec if not present.intersection(names)]
+    if not missing:
+        return
+    def expected(names: tuple[str, ...]) -> str:
+        seen: dict[str, str] = {}
+        for n in names:
+            seen.setdefault(n.lower(), n)
+        return " / ".join(f'"{n}"' for n in seen.values())
+    gaps = "; ".join(f"no {field} column (expected {expected(names)})" for field, names in missing)
+    label = FORMAT_LABELS.get(format_key, format_key)
+    raise ImportFileError(
+        f"This file does not have the column layout of a {label} export: {gaps}. "
+        f"Columns in the file: {describe_columns(header)}. Nothing was imported. If the tool's export "
+        "format has changed, pick the right format under Format Override, or report the new layout "
+        "(column names only, never the data)."
+    )
+
+
+def describe_unrecognized(filename: str, content: str) -> str:
+    """Extra detail for a file whose format could not be detected: for a CSV,
+    the header's column names (never a data row)."""
+    if filename.lower().endswith(".csv"):
+        header = _csv_header(content)
+        if header:
+            return f" Columns in the file: {describe_columns(header)}."
+    return ""
+
+
 def parse_file_report(content: str, format_key: str) -> ParseReport:
     """Parse ``content`` as ``format_key``; the report carries the rows plus
     every row skipped (with the reason), merged or cut off by the row cap.
@@ -1237,6 +1356,7 @@ def parse_file_report(content: str, format_key: str) -> ParseReport:
     parser = PARSERS.get(format_key)
     if not parser:
         raise ImportFileError(f"Unknown format: {format_key}")
+    check_csv_layout(content, format_key)
     rep = ParseReport()
     try:
         parser(content, rep)
