@@ -11,9 +11,6 @@ laptop, and your compliance data never leaves it.
 
 Created by [Douglas Cleary](https://github.com/djctwo).
 
-![Athorize demo: first-run setup, the dashboard, a control's crosswalk, a finding's cross-framework impact and the reports page](docs/media/athorize-demo-preview.gif)
-
-A one-minute tour: [full-quality video (MP4)](docs/media/athorize-demo.mp4).
 All data shown is the built-in demo (fictional companies Acme, Northwind and Contoso).
 
 | | |
