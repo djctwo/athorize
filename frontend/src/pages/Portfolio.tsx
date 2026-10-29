@@ -2,6 +2,7 @@ import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { useNavigate } from 'react-router-dom'
 import { Building2, ArrowRight } from 'lucide-react'
 import { api } from '../lib/api'
+import { activePairsText } from '../lib/compliancePairs'
 import { useUserStore } from '../store/userStore'
 import type { User } from '../types'
 
@@ -14,7 +15,9 @@ interface Company {
   overdue_findings: number
   critical_findings: number
   evidence_stale: number
+  /** Mean score over the company's active system × framework pairs (server rule, services/metrics.py). */
   avg_score: number | null
+  active_pairs: number
 }
 
 /** Operator cockpit: every client company's compliance posture on one screen.
@@ -64,7 +67,10 @@ export default function Portfolio() {
             <tr className="text-[11px] uppercase tracking-wider text-[var(--text-secondary)] border-b border-[var(--border)]">
               <th className="text-left px-3 py-2">Company</th>
               <th className="text-right px-3 py-2">Systems</th>
-              <th className="text-right px-3 py-2">Avg Score</th>
+              <th className="text-right px-3 py-2"
+                  title="Mean score across the active system × framework pairs: at least one control assessed, or an open finding. Frameworks nobody has started are left out.">
+                Avg Score
+              </th>
               <th className="text-right px-3 py-2">Open Findings</th>
               <th className="text-right px-3 py-2">Overdue</th>
               <th className="text-right px-3 py-2">Critical</th>
@@ -91,6 +97,7 @@ export default function Portfolio() {
                 <td className="px-3 py-2.5 text-right text-[var(--text-secondary)]">{c.systems}</td>
                 <td className="px-3 py-2.5 text-right font-semibold" style={{ color: scoreColor(c.avg_score) }}>
                   {c.avg_score !== null ? `${c.avg_score}%` : '—'}
+                  <div className="text-[10px] font-normal text-[var(--text-secondary)]">{activePairsText(c.active_pairs)}</div>
                 </td>
                 <td className="px-3 py-2.5 text-right">{c.open_findings}</td>
                 <td className="px-3 py-2.5 text-right" style={{ color: c.overdue_findings > 0 ? 'var(--risk-crit)' : undefined }}>

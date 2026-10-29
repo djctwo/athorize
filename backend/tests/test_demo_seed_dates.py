@@ -94,6 +94,17 @@ def test_compliance_trend_has_past_snapshots(auth_client_demo):
     assert len(hist) >= 9
     # Today's point is live; the trend improves into it.
     assert hist[0]["avg_score"] <= hist[-1]["avg_score"]
+    # Every point averages the pairs with work (an assessed control or an open
+    # finding), not every system x framework pair: today's equals the mean of
+    # the pairs the Dashboard chart shows, and seeded points average the same
+    # pairs, so the line is not pinned near 0% by frameworks nobody started.
+    pairs = client.get("/api/dashboard/compliance").json()
+    worked = [p for p in pairs if p["has_work"]]
+    assert 0 < len(worked) < len(pairs)
+    assert hist[-1]["active_pairs"] == len(worked)
+    assert hist[-1]["avg_score"] == round(sum(p["score_percentage"] for p in worked) / len(worked), 1)
+    assert hist[-1]["avg_score"] > 20
+    assert {p["active_pairs"] for p in hist} == {len(worked)}
 
 
 def test_same_seed_time_same_data(db):

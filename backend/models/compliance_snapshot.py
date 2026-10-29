@@ -27,4 +27,8 @@ class ComplianceSnapshot(Base):
     open_findings = Column(Integer, nullable=False, default=0)
     critical_findings = Column(Integer, nullable=False, default=0)
     overdue_findings = Column(Integer, nullable=False, default=0)
+    # Catalog controls assessed (any status but Not Assessed) that day: with
+    # open_findings, decides whether the pair counts toward the average
+    # (services.metrics.pair_has_work). NULL on rows recorded before it existed.
+    assessed_controls = Column(Integer, nullable=True)
     created_at = Column(UTCDateTime, default=lambda: datetime.now(timezone.utc))

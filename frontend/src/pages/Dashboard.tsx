@@ -9,7 +9,7 @@ import type {
   DashboardSnapshot, FindingAging, EvidenceFreshness, ActivityEntry, ComplianceScore, System,
 } from '../types'
 import { KpiCard } from '../components/KpiCard'
-import { splitPairs } from '../lib/compliancePairs'
+import { activePairsText, splitPairs } from '../lib/compliancePairs'
 import {
   PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, Tooltip, LabelList,
   ResponsiveContainer, Legend, LineChart, Line,
@@ -27,6 +27,17 @@ const SEV_COLORS: Record<string, string> = {
 
 const EVIDENCE_COLORS = ['var(--risk-low)', 'var(--risk-med)', 'var(--risk-crit)']
 const AGING_COLORS = ['var(--risk-crit)', 'var(--risk-high)', 'var(--risk-med)', 'var(--risk-low)']
+
+interface TrendPoint {
+  date: string
+  /** Mean score over the pairs with work that day; null when no pair has work yet. */
+  avg_score: number | null
+  active_pairs: number
+  open_findings: number
+  overdue_findings: number
+}
+
+const AVG_LINE = 'Avg compliance %'
 
 export default function Dashboard() {
   const [systemId, setSystemId] = useState<number | ''>('')
@@ -72,8 +83,11 @@ export default function Dashboard() {
 
   const { data: history = [] } = useQuery({
     queryKey: ['dashboard-history', key],
-    queryFn: () => api.get<{ date: string; avg_score: number; open_findings: number; overdue_findings: number }[]>(`/dashboard/history${qs}`),
+    queryFn: () => api.get<TrendPoint[]>(`/dashboard/history${qs}`),
   })
+  // The average is over the pairs with work only (server rule, services/metrics.py);
+  // say how many, so 35% is never read as "35% of everything".
+  const activeNow = history.length ? history[history.length - 1].active_pairs : 0
 
   const delayed = snapshot?.delayed_findings ?? 0
   const cards: { label: string; value: number; icon: typeof Server; tone: 'default' | 'warning' | 'danger'; sub?: string }[] = [
@@ -215,7 +229,11 @@ export default function Dashboard() {
 
       {/* Compliance trend + findings burndown (daily snapshots) */}
       <div className="bg-[var(--bg-secondary)] border border-[var(--border)] p-4 mb-6">
-        <h3 className="text-xs uppercase tracking-wider text-[var(--text-secondary)] mb-3">Compliance Trend</h3>
+        <h3 className="text-xs uppercase tracking-wider text-[var(--text-secondary)] mb-1">Compliance Trend</h3>
+        <p className="text-[11px] text-[var(--text-secondary)] mb-3">
+          {AVG_LINE} is the mean score {activePairsText(activeNow)} (at least one control assessed, or an open
+          finding). Frameworks nobody has started are left out.
+        </p>
         {history.length >= 2 ? (
           <ResponsiveContainer width="100%" height={200}>
             <LineChart data={history} margin={{ top: 4, right: 8, bottom: 0, left: -18 }}>
@@ -224,9 +242,13 @@ export default function Dashboard() {
               <YAxis yAxisId="score" domain={[0, 100]} tick={{ fontSize: 10, fill: 'var(--text-secondary)' }} />
               <YAxis yAxisId="count" orientation="right" allowDecimals={false}
                      tick={{ fontSize: 10, fill: 'var(--text-secondary)' }} />
-              <Tooltip contentStyle={{ background: 'var(--bg-tertiary)', border: '1px solid var(--border)', fontSize: 12 }} />
+              <Tooltip contentStyle={{ background: 'var(--bg-tertiary)', border: '1px solid var(--border)', fontSize: 12 }}
+                       formatter={(value, name, item) =>
+                         name === AVG_LINE
+                           ? [`${value == null ? '—' : `${value}%`} ${activePairsText((item.payload as TrendPoint).active_pairs)}`, name]
+                           : [value, name]} />
               <Legend wrapperStyle={{ fontSize: 11 }} />
-              <Line yAxisId="score" type="monotone" dataKey="avg_score" name="Avg compliance %"
+              <Line yAxisId="score" type="monotone" dataKey="avg_score" name={AVG_LINE}
                     stroke="var(--accent)" strokeWidth={2} dot={false} />
               <Line yAxisId="count" type="monotone" dataKey="open_findings" name="Open findings"
                     stroke="var(--risk-med)" strokeWidth={2} dot={false} />

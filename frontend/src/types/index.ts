@@ -234,6 +234,8 @@ export interface ComplianceScore {
   critical_findings: number
   /** Controls with any status but Not Assessed; 0 = nobody has started this pair. */
   assessed_controls?: number
+  /** Server's "has work" rule (assessed control or open finding): charted, briefed and averaged. */
+  has_work: boolean
 }
 
 export interface ConMonEntry {

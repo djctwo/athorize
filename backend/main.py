@@ -150,6 +150,12 @@ def run_schema_migrations(engine) -> None:
         conn.execute(text("DROP TABLE ics_advisory_matches"))
         conn.execute(text("ALTER TABLE ics_advisory_matches_new RENAME TO ics_advisory_matches"))
 
+    # Trend averages count only pairs with work (services.metrics.pair_has_work):
+    # snapshots record how many controls were assessed. Older rows stay NULL.
+    existing_snap = {c["name"] for c in inspect(engine).get_columns("compliance_snapshots")}
+    if "assessed_controls" not in existing_snap:
+        conn.execute(text("ALTER TABLE compliance_snapshots ADD COLUMN assessed_controls INTEGER"))
+
     # SSO identity binding (R2SEC-3/-9): users carry the IdP (issuer, sub)
     # they were linked to; one IdP identity binds at most one account.
     existing_users2 = {c["name"] for c in inspect(engine).get_columns("users")}
