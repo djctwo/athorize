@@ -1,0 +1,73 @@
+name: integration-watch
+
+# Weekly check that the outside feeds Athorize reads (CISA KEV, CISA AA RSS,
+# CISA CSAF, NVD CVE API) still answer the way the parsers expect. No API keys.
+# Changes open (or update) one issue per feed, labelled `integration-watch`;
+# GitHub notifies the repository owner. See docs/INTEGRATION_WATCH.md.
+on:
+  schedule:
+    - cron: "23 6 * * 1" # Mondays 06:23 UTC
+  workflow_dispatch:
+    inputs:
+      open_issues:
+        description: Open/update/close GitHub issues for what the run finds
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: integration-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    # The schedule only ever acts on the default branch; manual runs work on any branch.
+    if: github.event_name == 'workflow_dispatch' || github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write # commit the last-seen state file (default branch only)
+      issues: write   # open / update / close integration-watch issues
+      actions: write  # keepalive: re-enable this workflow so GitHub never disables the schedule
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ON_DEFAULT_BRANCH: ${{ github.ref == format('refs/heads/{0}', github.event.repository.default_branch) }}
+      OPEN_ISSUES: ${{ github.event_name != 'workflow_dispatch' || inputs.open_issues }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: "3.12"
+
+      - name: Self-test the watch
+        run: python -m unittest discover -s scripts/tests -t .
+
+      - name: Label
+        if: env.OPEN_ISSUES == 'true'
+        run: gh label create integration-watch --color B60205 --force --description "An outside feed changed or broke (weekly watch)"
+
+      - name: Check the feeds
+        run: |
+          args=(--state .github/integration-watch/state.json --summary "$GITHUB_STEP_SUMMARY")
+          if [ "$OPEN_ISSUES" = true ]; then args+=(--issues); fi
+          python scripts/integration_watch.py "${args[@]}"
+
+      - name: Save last-seen state
+        if: env.ON_DEFAULT_BRANCH == 'true'
+        run: |
+          f=.github/integration-watch/state.json
+          if git diff --quiet -- "$f"; then echo "State unchanged."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$f"
+          git commit -m "integration-watch: update last-seen feed state"
+          git push || { git pull --rebase && git push; }
+
+      - name: Keepalive
+        # GitHub disables scheduled workflows after 60 days without repository
+        # activity; re-enabling the workflow through the API resets that clock.
+        if: env.ON_DEFAULT_BRANCH == 'true'
+        run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/watch.yml/enable"

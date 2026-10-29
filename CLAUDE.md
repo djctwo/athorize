@@ -17,6 +17,9 @@ as JSON (`frameworks/`). AGPL-3.0, © 2026 Douglas Cleary.
   - `release-tooling.yml`: release archive + update round trip on Linux.
   - `build-windows-desktop.yml`: builds both `.exe` files, smoke-tests them, then runs the Playwright demo +
     blank suites with each built `.exe` as the server.
+  - `watch.yml`: weekly integration watch (`scripts/integration_watch.py`, no keys) of the outside feeds
+    (CISA KEV, AA RSS, CSAF, NVD); a change opens or updates one `integration-watch` issue per feed.
+    Last-seen state: `.github/integration-watch/state.json`. Details: `docs/INTEGRATION_WATCH.md`.
 
 ## Regression suites
 - `backend/tests/hunts/` and `frontend/e2e/` hold end-to-end and adversarial regression tests from the

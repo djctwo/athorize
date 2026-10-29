@@ -60,6 +60,9 @@ jobs:
         working-directory: backend
         run: python -m pytest -q -p no:cacheprovider
 
+      - name: Integration-watch unit tests
+        run: python -m unittest discover -s scripts/tests -t .
+
   frontend:
     runs-on: ubuntu-latest
     timeout-minutes: 15

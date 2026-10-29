@@ -1,0 +1,123 @@
+{
+  "feeds": {
+    "aa": {
+      "consecutive_unavailable": 0,
+      "last_status": "problem",
+      "signature": {
+        "aa_id_in_title": false,
+        "item_tags": [
+          "description",
+          "guid",
+          "link",
+          "pubDate",
+          "title",
+          "{http://purl.org/dc/elements/1.1/}creator"
+        ],
+        "pubdate_readable": false,
+        "root": "rss"
+      }
+    },
+    "csaf": {
+      "consecutive_unavailable": 0,
+      "last_status": "problem",
+      "signature": {
+        "csaf_version": "2.0",
+        "document_keys": [
+          "csaf_version",
+          "notes",
+          "title",
+          "tracking"
+        ],
+        "document_top_keys": [
+          "document",
+          "product_tree",
+          "vulnerabilities"
+        ],
+        "entry_keys": [
+          "content",
+          "format",
+          "id",
+          "link",
+          "published",
+          "title",
+          "updated"
+        ],
+        "feed_hosts": [
+          "raw.githubusercontent.com"
+        ],
+        "metadata_keys": [
+          "canonical_url",
+          "distributions",
+          "last_updated",
+          "list_on_CSAF_aggregators",
+          "metadata_version",
+          "mirror_on_CSAF_aggregators",
+          "public_openpgp_keys",
+          "publisher",
+          "role"
+        ],
+        "tracking_keys": [
+          "current_release_date",
+          "id",
+          "initial_release_date"
+        ]
+      }
+    },
+    "kev": {
+      "consecutive_unavailable": 0,
+      "last_status": "ok",
+      "signature": {
+        "ransomware_values": [
+          "Known",
+          "Unknown"
+        ],
+        "record_keys": [
+          "cveID",
+          "cwes",
+          "dateAdded",
+          "dueDate",
+          "forensicTriage",
+          "knownRansomwareCampaignUse",
+          "notes",
+          "product",
+          "requiredAction",
+          "shortDescription",
+          "vendorProject",
+          "vulnerabilityName"
+        ],
+        "top_keys": [
+          "catalogVersion",
+          "count",
+          "dateReleased",
+          "title",
+          "vulnerabilities"
+        ]
+      }
+    },
+    "nvd": {
+      "consecutive_unavailable": 0,
+      "last_status": "ok",
+      "signature": {
+        "cve_keys": [
+          "configurations",
+          "descriptions",
+          "id",
+          "metrics",
+          "published"
+        ],
+        "format": "NVD_CVE",
+        "top_keys": [
+          "format",
+          "resultsPerPage",
+          "startIndex",
+          "timestamp",
+          "totalResults",
+          "version",
+          "vulnerabilities"
+        ],
+        "version": "2.0"
+      }
+    }
+  },
+  "schema": 1
+}
