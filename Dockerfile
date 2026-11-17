@@ -22,7 +22,7 @@ RUN npm run build
 # Stage 2 — runtime: Python + backend + frameworks + pre-built UI. No Node,
 # no compilers, no tests, no .git.
 # ---------------------------------------------------------------------------
-FROM python:3.12-slim AS runtime
+FROM python:3.15-slim AS runtime
 
 LABEL org.opencontainers.image.title="Athorize" \
       org.opencontainers.image.description="Self-hosted multi-framework compliance platform" \
